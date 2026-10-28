@@ -12,7 +12,7 @@ module.exports = {
         doc += '╚══════════════════════════════╝\n\n';
         doc += '🔮 *Pense em um personagem real ou fictício!*\n';
         doc += '1. O seu personagem é brasileiro?\n';
-        doc += '2. O seu personagem é de anime?\n\n';
+        doc += '2. O seu personagem é de filme ou série?\n\n';
         doc += '👑 *' + botName + '*';
         return reply(doc.trim());
     }

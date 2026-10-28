@@ -10,7 +10,7 @@ const AUDIO_FILTERS = {
     // Pitch & Tempo
     nightcore: {
         id: 'nightcore',
-        name: 'Nightcore Anime Pitch',
+        name: 'Nightcore Pitch',
         category: 'pitch_tempo',
         emoji: '⚡',
         filter: 'asetrate=44100*1.25,aresample=44100,atempo=1.06',

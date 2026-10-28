@@ -1,6 +1,6 @@
 /**
  * Serviço de Personas de Inteligência Artificial
- * Gerencia personalidades imersivas de Saga Épica, animes icônicos e mentores profissionais
+ * Gerencia personalidades imersivas de Saga Épica e mentores profissionais
  */
 
 const logger = require('../core/logger');

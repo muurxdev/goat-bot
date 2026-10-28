@@ -68,3 +68,6 @@ docker-compose.override.yml
 relatorio-comandos-*.json
 relatorio-comandos-*.md
 audit-report.json
+
+# Wallpapers de terceiros (fotos com direitos autorais): ficam só no servidor, nunca no repositório
+assets/wallpapers/

@@ -8,7 +8,7 @@
  * evento.
  *
  * As frases padrão em assets/audios/<evento>/ são lidas por uma voz sintética
- * comum — não imitam o dublador do anime, de propósito: clonar a voz de uma
+ * comum — não imitam o dublador original, de propósito: clonar a voz de uma
  * pessoa real sem autorização não é algo que se ponha num bot de grupo.
  * O dono pode gravar as próprias com `.audioevento`.
  */

@@ -6,7 +6,7 @@
  * figurinha, imagem ou GIF no próprio WhatsApp. Elas ficam em
  * assets/figurinhas/<evento>/ e o bot sorteia uma a cada evento.
  *
- * O bot não traz figurinhas de fábrica: a arte do anime que o projeto tem são
+ * O bot não traz figurinhas de fábrica: a arte que o projeto tem são
  * wallpapers de fã assinados, que nem viram figurinha boa nem são nossos para
  * recortar. Sem figurinha cadastrada, o evento sai só com o texto.
  *

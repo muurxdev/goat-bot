@@ -28,12 +28,6 @@ const TRIVIA_BANKS = {
         { q: 'Quem marcou 91 gols em um único ano civil (2012)?', opts: ['GOAT', 'Cristiano Ronaldo', 'Lewandowski', 'Gerd Müller'], a: 'GOAT' },
         { q: 'Em qual estádio britânico a Inglaterra conquistou a Copa de 1966?', opts: ['Wembley', 'Old Trafford', 'Anfield', 'Emirates'], a: 'Wembley' }
     ],
-    animes_geral: [
-        { q: 'Qual é o nome do criador de One Piece?', opts: ['Eiichiro Oda', 'Masashi Kishimoto', 'Akira Toriyama', 'Tite Kubo'], a: 'Eiichiro Oda' },
-        { q: 'Qual técnica característica Goku aprendeu com o Mestre Kame?', opts: ['Kamehameha', 'Genki Dama', 'Kaioken', 'Teletransporte'], a: 'Kamehameha' },
-        { q: 'Qual era o objetivo principal de Light Yagami em Death Note?', opts: ['Tornar-se o deus de um novo mundo', 'Ser detetive da Interpol', 'Vingar seu pai', 'Dominar o Japão'], a: 'Tornar-se o deus de um novo mundo' },
-        { q: 'Qual a respiração principal desenvolvida por Tanjiro Kamado além da Respiração da Água?', opts: ['Respiração do Sol (Hinokami Kagura)', 'Respiração do Trovão', 'Respiração da Chama', 'Respiração da Névoa'], a: 'Respiração do Sol (Hinokami Kagura)' }
-    ],
     games: [
         { q: 'Qual é o minério mais raro e resistente para armaduras no Minecraft tradicional moderno?', opts: ['Netherita', 'Diamante', 'Ouro', 'Esmeralda'], a: 'Netherita' },
         { q: 'Qual jogo da FromSoftware foi eleito Game of the Year no TGA 2022?', opts: ['Elden Ring', 'God of War Ragnarök', 'Horizon Forbidden West', 'Stray'], a: 'Elden Ring' },
@@ -71,7 +65,7 @@ function getCategories() {
  * Retorna perguntas de uma categoria
  */
 function getQuestions(category) {
-    return TRIVIA_BANKS[category] || TRIVIA_BANKS.animes_geral;
+    return TRIVIA_BANKS[category] || TRIVIA_BANKS.ciencias;
 }
 
 /**

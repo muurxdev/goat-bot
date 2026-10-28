@@ -158,7 +158,7 @@ async function runSelfHeal() {
         stats.cookies = "não configurados";
     }
 
-    // 6. INTEGRIDADE DOS WALLPAPERS E COVERS DE ANIME
+    // 6. INTEGRIDADE DOS WALLPAPERS E COVERS
     try {
         const wpStatus = getAllMenuMediaStatus();
         const activeVideos = wpStatus.filter(c => c.type === "video").length;

@@ -141,9 +141,18 @@ function detectLinkPlatform(text = '') {
     return 'outros';
 }
 
+/**
+ * Só o endereço que aparece depois de https:// (ou http://), até a primeira barra.
+ * "https://chat.whatsapp.com/ABC" -> "chat.whatsapp.com"
+ */
+function dominioDoLink(url = '') {
+    return String(url).replace(/^[a-z]+:\/\//i, '').split('/')[0];
+}
+
 module.exports = {
     containsLink,
     detectLinkPlatform,
+    dominioDoLink,
     normalizeSneakySpacing,
     PLATFORM_PATTERNS
 };

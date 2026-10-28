@@ -97,7 +97,8 @@ async function runTests() {
     const totalCmds = Object.keys(cmdIndex.commands).length
     const totalAliases = Object.keys(cmdIndex.aliases).length
     assert.ok(totalCmds >= 9000, `Esperado >= 9000 comandos, obtido ${totalCmds}`)
-    assert.ok(totalAliases >= 20000, `Esperado >= 20000 aliases, obtido ${totalAliases}`)
+    // Piso ajustado de 20000 para 19900 ao remover os aliases de anime (31 aliases, 10 comandos).
+    assert.ok(totalAliases >= 19900, `Esperado >= 19900 aliases, obtido ${totalAliases}`)
     console.log(`  ✅ PASS: Total de Comandos: ${totalCmds} comandos canônicos (+ ${totalAliases} aliases = ${totalCmds + totalAliases} gatilhos)`)
     passed++
 

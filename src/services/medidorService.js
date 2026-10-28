@@ -21,7 +21,7 @@ function notaDoDia(alvo, chave) {
 const MEDIDORES = [
     ['belezometro', 'beleza'], ['burrometro', 'burrice'], ['coragemetro', 'coragem'],
     ['fofurometro', 'fofura'], ['fomemetro', 'fome'], ['inteligenciometro', 'inteligência'],
-    ['maldademetro', 'maldade'], ['nerdometro', 'nerd'], ['otakumetro', 'otaku'],
+    ['maldademetro', 'maldade'], ['nerdometro', 'nerd'],
     ['preguicometro', 'preguiça'], ['riquezometro', 'riqueza'], ['romanticometro', 'romantismo'],
     ['sonometro', 'sono'], ['sortometro', 'sorte']
 ]

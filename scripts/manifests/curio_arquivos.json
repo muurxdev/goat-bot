@@ -1,15 +1,15 @@
 {
   "familia": "curiosidades",
   "prefixo": "curio",
-  "total": 250,
-  "fichas": 1503,
+  "total": 249,
+  "fichas": 1497,
   "porSub": {
     "Mundo": 55,
     "Brasil": 45,
     "Ciência": 40,
     "História": 38,
     "Bicho e Planta": 36,
-    "Cultura": 36
+    "Cultura": 35
   },
   "geradoPor": "scripts/gen-curiosidades.js",
   "comandos": [
@@ -1851,14 +1851,6 @@
       "tema": "quadrinhos",
       "subcategory": "Cultura",
       "description": "A história dos quadrinhos",
-      "fichas": 6
-    },
-    {
-      "nome": "curio231",
-      "arquivo": "src/commands/curiosidades/curio231.js",
-      "tema": "mangaanime",
-      "subcategory": "Cultura",
-      "description": "Mangá e anime",
       "fichas": 6
     },
     {

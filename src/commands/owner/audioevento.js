@@ -4,7 +4,7 @@
  * boas-vindas e outros eventos, respondendo a um áudio.
  *
  * Cada evento já vem com uma frase padrão gravada em voz sintética comum. Ela
- * não imita o dublador do anime de propósito — clonar a voz de uma pessoa real
+ * não imita o dublador original de propósito — clonar a voz de uma pessoa real
  * sem autorização não é algo que se ponha num bot de grupo.
  */
 

@@ -2452,7 +2452,6 @@ T('Cultura', '🎞️', 'animacao', 'A história da animação',
     gertie: ['Gertie, o Dinossauro', '1914', 'Estados Unidos', 'Winsor McCay', 'McCay levava o filme para o palco e conversava com a dinossaura projetada, fingindo dar comida a ela. Foi o primeiro personagem de desenho com jeito de ter personalidade própria.'],
     achmed: ['As Aventuras do Príncipe Achmed', '1926', 'Alemanha', 'Lotte Reiniger', 'Ela recortava silhuetas de papel e chumbo e movia cada articulação entre uma foto e outra. É o longa de animação mais antigo que sobreviveu inteiro, e quase ninguém sabe o nome dela.'],
     brancadeneve: ['Branca de Neve e os Sete Anões', '1937', 'Estados Unidos', 'Estúdio de Walt Disney', 'A imprensa chamou o projeto de loucura, porque ninguém acreditava que alguém aguentaria mais de uma hora de desenho. O estúdio hipotecou a casa do dono para conseguir terminar.'],
-    astroboy: ['Astro Boy', '1963', 'Japão', 'Osamu Tezuka', 'Para caber no orçamento de televisão, Tezuka cortou desenhos: boca mexendo, resto parado, cenário reaproveitado. A economia acabou virando a própria cara do anime.'],
     toystory: ['Toy Story', '1995', 'Estados Unidos', 'Pixar', 'Primeiro longa feito inteiro no computador. Escolheram brinquedos de plástico de propósito, porque pele, cabelo e pano ainda ficavam falsos demais na máquina daquela época.'],
     wallace: ['Wallace e Gromit', '1989', 'Reino Unido', 'Nick Park e o estúdio Aardman', 'Massinha quadro a quadro: o animador encosta o dedo, tira foto, encosta de novo. Um dia inteiro de trabalho costuma render poucos segundos, e o cachorro não fala uma palavra.']
 })
@@ -2587,17 +2586,6 @@ T('Cultura', '🦸', 'quadrinhos', 'A história dos quadrinhos',
     marvel: ['A virada da Marvel', '1961', 'Nova York', 'Stan Lee e Jack Kirby', 'A novidade foi dar problema de gente comum ao herói: aluguel atrasado, briga em casa, namoro que não dá certo. Quem desenhou e bolou boa parte disso foi Kirby, reconhecido tarde demais.'],
     watchmen: ['Watchmen', '1986', 'Estados Unidos e Reino Unido', 'Alan Moore e Dave Gibbons', 'Junto com o Cavaleiro das Trevas, virou o argumento de que gibi podia ser leitura adulta. Moore passou a detestar o rótulo de romance gráfico, que achava conversa de vendedor.'],
     monica: ['Turma da Mônica', '1959', 'Brasil', 'Maurício de Sousa', 'Começou como tira de jornal estrelada por um cachorrinho, e a menina forte só apareceu alguns anos depois. Virou a maior operação de licenciamento de personagem do país.']
-})
-
-T('Cultura', '🗾', 'mangaanime', 'Mangá e anime',
-    'No Japão história em quadrinhos não é assunto de criança: tem revista semanal grossa como lista telefônica para cada tipo de leitor.',
-    ['Ano', 'Quem fez', 'Por que ficou'], {
-    tezuka: ['Osamu Tezuka', 'Anos 1950 e 1960', 'Osamu Tezuka', 'Fundou a gramática do mangá e do anime', 'Formado em medicina, escolheu desenhar. Trouxe para a página o corte e o movimento do cinema, e desenhou olho grande justamente para caber mais emoção no rosto.'],
-    dragonball: ['Dragon Ball', '1984', 'Akira Toriyama', 'Exportou o formato de luta e treino', 'Começou como comédia inspirada numa lenda chinesa do macaco. O esquema de ficar mais forte a cada etapa virou receita copiada por quase todo mangá de ação que veio depois.'],
-    akira: ['Akira', '1988', 'Katsuhiro Otomo', 'Mostrou ao mundo que anime não é infantil', 'Foi feito com orçamento fora do normal e desenho de detalhe obsessivo, com a boca animada a partir da voz já gravada, o contrário do costume. Lá fora, foi a porta de entrada de muita gente.'],
-    evangelion: ['Neon Genesis Evangelion', '1995', 'Hideaki Anno', 'Robô gigante virou estudo de depressão', 'Anno estava em crise pessoal e despejou isso nos personagens. O final, feito já com o dinheiro no fim, rendeu uma das discussões mais longas e raivosas da história do gênero.'],
-    chihiro: ['A Viagem de Chihiro', '2001', 'Hayao Miyazaki e o Studio Ghibli', 'Primeiro anime a ganhar o Oscar', 'Miyazaki não foi à cerimônia, em protesto contra a guerra no Iraque. O filme foi pensado para as filhas de amigos, e a heroína é uma menina emburrada e cheia de medo.'],
-    cavaleiros: ['Os Cavaleiros do Zodíaco', '1986', 'Masami Kurumada', 'Criou o público de anime no Brasil', 'A exibição na televisão aberta brasileira nos anos 1990 pegou uma geração inteira de surpresa. A dublagem daqui marcou tanto que o elenco de vozes virou atração de evento.']
 })
 
 T('Cultura', '🎮', 'videogames', 'A história dos videogames',

@@ -36,7 +36,7 @@ async function runTests() {
 
     await test('audioFilterService.explainFilter gera documentação técnica', () => {
         const doc = audioFilterService.explainFilter('nightcore');
-        assert(doc.toUpperCase().includes('NIGHTCORE ANIME PITCH'), 'Documentação não incluiu o nome correto');
+        assert(doc.toUpperCase().includes('NIGHTCORE PITCH'), 'Documentação não incluiu o nome correto');
         assert(doc.toUpperCase().includes('ESPECIFICAÇÕES TÉCNICAS'), 'Documentação ausente');
     });
 

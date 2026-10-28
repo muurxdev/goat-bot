@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-10-28T17:09:26.351Z",
-  "totalCommands": 9683,
-  "totalAliases": 20012,
+  "generatedAt": "2026-10-28T22:47:37.131Z",
+  "totalCommands": 9675,
+  "totalAliases": 19985,
   "commands": {
     "bannerascii": {
       "name": "bannerascii",
@@ -2319,6 +2319,28 @@
       "botAdminOnly": false,
       "cooldownMs": 800,
       "examples": [],
+      "subcategory": "",
+      "hidden": false,
+      "loreExempt": false,
+      "mediaCommand": false
+    },
+    "descricao": {
+      "name": "descricao",
+      "file": "admin/descricao.js",
+      "category": "admin",
+      "description": "Mostra a descrição atual do grupo",
+      "aliases": [
+        "descricaogrupo",
+        "verdescricao"
+      ],
+      "groupOnly": true,
+      "adminOnly": false,
+      "ownerOnly": false,
+      "botAdminOnly": false,
+      "cooldownMs": 3000,
+      "examples": [
+        " — mostra a descrição deste grupo"
+      ],
       "subcategory": "",
       "hidden": false,
       "loreExempt": false,
@@ -6095,6 +6117,28 @@
       "cooldownMs": 2000,
       "examples": [],
       "subcategory": "Administração",
+      "hidden": false,
+      "loreExempt": false,
+      "mediaCommand": false
+    },
+    "postardescricao": {
+      "name": "postardescricao",
+      "file": "admin/postardescricao.js",
+      "category": "admin",
+      "description": "Publica a descrição do grupo na conversa, para todos verem",
+      "aliases": [
+        "postardesc",
+        "anunciardescricao"
+      ],
+      "groupOnly": true,
+      "adminOnly": true,
+      "ownerOnly": false,
+      "botAdminOnly": false,
+      "cooldownMs": 5000,
+      "examples": [
+        " — publica a descrição deste grupo"
+      ],
+      "subcategory": "",
       "hidden": false,
       "loreExempt": false,
       "mediaCommand": false
@@ -13435,34 +13479,6 @@
       "examples": [
         "yellowkid — abre a ficha de o menino amarelo",
         "comparar yellowkid, superman — põe as duas lado a lado",
-        "lista — mostra tudo que dá para consultar aqui"
-      ],
-      "subcategory": "Cultura",
-      "hidden": false,
-      "loreExempt": false,
-      "mediaCommand": false
-    },
-    "curio231": {
-      "name": "curio231",
-      "file": "curiosidades/curio231.js",
-      "category": "curiosidades",
-      "description": "Mangá e anime",
-      "aliases": [
-        "cmd_curio231",
-        "alt_curio231",
-        "atalho_curio231",
-        "abrev_curio231",
-        "call_curio231",
-        "func_curio231"
-      ],
-      "groupOnly": false,
-      "adminOnly": false,
-      "ownerOnly": false,
-      "botAdminOnly": false,
-      "cooldownMs": 3000,
-      "examples": [
-        "tezuka — abre a ficha de osamu tezuka",
-        "comparar tezuka, dragonball — põe as duas lado a lado",
         "lista — mostra tudo que dá para consultar aqui"
       ],
       "subcategory": "Cultura",
@@ -97014,27 +97030,6 @@
       "loreExempt": false,
       "mediaCommand": false
     },
-    "desafiootaku": {
-      "name": "desafiootaku",
-      "file": "fun/desafiootaku.js",
-      "category": "fun",
-      "description": "Desafio de quiz otaku avançado para veteranos de animes",
-      "aliases": [
-        "quizexpert",
-        "desafioanimepro",
-        "otakuexpert"
-      ],
-      "groupOnly": false,
-      "adminOnly": false,
-      "ownerOnly": false,
-      "botAdminOnly": false,
-      "cooldownMs": 3000,
-      "examples": [],
-      "subcategory": "",
-      "hidden": false,
-      "loreExempt": false,
-      "mediaCommand": false
-    },
     "detectormentira": {
       "name": "detectormentira",
       "file": "fun/detectormentira.js",
@@ -107087,29 +107082,6 @@
       "loreExempt": false,
       "mediaCommand": false
     },
-    "otakumetro": {
-      "name": "otakumetro",
-      "file": "fun/otakumetro.js",
-      "category": "fun",
-      "description": "Mede, de brincadeira, o nível de otaku de alguém hoje",
-      "aliases": [
-        "otaku",
-        "weeb"
-      ],
-      "groupOnly": false,
-      "adminOnly": false,
-      "ownerOnly": false,
-      "botAdminOnly": false,
-      "cooldownMs": 1500,
-      "examples": [
-        " — mede o seu nível de otaku",
-        "@pessoa — mede o nível de otaku de alguém"
-      ],
-      "subcategory": "Diversão",
-      "hidden": false,
-      "loreExempt": false,
-      "mediaCommand": false
-    },
     "palindromocheck": {
       "name": "palindromocheck",
       "file": "fun/palindromocheck.js",
@@ -107306,48 +107278,6 @@
       "loreExempt": false,
       "mediaCommand": false
     },
-    "qualanime": {
-      "name": "qualanime",
-      "file": "fun/qualanime.js",
-      "category": "fun",
-      "description": "Adivinhe o anime pela sinopse descrita",
-      "aliases": [
-        "adivinhanime",
-        "qual-o-anime",
-        "quizsinopse"
-      ],
-      "groupOnly": false,
-      "adminOnly": false,
-      "ownerOnly": false,
-      "botAdminOnly": false,
-      "cooldownMs": 2000,
-      "examples": [],
-      "subcategory": "",
-      "hidden": false,
-      "loreExempt": false,
-      "mediaCommand": false
-    },
-    "quemdisse": {
-      "name": "quemdisse",
-      "file": "fun/quemdisse.js",
-      "category": "fun",
-      "description": "Adivinhe qual personagem de anime disse a frase famosa",
-      "aliases": [
-        "fraseanime",
-        "adivinharfrase",
-        "autorfrase"
-      ],
-      "groupOnly": false,
-      "adminOnly": false,
-      "ownerOnly": false,
-      "botAdminOnly": false,
-      "cooldownMs": 2000,
-      "examples": [],
-      "subcategory": "",
-      "hidden": false,
-      "loreExempt": false,
-      "mediaCommand": false
-    },
     "quiz": {
       "name": "quiz",
       "file": "fun/quiz.js",
@@ -107364,27 +107294,6 @@
       "cooldownMs": 0,
       "examples": [],
       "subcategory": "Quiz",
-      "hidden": false,
-      "loreExempt": false,
-      "mediaCommand": false
-    },
-    "quizanime": {
-      "name": "quizanime",
-      "file": "fun/quizanime.js",
-      "category": "fun",
-      "description": "Desafie seu conhecimento sobre Saga Épica e cultura anime",
-      "aliases": [
-        "perguntaanime",
-        "otakuquiz",
-        "desafioanime"
-      ],
-      "groupOnly": false,
-      "adminOnly": false,
-      "ownerOnly": false,
-      "botAdminOnly": false,
-      "cooldownMs": 3000,
-      "examples": [],
-      "subcategory": "",
       "hidden": false,
       "loreExempt": false,
       "mediaCommand": false
@@ -107489,6 +107398,26 @@
       "cooldownMs": 3000,
       "examples": [],
       "subcategory": "Quiz",
+      "hidden": false,
+      "loreExempt": false,
+      "mediaCommand": false
+    },
+    "quizcultura": {
+      "name": "quizcultura",
+      "file": "fun/quizcultura.js",
+      "category": "fun",
+      "description": "Desafie seus conhecimentos gerais com perguntas de múltipla escolha",
+      "aliases": [
+        "perguntaquiz",
+        "desafioquiz"
+      ],
+      "groupOnly": false,
+      "adminOnly": false,
+      "ownerOnly": false,
+      "botAdminOnly": false,
+      "cooldownMs": 3000,
+      "examples": [],
+      "subcategory": "",
       "hidden": false,
       "loreExempt": false,
       "mediaCommand": false
@@ -109657,25 +109586,6 @@
         " — sorteia um trava-línguas"
       ],
       "subcategory": "Desafios",
-      "hidden": false,
-      "loreExempt": false,
-      "mediaCommand": false
-    },
-    "quiz_animes_geral": {
-      "name": "quiz_animes_geral",
-      "file": "fun/trivias/quiz_animes_geral.js",
-      "category": "fun",
-      "description": "Desafio temático: Quiz Universo dos Animes",
-      "aliases": [
-        "jogar_quiz_animes_geral"
-      ],
-      "groupOnly": false,
-      "adminOnly": false,
-      "ownerOnly": false,
-      "botAdminOnly": false,
-      "cooldownMs": 4000,
-      "examples": [],
-      "subcategory": "Trivias & Quizzes",
       "hidden": false,
       "loreExempt": false,
       "mediaCommand": false
@@ -119432,27 +119342,6 @@
       "cooldownMs": 2500,
       "examples": [],
       "subcategory": "IA & Pesquisa",
-      "hidden": false,
-      "loreExempt": false,
-      "mediaCommand": false
-    },
-    "animesazonal": {
-      "name": "animesazonal",
-      "file": "general/animesazonal.js",
-      "category": "general",
-      "description": "Lista os animes mais populares da temporada atual",
-      "aliases": [
-        "temporadaanime",
-        "topseason",
-        "animesdatemporada"
-      ],
-      "groupOnly": false,
-      "adminOnly": false,
-      "ownerOnly": false,
-      "botAdminOnly": false,
-      "cooldownMs": 3000,
-      "examples": [],
-      "subcategory": "",
       "hidden": false,
       "loreExempt": false,
       "mediaCommand": false
@@ -130280,27 +130169,6 @@
       "loreExempt": false,
       "mediaCommand": false
     },
-    "curiosidadeanime": {
-      "name": "curiosidadeanime",
-      "file": "general/curiosidadeanime.js",
-      "category": "general",
-      "description": "Fatos e curiosidades de bastidores sobre o mundo dos animes",
-      "aliases": [
-        "fatoanime",
-        "sabianime",
-        "curiosidadesotaku"
-      ],
-      "groupOnly": false,
-      "adminOnly": false,
-      "ownerOnly": false,
-      "botAdminOnly": false,
-      "cooldownMs": 2000,
-      "examples": [],
-      "subcategory": "",
-      "hidden": false,
-      "loreExempt": false,
-      "mediaCommand": false
-    },
     "curiosidadeastronomia": {
       "name": "curiosidadeastronomia",
       "file": "general/curiosidadeastronomia.js",
@@ -140210,27 +140078,6 @@
       "loreExempt": false,
       "mediaCommand": false
     },
-    "personagemanime": {
-      "name": "personagemanime",
-      "file": "general/personagemanime.js",
-      "category": "general",
-      "description": "Consulta a biografia e poderes de personagens de animes",
-      "aliases": [
-        "fichapersonagem",
-        "infopersonagem",
-        "personageminfo"
-      ],
-      "groupOnly": false,
-      "adminOnly": false,
-      "ownerOnly": false,
-      "botAdminOnly": false,
-      "cooldownMs": 2000,
-      "examples": [],
-      "subcategory": "",
-      "hidden": false,
-      "loreExempt": false,
-      "mediaCommand": false
-    },
     "pes2metros": {
       "name": "pes2metros",
       "file": "general/pes2metros.js",
@@ -145926,27 +145773,6 @@
       "cooldownMs": 2000,
       "examples": [],
       "subcategory": "Ranking",
-      "hidden": false,
-      "loreExempt": false,
-      "mediaCommand": false
-    },
-    "topmangalist": {
-      "name": "topmangalist",
-      "file": "general/topmangalist.js",
-      "category": "general",
-      "description": "Ranking dos mangás mais vendidos e aclamados de todos os tempos",
-      "aliases": [
-        "melhoresmangas",
-        "mangaspopulares",
-        "topmanga"
-      ],
-      "groupOnly": false,
-      "adminOnly": false,
-      "ownerOnly": false,
-      "botAdminOnly": false,
-      "cooldownMs": 2000,
-      "examples": [],
-      "subcategory": "",
       "hidden": false,
       "loreExempt": false,
       "mediaCommand": false
@@ -197719,6 +197545,8 @@
     "abrev_desativar": "desativar",
     "call_desativar": "desativar",
     "func_desativar": "desativar",
+    "descricaogrupo": "descricao",
+    "verdescricao": "descricao",
     "destrancarchat": "desmutartodos",
     "abrirtodos": "desmutartodos",
     "liberargrupo": "desmutartodos",
@@ -198813,6 +198641,8 @@
     "abrev_parceria": "parceria",
     "call_parceria": "parceria",
     "func_parceria": "parceria",
+    "postardesc": "postardescricao",
+    "anunciardescricao": "postardescricao",
     "palavrao": "profanity",
     "palavroes": "profanity",
     "antipalavrao": "profanity",
@@ -200639,12 +200469,6 @@
     "abrev_curio230": "curio230",
     "call_curio230": "curio230",
     "func_curio230": "curio230",
-    "cmd_curio231": "curio231",
-    "alt_curio231": "curio231",
-    "atalho_curio231": "curio231",
-    "abrev_curio231": "curio231",
-    "call_curio231": "curio231",
-    "func_curio231": "curio231",
     "cmd_curio232": "curio232",
     "alt_curio232": "curio232",
     "atalho_curio232": "curio232",
@@ -210454,9 +210278,6 @@
     "missaoimpossivel": "desafioimpossivel",
     "desafiodiario": "desafioimpossivel",
     "challengedia": "desafioimpossivel",
-    "quizexpert": "desafiootaku",
-    "desafioanimepro": "desafiootaku",
-    "otakuexpert": "desafiootaku",
     "poligrafo": "detectormentira",
     "detectorverdade": "detectormentira",
     "mentiroso": "detectormentira",
@@ -211336,8 +211157,6 @@
     "nomepersonagem": "nomerpg",
     "numerodasorte-cmd": "numerodasorte",
     "cmd-numerodasorte": "numerodasorte",
-    "otaku": "otakumetro",
-    "weeb": "otakumetro",
     "palindromocheck-cmd": "palindromocheck",
     "cmd-palindromocheck": "palindromocheck",
     "pedrapapelreino-cmd": "pedrapapelreino",
@@ -211357,17 +211176,8 @@
     "pedrapapeltesoura": "ppt",
     "preguica": "preguicometro",
     "lazy": "preguicometro",
-    "adivinhanime": "qualanime",
-    "qual-o-anime": "qualanime",
-    "quizsinopse": "qualanime",
-    "fraseanime": "quemdisse",
-    "adivinharfrase": "quemdisse",
-    "autorfrase": "quemdisse",
     "trivia": "quiz",
     "jogodeperguntas": "quiz",
-    "perguntaanime": "quizanime",
-    "otakuquiz": "quizanime",
-    "desafioanime": "quizanime",
     "quizbiblico-cmd": "quizbiblico",
     "cmd-quizbiblico": "quizbiblico",
     "pergutacapital": "quizcapitais",
@@ -211378,6 +211188,8 @@
     "quizgerais": "quizconhecimentos",
     "quizgeral": "quizconhecimentos",
     "conhecimentosgerais": "quizconhecimentos",
+    "perguntaquiz": "quizcultura",
+    "desafioquiz": "quizcultura",
     "quizesportes-cmd": "quizesportes",
     "cmd-quizesportes": "quizesportes",
     "futebolquiz": "quizfutebol",
@@ -211549,7 +211361,6 @@
     "cmd-testememoria": "testememoria",
     "travafrases-cmd": "travafrases",
     "cmd-travafrases": "travafrases",
-    "jogar_quiz_animes_geral": "quiz_animes_geral",
     "jogar_quiz_ciencias": "quiz_ciencias",
     "jogar_quiz_cinema_series": "quiz_cinema_series",
     "jogar_quiz_futebol_br": "quiz_futebol_br",
@@ -212139,9 +211950,6 @@
     "alt_analisartexto": "analisartexto",
     "atalho_analisartexto": "analisartexto",
     "abrev_analisartexto": "analisartexto",
-    "temporadaanime": "animesazonal",
-    "topseason": "animesazonal",
-    "animesdatemporada": "animesazonal",
     "antonimosbr-cmd": "antonimosbr",
     "cmd-antonimosbr": "antonimosbr",
     "apertodemao-cmd": "apertodemao",
@@ -212802,9 +212610,6 @@
     "cube": "cubo",
     "curaramigo-cmd": "curaramigo",
     "cmd-curaramigo": "curaramigo",
-    "fatoanime": "curiosidadeanime",
-    "sabianime": "curiosidadeanime",
-    "curiosidadesotaku": "curiosidadeanime",
     "curiosidadeastronomia-cmd": "curiosidadeastronomia",
     "cmd-curiosidadeastronomia": "curiosidadeastronomia",
     "curiosidadenatureza-cmd": "curiosidadenatureza",
@@ -213592,9 +213397,6 @@
     "cmd-perdoaramigo": "perdoaramigo",
     "permutacao-cmd": "permutacao",
     "cmd-permutacao": "permutacao",
-    "fichapersonagem": "personagemanime",
-    "infopersonagem": "personagemanime",
-    "personageminfo": "personagemanime",
     "pes2metros-cmd": "pes2metros",
     "cmd-pes2metros": "pes2metros",
     "pesoconverter": "peso",
@@ -213955,9 +213757,6 @@
     "basalmetabolic": "tmb",
     "topativo-cmd": "topativo",
     "cmd-topativo": "topativo",
-    "melhoresmangas": "topmangalist",
-    "mangaspopulares": "topmangalist",
-    "topmanga": "topmangalist",
     "areatrapezio": "trapezio",
     "trapezoid": "trapezio",
     "treinarjunto-cmd": "treinarjunto",

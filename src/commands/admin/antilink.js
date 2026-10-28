@@ -7,6 +7,7 @@
 const dataService = require("../../services/dataService");
 const { getBotName } = require("../../config/botConfig");
 const logger = require("../../core/logger");
+const { dominioDoLink } = require("../../utils/linkDetector");
 
 module.exports = {
     name: "antilink",
@@ -56,7 +57,7 @@ module.exports = {
                         title: "DETALHES DA INFRAÇÃO",
                         icon: "🔗",
                         fields: [
-                            { label: "Link Detectado", value: "https://chat.whatsapp.com/ExemploConvite123", icon: "🌐" },
+                            { label: "Link Detectado", value: dominioDoLink("https://chat.whatsapp.com/ExemploConvite123"), icon: "🌐" },
                             { label: "Ação Aplicada", value: `⚡ *${cfg.action.toUpperCase()}*`, icon: "⚖️" },
                             { label: "Regra Violada", value: "Proibido envio de links não autorizados", icon: "📜" }
                         ]

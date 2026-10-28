@@ -251,24 +251,6 @@ const QUIZZES = {
             ['Qual grupo sul-coreano ficou mundialmente famoso com "Dynamite"?', ['BTS', 'Blackpink', 'EXO', 'Twice'], 0]
         ]
     },
-    anime: {
-        nome: 'Anime e mangá', emoji: '🍥', perguntas: [
-            ['Qual é o sonho do protagonista de One Piece?', ['Ser o Rei dos Piratas', 'Ser Hokage', 'Ser caçador', 'Ser almirante'], 0],
-            ['Qual vila é a casa de Naruto Uzumaki?', ['Konoha', 'Suna', 'Kiri', 'Iwa'], 0],
-            ['Em Dragon Ball, qual é a raça de Goku?', ['Saiyajin', 'Namekuseijin', 'Humano', 'Majin'], 0],
-            ['Em Death Note, qual é o nome do caderno assassino?', ['Death Note', 'Kill Book', 'Shinigami Eyes', 'Judgment Note'], 0],
-            ['Qual anime tem os titãs devorando humanos atrás de muralhas?', ['Attack on Titan', 'Tokyo Ghoul', 'Claymore', 'Berserk'], 0],
-            ['Em Demon Slayer, qual respiração Tanjiro usa no começo?', ['Respiração da Água', 'Respiração do Fogo', 'Respiração do Trovão', 'Respiração da Pedra'], 0],
-            ['Qual estúdio produziu "A Viagem de Chihiro"?', ['Studio Ghibli', 'Madhouse', 'Toei', 'Bones'], 0],
-            ['Qual é o nome do caderno de escolhas em Fullmetal Alchemist?', ['Pedra Filosofal', 'Livro dos Mortos', 'Círculo Proibido', 'Selo de Ishval'], 0],
-            ['Em Pokémon, qual é o parceiro inicial de Ash?', ['Pikachu', 'Charmander', 'Bulbasaur', 'Squirtle'], 0],
-            ['Em Jujutsu Kaisen, qual maldição Yuji hospeda?', ['Sukuna', 'Mahito', 'Jogo', 'Hanami'], 0],
-            ['Qual anime fala de um caderno de heróis e Plus Ultra?', ['My Hero Academia', 'One Punch Man', 'Mob Psycho', 'Tiger and Bunny'], 0],
-            ['Em Cavaleiros do Zodíaco, quem é o protagonista?', ['Seiya', 'Shiryu', 'Hyoga', 'Ikki'], 0],
-            ['Qual é o nome do robô gigante de Neon Genesis?', ['EVA', 'Gundam', 'Zoid', 'Jaeger'], 0],
-            ['Em Sailor Moon, qual é o nome civil da protagonista?', ['Usagi', 'Ami', 'Rei', 'Makoto'], 0]
-        ]
-    },
     games: {
         nome: 'Videogames', emoji: '🎮', perguntas: [
             ['Qual encanador é o mascote da Nintendo?', ['Mario', 'Luigi', 'Wario', 'Yoshi'], 0],
@@ -480,7 +462,7 @@ const QUIZZES = {
             ['Qual desenho passa no futuro com a família e a robô Rosie?', ['Os Jetsons', 'Os Flintstones', 'Futurama', 'Jonny Quest'], 0],
             ['Qual é o nome do coelho que pergunta "o que é que há, velhinho?"', ['Pernalonga', 'Patolino', 'Gaguinho', 'Hortelino'], 0],
             ['Qual desenho tem um urso de chapéu que rouba cestas em Jellystone?', ['Zé Colmeia', 'Ursinho Pooh', 'Baloo', 'Ben'], 0],
-            ['Qual anime dos anos 80 tem abelha em busca da mãe?', ['Abelha Maia', 'Zezinho', 'Sandy Bell', 'Belfy'], 0],
+            ['Qual desenho dos anos 80 tem abelha em busca da mãe?', ['Abelha Maia', 'Zezinho', 'Sandy Bell', 'Belfy'], 0],
             ['Qual desenho tem a turma do Snorks, que vive no fundo do mar?', ['Snorks', 'Bob Esponja', 'Pequena Sereia', 'Sea Lab'], 0],
             ['Qual cachorro de Dartagnan corre em Dastardly and Muttley?', ['Muttley', 'Bidu', 'Rex', 'Astro'], 0]
         ]

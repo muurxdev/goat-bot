@@ -371,33 +371,6 @@ const JOGO = {
         },
         {
             "palavras": [
-                "anime"
-            ],
-            "rotulo": "Anime e mangá",
-            "config": {
-                "motor": "quiz",
-                "tema": "anime",
-                "qtd": 5,
-                "emoji": "🍥",
-                "titulo": "Quiz de Anime e mangá"
-            }
-        },
-        {
-            "palavras": [
-                "anime",
-                "10"
-            ],
-            "rotulo": "Anime e mangá, 10 perguntas",
-            "config": {
-                "motor": "quiz",
-                "tema": "anime",
-                "qtd": 10,
-                "emoji": "🍥",
-                "titulo": "Quiz de Anime e mangá"
-            }
-        },
-        {
-            "palavras": [
                 "games"
             ],
             "rotulo": "Videogames",
