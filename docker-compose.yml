@@ -1,0 +1,105 @@
+version: '3.8'
+
+networks:
+  bot-net:
+    driver: bridge
+
+services:
+  goat-bot:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: goat_bot_xp
+    restart: unless-stopped
+    networks:
+      - bot-net
+    # Painel do QR de pareamento do WhatsApp: SÓ na própria VPS. Quem abrisse
+    # essa página de fora poderia parear o número do bot no aparelho dele.
+    # Antes a trava estava só no docker-compose.override.yml, que não entra
+    # quando se sobe com -f docker-compose.lite.yml.
+    ports:
+      - "127.0.0.1:3000:3000"
+    env_file:
+      - .env
+    environment:
+      - NODE_ENV=production
+      - PORT=3000
+      - TZ=America/Sao_Paulo
+      # Transcrição local (faster-whisper-server)
+      - WHISPER_API_URL=http://whisper:8000/v1/audio/transcriptions
+      - WHISPER_API_MODEL=${WHISPER_API_MODEL:-Systran/faster-whisper-base}
+    volumes:
+      - ./data:/app/data
+      - ./sessao:/app/sessao
+      - ./backups:/app/backups
+      - ./logs:/app/logs
+      - ./temp:/app/temp
+      - ./src:/app/src
+      - ./assets:/app/assets
+    deploy:
+      resources:
+        limits:
+          cpus: '1.0'
+          memory: 2048M
+        reservations:
+          memory: 256M
+    logging:
+      driver: 'json-file'
+      options:
+        max-size: '10m'
+        max-file: '3'
+    depends_on:
+      - bgutil-pot-provider
+      - whisper
+
+  # Serviço gerador de PO Tokens do YouTube (bgutil) — contorna o bloqueio
+  # "Sign in to confirm you're not a bot" gerando tokens frescos por vídeo.
+  bgutil-pot-provider:
+    image: brainicism/bgutil-ytdlp-pot-provider
+    container_name: bgutil_pot_provider
+    restart: unless-stopped
+    networks:
+      - bot-net
+    ports:
+      - "127.0.0.1:4416:4416"
+    deploy:
+      resources:
+        limits:
+          cpus: '1.0'
+          memory: 256M
+        reservations:
+          memory: 128M
+    logging:
+      driver: 'json-file'
+      options:
+        max-size: '5m'
+        max-file: '2'
+
+  # ═══════════════════════════════════════════════════════════════
+  # 🎙️ TRANSCRIÇÃO LOCAL (faster-whisper) — open source, offline.
+  # Expõe API compatível com OpenAI; o bot usa via WHISPER_API_URL.
+  # ═══════════════════════════════════════════════════════════════
+  whisper:
+    image: fedirz/faster-whisper-server:latest-cpu
+    container_name: goat_whisper
+    restart: unless-stopped
+    networks:
+      - bot-net
+    volumes:
+      - whisper_models:/root/.cache/huggingface
+    environment:
+      - WHISPER__MODEL=Systran/faster-whisper-base
+      - WHISPER__INFERENCE_DEVICE=cpu
+    deploy:
+      resources:
+        limits:
+          cpus: '1.0'
+          memory: 2G
+    logging:
+      driver: 'json-file'
+      options:
+        max-size: '5m'
+        max-file: '2'
+
+volumes:
+  whisper_models:

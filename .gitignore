@@ -1,0 +1,70 @@
+# Dependências
+node_modules/
+
+# Sessão e Credenciais do WhatsApp
+sessao/
+auth_info_baileys/
+*.json.bak
+
+# Diretórios Temporários, Backups e Logs
+temp/
+logs/
+backups/
+backups-test/
+scratch/
+assets/wallpapers_backup_pre1080p/
+*.log
+npm-debug.log*
+
+# Banco de dados de produção e testes
+tests/test_db.sqlite
+*.sqlite-journal
+*.sqlite-wal
+*.sqlite-shm
+
+# Variáveis de ambiente e credenciais
+.env
+.env.local
+cookies.txt
+
+# Backups legados e lixo
+*.bak
+*.bak.*
+.env.bak*
+sessao_bak/
+check_vps_rpg.js
+reset-users.js
+indexx.js
+indexxxxx/
+/database/
+
+# Sistema operacional e editores
+.DS_Store
+Thumbs.db
+.obsidian/
+# Backups legados arquivados
+legacy_backup/
+
+# Ferramentas de desenvolvimento (skills/agents) — não fazem parte do bot
+.agents/
+.claude/
+skills-lock.json
+
+# Banco de dados de produção (dados reais de usuários) — NUNCA versionar
+data/
+boss.json
+configs.json
+missoes.json
+warns.json
+xp.json
+moewalls_all_anime.json
+
+# Banco isolado da suite de testes (NODE_ENV=test)
+data/database.test.sqlite
+data/database.test.sqlite-*
+docker-compose.override.yml
+
+# Relatórios gerados pela auditoria de comandos
+relatorio-comandos-*.json
+relatorio-comandos-*.md
+audit-report.json

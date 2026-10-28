@@ -1,0 +1,1135 @@
+{
+  "familia": "texto",
+  "servico": "src/services/textStudioService.js",
+  "gerador": "scripts/gen-texto.js",
+  "geradoEm": "2026-10-15T19:56:31.311Z",
+  "total": 160,
+  "porSubcategoria": {
+    "Transformar": 60,
+    "Analisar": 40,
+    "Códigos": 36,
+    "Criar": 24
+  },
+  "arquivos": [
+    {
+      "arquivo": "src/commands/texto/txt1.js",
+      "nome": "txt1",
+      "operacao": "maiusculas",
+      "subcategoria": "Transformar",
+      "descricao": "Deixa o texto todo em letra maiúscula"
+    },
+    {
+      "arquivo": "src/commands/texto/txt2.js",
+      "nome": "txt2",
+      "operacao": "minusculas",
+      "subcategoria": "Transformar",
+      "descricao": "Deixa o texto todo em letra minúscula"
+    },
+    {
+      "arquivo": "src/commands/texto/txt3.js",
+      "nome": "txt3",
+      "operacao": "capitalizar",
+      "subcategoria": "Transformar",
+      "descricao": "Põe a primeira letra de cada palavra em maiúscula"
+    },
+    {
+      "arquivo": "src/commands/texto/txt4.js",
+      "nome": "txt4",
+      "operacao": "frasecapital",
+      "subcategoria": "Transformar",
+      "descricao": "Maiúscula no começo de cada frase, resto normal"
+    },
+    {
+      "arquivo": "src/commands/texto/txt5.js",
+      "nome": "txt5",
+      "operacao": "inverterletras",
+      "subcategoria": "Transformar",
+      "descricao": "Inverte a ordem das letras do texto"
+    },
+    {
+      "arquivo": "src/commands/texto/txt6.js",
+      "nome": "txt6",
+      "operacao": "inverterpalavras",
+      "subcategoria": "Transformar",
+      "descricao": "Inverte a ordem das palavras, sem mexer nas letras"
+    },
+    {
+      "arquivo": "src/commands/texto/txt7.js",
+      "nome": "txt7",
+      "operacao": "inverterlinhas",
+      "subcategoria": "Transformar",
+      "descricao": "Inverte a ordem das linhas do texto"
+    },
+    {
+      "arquivo": "src/commands/texto/txt8.js",
+      "nome": "txt8",
+      "operacao": "embaralharletras",
+      "subcategoria": "Transformar",
+      "descricao": "Embaralha as letras de cada palavra"
+    },
+    {
+      "arquivo": "src/commands/texto/txt9.js",
+      "nome": "txt9",
+      "operacao": "embaralharpalavras",
+      "subcategoria": "Transformar",
+      "descricao": "Embaralha a ordem das palavras do texto"
+    },
+    {
+      "arquivo": "src/commands/texto/txt10.js",
+      "nome": "txt10",
+      "operacao": "embaralharlinhas",
+      "subcategoria": "Transformar",
+      "descricao": "Embaralha a ordem das linhas do texto"
+    },
+    {
+      "arquivo": "src/commands/texto/txt11.js",
+      "nome": "txt11",
+      "operacao": "tiraracento",
+      "subcategoria": "Transformar",
+      "descricao": "Tira acento e cedilha, mantendo as letras"
+    },
+    {
+      "arquivo": "src/commands/texto/txt12.js",
+      "nome": "txt12",
+      "operacao": "tirarpontuacao",
+      "subcategoria": "Transformar",
+      "descricao": "Remove ponto, vírgula e outros sinais"
+    },
+    {
+      "arquivo": "src/commands/texto/txt13.js",
+      "nome": "txt13",
+      "operacao": "tirarespacorepetido",
+      "subcategoria": "Transformar",
+      "descricao": "Troca espaço repetido por um espaço só"
+    },
+    {
+      "arquivo": "src/commands/texto/txt14.js",
+      "nome": "txt14",
+      "operacao": "tirartodoespaco",
+      "subcategoria": "Transformar",
+      "descricao": "Cola tudo, sem nenhum espaço entre as palavras"
+    },
+    {
+      "arquivo": "src/commands/texto/txt15.js",
+      "nome": "txt15",
+      "operacao": "tirarnumeros",
+      "subcategoria": "Transformar",
+      "descricao": "Remove todos os algarismos do texto"
+    },
+    {
+      "arquivo": "src/commands/texto/txt16.js",
+      "nome": "txt16",
+      "operacao": "tiraremoji",
+      "subcategoria": "Transformar",
+      "descricao": "Remove os emoji e deixa só o texto"
+    },
+    {
+      "arquivo": "src/commands/texto/txt17.js",
+      "nome": "txt17",
+      "operacao": "tirarvogais",
+      "subcategoria": "Transformar",
+      "descricao": "Some com as vogais e deixa o enigma"
+    },
+    {
+      "arquivo": "src/commands/texto/txt18.js",
+      "nome": "txt18",
+      "operacao": "tirarlinhavazia",
+      "subcategoria": "Transformar",
+      "descricao": "Remove as linhas vazias do texto"
+    },
+    {
+      "arquivo": "src/commands/texto/txt19.js",
+      "nome": "txt19",
+      "operacao": "tirarlinharepetida",
+      "subcategoria": "Transformar",
+      "descricao": "Deixa uma linha só quando ela aparece repetida"
+    },
+    {
+      "arquivo": "src/commands/texto/txt20.js",
+      "nome": "txt20",
+      "operacao": "tirarespacoborda",
+      "subcategoria": "Transformar",
+      "descricao": "Tira o espaço do começo e do fim de cada linha"
+    },
+    {
+      "arquivo": "src/commands/texto/txt21.js",
+      "nome": "txt21",
+      "operacao": "slug",
+      "subcategoria": "Transformar",
+      "descricao": "Vira endereço de link, sem acento e com hífen"
+    },
+    {
+      "arquivo": "src/commands/texto/txt22.js",
+      "nome": "txt22",
+      "operacao": "nomearquivo",
+      "subcategoria": "Transformar",
+      "descricao": "Vira nome de arquivo sem sinal proibido"
+    },
+    {
+      "arquivo": "src/commands/texto/txt23.js",
+      "nome": "txt23",
+      "operacao": "espacado",
+      "subcategoria": "Transformar",
+      "descricao": "Separa cada letra com um espaço"
+    },
+    {
+      "arquivo": "src/commands/texto/txt24.js",
+      "nome": "txt24",
+      "operacao": "alternado",
+      "subcategoria": "Transformar",
+      "descricao": "Alterna maiúscula e minúscula letra a letra"
+    },
+    {
+      "arquivo": "src/commands/texto/txt25.js",
+      "nome": "txt25",
+      "operacao": "negrito",
+      "subcategoria": "Transformar",
+      "descricao": "Põe o texto em negrito do WhatsApp"
+    },
+    {
+      "arquivo": "src/commands/texto/txt26.js",
+      "nome": "txt26",
+      "operacao": "italico",
+      "subcategoria": "Transformar",
+      "descricao": "Põe o texto em itálico do WhatsApp"
+    },
+    {
+      "arquivo": "src/commands/texto/txt27.js",
+      "nome": "txt27",
+      "operacao": "riscado",
+      "subcategoria": "Transformar",
+      "descricao": "Põe o texto riscado do WhatsApp"
+    },
+    {
+      "arquivo": "src/commands/texto/txt28.js",
+      "nome": "txt28",
+      "operacao": "monoespacado",
+      "subcategoria": "Transformar",
+      "descricao": "Põe o texto na letra de máquina do WhatsApp"
+    },
+    {
+      "arquivo": "src/commands/texto/txt29.js",
+      "nome": "txt29",
+      "operacao": "letraspequenas",
+      "subcategoria": "Transformar",
+      "descricao": "Transforma em letras miúdas de enfeite"
+    },
+    {
+      "arquivo": "src/commands/texto/txt30.js",
+      "nome": "txt30",
+      "operacao": "caixaaltalarga",
+      "subcategoria": "Transformar",
+      "descricao": "Transforma em letras largas de enfeite"
+    },
+    {
+      "arquivo": "src/commands/texto/txt31.js",
+      "nome": "txt31",
+      "operacao": "emojientrepalavras",
+      "subcategoria": "Transformar",
+      "descricao": "Põe um emoji no lugar de cada espaço"
+    },
+    {
+      "arquivo": "src/commands/texto/txt32.js",
+      "nome": "txt32",
+      "operacao": "palavraporlinha",
+      "subcategoria": "Transformar",
+      "descricao": "Coloca cada palavra do texto numa linha"
+    },
+    {
+      "arquivo": "src/commands/texto/txt33.js",
+      "nome": "txt33",
+      "operacao": "letraporlinha",
+      "subcategoria": "Transformar",
+      "descricao": "Coloca cada letra do texto numa linha"
+    },
+    {
+      "arquivo": "src/commands/texto/txt34.js",
+      "nome": "txt34",
+      "operacao": "fraseporlinha",
+      "subcategoria": "Transformar",
+      "descricao": "Quebra o texto em uma frase por linha"
+    },
+    {
+      "arquivo": "src/commands/texto/txt35.js",
+      "nome": "txt35",
+      "operacao": "numerarlinhas",
+      "subcategoria": "Transformar",
+      "descricao": "Põe um número na frente de cada linha"
+    },
+    {
+      "arquivo": "src/commands/texto/txt36.js",
+      "nome": "txt36",
+      "operacao": "ordenarlinhas",
+      "subcategoria": "Transformar",
+      "descricao": "Ordena as linhas de A a Z"
+    },
+    {
+      "arquivo": "src/commands/texto/txt37.js",
+      "nome": "txt37",
+      "operacao": "ordenarlinhasdesc",
+      "subcategoria": "Transformar",
+      "descricao": "Ordena as linhas de Z a A"
+    },
+    {
+      "arquivo": "src/commands/texto/txt38.js",
+      "nome": "txt38",
+      "operacao": "ordenarpalavras",
+      "subcategoria": "Transformar",
+      "descricao": "Ordena as palavras do texto de A a Z"
+    },
+    {
+      "arquivo": "src/commands/texto/txt39.js",
+      "nome": "txt39",
+      "operacao": "blocos",
+      "subcategoria": "Transformar",
+      "descricao": "Quebra o texto em blocos de N caracteres"
+    },
+    {
+      "arquivo": "src/commands/texto/txt40.js",
+      "nome": "txt40",
+      "operacao": "alinhardireita",
+      "subcategoria": "Transformar",
+      "descricao": "Empurra cada linha para a direita"
+    },
+    {
+      "arquivo": "src/commands/texto/txt41.js",
+      "nome": "txt41",
+      "operacao": "alinharcentro",
+      "subcategoria": "Transformar",
+      "descricao": "Centraliza cada linha numa largura fixa"
+    },
+    {
+      "arquivo": "src/commands/texto/txt42.js",
+      "nome": "txt42",
+      "operacao": "recuar",
+      "subcategoria": "Transformar",
+      "descricao": "Põe um recuo de N espaços em cada linha"
+    },
+    {
+      "arquivo": "src/commands/texto/txt43.js",
+      "nome": "txt43",
+      "operacao": "censurar",
+      "subcategoria": "Transformar",
+      "descricao": "Tapa os palavrões deixando só a primeira letra"
+    },
+    {
+      "arquivo": "src/commands/texto/txt44.js",
+      "nome": "txt44",
+      "operacao": "trocarpalavra",
+      "subcategoria": "Transformar",
+      "descricao": "Troca uma palavra por outra no texto inteiro"
+    },
+    {
+      "arquivo": "src/commands/texto/txt45.js",
+      "nome": "txt45",
+      "operacao": "repetir",
+      "subcategoria": "Transformar",
+      "descricao": "Repete o texto o número de vezes que pedir"
+    },
+    {
+      "arquivo": "src/commands/texto/txt46.js",
+      "nome": "txt46",
+      "operacao": "refrao",
+      "subcategoria": "Transformar",
+      "descricao": "Usa a primeira linha como refrão entre as outras"
+    },
+    {
+      "arquivo": "src/commands/texto/txt47.js",
+      "nome": "txt47",
+      "operacao": "preencherzero",
+      "subcategoria": "Transformar",
+      "descricao": "Completa os números com zero à esquerda"
+    },
+    {
+      "arquivo": "src/commands/texto/txt48.js",
+      "nome": "txt48",
+      "operacao": "tabela",
+      "subcategoria": "Transformar",
+      "descricao": "Monta tabela alinhada a partir das linhas"
+    },
+    {
+      "arquivo": "src/commands/texto/txt49.js",
+      "nome": "txt49",
+      "operacao": "snakecase",
+      "subcategoria": "Transformar",
+      "descricao": "Junta as palavras com sublinhado, em minúscula"
+    },
+    {
+      "arquivo": "src/commands/texto/txt50.js",
+      "nome": "txt50",
+      "operacao": "camelcase",
+      "subcategoria": "Transformar",
+      "descricao": "Junta as palavras com maiúscula da segunda em diante"
+    },
+    {
+      "arquivo": "src/commands/texto/txt51.js",
+      "nome": "txt51",
+      "operacao": "kebabcase",
+      "subcategoria": "Transformar",
+      "descricao": "Junta as palavras com hífen, em minúscula"
+    },
+    {
+      "arquivo": "src/commands/texto/txt52.js",
+      "nome": "txt52",
+      "operacao": "constantecase",
+      "subcategoria": "Transformar",
+      "descricao": "Junta em maiúscula separando com sublinhado"
+    },
+    {
+      "arquivo": "src/commands/texto/txt53.js",
+      "nome": "txt53",
+      "operacao": "pascalcase",
+      "subcategoria": "Transformar",
+      "descricao": "Junta as palavras com maiúscula em todas"
+    },
+    {
+      "arquivo": "src/commands/texto/txt54.js",
+      "nome": "txt54",
+      "operacao": "sigla",
+      "subcategoria": "Transformar",
+      "descricao": "Monta a sigla com a inicial de cada palavra"
+    },
+    {
+      "arquivo": "src/commands/texto/txt55.js",
+      "nome": "txt55",
+      "operacao": "sonumeros",
+      "subcategoria": "Transformar",
+      "descricao": "Extrai só os números que aparecem no texto"
+    },
+    {
+      "arquivo": "src/commands/texto/txt56.js",
+      "nome": "txt56",
+      "operacao": "soletras",
+      "subcategoria": "Transformar",
+      "descricao": "Deixa só letras e espaço, tirando o resto"
+    },
+    {
+      "arquivo": "src/commands/texto/txt57.js",
+      "nome": "txt57",
+      "operacao": "juntarlinhas",
+      "subcategoria": "Transformar",
+      "descricao": "Junta as linhas num parágrafo só"
+    },
+    {
+      "arquivo": "src/commands/texto/txt58.js",
+      "nome": "txt58",
+      "operacao": "separarporvirgula",
+      "subcategoria": "Transformar",
+      "descricao": "Junta as linhas ou palavras separando por vírgula"
+    },
+    {
+      "arquivo": "src/commands/texto/txt59.js",
+      "nome": "txt59",
+      "operacao": "truncar",
+      "subcategoria": "Transformar",
+      "descricao": "Corta o texto no tamanho que você pedir"
+    },
+    {
+      "arquivo": "src/commands/texto/txt60.js",
+      "nome": "txt60",
+      "operacao": "filtrarlinhas",
+      "subcategoria": "Transformar",
+      "descricao": "Mantém só as linhas que têm a palavra"
+    },
+    {
+      "arquivo": "src/commands/texto/txt61.js",
+      "nome": "txt61",
+      "operacao": "contarcaracteres",
+      "subcategoria": "Analisar",
+      "descricao": "Conta os caracteres do texto, com e sem espaço"
+    },
+    {
+      "arquivo": "src/commands/texto/txt62.js",
+      "nome": "txt62",
+      "operacao": "contarsemespaco",
+      "subcategoria": "Analisar",
+      "descricao": "Conta só os caracteres que não são espaço"
+    },
+    {
+      "arquivo": "src/commands/texto/txt63.js",
+      "nome": "txt63",
+      "operacao": "contarpalavras",
+      "subcategoria": "Analisar",
+      "descricao": "Conta as palavras e as palavras diferentes"
+    },
+    {
+      "arquivo": "src/commands/texto/txt64.js",
+      "nome": "txt64",
+      "operacao": "contarfrases",
+      "subcategoria": "Analisar",
+      "descricao": "Conta as frases separadas por ponto final"
+    },
+    {
+      "arquivo": "src/commands/texto/txt65.js",
+      "nome": "txt65",
+      "operacao": "contarparagrafos",
+      "subcategoria": "Analisar",
+      "descricao": "Conta os parágrafos separados por linha em branco"
+    },
+    {
+      "arquivo": "src/commands/texto/txt66.js",
+      "nome": "txt66",
+      "operacao": "contarlinhas",
+      "subcategoria": "Analisar",
+      "descricao": "Conta as linhas, incluindo as vazias"
+    },
+    {
+      "arquivo": "src/commands/texto/txt67.js",
+      "nome": "txt67",
+      "operacao": "tempoleitura",
+      "subcategoria": "Analisar",
+      "descricao": "Estima quanto tempo leva para ler o texto"
+    },
+    {
+      "arquivo": "src/commands/texto/txt68.js",
+      "nome": "txt68",
+      "operacao": "tempofala",
+      "subcategoria": "Analisar",
+      "descricao": "Estima quanto tempo leva para falar o texto"
+    },
+    {
+      "arquivo": "src/commands/texto/txt69.js",
+      "nome": "txt69",
+      "operacao": "palavrasrepetidas",
+      "subcategoria": "Analisar",
+      "descricao": "Mostra as palavras que mais aparecem no texto"
+    },
+    {
+      "arquivo": "src/commands/texto/txt70.js",
+      "nome": "txt70",
+      "operacao": "palavrasraras",
+      "subcategoria": "Analisar",
+      "descricao": "Lista as palavras que aparecem uma única vez"
+    },
+    {
+      "arquivo": "src/commands/texto/txt71.js",
+      "nome": "txt71",
+      "operacao": "mediafrase",
+      "subcategoria": "Analisar",
+      "descricao": "Diz quantas palavras tem a frase média"
+    },
+    {
+      "arquivo": "src/commands/texto/txt72.js",
+      "nome": "txt72",
+      "operacao": "mediapalavra",
+      "subcategoria": "Analisar",
+      "descricao": "Diz quantas letras tem a palavra média"
+    },
+    {
+      "arquivo": "src/commands/texto/txt73.js",
+      "nome": "txt73",
+      "operacao": "legibilidade",
+      "subcategoria": "Analisar",
+      "descricao": "Dá uma nota de facilidade de leitura ao texto"
+    },
+    {
+      "arquivo": "src/commands/texto/txt74.js",
+      "nome": "txt74",
+      "operacao": "capsexcessivo",
+      "subcategoria": "Analisar",
+      "descricao": "Mede quanto do texto está em letra maiúscula"
+    },
+    {
+      "arquivo": "src/commands/texto/txt75.js",
+      "nome": "txt75",
+      "operacao": "contaremoji",
+      "subcategoria": "Analisar",
+      "descricao": "Conta os emoji e diz quais mais aparecem"
+    },
+    {
+      "arquivo": "src/commands/texto/txt76.js",
+      "nome": "txt76",
+      "operacao": "detectarportugues",
+      "subcategoria": "Analisar",
+      "descricao": "Palpita se o texto está em português pelas marcas"
+    },
+    {
+      "arquivo": "src/commands/texto/txt77.js",
+      "nome": "txt77",
+      "operacao": "acharemail",
+      "subcategoria": "Analisar",
+      "descricao": "Procura endereços de e-mail dentro do texto"
+    },
+    {
+      "arquivo": "src/commands/texto/txt78.js",
+      "nome": "txt78",
+      "operacao": "achartelefone",
+      "subcategoria": "Analisar",
+      "descricao": "Procura números de telefone dentro do texto"
+    },
+    {
+      "arquivo": "src/commands/texto/txt79.js",
+      "nome": "txt79",
+      "operacao": "acharlink",
+      "subcategoria": "Analisar",
+      "descricao": "Procura endereços de site dentro do texto"
+    },
+    {
+      "arquivo": "src/commands/texto/txt80.js",
+      "nome": "txt80",
+      "operacao": "acharcpf",
+      "subcategoria": "Analisar",
+      "descricao": "Procura CPF no texto e confere os dígitos"
+    },
+    {
+      "arquivo": "src/commands/texto/txt81.js",
+      "nome": "txt81",
+      "operacao": "achardata",
+      "subcategoria": "Analisar",
+      "descricao": "Procura datas escritas com barra ou traço"
+    },
+    {
+      "arquivo": "src/commands/texto/txt82.js",
+      "nome": "txt82",
+      "operacao": "achardinheiro",
+      "subcategoria": "Analisar",
+      "descricao": "Procura valores em reais dentro do texto"
+    },
+    {
+      "arquivo": "src/commands/texto/txt83.js",
+      "nome": "txt83",
+      "operacao": "acharhashtag",
+      "subcategoria": "Analisar",
+      "descricao": "Separa as hashtags usadas no texto"
+    },
+    {
+      "arquivo": "src/commands/texto/txt84.js",
+      "nome": "txt84",
+      "operacao": "acharmencao",
+      "subcategoria": "Analisar",
+      "descricao": "Separa as menções com arroba no texto"
+    },
+    {
+      "arquivo": "src/commands/texto/txt85.js",
+      "nome": "txt85",
+      "operacao": "compararTextos",
+      "subcategoria": "Analisar",
+      "descricao": "Mede o quanto dois textos se parecem"
+    },
+    {
+      "arquivo": "src/commands/texto/txt86.js",
+      "nome": "txt86",
+      "operacao": "diferencalinhas",
+      "subcategoria": "Analisar",
+      "descricao": "Mostra o que mudou de uma versão para a outra"
+    },
+    {
+      "arquivo": "src/commands/texto/txt87.js",
+      "nome": "txt87",
+      "operacao": "acharpalavra",
+      "subcategoria": "Analisar",
+      "descricao": "Conta e mostra onde a palavra aparece"
+    },
+    {
+      "arquivo": "src/commands/texto/txt88.js",
+      "nome": "txt88",
+      "operacao": "anagrama",
+      "subcategoria": "Analisar",
+      "descricao": "Diz se duas palavras usam as mesmas letras"
+    },
+    {
+      "arquivo": "src/commands/texto/txt89.js",
+      "nome": "txt89",
+      "operacao": "palindromo",
+      "subcategoria": "Analisar",
+      "descricao": "Diz se o texto fica igual lido ao contrário"
+    },
+    {
+      "arquivo": "src/commands/texto/txt90.js",
+      "nome": "txt90",
+      "operacao": "rima",
+      "subcategoria": "Analisar",
+      "descricao": "Diz se duas palavras rimam pelo final"
+    },
+    {
+      "arquivo": "src/commands/texto/txt91.js",
+      "nome": "txt91",
+      "operacao": "contarsilabas",
+      "subcategoria": "Analisar",
+      "descricao": "Conta as sílabas de cada palavra do texto"
+    },
+    {
+      "arquivo": "src/commands/texto/txt92.js",
+      "nome": "txt92",
+      "operacao": "metricaverso",
+      "subcategoria": "Analisar",
+      "descricao": "Conta as sílabas de cada verso do poema"
+    },
+    {
+      "arquivo": "src/commands/texto/txt93.js",
+      "nome": "txt93",
+      "operacao": "letrasfrequentes",
+      "subcategoria": "Analisar",
+      "descricao": "Mostra quais letras mais aparecem no texto"
+    },
+    {
+      "arquivo": "src/commands/texto/txt94.js",
+      "nome": "txt94",
+      "operacao": "vogaisconsoantes",
+      "subcategoria": "Analisar",
+      "descricao": "Conta vogais e consoantes do texto"
+    },
+    {
+      "arquivo": "src/commands/texto/txt95.js",
+      "nome": "txt95",
+      "operacao": "painelresumo",
+      "subcategoria": "Analisar",
+      "descricao": "Resumo geral com todos os números do texto"
+    },
+    {
+      "arquivo": "src/commands/texto/txt96.js",
+      "nome": "txt96",
+      "operacao": "nuvempalavras",
+      "subcategoria": "Analisar",
+      "descricao": "Desenha em barras as palavras que dominam"
+    },
+    {
+      "arquivo": "src/commands/texto/txt97.js",
+      "nome": "txt97",
+      "operacao": "palavraslongas",
+      "subcategoria": "Analisar",
+      "descricao": "Lista as palavras mais compridas do texto"
+    },
+    {
+      "arquivo": "src/commands/texto/txt98.js",
+      "nome": "txt98",
+      "operacao": "densidadepalavra",
+      "subcategoria": "Analisar",
+      "descricao": "Diz quanto do texto é uma palavra escolhida"
+    },
+    {
+      "arquivo": "src/commands/texto/txt99.js",
+      "nome": "txt99",
+      "operacao": "distanciaedicao",
+      "subcategoria": "Analisar",
+      "descricao": "Conta quantas trocas separam duas palavras"
+    },
+    {
+      "arquivo": "src/commands/texto/txt100.js",
+      "nome": "txt100",
+      "operacao": "contarsimbolos",
+      "subcategoria": "Analisar",
+      "descricao": "Conta pontuação e sinais usados no texto"
+    },
+    {
+      "arquivo": "src/commands/texto/txt101.js",
+      "nome": "txt101",
+      "operacao": "morse",
+      "subcategoria": "Códigos",
+      "descricao": "Passa o texto para código morse"
+    },
+    {
+      "arquivo": "src/commands/texto/txt102.js",
+      "nome": "txt102",
+      "operacao": "demorse",
+      "subcategoria": "Códigos",
+      "descricao": "Traduz ponto e traço de volta para letras"
+    },
+    {
+      "arquivo": "src/commands/texto/txt103.js",
+      "nome": "txt103",
+      "operacao": "binario",
+      "subcategoria": "Códigos",
+      "descricao": "Passa o texto para zeros e uns"
+    },
+    {
+      "arquivo": "src/commands/texto/txt104.js",
+      "nome": "txt104",
+      "operacao": "debinario",
+      "subcategoria": "Códigos",
+      "descricao": "Traduz zeros e uns de volta para texto"
+    },
+    {
+      "arquivo": "src/commands/texto/txt105.js",
+      "nome": "txt105",
+      "operacao": "hexadecimal",
+      "subcategoria": "Códigos",
+      "descricao": "Passa o texto para o formato hexadecimal"
+    },
+    {
+      "arquivo": "src/commands/texto/txt106.js",
+      "nome": "txt106",
+      "operacao": "dehexadecimal",
+      "subcategoria": "Códigos",
+      "descricao": "Traduz hexadecimal de volta para texto"
+    },
+    {
+      "arquivo": "src/commands/texto/txt107.js",
+      "nome": "txt107",
+      "operacao": "octal",
+      "subcategoria": "Códigos",
+      "descricao": "Passa o texto para o formato octal"
+    },
+    {
+      "arquivo": "src/commands/texto/txt108.js",
+      "nome": "txt108",
+      "operacao": "deoctal",
+      "subcategoria": "Códigos",
+      "descricao": "Traduz octal de volta para texto"
+    },
+    {
+      "arquivo": "src/commands/texto/txt109.js",
+      "nome": "txt109",
+      "operacao": "unicodedecimal",
+      "subcategoria": "Códigos",
+      "descricao": "Troca cada caractere pelo número dele"
+    },
+    {
+      "arquivo": "src/commands/texto/txt110.js",
+      "nome": "txt110",
+      "operacao": "deunicodedecimal",
+      "subcategoria": "Códigos",
+      "descricao": "Troca os números de volta pelos caracteres"
+    },
+    {
+      "arquivo": "src/commands/texto/txt111.js",
+      "nome": "txt111",
+      "operacao": "base64",
+      "subcategoria": "Códigos",
+      "descricao": "Embrulha o texto no formato base64"
+    },
+    {
+      "arquivo": "src/commands/texto/txt112.js",
+      "nome": "txt112",
+      "operacao": "debase64",
+      "subcategoria": "Códigos",
+      "descricao": "Desembrulha um texto que está em base64"
+    },
+    {
+      "arquivo": "src/commands/texto/txt113.js",
+      "nome": "txt113",
+      "operacao": "urlcodificar",
+      "subcategoria": "Códigos",
+      "descricao": "Troca acento e espaço pelo código de link"
+    },
+    {
+      "arquivo": "src/commands/texto/txt114.js",
+      "nome": "txt114",
+      "operacao": "urldecodificar",
+      "subcategoria": "Códigos",
+      "descricao": "Traduz o código de link de volta para texto"
+    },
+    {
+      "arquivo": "src/commands/texto/txt115.js",
+      "nome": "txt115",
+      "operacao": "rot13",
+      "subcategoria": "Códigos",
+      "descricao": "Gira o alfabeto em 13 casas, ida e volta"
+    },
+    {
+      "arquivo": "src/commands/texto/txt116.js",
+      "nome": "txt116",
+      "operacao": "atbash",
+      "subcategoria": "Códigos",
+      "descricao": "Troca A por Z, B por Y e assim por diante"
+    },
+    {
+      "arquivo": "src/commands/texto/txt117.js",
+      "nome": "txt117",
+      "operacao": "cesar",
+      "subcategoria": "Códigos",
+      "descricao": "Anda com as letras o número de casas que pedir"
+    },
+    {
+      "arquivo": "src/commands/texto/txt118.js",
+      "nome": "txt118",
+      "operacao": "decesar",
+      "subcategoria": "Códigos",
+      "descricao": "Volta as letras o número de casas que pedir"
+    },
+    {
+      "arquivo": "src/commands/texto/txt119.js",
+      "nome": "txt119",
+      "operacao": "vigenere",
+      "subcategoria": "Códigos",
+      "descricao": "Cifra usando uma palavra-chave que você escolhe"
+    },
+    {
+      "arquivo": "src/commands/texto/txt120.js",
+      "nome": "txt120",
+      "operacao": "devigenere",
+      "subcategoria": "Códigos",
+      "descricao": "Desfaz a cifra usando a mesma palavra-chave"
+    },
+    {
+      "arquivo": "src/commands/texto/txt121.js",
+      "nome": "txt121",
+      "operacao": "cifranumeros",
+      "subcategoria": "Códigos",
+      "descricao": "Troca cada letra pela posição dela no alfabeto"
+    },
+    {
+      "arquivo": "src/commands/texto/txt122.js",
+      "nome": "txt122",
+      "operacao": "decifranumeros",
+      "subcategoria": "Códigos",
+      "descricao": "Troca a posição no alfabeto de volta pela letra"
+    },
+    {
+      "arquivo": "src/commands/texto/txt123.js",
+      "nome": "txt123",
+      "operacao": "fonetico",
+      "subcategoria": "Códigos",
+      "descricao": "Soletra usando o alfabeto de rádio"
+    },
+    {
+      "arquivo": "src/commands/texto/txt124.js",
+      "nome": "txt124",
+      "operacao": "defonetico",
+      "subcategoria": "Códigos",
+      "descricao": "Junta as palavras do alfabeto de rádio em letras"
+    },
+    {
+      "arquivo": "src/commands/texto/txt125.js",
+      "nome": "txt125",
+      "operacao": "braille",
+      "subcategoria": "Códigos",
+      "descricao": "Mostra o texto com os pontos do braille"
+    },
+    {
+      "arquivo": "src/commands/texto/txt126.js",
+      "nome": "txt126",
+      "operacao": "debraille",
+      "subcategoria": "Códigos",
+      "descricao": "Traduz os pontos do braille de volta em letras"
+    },
+    {
+      "arquivo": "src/commands/texto/txt127.js",
+      "nome": "txt127",
+      "operacao": "leet",
+      "subcategoria": "Códigos",
+      "descricao": "Troca letras por números parecidos"
+    },
+    {
+      "arquivo": "src/commands/texto/txt128.js",
+      "nome": "txt128",
+      "operacao": "deleet",
+      "subcategoria": "Códigos",
+      "descricao": "Troca os números de volta pelas letras"
+    },
+    {
+      "arquivo": "src/commands/texto/txt129.js",
+      "nome": "txt129",
+      "operacao": "invertidotexto",
+      "subcategoria": "Códigos",
+      "descricao": "Escreve o texto de cabeça para baixo"
+    },
+    {
+      "arquivo": "src/commands/texto/txt130.js",
+      "nome": "txt130",
+      "operacao": "deinvertidotexto",
+      "subcategoria": "Códigos",
+      "descricao": "Põe de volta no pé o texto de ponta-cabeça"
+    },
+    {
+      "arquivo": "src/commands/texto/txt131.js",
+      "nome": "txt131",
+      "operacao": "codigoteclado",
+      "subcategoria": "Códigos",
+      "descricao": "Troca a letra pela posição dela no teclado"
+    },
+    {
+      "arquivo": "src/commands/texto/txt132.js",
+      "nome": "txt132",
+      "operacao": "decodigoteclado",
+      "subcategoria": "Códigos",
+      "descricao": "Troca a posição no teclado de volta pela letra"
+    },
+    {
+      "arquivo": "src/commands/texto/txt133.js",
+      "nome": "txt133",
+      "operacao": "t9",
+      "subcategoria": "Códigos",
+      "descricao": "Escreve como no celular de tecla, apertando números"
+    },
+    {
+      "arquivo": "src/commands/texto/txt134.js",
+      "nome": "txt134",
+      "operacao": "det9",
+      "subcategoria": "Códigos",
+      "descricao": "Traduz as teclas apertadas de volta em letras"
+    },
+    {
+      "arquivo": "src/commands/texto/txt135.js",
+      "nome": "txt135",
+      "operacao": "trilho",
+      "subcategoria": "Códigos",
+      "descricao": "Escreve em zigue-zague e lê linha por linha"
+    },
+    {
+      "arquivo": "src/commands/texto/txt136.js",
+      "nome": "txt136",
+      "operacao": "detrilho",
+      "subcategoria": "Códigos",
+      "descricao": "Refaz o zigue-zague e devolve o texto"
+    },
+    {
+      "arquivo": "src/commands/texto/txt137.js",
+      "nome": "txt137",
+      "operacao": "apelido",
+      "subcategoria": "Criar",
+      "descricao": "Cria apelidos a partir do nome que você mandar"
+    },
+    {
+      "arquivo": "src/commands/texto/txt138.js",
+      "nome": "txt138",
+      "operacao": "frasedeefeito",
+      "subcategoria": "Criar",
+      "descricao": "Monta frases de efeito com o seu tema"
+    },
+    {
+      "arquivo": "src/commands/texto/txt139.js",
+      "nome": "txt139",
+      "operacao": "nomegrupo",
+      "subcategoria": "Criar",
+      "descricao": "Sugere nomes de grupo com as suas palavras"
+    },
+    {
+      "arquivo": "src/commands/texto/txt140.js",
+      "nome": "txt140",
+      "operacao": "bio",
+      "subcategoria": "Criar",
+      "descricao": "Monta três textos curtos de perfil"
+    },
+    {
+      "arquivo": "src/commands/texto/txt141.js",
+      "nome": "txt141",
+      "operacao": "legendafoto",
+      "subcategoria": "Criar",
+      "descricao": "Sugere legendas a partir do que está na foto"
+    },
+    {
+      "arquivo": "src/commands/texto/txt142.js",
+      "nome": "txt142",
+      "operacao": "convite",
+      "subcategoria": "Criar",
+      "descricao": "Monta um convite com o que, quando e onde"
+    },
+    {
+      "arquivo": "src/commands/texto/txt143.js",
+      "nome": "txt143",
+      "operacao": "recadoaniversario",
+      "subcategoria": "Criar",
+      "descricao": "Escreve um recado de aniversário personalizado"
+    },
+    {
+      "arquivo": "src/commands/texto/txt144.js",
+      "nome": "txt144",
+      "operacao": "pedidodesculpa",
+      "subcategoria": "Criar",
+      "descricao": "Escreve um pedido de desculpa pelo motivo dado"
+    },
+    {
+      "arquivo": "src/commands/texto/txt145.js",
+      "nome": "txt145",
+      "operacao": "agradecimento",
+      "subcategoria": "Criar",
+      "descricao": "Escreve um agradecimento pelo motivo dado"
+    },
+    {
+      "arquivo": "src/commands/texto/txt146.js",
+      "nome": "txt146",
+      "operacao": "asciiletras",
+      "subcategoria": "Criar",
+      "descricao": "Desenha a palavra com blocos quadrados"
+    },
+    {
+      "arquivo": "src/commands/texto/txt147.js",
+      "nome": "txt147",
+      "operacao": "bomdia",
+      "subcategoria": "Criar",
+      "descricao": "Escreve um bom dia com o seu assunto"
+    },
+    {
+      "arquivo": "src/commands/texto/txt148.js",
+      "nome": "txt148",
+      "operacao": "boanoite",
+      "subcategoria": "Criar",
+      "descricao": "Escreve uma boa noite com o seu assunto"
+    },
+    {
+      "arquivo": "src/commands/texto/txt149.js",
+      "nome": "txt149",
+      "operacao": "contagemregressiva",
+      "subcategoria": "Criar",
+      "descricao": "Escreve a contagem regressiva para um evento"
+    },
+    {
+      "arquivo": "src/commands/texto/txt150.js",
+      "nome": "txt150",
+      "operacao": "listatarefas",
+      "subcategoria": "Criar",
+      "descricao": "Formata as suas tarefas numa lista de marcar"
+    },
+    {
+      "arquivo": "src/commands/texto/txt151.js",
+      "nome": "txt151",
+      "operacao": "atareuniao",
+      "subcategoria": "Criar",
+      "descricao": "Formata os assuntos numa ata de reunião"
+    },
+    {
+      "arquivo": "src/commands/texto/txt152.js",
+      "nome": "txt152",
+      "operacao": "poema",
+      "subcategoria": "Criar",
+      "descricao": "Monta um poema curto com as palavras dadas"
+    },
+    {
+      "arquivo": "src/commands/texto/txt153.js",
+      "nome": "txt153",
+      "operacao": "acrostico",
+      "subcategoria": "Criar",
+      "descricao": "Monta um acróstico com a palavra que mandar"
+    },
+    {
+      "arquivo": "src/commands/texto/txt154.js",
+      "nome": "txt154",
+      "operacao": "hashtags",
+      "subcategoria": "Criar",
+      "descricao": "Transforma as palavras do texto em hashtags"
+    },
+    {
+      "arquivo": "src/commands/texto/txt155.js",
+      "nome": "txt155",
+      "operacao": "titulos",
+      "subcategoria": "Criar",
+      "descricao": "Sugere títulos a partir do assunto do texto"
+    },
+    {
+      "arquivo": "src/commands/texto/txt156.js",
+      "nome": "txt156",
+      "operacao": "avisogrupo",
+      "subcategoria": "Criar",
+      "descricao": "Formata o seu recado como aviso de grupo"
+    },
+    {
+      "arquivo": "src/commands/texto/txt157.js",
+      "nome": "txt157",
+      "operacao": "enquete",
+      "subcategoria": "Criar",
+      "descricao": "Formata pergunta e opções como enquete"
+    },
+    {
+      "arquivo": "src/commands/texto/txt158.js",
+      "nome": "txt158",
+      "operacao": "despedida",
+      "subcategoria": "Criar",
+      "descricao": "Escreve uma despedida com o motivo dado"
+    },
+    {
+      "arquivo": "src/commands/texto/txt159.js",
+      "nome": "txt159",
+      "operacao": "boasvindas",
+      "subcategoria": "Criar",
+      "descricao": "Escreve boas-vindas para quem chegou"
+    },
+    {
+      "arquivo": "src/commands/texto/txt160.js",
+      "nome": "txt160",
+      "operacao": "dedicatoria",
+      "subcategoria": "Criar",
+      "descricao": "Escreve uma dedicatória para presente ou livro"
+    }
+  ]
+}

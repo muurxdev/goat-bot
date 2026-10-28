@@ -1,0 +1,1269 @@
+{
+  "familia": "escola — exatas",
+  "prefixo": "mat",
+  "total": 180,
+  "geradoPor": "scripts/gen-matematica.js",
+  "servico": "src/services/exactSciencesService.js",
+  "comandos": [
+    {
+      "nome": "mat1",
+      "arquivo": "src/commands/escola/mat1.js",
+      "chave": "eq1grau",
+      "subcategory": "Matemática",
+      "description": "Isola o x e mostra passo a passo"
+    },
+    {
+      "nome": "mat2",
+      "arquivo": "src/commands/escola/mat2.js",
+      "chave": "eq2grau",
+      "subcategory": "Matemática",
+      "description": "Bhaskara completa, com delta e as raízes"
+    },
+    {
+      "nome": "mat3",
+      "arquivo": "src/commands/escola/mat3.js",
+      "chave": "delta",
+      "subcategory": "Matemática",
+      "description": "Calcula o discriminante e diz o que ele significa"
+    },
+    {
+      "nome": "mat4",
+      "arquivo": "src/commands/escola/mat4.js",
+      "chave": "girard",
+      "subcategory": "Matemática",
+      "description": "Relações de Girard sem precisar de Bhaskara"
+    },
+    {
+      "nome": "mat5",
+      "arquivo": "src/commands/escola/mat5.js",
+      "chave": "sistema2x2",
+      "subcategory": "Matemática",
+      "description": "Resolve o sistema de x e y e mostra as contas"
+    },
+    {
+      "nome": "mat6",
+      "arquivo": "src/commands/escola/mat6.js",
+      "chave": "funcao1grau",
+      "subcategory": "Matemática",
+      "description": "Calcula f(x), a raiz e se a reta sobe ou desce"
+    },
+    {
+      "nome": "mat7",
+      "arquivo": "src/commands/escola/mat7.js",
+      "chave": "funcao2grau",
+      "subcategory": "Matemática",
+      "description": "Acha vértice, máximo ou mínimo e as raízes"
+    },
+    {
+      "nome": "mat8",
+      "arquivo": "src/commands/escola/mat8.js",
+      "chave": "regratres",
+      "subcategory": "Matemática",
+      "description": "Se A vale B, quanto vale C? Com as contas"
+    },
+    {
+      "nome": "mat9",
+      "arquivo": "src/commands/escola/mat9.js",
+      "chave": "regratresinv",
+      "subcategory": "Matemática",
+      "description": "Quando aumenta um lado e diminui o outro"
+    },
+    {
+      "nome": "mat10",
+      "arquivo": "src/commands/escola/mat10.js",
+      "chave": "regratrescomp",
+      "subcategory": "Matemática",
+      "description": "Três grandezas juntas, tudo proporcional"
+    },
+    {
+      "nome": "mat11",
+      "arquivo": "src/commands/escola/mat11.js",
+      "chave": "razaoproporcao",
+      "subcategory": "Matemática",
+      "description": "Simplifica a razão ou confere se a proporção vale"
+    },
+    {
+      "nome": "mat12",
+      "arquivo": "src/commands/escola/mat12.js",
+      "chave": "escala",
+      "subcategory": "Matemática",
+      "description": "Converte centímetros do mapa em distância real"
+    },
+    {
+      "nome": "mat13",
+      "arquivo": "src/commands/escola/mat13.js",
+      "chave": "porcentagemde",
+      "subcategory": "Matemática",
+      "description": "Calcula quanto é X% de um valor"
+    },
+    {
+      "nome": "mat14",
+      "arquivo": "src/commands/escola/mat14.js",
+      "chave": "percentualquanto",
+      "subcategory": "Matemática",
+      "description": "Descobre a porcentagem que um valor representa"
+    },
+    {
+      "nome": "mat15",
+      "arquivo": "src/commands/escola/mat15.js",
+      "chave": "aumentar",
+      "subcategory": "Matemática",
+      "description": "Aplica um aumento e mostra o valor novo"
+    },
+    {
+      "nome": "mat16",
+      "arquivo": "src/commands/escola/mat16.js",
+      "chave": "descontar",
+      "subcategory": "Matemática",
+      "description": "Tira X% do preço e mostra quanto você economiza"
+    },
+    {
+      "nome": "mat17",
+      "arquivo": "src/commands/escola/mat17.js",
+      "chave": "variacaopercent",
+      "subcategory": "Matemática",
+      "description": "De um valor para outro: subiu ou caiu quantos %"
+    },
+    {
+      "nome": "mat18",
+      "arquivo": "src/commands/escola/mat18.js",
+      "chave": "jurossimples",
+      "subcategory": "Matemática",
+      "description": "Juros sempre sobre o valor inicial, com passos"
+    },
+    {
+      "nome": "mat19",
+      "arquivo": "src/commands/escola/mat19.js",
+      "chave": "juroscompostos",
+      "subcategory": "Matemática",
+      "description": "Juro sobre juro, com o crescimento período a período"
+    },
+    {
+      "nome": "mat20",
+      "arquivo": "src/commands/escola/mat20.js",
+      "chave": "tempodobrar",
+      "subcategory": "Matemática",
+      "description": "Quantos períodos até o valor dobrar nos juros"
+    },
+    {
+      "nome": "mat21",
+      "arquivo": "src/commands/escola/mat21.js",
+      "chave": "taxaequivalente",
+      "subcategory": "Matemática",
+      "description": "Converte taxa de juros entre mês e ano"
+    },
+    {
+      "nome": "mat22",
+      "arquivo": "src/commands/escola/mat22.js",
+      "chave": "parcela",
+      "subcategory": "Matemática",
+      "description": "Parcela fixa de um financiamento e o total pago"
+    },
+    {
+      "nome": "mat23",
+      "arquivo": "src/commands/escola/mat23.js",
+      "chave": "aportemensal",
+      "subcategory": "Matemática",
+      "description": "Soma de depósitos mensais com juros compostos"
+    },
+    {
+      "nome": "mat24",
+      "arquivo": "src/commands/escola/mat24.js",
+      "chave": "mmc",
+      "subcategory": "Matemática",
+      "description": "MMC de dois ou mais números, com a fatoração"
+    },
+    {
+      "nome": "mat25",
+      "arquivo": "src/commands/escola/mat25.js",
+      "chave": "mdc",
+      "subcategory": "Matemática",
+      "description": "MDC de dois ou mais números, com a fatoração"
+    },
+    {
+      "nome": "mat26",
+      "arquivo": "src/commands/escola/mat26.js",
+      "chave": "divisores",
+      "subcategory": "Matemática",
+      "description": "Lista todos os divisores e conta quantos são"
+    },
+    {
+      "nome": "mat27",
+      "arquivo": "src/commands/escola/mat27.js",
+      "chave": "fatorar",
+      "subcategory": "Matemática",
+      "description": "Decompõe o número em fatores primos"
+    },
+    {
+      "nome": "mat28",
+      "arquivo": "src/commands/escola/mat28.js",
+      "chave": "ehprimo",
+      "subcategory": "Matemática",
+      "description": "Testa se o número é primo e mostra a prova"
+    },
+    {
+      "nome": "mat29",
+      "arquivo": "src/commands/escola/mat29.js",
+      "chave": "primosate",
+      "subcategory": "Matemática",
+      "description": "Lista os números primos de 2 até o limite"
+    },
+    {
+      "nome": "mat30",
+      "arquivo": "src/commands/escola/mat30.js",
+      "chave": "divisibilidade",
+      "subcategory": "Matemática",
+      "description": "Diz por quais números ele é divisível e por quê"
+    },
+    {
+      "nome": "mat31",
+      "arquivo": "src/commands/escola/mat31.js",
+      "chave": "tabuada",
+      "subcategory": "Matemática",
+      "description": "Tabuada de um número, até onde você quiser"
+    },
+    {
+      "nome": "mat32",
+      "arquivo": "src/commands/escola/mat32.js",
+      "chave": "media",
+      "subcategory": "Matemática",
+      "description": "Soma tudo e divide pela quantidade"
+    },
+    {
+      "nome": "mat33",
+      "arquivo": "src/commands/escola/mat33.js",
+      "chave": "mediaponderada",
+      "subcategory": "Matemática",
+      "description": "Média com pesos: nota e peso alternados"
+    },
+    {
+      "nome": "mat34",
+      "arquivo": "src/commands/escola/mat34.js",
+      "chave": "mediana",
+      "subcategory": "Matemática",
+      "description": "O valor do meio depois de colocar em ordem"
+    },
+    {
+      "nome": "mat35",
+      "arquivo": "src/commands/escola/mat35.js",
+      "chave": "moda",
+      "subcategory": "Matemática",
+      "description": "O valor que mais se repete na lista"
+    },
+    {
+      "nome": "mat36",
+      "arquivo": "src/commands/escola/mat36.js",
+      "chave": "desviopadrao",
+      "subcategory": "Matemática",
+      "description": "Mede o quanto os valores se espalham da média"
+    },
+    {
+      "nome": "mat37",
+      "arquivo": "src/commands/escola/mat37.js",
+      "chave": "notafinal",
+      "subcategory": "Matemática",
+      "description": "Nota necessária para fechar a média que falta"
+    },
+    {
+      "nome": "mat38",
+      "arquivo": "src/commands/escola/mat38.js",
+      "chave": "somarfracao",
+      "subcategory": "Matemática",
+      "description": "Soma ou subtrai duas frações pelo MMC"
+    },
+    {
+      "nome": "mat39",
+      "arquivo": "src/commands/escola/mat39.js",
+      "chave": "multiplicarfracao",
+      "subcategory": "Matemática",
+      "description": "Multiplica ou divide duas frações, com os passos"
+    },
+    {
+      "nome": "mat40",
+      "arquivo": "src/commands/escola/mat40.js",
+      "chave": "simplificarfracao",
+      "subcategory": "Matemática",
+      "description": "Reduz a fração à forma irredutível pelo MDC"
+    },
+    {
+      "nome": "mat41",
+      "arquivo": "src/commands/escola/mat41.js",
+      "chave": "fracaodecimal",
+      "subcategory": "Matemática",
+      "description": "Transforma fração em número decimal e em %"
+    },
+    {
+      "nome": "mat42",
+      "arquivo": "src/commands/escola/mat42.js",
+      "chave": "decimalfracao",
+      "subcategory": "Matemática",
+      "description": "Escreve um número decimal como fração exata"
+    },
+    {
+      "nome": "mat43",
+      "arquivo": "src/commands/escola/mat43.js",
+      "chave": "potencia",
+      "subcategory": "Matemática",
+      "description": "Eleva um número a qualquer expoente"
+    },
+    {
+      "nome": "mat44",
+      "arquivo": "src/commands/escola/mat44.js",
+      "chave": "raiz",
+      "subcategory": "Matemática",
+      "description": "Calcula a raiz e simplifica o radical"
+    },
+    {
+      "nome": "mat45",
+      "arquivo": "src/commands/escola/mat45.js",
+      "chave": "raizn",
+      "subcategory": "Matemática",
+      "description": "Raiz cúbica, quarta, quinta: você escolhe"
+    },
+    {
+      "nome": "mat46",
+      "arquivo": "src/commands/escola/mat46.js",
+      "chave": "logaritmo",
+      "subcategory": "Matemática",
+      "description": "Log em qualquer base, com a leitura do resultado"
+    },
+    {
+      "nome": "mat47",
+      "arquivo": "src/commands/escola/mat47.js",
+      "chave": "notacaocientifica",
+      "subcategory": "Matemática",
+      "description": "Escreve número grande ou pequeno em potência de 10"
+    },
+    {
+      "nome": "mat48",
+      "arquivo": "src/commands/escola/mat48.js",
+      "chave": "denotacao",
+      "subcategory": "Matemática",
+      "description": "Abre a potência de 10 e escreve o número inteiro"
+    },
+    {
+      "nome": "mat49",
+      "arquivo": "src/commands/escola/mat49.js",
+      "chave": "areaquadrado",
+      "subcategory": "Matemática",
+      "description": "Área, perímetro e diagonal a partir do lado"
+    },
+    {
+      "nome": "mat50",
+      "arquivo": "src/commands/escola/mat50.js",
+      "chave": "arearetangulo",
+      "subcategory": "Matemática",
+      "description": "Área, perímetro e diagonal com base e altura"
+    },
+    {
+      "nome": "mat51",
+      "arquivo": "src/commands/escola/mat51.js",
+      "chave": "areatriangulo",
+      "subcategory": "Matemática",
+      "description": "Área do triângulo com base e altura"
+    },
+    {
+      "nome": "mat52",
+      "arquivo": "src/commands/escola/mat52.js",
+      "chave": "areaheron",
+      "subcategory": "Matemática",
+      "description": "Fórmula de Heron quando só se sabe os lados"
+    },
+    {
+      "nome": "mat53",
+      "arquivo": "src/commands/escola/mat53.js",
+      "chave": "areacirculo",
+      "subcategory": "Matemática",
+      "description": "Área, diâmetro e comprimento a partir do raio"
+    },
+    {
+      "nome": "mat54",
+      "arquivo": "src/commands/escola/mat54.js",
+      "chave": "areatrapezio",
+      "subcategory": "Matemática",
+      "description": "Área do trapézio com as duas bases e a altura"
+    },
+    {
+      "nome": "mat55",
+      "arquivo": "src/commands/escola/mat55.js",
+      "chave": "arealosango",
+      "subcategory": "Matemática",
+      "description": "Área do losango pelas duas diagonais"
+    },
+    {
+      "nome": "mat56",
+      "arquivo": "src/commands/escola/mat56.js",
+      "chave": "perimetroretangulo",
+      "subcategory": "Matemática",
+      "description": "Quanto de cerca ou rodapé dá a volta na área"
+    },
+    {
+      "nome": "mat57",
+      "arquivo": "src/commands/escola/mat57.js",
+      "chave": "circunferencia",
+      "subcategory": "Matemática",
+      "description": "A volta completa de um círculo pelo raio"
+    },
+    {
+      "nome": "mat58",
+      "arquivo": "src/commands/escola/mat58.js",
+      "chave": "areasetor",
+      "subcategory": "Matemática",
+      "description": "Área da fatia e comprimento do arco"
+    },
+    {
+      "nome": "mat59",
+      "arquivo": "src/commands/escola/mat59.js",
+      "chave": "volumecubo",
+      "subcategory": "Matemática",
+      "description": "Volume, área total e diagonal pela aresta"
+    },
+    {
+      "nome": "mat60",
+      "arquivo": "src/commands/escola/mat60.js",
+      "chave": "volumebloco",
+      "subcategory": "Matemática",
+      "description": "Volume e litros de uma caixa ou cômodo"
+    },
+    {
+      "nome": "mat61",
+      "arquivo": "src/commands/escola/mat61.js",
+      "chave": "volumecilindro",
+      "subcategory": "Matemática",
+      "description": "Volume, litros e área total de um cilindro"
+    },
+    {
+      "nome": "mat62",
+      "arquivo": "src/commands/escola/mat62.js",
+      "chave": "volumecone",
+      "subcategory": "Matemática",
+      "description": "Volume, geratriz e área total do cone"
+    },
+    {
+      "nome": "mat63",
+      "arquivo": "src/commands/escola/mat63.js",
+      "chave": "volumeesfera",
+      "subcategory": "Matemática",
+      "description": "Volume e superfície de uma bola pelo raio"
+    },
+    {
+      "nome": "mat64",
+      "arquivo": "src/commands/escola/mat64.js",
+      "chave": "volumepiramide",
+      "subcategory": "Matemática",
+      "description": "Volume e apótema de uma pirâmide quadrada"
+    },
+    {
+      "nome": "mat65",
+      "arquivo": "src/commands/escola/mat65.js",
+      "chave": "pitagoras",
+      "subcategory": "Matemática",
+      "description": "Acha a hipotenusa a partir dos dois catetos"
+    },
+    {
+      "nome": "mat66",
+      "arquivo": "src/commands/escola/mat66.js",
+      "chave": "pitagorascateto",
+      "subcategory": "Matemática",
+      "description": "Acha o cateto que falta com hipotenusa e cateto"
+    },
+    {
+      "nome": "mat67",
+      "arquivo": "src/commands/escola/mat67.js",
+      "chave": "trigangulo",
+      "subcategory": "Matemática",
+      "description": "As três razões de um ângulo em graus"
+    },
+    {
+      "nome": "mat68",
+      "arquivo": "src/commands/escola/mat68.js",
+      "chave": "trigtriangulo",
+      "subcategory": "Matemática",
+      "description": "Acha os catetos sabendo ângulo e hipotenusa"
+    },
+    {
+      "nome": "mat69",
+      "arquivo": "src/commands/escola/mat69.js",
+      "chave": "leisenos",
+      "subcategory": "Matemática",
+      "description": "Acha um lado com dois ângulos e um lado"
+    },
+    {
+      "nome": "mat70",
+      "arquivo": "src/commands/escola/mat70.js",
+      "chave": "leicossenos",
+      "subcategory": "Matemática",
+      "description": "Acha o lado oposto sabendo dois lados e o ângulo"
+    },
+    {
+      "nome": "mat71",
+      "arquivo": "src/commands/escola/mat71.js",
+      "chave": "grausrad",
+      "subcategory": "Matemática",
+      "description": "Converte ângulo entre graus e radianos"
+    },
+    {
+      "nome": "mat72",
+      "arquivo": "src/commands/escola/mat72.js",
+      "chave": "distanciapontos",
+      "subcategory": "Matemática",
+      "description": "Distância no plano cartesiano com os passos"
+    },
+    {
+      "nome": "mat73",
+      "arquivo": "src/commands/escola/mat73.js",
+      "chave": "pontomedio",
+      "subcategory": "Matemática",
+      "description": "O ponto bem no meio de dois pontos dados"
+    },
+    {
+      "nome": "mat74",
+      "arquivo": "src/commands/escola/mat74.js",
+      "chave": "equacaoreta",
+      "subcategory": "Matemática",
+      "description": "Monta a equação da reta que passa nos pontos"
+    },
+    {
+      "nome": "mat75",
+      "arquivo": "src/commands/escola/mat75.js",
+      "chave": "areacoordenadas",
+      "subcategory": "Matemática",
+      "description": "Área de um triângulo dados os três vértices"
+    },
+    {
+      "nome": "mat76",
+      "arquivo": "src/commands/escola/mat76.js",
+      "chave": "decbin",
+      "subcategory": "Matemática",
+      "description": "Converte para binário mostrando as divisões"
+    },
+    {
+      "nome": "mat77",
+      "arquivo": "src/commands/escola/mat77.js",
+      "chave": "bindec",
+      "subcategory": "Matemática",
+      "description": "Converte binário somando os valores posicionais"
+    },
+    {
+      "nome": "mat78",
+      "arquivo": "src/commands/escola/mat78.js",
+      "chave": "basequalquer",
+      "subcategory": "Matemática",
+      "description": "Muda um número de uma base para outra"
+    },
+    {
+      "nome": "mat79",
+      "arquivo": "src/commands/escola/mat79.js",
+      "chave": "pa",
+      "subcategory": "Matemática",
+      "description": "Acha o enésimo termo de uma progressão aritmética"
+    },
+    {
+      "nome": "mat80",
+      "arquivo": "src/commands/escola/mat80.js",
+      "chave": "pasoma",
+      "subcategory": "Matemática",
+      "description": "Soma os n primeiros termos de uma PA"
+    },
+    {
+      "nome": "mat81",
+      "arquivo": "src/commands/escola/mat81.js",
+      "chave": "pg",
+      "subcategory": "Matemática",
+      "description": "Acha o enésimo termo de uma progressão geométrica"
+    },
+    {
+      "nome": "mat82",
+      "arquivo": "src/commands/escola/mat82.js",
+      "chave": "pgsoma",
+      "subcategory": "Matemática",
+      "description": "Soma os termos de uma PG, finita ou infinita"
+    },
+    {
+      "nome": "mat83",
+      "arquivo": "src/commands/escola/mat83.js",
+      "chave": "fatorial",
+      "subcategory": "Matemática",
+      "description": "Calcula n! e explica para que ele serve"
+    },
+    {
+      "nome": "mat84",
+      "arquivo": "src/commands/escola/mat84.js",
+      "chave": "anagramas",
+      "subcategory": "Matemática",
+      "description": "Quantas palavras diferentes dá para montar"
+    },
+    {
+      "nome": "mat85",
+      "arquivo": "src/commands/escola/mat85.js",
+      "chave": "arranjo",
+      "subcategory": "Matemática",
+      "description": "Quantas sequências de p entre n, com ordem"
+    },
+    {
+      "nome": "mat86",
+      "arquivo": "src/commands/escola/mat86.js",
+      "chave": "combinacao",
+      "subcategory": "Matemática",
+      "description": "Quantos grupos de p entre n, sem ordem"
+    },
+    {
+      "nome": "mat87",
+      "arquivo": "src/commands/escola/mat87.js",
+      "chave": "probabilidade",
+      "subcategory": "Matemática",
+      "description": "Chance em % com casos favoráveis e possíveis"
+    },
+    {
+      "nome": "mat88",
+      "arquivo": "src/commands/escola/mat88.js",
+      "chave": "probdados",
+      "subcategory": "Matemática",
+      "description": "Chance de tirar certa soma com dois dados"
+    },
+    {
+      "nome": "mat89",
+      "arquivo": "src/commands/escola/mat89.js",
+      "chave": "probbinomial",
+      "subcategory": "Matemática",
+      "description": "Chance de k acertos em n tentativas"
+    },
+    {
+      "nome": "mat90",
+      "arquivo": "src/commands/escola/mat90.js",
+      "chave": "probmega",
+      "subcategory": "Matemática",
+      "description": "Probabilidade real de acertar as seis dezenas"
+    },
+    {
+      "nome": "mat91",
+      "arquivo": "src/commands/escola/mat91.js",
+      "chave": "vmedia",
+      "subcategory": "Física",
+      "description": "Velocidade média a partir da distância e do tempo"
+    },
+    {
+      "nome": "mat92",
+      "arquivo": "src/commands/escola/mat92.js",
+      "chave": "mru",
+      "subcategory": "Física",
+      "description": "Posição final com velocidade constante"
+    },
+    {
+      "nome": "mat93",
+      "arquivo": "src/commands/escola/mat93.js",
+      "chave": "aceleracao",
+      "subcategory": "Física",
+      "description": "Quanto a velocidade muda por segundo"
+    },
+    {
+      "nome": "mat94",
+      "arquivo": "src/commands/escola/mat94.js",
+      "chave": "mruvvel",
+      "subcategory": "Física",
+      "description": "Velocidade depois de acelerar por certo tempo"
+    },
+    {
+      "nome": "mat95",
+      "arquivo": "src/commands/escola/mat95.js",
+      "chave": "mruvpos",
+      "subcategory": "Física",
+      "description": "Onde o corpo está depois de acelerar"
+    },
+    {
+      "nome": "mat96",
+      "arquivo": "src/commands/escola/mat96.js",
+      "chave": "torricelli",
+      "subcategory": "Física",
+      "description": "Velocidade final sem precisar saber o tempo"
+    },
+    {
+      "nome": "mat97",
+      "arquivo": "src/commands/escola/mat97.js",
+      "chave": "quedalivre",
+      "subcategory": "Física",
+      "description": "Tempo de queda e velocidade ao chegar no chão"
+    },
+    {
+      "nome": "mat98",
+      "arquivo": "src/commands/escola/mat98.js",
+      "chave": "lancvertical",
+      "subcategory": "Física",
+      "description": "Altura máxima e tempo de um objeto jogado pra cima"
+    },
+    {
+      "nome": "mat99",
+      "arquivo": "src/commands/escola/mat99.js",
+      "chave": "lancobliquo",
+      "subcategory": "Física",
+      "description": "Alcance e altura de um chute ou arremesso"
+    },
+    {
+      "nome": "mat100",
+      "arquivo": "src/commands/escola/mat100.js",
+      "chave": "mcu",
+      "subcategory": "Física",
+      "description": "Período, frequência e velocidade numa volta"
+    },
+    {
+      "nome": "mat101",
+      "arquivo": "src/commands/escola/mat101.js",
+      "chave": "acentripeta",
+      "subcategory": "Física",
+      "description": "A aceleração que empurra para o centro da curva"
+    },
+    {
+      "nome": "mat102",
+      "arquivo": "src/commands/escola/mat102.js",
+      "chave": "forcaresultante",
+      "subcategory": "Física",
+      "description": "Força resultante a partir da massa e aceleração"
+    },
+    {
+      "nome": "mat103",
+      "arquivo": "src/commands/escola/mat103.js",
+      "chave": "peso",
+      "subcategory": "Física",
+      "description": "Peso em newtons e em outros mundos"
+    },
+    {
+      "nome": "mat104",
+      "arquivo": "src/commands/escola/mat104.js",
+      "chave": "atrito",
+      "subcategory": "Física",
+      "description": "Atrito a partir do coeficiente e da massa"
+    },
+    {
+      "nome": "mat105",
+      "arquivo": "src/commands/escola/mat105.js",
+      "chave": "planoinclinado",
+      "subcategory": "Física",
+      "description": "Forças e aceleração numa rampa sem atrito"
+    },
+    {
+      "nome": "mat106",
+      "arquivo": "src/commands/escola/mat106.js",
+      "chave": "hooke",
+      "subcategory": "Física",
+      "description": "Força de uma mola esticada ou comprimida"
+    },
+    {
+      "nome": "mat107",
+      "arquivo": "src/commands/escola/mat107.js",
+      "chave": "elevador",
+      "subcategory": "Física",
+      "description": "Quanto a balança marca num elevador acelerando"
+    },
+    {
+      "nome": "mat108",
+      "arquivo": "src/commands/escola/mat108.js",
+      "chave": "quantmovimento",
+      "subcategory": "Física",
+      "description": "Momento linear e o impulso para parar o corpo"
+    },
+    {
+      "nome": "mat109",
+      "arquivo": "src/commands/escola/mat109.js",
+      "chave": "colisaoinelastica",
+      "subcategory": "Física",
+      "description": "Velocidade final quando dois corpos se juntam"
+    },
+    {
+      "nome": "mat110",
+      "arquivo": "src/commands/escola/mat110.js",
+      "chave": "trabalho",
+      "subcategory": "Física",
+      "description": "Energia gasta ao empurrar algo por uma distância"
+    },
+    {
+      "nome": "mat111",
+      "arquivo": "src/commands/escola/mat111.js",
+      "chave": "energiacinetica",
+      "subcategory": "Física",
+      "description": "Energia guardada no movimento de um corpo"
+    },
+    {
+      "nome": "mat112",
+      "arquivo": "src/commands/escola/mat112.js",
+      "chave": "energiapotencial",
+      "subcategory": "Física",
+      "description": "Energia guardada pela altura de um corpo"
+    },
+    {
+      "nome": "mat113",
+      "arquivo": "src/commands/escola/mat113.js",
+      "chave": "energiaelastica",
+      "subcategory": "Física",
+      "description": "Energia guardada numa mola deformada"
+    },
+    {
+      "nome": "mat114",
+      "arquivo": "src/commands/escola/mat114.js",
+      "chave": "potenciamecanica",
+      "subcategory": "Física",
+      "description": "Energia por segundo, em watts e em cavalos"
+    },
+    {
+      "nome": "mat115",
+      "arquivo": "src/commands/escola/mat115.js",
+      "chave": "rendimento",
+      "subcategory": "Física",
+      "description": "Quanto da energia vira trabalho útil, em %"
+    },
+    {
+      "nome": "mat116",
+      "arquivo": "src/commands/escola/mat116.js",
+      "chave": "densidade",
+      "subcategory": "Física",
+      "description": "Densidade em g/cm³ e se o corpo boia na água"
+    },
+    {
+      "nome": "mat117",
+      "arquivo": "src/commands/escola/mat117.js",
+      "chave": "pressao",
+      "subcategory": "Física",
+      "description": "Pressão a partir da força e da área"
+    },
+    {
+      "nome": "mat118",
+      "arquivo": "src/commands/escola/mat118.js",
+      "chave": "pressaohidrostatica",
+      "subcategory": "Física",
+      "description": "Pressão a certa profundidade, com e sem o ar"
+    },
+    {
+      "nome": "mat119",
+      "arquivo": "src/commands/escola/mat119.js",
+      "chave": "empuxo",
+      "subcategory": "Física",
+      "description": "Força que a água faz para cima num corpo"
+    },
+    {
+      "nome": "mat120",
+      "arquivo": "src/commands/escola/mat120.js",
+      "chave": "prensahidraulica",
+      "subcategory": "Física",
+      "description": "Força multiplicada pelo princípio de Pascal"
+    },
+    {
+      "nome": "mat121",
+      "arquivo": "src/commands/escola/mat121.js",
+      "chave": "calorsensivel",
+      "subcategory": "Física",
+      "description": "Calor necessário para mudar a temperatura"
+    },
+    {
+      "nome": "mat122",
+      "arquivo": "src/commands/escola/mat122.js",
+      "chave": "calorlatente",
+      "subcategory": "Física",
+      "description": "Calor da mudança de estado, sem mudar a temperatura"
+    },
+    {
+      "nome": "mat123",
+      "arquivo": "src/commands/escola/mat123.js",
+      "chave": "equilibriotermico",
+      "subcategory": "Física",
+      "description": "Misturando duas águas, qual a temperatura final"
+    },
+    {
+      "nome": "mat124",
+      "arquivo": "src/commands/escola/mat124.js",
+      "chave": "temperaturaconv",
+      "subcategory": "Física",
+      "description": "Celsius, Fahrenheit e Kelvin de uma vez"
+    },
+    {
+      "nome": "mat125",
+      "arquivo": "src/commands/escola/mat125.js",
+      "chave": "dilatacaolinear",
+      "subcategory": "Física",
+      "description": "Quanto um corpo estica ao esquentar"
+    },
+    {
+      "nome": "mat126",
+      "arquivo": "src/commands/escola/mat126.js",
+      "chave": "dilatacaovolumetrica",
+      "subcategory": "Física",
+      "description": "Quanto um volume cresce ao esquentar"
+    },
+    {
+      "nome": "mat127",
+      "arquivo": "src/commands/escola/mat127.js",
+      "chave": "lentes",
+      "subcategory": "Física",
+      "description": "Onde a imagem se forma e de que tamanho"
+    },
+    {
+      "nome": "mat128",
+      "arquivo": "src/commands/escola/mat128.js",
+      "chave": "espelhos",
+      "subcategory": "Física",
+      "description": "Imagem num espelho côncavo ou convexo"
+    },
+    {
+      "nome": "mat129",
+      "arquivo": "src/commands/escola/mat129.js",
+      "chave": "snell",
+      "subcategory": "Física",
+      "description": "Ângulo da luz ao passar de um meio para outro"
+    },
+    {
+      "nome": "mat130",
+      "arquivo": "src/commands/escola/mat130.js",
+      "chave": "vergencia",
+      "subcategory": "Física",
+      "description": "Converte distância focal em graus de dioptria"
+    },
+    {
+      "nome": "mat131",
+      "arquivo": "src/commands/escola/mat131.js",
+      "chave": "ondavelocidade",
+      "subcategory": "Física",
+      "description": "Velocidade pelo comprimento de onda e frequência"
+    },
+    {
+      "nome": "mat132",
+      "arquivo": "src/commands/escola/mat132.js",
+      "chave": "periodofrequencia",
+      "subcategory": "Física",
+      "description": "Um é o inverso do outro; eu converto os dois"
+    },
+    {
+      "nome": "mat133",
+      "arquivo": "src/commands/escola/mat133.js",
+      "chave": "ohm",
+      "subcategory": "Física",
+      "description": "Corrente a partir da tensão e da resistência"
+    },
+    {
+      "nome": "mat134",
+      "arquivo": "src/commands/escola/mat134.js",
+      "chave": "potenciaeletrica",
+      "subcategory": "Física",
+      "description": "Potência em watts pela tensão e corrente"
+    },
+    {
+      "nome": "mat135",
+      "arquivo": "src/commands/escola/mat135.js",
+      "chave": "resistoresserie",
+      "subcategory": "Física",
+      "description": "Resistência total quando estão em fila"
+    },
+    {
+      "nome": "mat136",
+      "arquivo": "src/commands/escola/mat136.js",
+      "chave": "resistoresparalelo",
+      "subcategory": "Física",
+      "description": "Resistência total quando estão lado a lado"
+    },
+    {
+      "nome": "mat137",
+      "arquivo": "src/commands/escola/mat137.js",
+      "chave": "consumokwh",
+      "subcategory": "Física",
+      "description": "Quantos kWh um aparelho gasta por mês"
+    },
+    {
+      "nome": "mat138",
+      "arquivo": "src/commands/escola/mat138.js",
+      "chave": "contadeluz",
+      "subcategory": "Física",
+      "description": "Converte kWh em reais usando a sua tarifa"
+    },
+    {
+      "nome": "mat139",
+      "arquivo": "src/commands/escola/mat139.js",
+      "chave": "constantesfisicas",
+      "subcategory": "Física",
+      "description": "Procure uma constante pelo nome e veja o valor"
+    },
+    {
+      "nome": "mat140",
+      "arquivo": "src/commands/escola/mat140.js",
+      "chave": "unidadessi",
+      "subcategory": "Física",
+      "description": "As sete unidades de base e os prefixos do SI"
+    },
+    {
+      "nome": "mat141",
+      "arquivo": "src/commands/escola/mat141.js",
+      "chave": "elemento",
+      "subcategory": "Química",
+      "description": "Tudo sobre um elemento: símbolo, massa, família"
+    },
+    {
+      "nome": "mat142",
+      "arquivo": "src/commands/escola/mat142.js",
+      "chave": "familia",
+      "subcategory": "Química",
+      "description": "Quem são e o que têm em comum os elementos"
+    },
+    {
+      "nome": "mat143",
+      "arquivo": "src/commands/escola/mat143.js",
+      "chave": "distribuicao",
+      "subcategory": "Química",
+      "description": "Diagrama de Pauling elemento por elemento"
+    },
+    {
+      "nome": "mat144",
+      "arquivo": "src/commands/escola/mat144.js",
+      "chave": "valencia",
+      "subcategory": "Química",
+      "description": "Quantos elétrons faltam ou sobram para ligar"
+    },
+    {
+      "nome": "mat145",
+      "arquivo": "src/commands/escola/mat145.js",
+      "chave": "particulas",
+      "subcategory": "Química",
+      "description": "Conta as partículas de um átomo ou de um íon"
+    },
+    {
+      "nome": "mat146",
+      "arquivo": "src/commands/escola/mat146.js",
+      "chave": "isotopos",
+      "subcategory": "Química",
+      "description": "Compara dois átomos e diz a relação entre eles"
+    },
+    {
+      "nome": "mat147",
+      "arquivo": "src/commands/escola/mat147.js",
+      "chave": "massaatomicamedia",
+      "subcategory": "Química",
+      "description": "Média ponderada dos isótopos pela abundância"
+    },
+    {
+      "nome": "mat148",
+      "arquivo": "src/commands/escola/mat148.js",
+      "chave": "propriedadesperiodicas",
+      "subcategory": "Química",
+      "description": "Raio, eletronegatividade e caráter metálico"
+    },
+    {
+      "nome": "mat149",
+      "arquivo": "src/commands/escola/mat149.js",
+      "chave": "massamolar",
+      "subcategory": "Química",
+      "description": "Soma as massas atômicas da fórmula que você mandar"
+    },
+    {
+      "nome": "mat150",
+      "arquivo": "src/commands/escola/mat150.js",
+      "chave": "molparamassa",
+      "subcategory": "Química",
+      "description": "Quantos gramas há na quantidade de mols"
+    },
+    {
+      "nome": "mat151",
+      "arquivo": "src/commands/escola/mat151.js",
+      "chave": "massaparamol",
+      "subcategory": "Química",
+      "description": "Quantos mols há na massa que você pesou"
+    },
+    {
+      "nome": "mat152",
+      "arquivo": "src/commands/escola/mat152.js",
+      "chave": "avogadro",
+      "subcategory": "Química",
+      "description": "Converte mols em número de moléculas"
+    },
+    {
+      "nome": "mat153",
+      "arquivo": "src/commands/escola/mat153.js",
+      "chave": "volumemolar",
+      "subcategory": "Química",
+      "description": "Volume ocupado por um gás a 0 °C e 1 atm"
+    },
+    {
+      "nome": "mat154",
+      "arquivo": "src/commands/escola/mat154.js",
+      "chave": "composicaopercentual",
+      "subcategory": "Química",
+      "description": "Quanto por cento da massa é de cada elemento"
+    },
+    {
+      "nome": "mat155",
+      "arquivo": "src/commands/escola/mat155.js",
+      "chave": "formulaminima",
+      "subcategory": "Química",
+      "description": "Descobre a proporção dos átomos por análise"
+    },
+    {
+      "nome": "mat156",
+      "arquivo": "src/commands/escola/mat156.js",
+      "chave": "balanceamento",
+      "subcategory": "Química",
+      "description": "Acha os coeficientes que fecham a equação"
+    },
+    {
+      "nome": "mat157",
+      "arquivo": "src/commands/escola/mat157.js",
+      "chave": "concentracaocomum",
+      "subcategory": "Química",
+      "description": "Gramas de soluto por litro de solução"
+    },
+    {
+      "nome": "mat158",
+      "arquivo": "src/commands/escola/mat158.js",
+      "chave": "molaridade",
+      "subcategory": "Química",
+      "description": "Molaridade a partir da massa e do volume"
+    },
+    {
+      "nome": "mat159",
+      "arquivo": "src/commands/escola/mat159.js",
+      "chave": "diluicao",
+      "subcategory": "Química",
+      "description": "Concentração final ao acrescentar água"
+    },
+    {
+      "nome": "mat160",
+      "arquivo": "src/commands/escola/mat160.js",
+      "chave": "misturasolucoes",
+      "subcategory": "Química",
+      "description": "Concentração final ao juntar dois preparos"
+    },
+    {
+      "nome": "mat161",
+      "arquivo": "src/commands/escola/mat161.js",
+      "chave": "titulomassa",
+      "subcategory": "Química",
+      "description": "Porcentagem de soluto na massa da solução"
+    },
+    {
+      "nome": "mat162",
+      "arquivo": "src/commands/escola/mat162.js",
+      "chave": "ppm",
+      "subcategory": "Química",
+      "description": "Concentração de quantidades muito pequenas"
+    },
+    {
+      "nome": "mat163",
+      "arquivo": "src/commands/escola/mat163.js",
+      "chave": "molalidade",
+      "subcategory": "Química",
+      "description": "Mols de soluto por quilo de solvente"
+    },
+    {
+      "nome": "mat164",
+      "arquivo": "src/commands/escola/mat164.js",
+      "chave": "ph",
+      "subcategory": "Química",
+      "description": "Calcula o pH e diz se é ácido ou básico"
+    },
+    {
+      "nome": "mat165",
+      "arquivo": "src/commands/escola/mat165.js",
+      "chave": "hidrogenionica",
+      "subcategory": "Química",
+      "description": "O caminho de volta: do pH para o mol/L"
+    },
+    {
+      "nome": "mat166",
+      "arquivo": "src/commands/escola/mat166.js",
+      "chave": "poh",
+      "subcategory": "Química",
+      "description": "Converte entre pH e pOH (a soma dá 14)"
+    },
+    {
+      "nome": "mat167",
+      "arquivo": "src/commands/escola/mat167.js",
+      "chave": "phacidoforte",
+      "subcategory": "Química",
+      "description": "pH pela concentração de um ácido forte"
+    },
+    {
+      "nome": "mat168",
+      "arquivo": "src/commands/escola/mat168.js",
+      "chave": "classificafuncao",
+      "subcategory": "Química",
+      "description": "Diz se é ácido, base, sal ou óxido"
+    },
+    {
+      "nome": "mat169",
+      "arquivo": "src/commands/escola/mat169.js",
+      "chave": "tipoligacao",
+      "subcategory": "Química",
+      "description": "Iônica ou covalente pela eletronegatividade"
+    },
+    {
+      "nome": "mat170",
+      "arquivo": "src/commands/escola/mat170.js",
+      "chave": "geometria",
+      "subcategory": "Química",
+      "description": "A forma da molécula pelo modelo VSEPR"
+    },
+    {
+      "nome": "mat171",
+      "arquivo": "src/commands/escola/mat171.js",
+      "chave": "polaridade",
+      "subcategory": "Química",
+      "description": "Se a molécula é polar e no que ela dissolve"
+    },
+    {
+      "nome": "mat172",
+      "arquivo": "src/commands/escola/mat172.js",
+      "chave": "nox",
+      "subcategory": "Química",
+      "description": "Calcula o nox de um elemento na fórmula"
+    },
+    {
+      "nome": "mat173",
+      "arquivo": "src/commands/escola/mat173.js",
+      "chave": "gasesideais",
+      "subcategory": "Química",
+      "description": "Quantos mols há num gás por P, V e T"
+    },
+    {
+      "nome": "mat174",
+      "arquivo": "src/commands/escola/mat174.js",
+      "chave": "boyle",
+      "subcategory": "Química",
+      "description": "Volume final ao mudar a pressão do gás"
+    },
+    {
+      "nome": "mat175",
+      "arquivo": "src/commands/escola/mat175.js",
+      "chave": "charles",
+      "subcategory": "Química",
+      "description": "Volume final ao mudar a temperatura do gás"
+    },
+    {
+      "nome": "mat176",
+      "arquivo": "src/commands/escola/mat176.js",
+      "chave": "equacaogeralgases",
+      "subcategory": "Química",
+      "description": "Volume final mudando pressão e temperatura"
+    },
+    {
+      "nome": "mat177",
+      "arquivo": "src/commands/escola/mat177.js",
+      "chave": "densidadegas",
+      "subcategory": "Química",
+      "description": "Densidade de um gás e se ele sobe ou desce no ar"
+    },
+    {
+      "nome": "mat178",
+      "arquivo": "src/commands/escola/mat178.js",
+      "chave": "hidrocarboneto",
+      "subcategory": "Química",
+      "description": "Nome, fórmula e massa molar de um hidrocarboneto"
+    },
+    {
+      "nome": "mat179",
+      "arquivo": "src/commands/escola/mat179.js",
+      "chave": "funcaoorganica",
+      "subcategory": "Química",
+      "description": "Grupo característico, sufixo e exemplos reais"
+    },
+    {
+      "nome": "mat180",
+      "arquivo": "src/commands/escola/mat180.js",
+      "chave": "nomenclaturaorganica",
+      "subcategory": "Química",
+      "description": "Nome e fórmula pelo nº de carbonos e a função"
+    }
+  ]
+}

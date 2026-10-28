@@ -1,0 +1,50 @@
+{
+  "name": "goat-bot",
+  "version": "2.0.0",
+  "description": "Bot WhatsApp modular com RPG, economia e mídia",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "cli": "node scripts/dev-cli.js",
+    "seed": "node scripts/seed.js",
+    "healthcheck": "node scripts/healthcheck.js",
+    "test:expanded": "node tests/economy-expanded.test.js && node tests/rpg-expanded.test.js && node tests/education-expanded.test.js && node tests/media-fun-expanded.test.js && node tests/fase6-final.test.js",
+    "test": "node scripts/check-template-literals.js && node scripts/run-tests.js",
+    "test:group": "node tests/group-auth.test.js",
+    "test:grouppromote": "node tests/group-promote.test.js",
+    "test:groupcontrol": "node tests/group-control.test.js",
+    "test:mediafix": "node tests/media-fix.test.js",
+    "test:telemetry": "node tests/telemetry.test.js",
+    "test:backup": "node tests/backup.test.js",
+    "test:media": "node tests/media.test.js",
+    "fix:git": "node scripts/fix-git-index.js",
+    "check:templates": "node scripts/check-template-literals.js",
+    "test:comandos": "node scripts/testar-comandos.js --passe=execute --args=exemplos --citada=imagem",
+    "test:comandos:usuario": "node scripts/testar-comandos.js --passe=dispatch --papel=comum --args=exemplos"
+  },
+  "author": "GOAT",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "dependencies": {
+    "@distube/ytdl-core": "^4.16.12",
+    "@img/sharp-linux-x64": "^0.35.5",
+    "@whiskeysockets/baileys": "7.0.0-rc11",
+    "axios": "^1.20.0",
+    "chess.js": "^1.4.0",
+    "dotenv": "^17.4.2",
+    "instagram-url-direct": "^2.0.7",
+    "mathjs": "^12.4.0",
+    "node-webpmux": "^3.2.1",
+    "pdfkit": "^0.20.2",
+    "pino": "^7.11.0",
+    "play-dl": "^1.9.7",
+    "puppeteer-core": "^23.11.1",
+    "qrcode": "^1.5.4",
+    "qrcode-terminal": "^0.12.0",
+    "sharp": "^0.35.5",
+    "youtubei.js": "^18.0.0",
+    "yt-search": "^2.13.1"
+  }
+}

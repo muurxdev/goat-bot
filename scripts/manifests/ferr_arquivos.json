@@ -1,0 +1,2899 @@
+{
+  "familia": "ferramentas",
+  "servicos": [
+    "src/services/converterService.js",
+    "src/services/toolboxService.js"
+  ],
+  "gerador": "scripts/gen-ferramentas.js",
+  "geradoEm": "2026-09-18T04:47:59.587Z",
+  "total": 360,
+  "porSubcategoria": {
+    "Conversões": 120,
+    "Calculadoras": 120,
+    "Documentos": 50,
+    "Geradores": 40,
+    "Data e Hora": 30
+  },
+  "arquivos": [
+    {
+      "arquivo": "src/commands/ferramentas/ferr1.js",
+      "nome": "ferr1",
+      "servico": "src/services/converterService.js",
+      "ferramenta": "comp_m_cm",
+      "subcategoria": "Conversões",
+      "descricao": "Converte metros em centímetros"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr2.js",
+      "nome": "ferr2",
+      "servico": "src/services/converterService.js",
+      "ferramenta": "comp_km_m",
+      "subcategoria": "Conversões",
+      "descricao": "Converte quilômetros em metros"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr3.js",
+      "nome": "ferr3",
+      "servico": "src/services/converterService.js",
+      "ferramenta": "comp_cm_mm",
+      "subcategoria": "Conversões",
+      "descricao": "Converte centímetros em milímetros"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr4.js",
+      "nome": "ferr4",
+      "servico": "src/services/converterService.js",
+      "ferramenta": "comp_m_pe",
+      "subcategoria": "Conversões",
+      "descricao": "Converte metros em pés"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr5.js",
+      "nome": "ferr5",
+      "servico": "src/services/converterService.js",
+      "ferramenta": "comp_pe_m",
+      "subcategoria": "Conversões",
+      "descricao": "Converte pés em metros"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr6.js",
+      "nome": "ferr6",
+      "servico": "src/services/converterService.js",
+      "ferramenta": "comp_pol_cm",
+      "subcategoria": "Conversões",
+      "descricao": "Converte polegadas em centímetros"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr7.js",
+      "nome": "ferr7",
+      "servico": "src/services/converterService.js",
+      "ferramenta": "comp_cm_pol",
+      "subcategoria": "Conversões",
+      "descricao": "Converte centímetros em polegadas"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr8.js",
+      "nome": "ferr8",
+      "servico": "src/services/converterService.js",
+      "ferramenta": "comp_mi_km",
+      "subcategoria": "Conversões",
+      "descricao": "Converte milhas em quilômetros"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr9.js",
+      "nome": "ferr9",
+      "servico": "src/services/converterService.js",
+      "ferramenta": "comp_km_mi",
+      "subcategoria": "Conversões",
+      "descricao": "Converte quilômetros em milhas"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr10.js",
+      "nome": "ferr10",
+      "servico": "src/services/converterService.js",
+      "ferramenta": "comp_jd_m",
+      "subcategoria": "Conversões",
+      "descricao": "Converte jardas em metros"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr11.js",
+      "nome": "ferr11",
+      "servico": "src/services/converterService.js",
+      "ferramenta": "comp_m_jd",
+      "subcategoria": "Conversões",
+      "descricao": "Converte metros em jardas"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr12.js",
+      "nome": "ferr12",
+      "servico": "src/services/converterService.js",
+      "ferramenta": "comp_nm_km",
+      "subcategoria": "Conversões",
+      "descricao": "Converte milhas náuticas em quilômetros"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr13.js",
+      "nome": "ferr13",
+      "servico": "src/services/converterService.js",
+      "ferramenta": "mas_kg_g",
+      "subcategoria": "Conversões",
+      "descricao": "Converte quilos em gramas"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr14.js",
+      "nome": "ferr14",
+      "servico": "src/services/converterService.js",
+      "ferramenta": "mas_g_mg",
+      "subcategoria": "Conversões",
+      "descricao": "Converte gramas em miligramas"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr15.js",
+      "nome": "ferr15",
+      "servico": "src/services/converterService.js",
+      "ferramenta": "mas_kg_lb",
+      "subcategoria": "Conversões",
+      "descricao": "Converte quilos em libras"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr16.js",
+      "nome": "ferr16",
+      "servico": "src/services/converterService.js",
+      "ferramenta": "mas_lb_kg",
+      "subcategoria": "Conversões",
+      "descricao": "Converte libras em quilos"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr17.js",
+      "nome": "ferr17",
+      "servico": "src/services/converterService.js",
+      "ferramenta": "mas_oz_g",
+      "subcategoria": "Conversões",
+      "descricao": "Converte onças em gramas"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr18.js",
+      "nome": "ferr18",
+      "servico": "src/services/converterService.js",
+      "ferramenta": "mas_g_oz",
+      "subcategoria": "Conversões",
+      "descricao": "Converte gramas em onças"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr19.js",
+      "nome": "ferr19",
+      "servico": "src/services/converterService.js",
+      "ferramenta": "mas_t_kg",
+      "subcategoria": "Conversões",
+      "descricao": "Converte toneladas em quilos"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr20.js",
+      "nome": "ferr20",
+      "servico": "src/services/converterService.js",
+      "ferramenta": "mas_arroba_kg",
+      "subcategoria": "Conversões",
+      "descricao": "Converte arrobas em quilos"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr21.js",
+      "nome": "ferr21",
+      "servico": "src/services/converterService.js",
+      "ferramenta": "vol_l_ml",
+      "subcategoria": "Conversões",
+      "descricao": "Converte litros em mililitros"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr22.js",
+      "nome": "ferr22",
+      "servico": "src/services/converterService.js",
+      "ferramenta": "vol_m3_l",
+      "subcategoria": "Conversões",
+      "descricao": "Converte metros cúbicos em litros"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr23.js",
+      "nome": "ferr23",
+      "servico": "src/services/converterService.js",
+      "ferramenta": "vol_l_m3",
+      "subcategoria": "Conversões",
+      "descricao": "Converte litros em metros cúbicos"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr24.js",
+      "nome": "ferr24",
+      "servico": "src/services/converterService.js",
+      "ferramenta": "vol_l_gal",
+      "subcategoria": "Conversões",
+      "descricao": "Converte litros em galões americanos"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr25.js",
+      "nome": "ferr25",
+      "servico": "src/services/converterService.js",
+      "ferramenta": "vol_gal_l",
+      "subcategoria": "Conversões",
+      "descricao": "Converte galões americanos em litros"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr26.js",
+      "nome": "ferr26",
+      "servico": "src/services/converterService.js",
+      "ferramenta": "vol_csopa_ml",
+      "subcategoria": "Conversões",
+      "descricao": "Converte colheres de sopa em mililitros"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr27.js",
+      "nome": "ferr27",
+      "servico": "src/services/converterService.js",
+      "ferramenta": "vol_ml_ozfl",
+      "subcategoria": "Conversões",
+      "descricao": "Converte mililitros em onças fluidas"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr28.js",
+      "nome": "ferr28",
+      "servico": "src/services/converterService.js",
+      "ferramenta": "vol_xicara_ml",
+      "subcategoria": "Conversões",
+      "descricao": "Converte xícaras em mililitros"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr29.js",
+      "nome": "ferr29",
+      "servico": "src/services/converterService.js",
+      "ferramenta": "area_m2_cm2",
+      "subcategoria": "Conversões",
+      "descricao": "Converte metro quadrado em centímetro quadrado"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr30.js",
+      "nome": "ferr30",
+      "servico": "src/services/converterService.js",
+      "ferramenta": "area_km2_m2",
+      "subcategoria": "Conversões",
+      "descricao": "Converte quilômetro quadrado em metro quadrado"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr31.js",
+      "nome": "ferr31",
+      "servico": "src/services/converterService.js",
+      "ferramenta": "area_ha_m2",
+      "subcategoria": "Conversões",
+      "descricao": "Converte hectares em metros quadrados"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr32.js",
+      "nome": "ferr32",
+      "servico": "src/services/converterService.js",
+      "ferramenta": "area_alq_ha",
+      "subcategoria": "Conversões",
+      "descricao": "Converte alqueires paulistas em hectares"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr33.js",
+      "nome": "ferr33",
+      "servico": "src/services/converterService.js",
+      "ferramenta": "area_acre_m2",
+      "subcategoria": "Conversões",
+      "descricao": "Converte acres em metros quadrados"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr34.js",
+      "nome": "ferr34",
+      "servico": "src/services/converterService.js",
+      "ferramenta": "area_m2_pe2",
+      "subcategoria": "Conversões",
+      "descricao": "Converte metro quadrado em pé quadrado"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr35.js",
+      "nome": "ferr35",
+      "servico": "src/services/converterService.js",
+      "ferramenta": "temp_c_f",
+      "subcategoria": "Conversões",
+      "descricao": "Converte Celsius em Fahrenheit"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr36.js",
+      "nome": "ferr36",
+      "servico": "src/services/converterService.js",
+      "ferramenta": "temp_f_c",
+      "subcategoria": "Conversões",
+      "descricao": "Converte Fahrenheit em Celsius"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr37.js",
+      "nome": "ferr37",
+      "servico": "src/services/converterService.js",
+      "ferramenta": "temp_c_k",
+      "subcategoria": "Conversões",
+      "descricao": "Converte Celsius em Kelvin"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr38.js",
+      "nome": "ferr38",
+      "servico": "src/services/converterService.js",
+      "ferramenta": "temp_k_c",
+      "subcategoria": "Conversões",
+      "descricao": "Converte Kelvin em Celsius"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr39.js",
+      "nome": "ferr39",
+      "servico": "src/services/converterService.js",
+      "ferramenta": "temp_f_k",
+      "subcategoria": "Conversões",
+      "descricao": "Converte Fahrenheit em Kelvin"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr40.js",
+      "nome": "ferr40",
+      "servico": "src/services/converterService.js",
+      "ferramenta": "temp_c_r",
+      "subcategoria": "Conversões",
+      "descricao": "Converte Celsius em Rankine"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr41.js",
+      "nome": "ferr41",
+      "servico": "src/services/converterService.js",
+      "ferramenta": "vel_kmh_ms",
+      "subcategoria": "Conversões",
+      "descricao": "Converte km por hora em metros por segundo"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr42.js",
+      "nome": "ferr42",
+      "servico": "src/services/converterService.js",
+      "ferramenta": "vel_ms_kmh",
+      "subcategoria": "Conversões",
+      "descricao": "Converte metros por segundo em km por hora"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr43.js",
+      "nome": "ferr43",
+      "servico": "src/services/converterService.js",
+      "ferramenta": "vel_kmh_mph",
+      "subcategoria": "Conversões",
+      "descricao": "Converte km por hora em milhas por hora"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr44.js",
+      "nome": "ferr44",
+      "servico": "src/services/converterService.js",
+      "ferramenta": "vel_mph_kmh",
+      "subcategoria": "Conversões",
+      "descricao": "Converte milhas por hora em km por hora"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr45.js",
+      "nome": "ferr45",
+      "servico": "src/services/converterService.js",
+      "ferramenta": "vel_no_kmh",
+      "subcategoria": "Conversões",
+      "descricao": "Converte nós em quilômetros por hora"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr46.js",
+      "nome": "ferr46",
+      "servico": "src/services/converterService.js",
+      "ferramenta": "vel_kmh_no",
+      "subcategoria": "Conversões",
+      "descricao": "Converte quilômetros por hora em nós"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr47.js",
+      "nome": "ferr47",
+      "servico": "src/services/converterService.js",
+      "ferramenta": "vel_mach_kmh",
+      "subcategoria": "Conversões",
+      "descricao": "Converte mach em quilômetros por hora"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr48.js",
+      "nome": "ferr48",
+      "servico": "src/services/converterService.js",
+      "ferramenta": "vel_pace_kmh",
+      "subcategoria": "Conversões",
+      "descricao": "Converte ritmo min por km em km por hora"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr49.js",
+      "nome": "ferr49",
+      "servico": "src/services/converterService.js",
+      "ferramenta": "pre_atm_pa",
+      "subcategoria": "Conversões",
+      "descricao": "Converte atmosferas em pascals"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr50.js",
+      "nome": "ferr50",
+      "servico": "src/services/converterService.js",
+      "ferramenta": "pre_bar_psi",
+      "subcategoria": "Conversões",
+      "descricao": "Converte bar em psi"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr51.js",
+      "nome": "ferr51",
+      "servico": "src/services/converterService.js",
+      "ferramenta": "pre_psi_bar",
+      "subcategoria": "Conversões",
+      "descricao": "Converte psi em bar"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr52.js",
+      "nome": "ferr52",
+      "servico": "src/services/converterService.js",
+      "ferramenta": "pre_mmhg_atm",
+      "subcategoria": "Conversões",
+      "descricao": "Converte mmHg em atmosferas"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr53.js",
+      "nome": "ferr53",
+      "servico": "src/services/converterService.js",
+      "ferramenta": "pre_kgfcm2_psi",
+      "subcategoria": "Conversões",
+      "descricao": "Converte kgf por cm² em psi (calibragem)"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr54.js",
+      "nome": "ferr54",
+      "servico": "src/services/converterService.js",
+      "ferramenta": "ene_cal_j",
+      "subcategoria": "Conversões",
+      "descricao": "Converte calorias em joules"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr55.js",
+      "nome": "ferr55",
+      "servico": "src/services/converterService.js",
+      "ferramenta": "ene_j_cal",
+      "subcategoria": "Conversões",
+      "descricao": "Converte joules em calorias"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr56.js",
+      "nome": "ferr56",
+      "servico": "src/services/converterService.js",
+      "ferramenta": "ene_kcal_kj",
+      "subcategoria": "Conversões",
+      "descricao": "Converte quilocalorias em quilojoules"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr57.js",
+      "nome": "ferr57",
+      "servico": "src/services/converterService.js",
+      "ferramenta": "ene_kwh_j",
+      "subcategoria": "Conversões",
+      "descricao": "Converte quilowatt-hora em joules"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr58.js",
+      "nome": "ferr58",
+      "servico": "src/services/converterService.js",
+      "ferramenta": "ene_btu_kj",
+      "subcategoria": "Conversões",
+      "descricao": "Converte BTU em quilojoules"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr59.js",
+      "nome": "ferr59",
+      "servico": "src/services/converterService.js",
+      "ferramenta": "pot_cv_kw",
+      "subcategoria": "Conversões",
+      "descricao": "Converte cavalos-vapor em quilowatts"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr60.js",
+      "nome": "ferr60",
+      "servico": "src/services/converterService.js",
+      "ferramenta": "pot_kw_cv",
+      "subcategoria": "Conversões",
+      "descricao": "Converte quilowatts em cavalos-vapor"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr61.js",
+      "nome": "ferr61",
+      "servico": "src/services/converterService.js",
+      "ferramenta": "pot_hp_kw",
+      "subcategoria": "Conversões",
+      "descricao": "Converte horsepower em quilowatts"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr62.js",
+      "nome": "ferr62",
+      "servico": "src/services/converterService.js",
+      "ferramenta": "pot_w_btuh",
+      "subcategoria": "Conversões",
+      "descricao": "Converte watts em BTU por hora"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr63.js",
+      "nome": "ferr63",
+      "servico": "src/services/converterService.js",
+      "ferramenta": "tmp_h_min",
+      "subcategoria": "Conversões",
+      "descricao": "Converte horas em minutos"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr64.js",
+      "nome": "ferr64",
+      "servico": "src/services/converterService.js",
+      "ferramenta": "tmp_d_h",
+      "subcategoria": "Conversões",
+      "descricao": "Converte dias em horas"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr65.js",
+      "nome": "ferr65",
+      "servico": "src/services/converterService.js",
+      "ferramenta": "tmp_min_s",
+      "subcategoria": "Conversões",
+      "descricao": "Converte minutos em segundos"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr66.js",
+      "nome": "ferr66",
+      "servico": "src/services/converterService.js",
+      "ferramenta": "tmp_sem_d",
+      "subcategoria": "Conversões",
+      "descricao": "Converte semanas em dias"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr67.js",
+      "nome": "ferr67",
+      "servico": "src/services/converterService.js",
+      "ferramenta": "tmp_ano_d",
+      "subcategoria": "Conversões",
+      "descricao": "Converte anos em dias"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr68.js",
+      "nome": "ferr68",
+      "servico": "src/services/converterService.js",
+      "ferramenta": "tmp_s_legivel",
+      "subcategoria": "Conversões",
+      "descricao": "Transforma segundos em dias, horas e minutos"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr69.js",
+      "nome": "ferr69",
+      "servico": "src/services/converterService.js",
+      "ferramenta": "ang_grau_rad",
+      "subcategoria": "Conversões",
+      "descricao": "Converte graus em radianos"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr70.js",
+      "nome": "ferr70",
+      "servico": "src/services/converterService.js",
+      "ferramenta": "ang_rad_grau",
+      "subcategoria": "Conversões",
+      "descricao": "Converte radianos em graus"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr71.js",
+      "nome": "ferr71",
+      "servico": "src/services/converterService.js",
+      "ferramenta": "ang_dec_gms",
+      "subcategoria": "Conversões",
+      "descricao": "Converte grau decimal em grau, minuto e segundo"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr72.js",
+      "nome": "ferr72",
+      "servico": "src/services/converterService.js",
+      "ferramenta": "ang_gms_dec",
+      "subcategoria": "Conversões",
+      "descricao": "Converte grau minuto segundo em grau decimal"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr73.js",
+      "nome": "ferr73",
+      "servico": "src/services/converterService.js",
+      "ferramenta": "dig_mb_gb",
+      "subcategoria": "Conversões",
+      "descricao": "Converte megabytes em gigabytes"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr74.js",
+      "nome": "ferr74",
+      "servico": "src/services/converterService.js",
+      "ferramenta": "dig_gb_mb",
+      "subcategoria": "Conversões",
+      "descricao": "Converte gigabytes em megabytes"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr75.js",
+      "nome": "ferr75",
+      "servico": "src/services/converterService.js",
+      "ferramenta": "dig_gb_tb",
+      "subcategoria": "Conversões",
+      "descricao": "Converte gigabytes em terabytes"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr76.js",
+      "nome": "ferr76",
+      "servico": "src/services/converterService.js",
+      "ferramenta": "dig_kb_mb",
+      "subcategoria": "Conversões",
+      "descricao": "Converte kilobytes em megabytes"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr77.js",
+      "nome": "ferr77",
+      "servico": "src/services/converterService.js",
+      "ferramenta": "dig_byte_bit",
+      "subcategoria": "Conversões",
+      "descricao": "Converte bytes em bits"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr78.js",
+      "nome": "ferr78",
+      "servico": "src/services/converterService.js",
+      "ferramenta": "dig_mbps_mbs",
+      "subcategoria": "Conversões",
+      "descricao": "Converte megabits por segundo em megabytes por segundo"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr79.js",
+      "nome": "ferr79",
+      "servico": "src/services/converterService.js",
+      "ferramenta": "dig_download",
+      "subcategoria": "Conversões",
+      "descricao": "Calcula quanto demora baixar um arquivo"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr80.js",
+      "nome": "ferr80",
+      "servico": "src/services/converterService.js",
+      "ferramenta": "dig_bytes_legivel",
+      "subcategoria": "Conversões",
+      "descricao": "Transforma um monte de bytes em KB, MB ou GB"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr81.js",
+      "nome": "ferr81",
+      "servico": "src/services/converterService.js",
+      "ferramenta": "comb_kml_l100",
+      "subcategoria": "Conversões",
+      "descricao": "Converte km por litro em litros por 100 km"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr82.js",
+      "nome": "ferr82",
+      "servico": "src/services/converterService.js",
+      "ferramenta": "comb_l100_kml",
+      "subcategoria": "Conversões",
+      "descricao": "Converte litros por 100 km em km por litro"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr83.js",
+      "nome": "ferr83",
+      "servico": "src/services/converterService.js",
+      "ferramenta": "comb_mpg_kml",
+      "subcategoria": "Conversões",
+      "descricao": "Converte milhas por galão em km por litro"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr84.js",
+      "nome": "ferr84",
+      "servico": "src/services/converterService.js",
+      "ferramenta": "comb_kml_mpg",
+      "subcategoria": "Conversões",
+      "descricao": "Converte km por litro em milhas por galão"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr85.js",
+      "nome": "ferr85",
+      "servico": "src/services/converterService.js",
+      "ferramenta": "coz_xic_farinha",
+      "subcategoria": "Conversões",
+      "descricao": "Xícara de farinha de trigo para gramas"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr86.js",
+      "nome": "ferr86",
+      "servico": "src/services/converterService.js",
+      "ferramenta": "coz_xic_acucar",
+      "subcategoria": "Conversões",
+      "descricao": "Xícara de açúcar refinado para gramas"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr87.js",
+      "nome": "ferr87",
+      "servico": "src/services/converterService.js",
+      "ferramenta": "coz_xic_arroz",
+      "subcategoria": "Conversões",
+      "descricao": "Xícara de arroz cru para gramas"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr88.js",
+      "nome": "ferr88",
+      "servico": "src/services/converterService.js",
+      "ferramenta": "coz_xic_leite",
+      "subcategoria": "Conversões",
+      "descricao": "Xícara de leite para gramas"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr89.js",
+      "nome": "ferr89",
+      "servico": "src/services/converterService.js",
+      "ferramenta": "coz_xic_oleo",
+      "subcategoria": "Conversões",
+      "descricao": "Xícara de óleo para gramas"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr90.js",
+      "nome": "ferr90",
+      "servico": "src/services/converterService.js",
+      "ferramenta": "coz_xic_cacau",
+      "subcategoria": "Conversões",
+      "descricao": "Xícara de cacau em pó para gramas"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr91.js",
+      "nome": "ferr91",
+      "servico": "src/services/converterService.js",
+      "ferramenta": "coz_sopa_manteiga",
+      "subcategoria": "Conversões",
+      "descricao": "Colher de sopa de manteiga para gramas"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr92.js",
+      "nome": "ferr92",
+      "servico": "src/services/converterService.js",
+      "ferramenta": "coz_sopa_acucar",
+      "subcategoria": "Conversões",
+      "descricao": "Colher de sopa de açúcar refinado para gramas"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr93.js",
+      "nome": "ferr93",
+      "servico": "src/services/converterService.js",
+      "ferramenta": "coz_cha_sal",
+      "subcategoria": "Conversões",
+      "descricao": "Colher de chá de sal para gramas"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr94.js",
+      "nome": "ferr94",
+      "servico": "src/services/converterService.js",
+      "ferramenta": "coz_g_para_medida",
+      "subcategoria": "Conversões",
+      "descricao": "Diz quantas xícaras e colheres dão X gramas"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr95.js",
+      "nome": "ferr95",
+      "servico": "src/services/converterService.js",
+      "ferramenta": "tam_calcado_br_eua_f",
+      "subcategoria": "Conversões",
+      "descricao": "Numeração de calçado feminino BR para EUA"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr96.js",
+      "nome": "ferr96",
+      "servico": "src/services/converterService.js",
+      "ferramenta": "tam_calcado_br_eua_m",
+      "subcategoria": "Conversões",
+      "descricao": "Numeração de calçado masculino BR para EUA"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr97.js",
+      "nome": "ferr97",
+      "servico": "src/services/converterService.js",
+      "ferramenta": "tam_calcado_br_eu",
+      "subcategoria": "Conversões",
+      "descricao": "Numeração de calçado do Brasil para a Europa"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr98.js",
+      "nome": "ferr98",
+      "servico": "src/services/converterService.js",
+      "ferramenta": "tam_calcado_eua_br",
+      "subcategoria": "Conversões",
+      "descricao": "Numeração de calçado dos EUA para o Brasil"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr99.js",
+      "nome": "ferr99",
+      "servico": "src/services/converterService.js",
+      "ferramenta": "tam_roupa_br",
+      "subcategoria": "Conversões",
+      "descricao": "Tamanho de roupa PP a XGG em BR, EUA e Europa"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr100.js",
+      "nome": "ferr100",
+      "servico": "src/services/converterService.js",
+      "ferramenta": "tam_sutia",
+      "subcategoria": "Conversões",
+      "descricao": "Calcula o tamanho do sutiã por tórax e busto"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr101.js",
+      "nome": "ferr101",
+      "servico": "src/services/converterService.js",
+      "ferramenta": "tam_anel",
+      "subcategoria": "Conversões",
+      "descricao": "Descobre o aro brasileiro do anel pelo dedo"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr102.js",
+      "nome": "ferr102",
+      "servico": "src/services/converterService.js",
+      "ferramenta": "tela_pol_cm",
+      "subcategoria": "Conversões",
+      "descricao": "Mostra largura e altura de uma tela em cm"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr103.js",
+      "nome": "ferr103",
+      "servico": "src/services/converterService.js",
+      "ferramenta": "tela_cm_pol",
+      "subcategoria": "Conversões",
+      "descricao": "Descobre quantas polegadas tem uma tela medida"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr104.js",
+      "nome": "ferr104",
+      "servico": "src/services/converterService.js",
+      "ferramenta": "tela_ppi",
+      "subcategoria": "Conversões",
+      "descricao": "Calcula os pontos por polegada de uma tela"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr105.js",
+      "nome": "ferr105",
+      "servico": "src/services/converterService.js",
+      "ferramenta": "tela_distancia",
+      "subcategoria": "Conversões",
+      "descricao": "Diz a que distância sentar de uma TV"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr106.js",
+      "nome": "ferr106",
+      "servico": "src/services/converterService.js",
+      "ferramenta": "base_dec_bin",
+      "subcategoria": "Conversões",
+      "descricao": "Converte decimal em binário"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr107.js",
+      "nome": "ferr107",
+      "servico": "src/services/converterService.js",
+      "ferramenta": "base_bin_dec",
+      "subcategoria": "Conversões",
+      "descricao": "Converte binário em decimal"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr108.js",
+      "nome": "ferr108",
+      "servico": "src/services/converterService.js",
+      "ferramenta": "base_dec_hex",
+      "subcategoria": "Conversões",
+      "descricao": "Converte decimal em hexadecimal"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr109.js",
+      "nome": "ferr109",
+      "servico": "src/services/converterService.js",
+      "ferramenta": "base_hex_dec",
+      "subcategoria": "Conversões",
+      "descricao": "Converte hexadecimal em decimal"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr110.js",
+      "nome": "ferr110",
+      "servico": "src/services/converterService.js",
+      "ferramenta": "base_dec_oct",
+      "subcategoria": "Conversões",
+      "descricao": "Converte decimal em octal"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr111.js",
+      "nome": "ferr111",
+      "servico": "src/services/converterService.js",
+      "ferramenta": "base_texto_bin",
+      "subcategoria": "Conversões",
+      "descricao": "Transforma uma frase em zeros e uns"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr112.js",
+      "nome": "ferr112",
+      "servico": "src/services/converterService.js",
+      "ferramenta": "base_qualquer",
+      "subcategoria": "Conversões",
+      "descricao": "Converte número entre duas bases de 2 a 36"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr113.js",
+      "nome": "ferr113",
+      "servico": "src/services/converterService.js",
+      "ferramenta": "rom_num_rom",
+      "subcategoria": "Conversões",
+      "descricao": "Escreve um número em algarismos romanos"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr114.js",
+      "nome": "ferr114",
+      "servico": "src/services/converterService.js",
+      "ferramenta": "rom_rom_num",
+      "subcategoria": "Conversões",
+      "descricao": "Lê um algarismo romano e diz o valor"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr115.js",
+      "nome": "ferr115",
+      "servico": "src/services/converterService.js",
+      "ferramenta": "fuso_br_lisboa",
+      "subcategoria": "Conversões",
+      "descricao": "Que horas são em Lisboa quando é X em Brasília"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr116.js",
+      "nome": "ferr116",
+      "servico": "src/services/converterService.js",
+      "ferramenta": "fuso_br_novayork",
+      "subcategoria": "Conversões",
+      "descricao": "Que horas são em Nova York quando é X em Brasília"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr117.js",
+      "nome": "ferr117",
+      "servico": "src/services/converterService.js",
+      "ferramenta": "fuso_br_toquio",
+      "subcategoria": "Conversões",
+      "descricao": "Que horas são em Tóquio quando é X em Brasília"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr118.js",
+      "nome": "ferr118",
+      "servico": "src/services/converterService.js",
+      "ferramenta": "fuso_br_londres",
+      "subcategoria": "Conversões",
+      "descricao": "Que horas são em Londres quando é X em Brasília"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr119.js",
+      "nome": "ferr119",
+      "servico": "src/services/converterService.js",
+      "ferramenta": "fuso_br_manaus",
+      "subcategoria": "Conversões",
+      "descricao": "Que horas são em Manaus quando é X em Brasília"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr120.js",
+      "nome": "ferr120",
+      "servico": "src/services/converterService.js",
+      "ferramenta": "fuso_entre_capitais",
+      "subcategoria": "Conversões",
+      "descricao": "Converte um horário entre duas cidades da lista"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr121.js",
+      "nome": "ferr121",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "imc",
+      "subcategoria": "Calculadoras",
+      "descricao": "Calcula o IMC pelo peso e pela altura"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr122.js",
+      "nome": "ferr122",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "peso_ideal",
+      "subcategoria": "Calculadoras",
+      "descricao": "Mostra a faixa de peso saudável para a altura"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr123.js",
+      "nome": "ferr123",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "tmb",
+      "subcategoria": "Calculadoras",
+      "descricao": "Calcula as calorias gastas em repouso"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr124.js",
+      "nome": "ferr124",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "gasto_calorico",
+      "subcategoria": "Calculadoras",
+      "descricao": "Calcula quantas calorias você gasta por dia"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr125.js",
+      "nome": "ferr125",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "agua_dia",
+      "subcategoria": "Calculadoras",
+      "descricao": "Calcula quanta água beber por dia pelo peso"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr126.js",
+      "nome": "ferr126",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "gordura_corporal",
+      "subcategoria": "Calculadoras",
+      "descricao": "Estima o percentual de gordura por fita métrica"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr127.js",
+      "nome": "ferr127",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "fc_zonas",
+      "subcategoria": "Calculadoras",
+      "descricao": "Calcula as zonas de treino pela sua idade"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr128.js",
+      "nome": "ferr128",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "deficit_calorico",
+      "subcategoria": "Calculadoras",
+      "descricao": "Diz quanto tempo leva para perder X quilos"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr129.js",
+      "nome": "ferr129",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "proteina_dia",
+      "subcategoria": "Calculadoras",
+      "descricao": "Calcula quanta proteína comer por dia"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr130.js",
+      "nome": "ferr130",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "cintura_quadril",
+      "subcategoria": "Calculadoras",
+      "descricao": "Calcula a relação entre cintura e quadril"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr131.js",
+      "nome": "ferr131",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "superficie_corporal",
+      "subcategoria": "Calculadoras",
+      "descricao": "Calcula a área de superfície do corpo em m²"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr132.js",
+      "nome": "ferr132",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "dose_remedio",
+      "subcategoria": "Calculadoras",
+      "descricao": "Calcula a dose de um remédio pelo peso"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr133.js",
+      "nome": "ferr133",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "racao_pet",
+      "subcategoria": "Calculadoras",
+      "descricao": "Calcula a ração diária pelo peso do bicho"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr134.js",
+      "nome": "ferr134",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "salario_liquido",
+      "subcategoria": "Calculadoras",
+      "descricao": "Calcula o salário na conta após INSS e imposto"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr135.js",
+      "nome": "ferr135",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "inss",
+      "subcategoria": "Calculadoras",
+      "descricao": "Calcula o desconto do INSS sobre o salário"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr136.js",
+      "nome": "ferr136",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "irrf",
+      "subcategoria": "Calculadoras",
+      "descricao": "Calcula o imposto de renda descontado no mês"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr137.js",
+      "nome": "ferr137",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "ferias",
+      "subcategoria": "Calculadoras",
+      "descricao": "Calcula o valor das férias com o terço legal"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr138.js",
+      "nome": "ferr138",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "decimo_terceiro",
+      "subcategoria": "Calculadoras",
+      "descricao": "Calcula as duas parcelas do décimo terceiro"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr139.js",
+      "nome": "ferr139",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "rescisao_sem_justa",
+      "subcategoria": "Calculadoras",
+      "descricao": "Estima a rescisão de quem foi mandado embora"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr140.js",
+      "nome": "ferr140",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "rescisao_pedido",
+      "subcategoria": "Calculadoras",
+      "descricao": "Estima o acerto de quem pede para sair"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr141.js",
+      "nome": "ferr141",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "hora_extra50",
+      "subcategoria": "Calculadoras",
+      "descricao": "Calcula hora extra com adicional de 50%"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr142.js",
+      "nome": "ferr142",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "hora_extra100",
+      "subcategoria": "Calculadoras",
+      "descricao": "Calcula hora extra de domingo e feriado"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr143.js",
+      "nome": "ferr143",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "adicional_noturno",
+      "subcategoria": "Calculadoras",
+      "descricao": "Calcula o adicional noturno com hora reduzida"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr144.js",
+      "nome": "ferr144",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "fgts_mensal",
+      "subcategoria": "Calculadoras",
+      "descricao": "Calcula o FGTS depositado ao longo do tempo"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr145.js",
+      "nome": "ferr145",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "fgts_multa",
+      "subcategoria": "Calculadoras",
+      "descricao": "Calcula a multa de 40% sobre o saldo do FGTS"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr146.js",
+      "nome": "ferr146",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "seguro_desemprego",
+      "subcategoria": "Calculadoras",
+      "descricao": "Estima o valor e o número de parcelas do seguro"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr147.js",
+      "nome": "ferr147",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "vale_transporte",
+      "subcategoria": "Calculadoras",
+      "descricao": "Calcula o desconto legal do vale-transporte"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr148.js",
+      "nome": "ferr148",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "valor_hora",
+      "subcategoria": "Calculadoras",
+      "descricao": "Descobre quanto vale uma hora do seu trabalho"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr149.js",
+      "nome": "ferr149",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "salario_proporcional",
+      "subcategoria": "Calculadoras",
+      "descricao": "Calcula o salário por dias trabalhados no mês"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr150.js",
+      "nome": "ferr150",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "aviso_previo",
+      "subcategoria": "Calculadoras",
+      "descricao": "Calcula os dias de aviso prévio pelo tempo de casa"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr151.js",
+      "nome": "ferr151",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "juros_simples",
+      "subcategoria": "Calculadoras",
+      "descricao": "Calcula juros simples sobre um valor"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr152.js",
+      "nome": "ferr152",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "juros_compostos",
+      "subcategoria": "Calculadoras",
+      "descricao": "Calcula juros compostos sobre um valor"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr153.js",
+      "nome": "ferr153",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "aporte_mensal",
+      "subcategoria": "Calculadoras",
+      "descricao": "Mostra quanto rende guardar um valor todo mês"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr154.js",
+      "nome": "ferr154",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "price",
+      "subcategoria": "Calculadoras",
+      "descricao": "Calcula a parcela fixa de um financiamento"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr155.js",
+      "nome": "ferr155",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "sac",
+      "subcategoria": "Calculadoras",
+      "descricao": "Calcula as parcelas decrescentes do sistema SAC"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr156.js",
+      "nome": "ferr156",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "parcelamento_taxa",
+      "subcategoria": "Calculadoras",
+      "descricao": "Descobre a taxa embutida em uma compra parcelada"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr157.js",
+      "nome": "ferr157",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "desconto",
+      "subcategoria": "Calculadoras",
+      "descricao": "Calcula o preço final depois do desconto"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr158.js",
+      "nome": "ferr158",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "aumento",
+      "subcategoria": "Calculadoras",
+      "descricao": "Calcula o valor depois de um aumento em %"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr159.js",
+      "nome": "ferr159",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "margem_lucro",
+      "subcategoria": "Calculadoras",
+      "descricao": "Calcula a margem de lucro de uma venda"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr160.js",
+      "nome": "ferr160",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "markup",
+      "subcategoria": "Calculadoras",
+      "descricao": "Descobre o preço de venda a partir do custo"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr161.js",
+      "nome": "ferr161",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "poupanca",
+      "subcategoria": "Calculadoras",
+      "descricao": "Estima quanto rende dinheiro na poupança"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr162.js",
+      "nome": "ferr162",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "cdi",
+      "subcategoria": "Calculadoras",
+      "descricao": "Calcula o rendimento de aplicação atrelada ao CDI"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr163.js",
+      "nome": "ferr163",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "regra72",
+      "subcategoria": "Calculadoras",
+      "descricao": "Diz em quanto tempo o dinheiro dobra"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr164.js",
+      "nome": "ferr164",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "meta_poupanca",
+      "subcategoria": "Calculadoras",
+      "descricao": "Calcula o valor mensal para atingir uma meta"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr165.js",
+      "nome": "ferr165",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "inflacao",
+      "subcategoria": "Calculadoras",
+      "descricao": "Corrige um valor por uma inflação anual"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr166.js",
+      "nome": "ferr166",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "dividir_conta",
+      "subcategoria": "Calculadoras",
+      "descricao": "Divide a conta entre as pessoas da mesa"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr167.js",
+      "nome": "ferr167",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "gorjeta",
+      "subcategoria": "Calculadoras",
+      "descricao": "Calcula a gorjeta sobre o valor da conta"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr168.js",
+      "nome": "ferr168",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "troco",
+      "subcategoria": "Calculadoras",
+      "descricao": "Calcula o troco e as notas para devolver"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr169.js",
+      "nome": "ferr169",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "preco_por_kg",
+      "subcategoria": "Calculadoras",
+      "descricao": "Compara embalagens pelo preço por quilo ou litro"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr170.js",
+      "nome": "ferr170",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "vista_ou_parcelado",
+      "subcategoria": "Calculadoras",
+      "descricao": "Compara pagar à vista com desconto ou parcelar"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr171.js",
+      "nome": "ferr171",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "tinta_parede",
+      "subcategoria": "Calculadoras",
+      "descricao": "Calcula litros de tinta para pintar uma área"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr172.js",
+      "nome": "ferr172",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "piso_ceramico",
+      "subcategoria": "Calculadoras",
+      "descricao": "Calcula caixas de piso para um cômodo"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr173.js",
+      "nome": "ferr173",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "rodape_metros",
+      "subcategoria": "Calculadoras",
+      "descricao": "Calcula metros de rodapé e barras a comprar"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr174.js",
+      "nome": "ferr174",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "azulejo_parede",
+      "subcategoria": "Calculadoras",
+      "descricao": "Calcula azulejos para revestir uma parede"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr175.js",
+      "nome": "ferr175",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "concreto_sacos",
+      "subcategoria": "Calculadoras",
+      "descricao": "Calcula cimento, areia e brita de um concreto"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr176.js",
+      "nome": "ferr176",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "tijolos_parede",
+      "subcategoria": "Calculadoras",
+      "descricao": "Calcula tijolos e argamassa de uma parede"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr177.js",
+      "nome": "ferr177",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "argamassa_piso",
+      "subcategoria": "Calculadoras",
+      "descricao": "Calcula sacos de argamassa colante por área"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr178.js",
+      "nome": "ferr178",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "cerca_terreno",
+      "subcategoria": "Calculadoras",
+      "descricao": "Calcula postes e arame para cercar um terreno"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr179.js",
+      "nome": "ferr179",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "telhas_telhado",
+      "subcategoria": "Calculadoras",
+      "descricao": "Calcula telhas pela área do telhado"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr180.js",
+      "nome": "ferr180",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "caixa_dagua",
+      "subcategoria": "Calculadoras",
+      "descricao": "Diz o tamanho da caixa de água pela família"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr181.js",
+      "nome": "ferr181",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "laje_volume",
+      "subcategoria": "Calculadoras",
+      "descricao": "Calcula o concreto usinado de uma laje"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr182.js",
+      "nome": "ferr182",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "grama_jardim",
+      "subcategoria": "Calculadoras",
+      "descricao": "Calcula placas de grama para um jardim"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr183.js",
+      "nome": "ferr183",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "papel_parede",
+      "subcategoria": "Calculadoras",
+      "descricao": "Calcula rolos de papel de parede necessários"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr184.js",
+      "nome": "ferr184",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "piscina_agua",
+      "subcategoria": "Calculadoras",
+      "descricao": "Calcula o volume da piscina e o cloro do dia"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr185.js",
+      "nome": "ferr185",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "escada_degraus",
+      "subcategoria": "Calculadoras",
+      "descricao": "Calcula altura e quantidade de degraus"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr186.js",
+      "nome": "ferr186",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "ar_condicionado_btu",
+      "subcategoria": "Calculadoras",
+      "descricao": "Calcula os BTUs do ar para um ambiente"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr187.js",
+      "nome": "ferr187",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "consumo_kwh",
+      "subcategoria": "Calculadoras",
+      "descricao": "Calcula o consumo em kWh de um aparelho"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr188.js",
+      "nome": "ferr188",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "conta_luz",
+      "subcategoria": "Calculadoras",
+      "descricao": "Estima a conta de luz pelo consumo do mês"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr189.js",
+      "nome": "ferr189",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "iluminacao_lumens",
+      "subcategoria": "Calculadoras",
+      "descricao": "Calcula lúmens e lâmpadas de um cômodo"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr190.js",
+      "nome": "ferr190",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "energia_solar",
+      "subcategoria": "Calculadoras",
+      "descricao": "Calcula painéis solares pelo consumo mensal"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr191.js",
+      "nome": "ferr191",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "combustivel_viagem",
+      "subcategoria": "Calculadoras",
+      "descricao": "Calcula litros e gasto de combustível na viagem"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr192.js",
+      "nome": "ferr192",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "alcool_ou_gasolina",
+      "subcategoria": "Calculadoras",
+      "descricao": "Diz qual combustível compensa pelo preço"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr193.js",
+      "nome": "ferr193",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "consumo_medio_carro",
+      "subcategoria": "Calculadoras",
+      "descricao": "Mede o consumo real pelo abastecimento"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr194.js",
+      "nome": "ferr194",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "custo_km",
+      "subcategoria": "Calculadoras",
+      "descricao": "Calcula quanto custa cada km do seu carro"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr195.js",
+      "nome": "ferr195",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "tempo_viagem",
+      "subcategoria": "Calculadoras",
+      "descricao": "Calcula o tempo de viagem com as paradas"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr196.js",
+      "nome": "ferr196",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "viagem_rateio",
+      "subcategoria": "Calculadoras",
+      "descricao": "Divide o custo da viagem entre os passageiros"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr197.js",
+      "nome": "ferr197",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "autonomia_tanque",
+      "subcategoria": "Calculadoras",
+      "descricao": "Diz quantos km o tanque cheio ainda roda"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr198.js",
+      "nome": "ferr198",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "pneu_medida",
+      "subcategoria": "Calculadoras",
+      "descricao": "Explica a medida do pneu e o diâmetro dele"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr199.js",
+      "nome": "ferr199",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "ipva_estimado",
+      "subcategoria": "Calculadoras",
+      "descricao": "Estima o IPVA pelo valor e pela alíquota"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr200.js",
+      "nome": "ferr200",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "multa_transito",
+      "subcategoria": "Calculadoras",
+      "descricao": "Mostra valor e pontos de multa por gravidade"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr201.js",
+      "nome": "ferr201",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "regra_tres",
+      "subcategoria": "Calculadoras",
+      "descricao": "Resolve regra de três direta com três valores"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr202.js",
+      "nome": "ferr202",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "regra_tres_inversa",
+      "subcategoria": "Calculadoras",
+      "descricao": "Resolve regra de três inversamente proporcional"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr203.js",
+      "nome": "ferr203",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "porcentagem_de",
+      "subcategoria": "Calculadoras",
+      "descricao": "Calcula quanto é uma porcentagem de um valor"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr204.js",
+      "nome": "ferr204",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "porcentagem_quanto",
+      "subcategoria": "Calculadoras",
+      "descricao": "Diz quantos por cento um valor é do outro"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr205.js",
+      "nome": "ferr205",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "variacao_percentual",
+      "subcategoria": "Calculadoras",
+      "descricao": "Calcula a variação percentual entre dois valores"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr206.js",
+      "nome": "ferr206",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "media_simples",
+      "subcategoria": "Calculadoras",
+      "descricao": "Calcula média, mediana e moda de números"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr207.js",
+      "nome": "ferr207",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "media_ponderada",
+      "subcategoria": "Calculadoras",
+      "descricao": "Calcula média com peso diferente em cada nota"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr208.js",
+      "nome": "ferr208",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "media_para_passar",
+      "subcategoria": "Calculadoras",
+      "descricao": "Diz a nota necessária na última avaliação"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr209.js",
+      "nome": "ferr209",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "divisao_proporcional",
+      "subcategoria": "Calculadoras",
+      "descricao": "Divide um valor em partes proporcionais dadas"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr210.js",
+      "nome": "ferr210",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "mmc_mdc",
+      "subcategoria": "Calculadoras",
+      "descricao": "Calcula o MMC e o MDC de vários números"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr211.js",
+      "nome": "ferr211",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "bhaskara",
+      "subcategoria": "Calculadoras",
+      "descricao": "Resolve equação do segundo grau por Bhaskara"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr212.js",
+      "nome": "ferr212",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "area_circulo",
+      "subcategoria": "Calculadoras",
+      "descricao": "Calcula área e volta de um círculo pelo raio"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr213.js",
+      "nome": "ferr213",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "volume_caixa",
+      "subcategoria": "Calculadoras",
+      "descricao": "Calcula volume e litros de uma caixa"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr214.js",
+      "nome": "ferr214",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "pitagoras",
+      "subcategoria": "Calculadoras",
+      "descricao": "Calcula o lado que falta num triângulo reto"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr215.js",
+      "nome": "ferr215",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "juros_atraso",
+      "subcategoria": "Calculadoras",
+      "descricao": "Calcula multa e juros de uma conta em atraso"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr216.js",
+      "nome": "ferr216",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "desconto_sucessivo",
+      "subcategoria": "Calculadoras",
+      "descricao": "Calcula o efeito de descontos em sequência"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr217.js",
+      "nome": "ferr217",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "fracao_para_decimal",
+      "subcategoria": "Calculadoras",
+      "descricao": "Converte uma fração em decimal e porcentagem"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr218.js",
+      "nome": "ferr218",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "escala_mapa",
+      "subcategoria": "Calculadoras",
+      "descricao": "Converte medida do mapa em distância real"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr219.js",
+      "nome": "ferr219",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "probabilidade_sorteio",
+      "subcategoria": "Calculadoras",
+      "descricao": "Calcula a chance de ganhar em um sorteio"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr220.js",
+      "nome": "ferr220",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "combinacoes",
+      "subcategoria": "Calculadoras",
+      "descricao": "Calcula quantas combinações saem de um grupo"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr221.js",
+      "nome": "ferr221",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "churrasco",
+      "subcategoria": "Calculadoras",
+      "descricao": "Calcula carne, bebida e carvão do churrasco"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr222.js",
+      "nome": "ferr222",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "bebidas_festa",
+      "subcategoria": "Calculadoras",
+      "descricao": "Calcula bebidas por convidado em uma festa"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr223.js",
+      "nome": "ferr223",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "receita_porcoes",
+      "subcategoria": "Calculadoras",
+      "descricao": "Ajusta a quantidade de uma receita por porções"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr224.js",
+      "nome": "ferr224",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "forma_bolo",
+      "subcategoria": "Calculadoras",
+      "descricao": "Adapta a receita para outra forma de bolo"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr225.js",
+      "nome": "ferr225",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "assado_tempo",
+      "subcategoria": "Calculadoras",
+      "descricao": "Calcula o tempo de forno pelo peso da carne"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr226.js",
+      "nome": "ferr226",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "pizza_comparar",
+      "subcategoria": "Calculadoras",
+      "descricao": "Compara duas pizzas por área e preço"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr227.js",
+      "nome": "ferr227",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "cafe_coado",
+      "subcategoria": "Calculadoras",
+      "descricao": "Calcula o pó de café para a água do coador"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr228.js",
+      "nome": "ferr228",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "consumo_agua_casa",
+      "subcategoria": "Calculadoras",
+      "descricao": "Estima o consumo de água e a conta do mês"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr229.js",
+      "nome": "ferr229",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "gas_botijao",
+      "subcategoria": "Calculadoras",
+      "descricao": "Estima quanto tempo dura um botijão de gás"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr230.js",
+      "nome": "ferr230",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "comida_pessoa",
+      "subcategoria": "Calculadoras",
+      "descricao": "Calcula a comida do buffet por convidado"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr231.js",
+      "nome": "ferr231",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "horas_sono",
+      "subcategoria": "Calculadoras",
+      "descricao": "Sugere horários de dormir e de acordar"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr232.js",
+      "nome": "ferr232",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "leitura_tempo",
+      "subcategoria": "Calculadoras",
+      "descricao": "Calcula o tempo para terminar uma leitura"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr233.js",
+      "nome": "ferr233",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "estudo_cronograma",
+      "subcategoria": "Calculadoras",
+      "descricao": "Divide as matérias no tempo até a prova"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr234.js",
+      "nome": "ferr234",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "aposentadoria_pontos",
+      "subcategoria": "Calculadoras",
+      "descricao": "Calcula os pontos da regra de idade mais tempo"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr235.js",
+      "nome": "ferr235",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "horas_para_comprar",
+      "subcategoria": "Calculadoras",
+      "descricao": "Diz quantas horas de trabalho custa um produto"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr236.js",
+      "nome": "ferr236",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "gastos_casal",
+      "subcategoria": "Calculadoras",
+      "descricao": "Divide as contas da casa conforme cada renda"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr237.js",
+      "nome": "ferr237",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "orcamento_503020",
+      "subcategoria": "Calculadoras",
+      "descricao": "Divide a renda em necessidades, desejos e poupança"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr238.js",
+      "nome": "ferr238",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "reserva_emergencia",
+      "subcategoria": "Calculadoras",
+      "descricao": "Calcula a reserva de emergência e o prazo dela"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr239.js",
+      "nome": "ferr239",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "divida_quitacao",
+      "subcategoria": "Calculadoras",
+      "descricao": "Calcula em quanto tempo a dívida é quitada"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr240.js",
+      "nome": "ferr240",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "freelancer_preco",
+      "subcategoria": "Calculadoras",
+      "descricao": "Calcula quanto cobrar por hora como autônomo"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr241.js",
+      "nome": "ferr241",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "doc_cpf_validar",
+      "subcategoria": "Documentos",
+      "descricao": "Confere se os dígitos de um CPF fecham"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr242.js",
+      "nome": "ferr242",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "doc_cpf_formatar",
+      "subcategoria": "Documentos",
+      "descricao": "Põe pontos e traço em um CPF digitado solto"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr243.js",
+      "nome": "ferr243",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "doc_cpf_regiao",
+      "subcategoria": "Documentos",
+      "descricao": "Diz em que região o CPF foi emitido"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr244.js",
+      "nome": "ferr244",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "doc_cpf_digito",
+      "subcategoria": "Documentos",
+      "descricao": "Mostra passo a passo o cálculo do dígito do CPF"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr245.js",
+      "nome": "ferr245",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "doc_cpf_mascarar",
+      "subcategoria": "Documentos",
+      "descricao": "Esconde os dígitos do meio do CPF para enviar"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr246.js",
+      "nome": "ferr246",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "doc_cnpj_validar",
+      "subcategoria": "Documentos",
+      "descricao": "Confere se os dígitos de um CNPJ fecham"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr247.js",
+      "nome": "ferr247",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "doc_cnpj_formatar",
+      "subcategoria": "Documentos",
+      "descricao": "Põe a pontuação certa em um CNPJ solto"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr248.js",
+      "nome": "ferr248",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "doc_cnpj_filial",
+      "subcategoria": "Documentos",
+      "descricao": "Diz se o CNPJ é da matriz ou de uma filial"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr249.js",
+      "nome": "ferr249",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "doc_cnpj_digito",
+      "subcategoria": "Documentos",
+      "descricao": "Mostra o cálculo dos dígitos do CNPJ"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr250.js",
+      "nome": "ferr250",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "doc_cep_validar",
+      "subcategoria": "Documentos",
+      "descricao": "Confere o formato do CEP e a faixa de estado"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr251.js",
+      "nome": "ferr251",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "doc_cep_formatar",
+      "subcategoria": "Documentos",
+      "descricao": "Põe o traço no lugar certo de um CEP"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr252.js",
+      "nome": "ferr252",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "doc_cep_estado",
+      "subcategoria": "Documentos",
+      "descricao": "Mostra a faixa de CEP de cada estado"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr253.js",
+      "nome": "ferr253",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "doc_pis_validar",
+      "subcategoria": "Documentos",
+      "descricao": "Confere o dígito do PIS, PASEP ou NIS"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr254.js",
+      "nome": "ferr254",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "doc_pis_formatar",
+      "subcategoria": "Documentos",
+      "descricao": "Põe a pontuação certa no número do PIS"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr255.js",
+      "nome": "ferr255",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "doc_titulo_validar",
+      "subcategoria": "Documentos",
+      "descricao": "Confere os dígitos do título de eleitor"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr256.js",
+      "nome": "ferr256",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "doc_titulo_uf",
+      "subcategoria": "Documentos",
+      "descricao": "Diz o estado que emitiu o título de eleitor"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr257.js",
+      "nome": "ferr257",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "doc_renavam_validar",
+      "subcategoria": "Documentos",
+      "descricao": "Confere o dígito verificador do RENAVAM"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr258.js",
+      "nome": "ferr258",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "doc_renavam_formatar",
+      "subcategoria": "Documentos",
+      "descricao": "Completa e pontua um número de RENAVAM"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr259.js",
+      "nome": "ferr259",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "doc_placa_validar",
+      "subcategoria": "Documentos",
+      "descricao": "Confere se a placa segue um padrão válido"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr260.js",
+      "nome": "ferr260",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "doc_placa_padrao",
+      "subcategoria": "Documentos",
+      "descricao": "Converte a placa entre o padrão antigo e o novo"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr261.js",
+      "nome": "ferr261",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "doc_placa_uf",
+      "subcategoria": "Documentos",
+      "descricao": "Descobre o estado pela faixa de letras da placa"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr262.js",
+      "nome": "ferr262",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "doc_cartao_validar",
+      "subcategoria": "Documentos",
+      "descricao": "Confere um número de cartão pelo teste de Luhn"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr263.js",
+      "nome": "ferr263",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "doc_cartao_bandeira",
+      "subcategoria": "Documentos",
+      "descricao": "Identifica a bandeira pelos primeiros dígitos"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr264.js",
+      "nome": "ferr264",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "doc_cartao_mascarar",
+      "subcategoria": "Documentos",
+      "descricao": "Mostra só o final do cartão, como na fatura"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr265.js",
+      "nome": "ferr265",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "doc_cartao_validade",
+      "subcategoria": "Documentos",
+      "descricao": "Confere se a validade do cartão já passou"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr266.js",
+      "nome": "ferr266",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "doc_boleto_validar",
+      "subcategoria": "Documentos",
+      "descricao": "Confere os dígitos da linha digitável do boleto"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr267.js",
+      "nome": "ferr267",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "doc_boleto_valor",
+      "subcategoria": "Documentos",
+      "descricao": "Lê valor e vencimento na linha do boleto"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr268.js",
+      "nome": "ferr268",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "doc_boleto_banco",
+      "subcategoria": "Documentos",
+      "descricao": "Diz qual banco emitiu o boleto pelo código"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr269.js",
+      "nome": "ferr269",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "doc_arrecadacao_validar",
+      "subcategoria": "Documentos",
+      "descricao": "Confere o código de conta de luz, água ou tributo"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr270.js",
+      "nome": "ferr270",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "doc_telefone_validar",
+      "subcategoria": "Documentos",
+      "descricao": "Confere DDD, tamanho e tipo de um telefone"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr271.js",
+      "nome": "ferr271",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "doc_telefone_formatar",
+      "subcategoria": "Documentos",
+      "descricao": "Escreve o telefone em vários formatos usuais"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr272.js",
+      "nome": "ferr272",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "doc_ddd_cidade",
+      "subcategoria": "Documentos",
+      "descricao": "Diz a cidade e o estado de um código de área"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr273.js",
+      "nome": "ferr273",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "doc_uf_ddds",
+      "subcategoria": "Documentos",
+      "descricao": "Lista todos os códigos de área de um estado"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr274.js",
+      "nome": "ferr274",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "doc_email_validar",
+      "subcategoria": "Documentos",
+      "descricao": "Confere se um endereço de e-mail está bem escrito"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr275.js",
+      "nome": "ferr275",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "doc_email_provedor",
+      "subcategoria": "Documentos",
+      "descricao": "Identifica o provedor e o tipo de domínio"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr276.js",
+      "nome": "ferr276",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "doc_cnh_validar",
+      "subcategoria": "Documentos",
+      "descricao": "Confere os dois dígitos do número da CNH"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr277.js",
+      "nome": "ferr277",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "doc_rg_sp",
+      "subcategoria": "Documentos",
+      "descricao": "Confere o dígito do RG emitido em São Paulo"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr278.js",
+      "nome": "ferr278",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "doc_sus_validar",
+      "subcategoria": "Documentos",
+      "descricao": "Confere o número do cartão nacional de saúde"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr279.js",
+      "nome": "ferr279",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "doc_nfe_validar",
+      "subcategoria": "Documentos",
+      "descricao": "Confere o dígito da chave de acesso da nota"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr280.js",
+      "nome": "ferr280",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "doc_nfe_ler",
+      "subcategoria": "Documentos",
+      "descricao": "Extrai estado, data e emitente da chave da nota"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr281.js",
+      "nome": "ferr281",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "doc_processo_validar",
+      "subcategoria": "Documentos",
+      "descricao": "Confere os dígitos do número único do processo"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr282.js",
+      "nome": "ferr282",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "doc_processo_ler",
+      "subcategoria": "Documentos",
+      "descricao": "Explica cada parte do número do processo"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr283.js",
+      "nome": "ferr283",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "doc_ean_validar",
+      "subcategoria": "Documentos",
+      "descricao": "Confere o dígito de um código de barras EAN"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr284.js",
+      "nome": "ferr284",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "doc_isbn_validar",
+      "subcategoria": "Documentos",
+      "descricao": "Confere o dígito de um ISBN de 10 ou 13 dígitos"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr285.js",
+      "nome": "ferr285",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "doc_imei_validar",
+      "subcategoria": "Documentos",
+      "descricao": "Confere o dígito do IMEI de um celular"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr286.js",
+      "nome": "ferr286",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "doc_pix_chave",
+      "subcategoria": "Documentos",
+      "descricao": "Descobre e confere o tipo de uma chave PIX"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr287.js",
+      "nome": "ferr287",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "doc_pix_brcode",
+      "subcategoria": "Documentos",
+      "descricao": "Confere e lê um código PIX copia e cola"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr288.js",
+      "nome": "ferr288",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "doc_rastreio_correios",
+      "subcategoria": "Documentos",
+      "descricao": "Confere o formato do código de rastreio postal"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr289.js",
+      "nome": "ferr289",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "doc_lote_validar",
+      "subcategoria": "Documentos",
+      "descricao": "Confere uma lista de CPF ou CNPJ de uma vez"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr290.js",
+      "nome": "ferr290",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "doc_detectar",
+      "subcategoria": "Documentos",
+      "descricao": "Descobre que tipo de documento é o número dado"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr291.js",
+      "nome": "ferr291",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "ger_senha",
+      "subcategoria": "Geradores",
+      "descricao": "Gera uma senha forte com letras, números e símbolos"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr292.js",
+      "nome": "ferr292",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "ger_senha_pin",
+      "subcategoria": "Geradores",
+      "descricao": "Gera um PIN numérico sorteado com segurança"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr293.js",
+      "nome": "ferr293",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "ger_senha_frase",
+      "subcategoria": "Geradores",
+      "descricao": "Gera uma frase-senha com palavras sorteadas"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr294.js",
+      "nome": "ferr294",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "ger_senha_wifi",
+      "subcategoria": "Geradores",
+      "descricao": "Gera senha de wi-fi sem letra que confunde"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr295.js",
+      "nome": "ferr295",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "ger_senha_forca",
+      "subcategoria": "Geradores",
+      "descricao": "Avalia a força de uma senha que você já usa"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr296.js",
+      "nome": "ferr296",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "ger_senha_regra",
+      "subcategoria": "Geradores",
+      "descricao": "Gera senha escolhendo o que pode entrar nela"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr297.js",
+      "nome": "ferr297",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "ger_numero",
+      "subcategoria": "Geradores",
+      "descricao": "Sorteia um número de 1 até o que você mandar"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr298.js",
+      "nome": "ferr298",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "ger_numero_faixa",
+      "subcategoria": "Geradores",
+      "descricao": "Sorteia um número entre dois valores dados"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr299.js",
+      "nome": "ferr299",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "ger_numeros_distintos",
+      "subcategoria": "Geradores",
+      "descricao": "Sorteia vários números diferentes de uma faixa"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr300.js",
+      "nome": "ferr300",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "ger_sequencia",
+      "subcategoria": "Geradores",
+      "descricao": "Monta uma lista de números, embaralhada ou não"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr301.js",
+      "nome": "ferr301",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "ger_sortear_nome",
+      "subcategoria": "Geradores",
+      "descricao": "Sorteia uma pessoa entre os nomes da lista"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr302.js",
+      "nome": "ferr302",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "ger_sortear_ganhadores",
+      "subcategoria": "Geradores",
+      "descricao": "Sorteia mais de um ganhador sem repetir ninguém"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr303.js",
+      "nome": "ferr303",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "ger_embaralhar",
+      "subcategoria": "Geradores",
+      "descricao": "Embaralha os itens de uma lista qualquer"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr304.js",
+      "nome": "ferr304",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "ger_times",
+      "subcategoria": "Geradores",
+      "descricao": "Divide os nomes em times equilibrados no tamanho"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr305.js",
+      "nome": "ferr305",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "ger_grupos",
+      "subcategoria": "Geradores",
+      "descricao": "Separa a lista em grupos de tamanho escolhido"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr306.js",
+      "nome": "ferr306",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "ger_escolher",
+      "subcategoria": "Geradores",
+      "descricao": "Escolhe uma opção quando você está em dúvida"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr307.js",
+      "nome": "ferr307",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "ger_ordem_fala",
+      "subcategoria": "Geradores",
+      "descricao": "Monta a ordem de quem fala ou se apresenta"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr308.js",
+      "nome": "ferr308",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "ger_escala_tarefas",
+      "subcategoria": "Geradores",
+      "descricao": "Monta uma escala de tarefas girando entre todos"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr309.js",
+      "nome": "ferr309",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "ger_amigo_secreto",
+      "subcategoria": "Geradores",
+      "descricao": "Sorteia os pares do amigo secreto sem repetir"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr310.js",
+      "nome": "ferr310",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "ger_dado",
+      "subcategoria": "Geradores",
+      "descricao": "Joga dados de seis faces e soma o resultado"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr311.js",
+      "nome": "ferr311",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "ger_dado_rpg",
+      "subcategoria": "Geradores",
+      "descricao": "Rola dados no formato 2d6 mais modificador"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr312.js",
+      "nome": "ferr312",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "ger_moeda",
+      "subcategoria": "Geradores",
+      "descricao": "Joga uma moeda para tirar cara ou coroa"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr313.js",
+      "nome": "ferr313",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "ger_jokenpo",
+      "subcategoria": "Geradores",
+      "descricao": "Sorteia pedra, papel ou tesoura para decidir"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr314.js",
+      "nome": "ferr314",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "ger_roleta_sim_nao",
+      "subcategoria": "Geradores",
+      "descricao": "Responde sim ou não quando você não decide"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr315.js",
+      "nome": "ferr315",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "ger_bingo_numero",
+      "subcategoria": "Geradores",
+      "descricao": "Sorteia um número de bingo com a letra dele"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr316.js",
+      "nome": "ferr316",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "ger_bingo_cartela",
+      "subcategoria": "Geradores",
+      "descricao": "Monta uma cartela de bingo de cinco colunas"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr317.js",
+      "nome": "ferr317",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "ger_megasena",
+      "subcategoria": "Geradores",
+      "descricao": "Monta jogos de seis a quinze dezenas sorteadas"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr318.js",
+      "nome": "ferr318",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "ger_loteria",
+      "subcategoria": "Geradores",
+      "descricao": "Monta jogo de Quina, Lotofácil ou Lotomania"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr319.js",
+      "nome": "ferr319",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "ger_cor",
+      "subcategoria": "Geradores",
+      "descricao": "Sorteia uma cor com o código dela"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr320.js",
+      "nome": "ferr320",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "ger_paleta",
+      "subcategoria": "Geradores",
+      "descricao": "Monta uma paleta de cores a partir de uma base"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr321.js",
+      "nome": "ferr321",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "ger_apelido",
+      "subcategoria": "Geradores",
+      "descricao": "Sorteia sugestões de apelido para usar em jogo"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr322.js",
+      "nome": "ferr322",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "ger_usuario",
+      "subcategoria": "Geradores",
+      "descricao": "Monta sugestões de nome de usuário a partir do seu"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr323.js",
+      "nome": "ferr323",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "ger_nome_time",
+      "subcategoria": "Geradores",
+      "descricao": "Sorteia nomes para time, grupo ou equipe"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr324.js",
+      "nome": "ferr324",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "ger_codigo",
+      "subcategoria": "Geradores",
+      "descricao": "Gera um código curto de confirmação"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr325.js",
+      "nome": "ferr325",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "ger_cupom",
+      "subcategoria": "Geradores",
+      "descricao": "Monta códigos de cupom com prefixo de campanha"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr326.js",
+      "nome": "ferr326",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "ger_uuid",
+      "subcategoria": "Geradores",
+      "descricao": "Gera um identificador único no formato UUID"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr327.js",
+      "nome": "ferr327",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "ger_token",
+      "subcategoria": "Geradores",
+      "descricao": "Gera uma chave aleatória longa em hexadecimal"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr328.js",
+      "nome": "ferr328",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "ger_id_curto",
+      "subcategoria": "Geradores",
+      "descricao": "Gera um código curto para numerar pedido ou ficha"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr329.js",
+      "nome": "ferr329",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "ger_nome_arquivo",
+      "subcategoria": "Geradores",
+      "descricao": "Monta um nome de arquivo com data e hora"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr330.js",
+      "nome": "ferr330",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "ger_lorem",
+      "subcategoria": "Geradores",
+      "descricao": "Monta parágrafos falsos para testar um layout"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr331.js",
+      "nome": "ferr331",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "dh_dias_entre",
+      "subcategoria": "Data e Hora",
+      "descricao": "Conta os dias entre duas datas do calendário"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr332.js",
+      "nome": "ferr332",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "dh_idade",
+      "subcategoria": "Data e Hora",
+      "descricao": "Calcula a idade em anos, meses e dias"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr333.js",
+      "nome": "ferr333",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "dh_dia_semana",
+      "subcategoria": "Data e Hora",
+      "descricao": "Diz em que dia da semana caiu ou cai uma data"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr334.js",
+      "nome": "ferr334",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "dh_proximo_aniversario",
+      "subcategoria": "Data e Hora",
+      "descricao": "Diz quanto falta para o próximo aniversário"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr335.js",
+      "nome": "ferr335",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "dh_contagem_regressiva",
+      "subcategoria": "Data e Hora",
+      "descricao": "Mostra a contagem regressiva até uma data"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr336.js",
+      "nome": "ferr336",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "dh_dias_uteis",
+      "subcategoria": "Data e Hora",
+      "descricao": "Conta dias úteis descontando feriados nacionais"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr337.js",
+      "nome": "ferr337",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "dh_somar_dias",
+      "subcategoria": "Data e Hora",
+      "descricao": "Soma uma quantidade de dias corridos a uma data"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr338.js",
+      "nome": "ferr338",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "dh_somar_uteis",
+      "subcategoria": "Data e Hora",
+      "descricao": "Calcula a data final de um prazo em dias úteis"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr339.js",
+      "nome": "ferr339",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "dh_subtrair_dias",
+      "subcategoria": "Data e Hora",
+      "descricao": "Descobre a data de X dias atrás"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr340.js",
+      "nome": "ferr340",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "dh_feriados_ano",
+      "subcategoria": "Data e Hora",
+      "descricao": "Lista os feriados nacionais de um ano"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr341.js",
+      "nome": "ferr341",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "dh_proximo_feriado",
+      "subcategoria": "Data e Hora",
+      "descricao": "Diz qual é o próximo feriado e quanto falta"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr342.js",
+      "nome": "ferr342",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "dh_feriado_e",
+      "subcategoria": "Data e Hora",
+      "descricao": "Diz se uma data é feriado, ponto facultativo ou útil"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr343.js",
+      "nome": "ferr343",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "dh_semana_ano",
+      "subcategoria": "Data e Hora",
+      "descricao": "Diz em que semana do ano uma data cai"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr344.js",
+      "nome": "ferr344",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "dh_calendario_mes",
+      "subcategoria": "Data e Hora",
+      "descricao": "Mostra o calendário de um mês com os feriados"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr345.js",
+      "nome": "ferr345",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "dh_dias_no_mes",
+      "subcategoria": "Data e Hora",
+      "descricao": "Diz quantos dias e dias úteis tem um mês"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr346.js",
+      "nome": "ferr346",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "dh_bissexto",
+      "subcategoria": "Data e Hora",
+      "descricao": "Diz se um ano é bissexto e explica a regra"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr347.js",
+      "nome": "ferr347",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "dh_data_extenso",
+      "subcategoria": "Data e Hora",
+      "descricao": "Escreve a data por extenso para documento"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr348.js",
+      "nome": "ferr348",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "dh_hora_capitais",
+      "subcategoria": "Data e Hora",
+      "descricao": "Mostra a hora atual em várias capitais de uma vez"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr349.js",
+      "nome": "ferr349",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "dh_fuso_diferenca",
+      "subcategoria": "Data e Hora",
+      "descricao": "Diz a diferença de horas entre uma cidade e Brasília"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr350.js",
+      "nome": "ferr350",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "dh_tempo_ate_hora",
+      "subcategoria": "Data e Hora",
+      "descricao": "Diz quanto falta para um horário de hoje"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr351.js",
+      "nome": "ferr351",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "dh_soma_horas",
+      "subcategoria": "Data e Hora",
+      "descricao": "Soma vários tempos no formato horas e minutos"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr352.js",
+      "nome": "ferr352",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "dh_diferenca_horas",
+      "subcategoria": "Data e Hora",
+      "descricao": "Calcula quanto tempo passa entre dois horários"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr353.js",
+      "nome": "ferr353",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "dh_jornada_ponto",
+      "subcategoria": "Data e Hora",
+      "descricao": "Calcula as horas do dia pelas marcações do ponto"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr354.js",
+      "nome": "ferr354",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "dh_banco_horas",
+      "subcategoria": "Data e Hora",
+      "descricao": "Soma o saldo de horas positivas e negativas"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr355.js",
+      "nome": "ferr355",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "dh_trimestre",
+      "subcategoria": "Data e Hora",
+      "descricao": "Diz o bimestre, trimestre e semestre de uma data"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr356.js",
+      "nome": "ferr356",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "dh_signo",
+      "subcategoria": "Data e Hora",
+      "descricao": "Diz o signo e o período dele pela data"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr357.js",
+      "nome": "ferr357",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "dh_gestacao",
+      "subcategoria": "Data e Hora",
+      "descricao": "Calcula semanas de gestação e a data provável"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr358.js",
+      "nome": "ferr358",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "dh_fins_de_semana",
+      "subcategoria": "Data e Hora",
+      "descricao": "Conta sábados e domingos em um intervalo"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr359.js",
+      "nome": "ferr359",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "dh_aniversario_semanas",
+      "subcategoria": "Data e Hora",
+      "descricao": "Mostra o dia da semana do aniversário por vários anos"
+    },
+    {
+      "arquivo": "src/commands/ferramentas/ferr360.js",
+      "nome": "ferr360",
+      "servico": "src/services/toolboxService.js",
+      "ferramenta": "dh_tempo_vivido",
+      "subcategoria": "Data e Hora",
+      "descricao": "Mostra o tempo vivido em várias unidades"
+    }
+  ]
+}

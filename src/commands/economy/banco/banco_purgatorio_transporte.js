@@ -1,0 +1,16 @@
+module.exports = {
+    name: 'banco_purgatorio_transporte',
+    aliases: ["cmd_banco_purgatorio_transporte","atalho_banco_purgatorio_transporte","abrev_banco_purgatorio_transporte"],
+    category: 'economy',
+    subcategory: 'Agências Bancárias',
+    description: 'Agência e atendimento do Banco Real em purgatorio para o setor de transporte',
+    cooldownMs: 2000,
+    execute: async ({ reply }) => {
+        let txt = '╔═══════ 🏦 *BANCO DE REINO - AGÊNCIA PURGATORIO* ═══════╗\n\n'
+        txt += '🏛️ *Especialidade:* Linhas de financiamento para transporte\n'
+        txt += '💳 *Score Mínimo Requerido:* 550 pontos\n'
+        txt += '💰 *Taxa Especial de Poupança:* Isenta de IOF real\n\n'
+        txt += 'Consulte sua conta com `.poupanca` e `.scorecredito`.'
+        return reply(txt.trim())
+    }
+}

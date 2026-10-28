@@ -1,0 +1,584 @@
+{
+  "familia": "jogos de grupo",
+  "prefixoArquivo": "jogo-",
+  "total": 31,
+  "itensNaTabela": 250,
+  "geradoPor": "scripts/gen-jogos.js",
+  "comandos": [
+    {
+      "nome": "quiztema",
+      "arquivo": "src/commands/fun/jogo-quiztema.js",
+      "motor": "quiz",
+      "subcategory": "Jogos & Quizzes",
+      "description": "Quiz de múltipla escolha: escolha tema e tamanho",
+      "variantes": 80,
+      "atalhos": [
+        "jogo1",
+        "jogo2",
+        "jogo3",
+        "jogo4",
+        "jogo5",
+        "jogo6",
+        "jogo7",
+        "jogo8",
+        "jogo9",
+        "jogo10",
+        "jogo11",
+        "jogo12",
+        "jogo13",
+        "jogo14",
+        "jogo15",
+        "jogo16",
+        "jogo17",
+        "jogo18",
+        "jogo19",
+        "jogo20",
+        "jogo21",
+        "jogo22",
+        "jogo23",
+        "jogo24",
+        "jogo25",
+        "jogo26",
+        "jogo27",
+        "jogo28",
+        "jogo29",
+        "jogo30",
+        "jogo31",
+        "jogo32",
+        "jogo33",
+        "jogo34",
+        "jogo35",
+        "jogo36",
+        "jogo37",
+        "jogo38",
+        "jogo39",
+        "jogo40",
+        "jogo41",
+        "jogo42",
+        "jogo43",
+        "jogo44",
+        "jogo45",
+        "jogo46",
+        "jogo47",
+        "jogo48",
+        "jogo49",
+        "jogo50",
+        "jogo51",
+        "jogo52",
+        "jogo53",
+        "jogo54",
+        "jogo55",
+        "jogo56",
+        "jogo57",
+        "jogo58",
+        "jogo59",
+        "jogo60",
+        "jogo61",
+        "jogo62",
+        "jogo63",
+        "jogo64",
+        "jogo65",
+        "jogo66",
+        "jogo67",
+        "jogo68",
+        "jogo69",
+        "jogo70",
+        "jogo71",
+        "jogo72",
+        "jogo73",
+        "jogo74",
+        "jogo75",
+        "jogo76",
+        "jogo77",
+        "jogo78",
+        "jogo79",
+        "jogo80"
+      ]
+    },
+    {
+      "nome": "forca",
+      "arquivo": "src/commands/fun/jogo-forca.js",
+      "motor": "forca",
+      "subcategory": "Jogos & Quizzes",
+      "description": "Forca com palavras do tema que você escolher",
+      "variantes": 13,
+      "atalhos": [
+        "jogo81",
+        "jogo82",
+        "jogo83",
+        "jogo84",
+        "jogo85",
+        "jogo86",
+        "jogo87",
+        "jogo88",
+        "jogo89",
+        "jogo90",
+        "jogo91",
+        "jogo92",
+        "hangman",
+        "jogodaforca"
+      ]
+    },
+    {
+      "nome": "adivinhe",
+      "arquivo": "src/commands/fun/jogo-adivinhe.js",
+      "motor": "palavra",
+      "subcategory": "Jogos & Quizzes",
+      "description": "Adivinhe a palavra do tema pela dica",
+      "variantes": 12,
+      "atalhos": [
+        "jogo93",
+        "jogo94",
+        "jogo95",
+        "jogo96",
+        "jogo97",
+        "jogo98",
+        "jogo99",
+        "jogo100",
+        "jogo101",
+        "jogo102",
+        "jogo103",
+        "jogo104"
+      ]
+    },
+    {
+      "nome": "anagrama",
+      "arquivo": "src/commands/fun/jogo-anagrama.js",
+      "motor": "palavra",
+      "subcategory": "Jogos & Quizzes",
+      "description": "Anagrama do tema escolhido, com dica junto",
+      "variantes": 6,
+      "atalhos": [
+        "jogo105",
+        "jogo106",
+        "jogo107",
+        "jogo108",
+        "jogo109",
+        "jogo110",
+        "desembaralhar"
+      ]
+    },
+    {
+      "nome": "embaralhada",
+      "arquivo": "src/commands/fun/jogo-embaralhada.js",
+      "motor": "palavra",
+      "subcategory": "Jogos & Quizzes",
+      "description": "Palavra embaralhada sem dica: a versão difícil",
+      "variantes": 3,
+      "atalhos": [
+        "jogo111",
+        "jogo112",
+        "jogo113"
+      ]
+    },
+    {
+      "nome": "cacasinonimos",
+      "arquivo": "src/commands/fun/jogo-cacasinonimos.js",
+      "motor": "sinonimo",
+      "subcategory": "Jogos & Quizzes",
+      "description": "Liste os sinônimos que eu aceito para a palavra",
+      "variantes": 1,
+      "atalhos": [
+        "jogo114",
+        "jogo115",
+        "jogo116"
+      ]
+    },
+    {
+      "nome": "cacaantonimos",
+      "arquivo": "src/commands/fun/jogo-cacaantonimos.js",
+      "motor": "sinonimo",
+      "subcategory": "Jogos & Quizzes",
+      "description": "Liste os antônimos que eu aceito para a palavra",
+      "variantes": 1,
+      "atalhos": [
+        "jogo117",
+        "jogo118",
+        "jogo119"
+      ]
+    },
+    {
+      "nome": "enigmas",
+      "arquivo": "src/commands/fun/jogo-enigmas.js",
+      "motor": "texto",
+      "subcategory": "Jogos & Quizzes",
+      "description": "Charada, enigma, provérbio e outros desafios",
+      "variantes": 14,
+      "atalhos": [
+        "jogo120",
+        "jogo121",
+        "jogo122",
+        "jogo123",
+        "jogo124",
+        "jogo125",
+        "jogo126",
+        "jogo127",
+        "jogo128",
+        "jogo129",
+        "jogo130",
+        "jogo131",
+        "jogo132",
+        "jogo133"
+      ]
+    },
+    {
+      "nome": "batalharima",
+      "arquivo": "src/commands/fun/jogo-batalharima.js",
+      "motor": "rima",
+      "subcategory": "Jogos & Quizzes",
+      "description": "Batalha de rima com o tema escolhido",
+      "variantes": 2,
+      "atalhos": [
+        "jogo134",
+        "jogo135"
+      ]
+    },
+    {
+      "nome": "adedonha",
+      "arquivo": "src/commands/fun/jogo-adedonha.js",
+      "motor": "stop",
+      "subcategory": "Jogos & Quizzes",
+      "description": "Stop com letra sorteada e 4 ou 6 categorias",
+      "variantes": 2,
+      "atalhos": [
+        "jogo136",
+        "jogo137"
+      ]
+    },
+    {
+      "nome": "tabu",
+      "arquivo": "src/commands/fun/jogo-tabu.js",
+      "motor": "proibida",
+      "subcategory": "Jogos & Quizzes",
+      "description": "Descreva a palavra sem usar as proibidas",
+      "variantes": 1,
+      "atalhos": [
+        "jogo138"
+      ]
+    },
+    {
+      "nome": "cacapalavras",
+      "arquivo": "src/commands/fun/jogo-cacapalavras.js",
+      "motor": "caca",
+      "subcategory": "Jogos & Quizzes",
+      "description": "Caça-palavras em grade, com o tema escolhido",
+      "variantes": 2,
+      "atalhos": [
+        "jogo139",
+        "jogo140"
+      ]
+    },
+    {
+      "nome": "roda",
+      "arquivo": "src/commands/fun/jogo-roda.js",
+      "motor": "sorteio",
+      "subcategory": "Jogos & Quizzes",
+      "description": "Verdade, desafio, eu nunca e outras rodas",
+      "variantes": 34,
+      "atalhos": [
+        "jogo141",
+        "jogo142",
+        "jogo143",
+        "jogo144",
+        "jogo145",
+        "jogo146",
+        "jogo147",
+        "jogo148",
+        "jogo149",
+        "jogo150",
+        "jogo151",
+        "jogo152",
+        "jogo153",
+        "jogo154",
+        "jogo155",
+        "jogo156",
+        "jogo157",
+        "jogo158",
+        "jogo159",
+        "jogo160",
+        "jogo161",
+        "jogo162",
+        "jogo163",
+        "jogo164",
+        "jogo165",
+        "jogo166",
+        "jogo167",
+        "jogo168",
+        "jogo169",
+        "jogo170",
+        "jogo171",
+        "jogo172",
+        "jogo173",
+        "jogo174"
+      ]
+    },
+    {
+      "nome": "dilemas",
+      "arquivo": "src/commands/fun/jogo-dilemas.js",
+      "motor": "vocePrefere",
+      "subcategory": "Jogos & Quizzes",
+      "description": "Dilemas \"você prefere\" para o grupo votar",
+      "variantes": 6,
+      "atalhos": [
+        "jogo175",
+        "jogo176",
+        "jogo177",
+        "jogo178",
+        "voceprefere",
+        "prefere",
+        "vcprefere",
+        "wouldyourather",
+        "ououdilema",
+        "dilema",
+        "dilemamoral",
+        "oquefazer",
+        "dilemaetico"
+      ]
+    },
+    {
+      "nome": "mimica",
+      "arquivo": "src/commands/fun/jogo-mimica.js",
+      "motor": "mimica",
+      "subcategory": "Jogos & Quizzes",
+      "description": "Mímica com o tema escolhido",
+      "variantes": 4,
+      "atalhos": [
+        "jogo179",
+        "jogo180",
+        "jogo181",
+        "jogo182"
+      ]
+    },
+    {
+      "nome": "eleicao",
+      "arquivo": "src/commands/fun/jogo-eleicao.js",
+      "motor": "eleicao",
+      "subcategory": "Jogos & Quizzes",
+      "description": "Sorteia cargos para o grupo eleger",
+      "variantes": 4,
+      "atalhos": [
+        "jogo183",
+        "jogo184",
+        "jogo185",
+        "jogo186"
+      ]
+    },
+    {
+      "nome": "rankingzoeira",
+      "arquivo": "src/commands/fun/jogo-rankingzoeira.js",
+      "motor": "ranking",
+      "subcategory": "Jogos & Quizzes",
+      "description": "Sorteia categorias para o grupo votar",
+      "variantes": 4,
+      "atalhos": [
+        "jogo187",
+        "jogo188",
+        "jogo189",
+        "jogo190"
+      ]
+    },
+    {
+      "nome": "adivinhenumero",
+      "arquivo": "src/commands/fun/jogo-adivinhenumero.js",
+      "motor": "numero",
+      "subcategory": "Jogos & Quizzes",
+      "description": "Adivinhe o número; eu digo se é maior ou menor",
+      "variantes": 6,
+      "atalhos": [
+        "jogo191",
+        "jogo192",
+        "jogo193",
+        "jogo194",
+        "jogo195",
+        "jogo196"
+      ]
+    },
+    {
+      "nome": "velhabot",
+      "arquivo": "src/commands/fun/jogo-velhabot.js",
+      "motor": "velha",
+      "subcategory": "Jogos de Mesa",
+      "description": "Jogo da velha contra o bot, em três níveis",
+      "variantes": 3,
+      "atalhos": [
+        "jogo197",
+        "jogo198",
+        "jogo199"
+      ]
+    },
+    {
+      "nome": "jokenpobot",
+      "arquivo": "src/commands/fun/jogo-jokenpobot.js",
+      "motor": "jokenpo",
+      "subcategory": "Jogos & Quizzes",
+      "description": "Pedra, papel e tesoura contra mim",
+      "variantes": 3,
+      "atalhos": [
+        "jogo200",
+        "jogo201",
+        "jogo202"
+      ]
+    },
+    {
+      "nome": "rolardados",
+      "arquivo": "src/commands/fun/jogo-rolardados.js",
+      "motor": "dados",
+      "subcategory": "Jogos de Mesa",
+      "description": "Rola dados de 6, 12, 20 ou 100 faces",
+      "variantes": 5,
+      "atalhos": [
+        "jogo203",
+        "jogo204",
+        "jogo205",
+        "jogo206",
+        "jogo207"
+      ]
+    },
+    {
+      "nome": "roletaprendas",
+      "arquivo": "src/commands/fun/jogo-roletaprendas.js",
+      "motor": "roleta",
+      "subcategory": "Jogos & Quizzes",
+      "description": "Roleta de prendas para o grupo",
+      "variantes": 4,
+      "atalhos": [
+        "jogo208",
+        "jogo209",
+        "jogo210",
+        "jogo211"
+      ]
+    },
+    {
+      "nome": "memoria",
+      "arquivo": "src/commands/fun/jogo-memoria.js",
+      "motor": "memoria",
+      "subcategory": "Jogos & Quizzes",
+      "description": "Repita a sequência que cresce a cada rodada",
+      "variantes": 4,
+      "atalhos": [
+        "jogo212",
+        "jogo213",
+        "jogo214",
+        "jogo215",
+        "jogomemoria",
+        "memory",
+        "cartas-memoria"
+      ]
+    },
+    {
+      "nome": "sudokubolso",
+      "arquivo": "src/commands/fun/jogo-sudokubolso.js",
+      "motor": "sudoku",
+      "subcategory": "Jogos de Mesa",
+      "description": "Sudoku 4x4 em três níveis",
+      "variantes": 3,
+      "atalhos": [
+        "jogo216",
+        "jogo217",
+        "jogo218"
+      ]
+    },
+    {
+      "nome": "restaum",
+      "arquivo": "src/commands/fun/jogo-restaum.js",
+      "motor": "restaum",
+      "subcategory": "Jogos de Mesa",
+      "description": "Resta-um: pule as peças até sobrar uma",
+      "variantes": 2,
+      "atalhos": [
+        "jogo219",
+        "jogo220"
+      ]
+    },
+    {
+      "nome": "hanoi",
+      "arquivo": "src/commands/fun/jogo-hanoi.js",
+      "motor": "hanoi",
+      "subcategory": "Jogos de Mesa",
+      "description": "Torre de Hanói com 3 a 6 discos",
+      "variantes": 4,
+      "atalhos": [
+        "jogo221",
+        "jogo222",
+        "jogo223",
+        "jogo224"
+      ]
+    },
+    {
+      "nome": "labirintobolso",
+      "arquivo": "src/commands/fun/jogo-labirintobolso.js",
+      "motor": "labirinto",
+      "subcategory": "Jogos & Quizzes",
+      "description": "Ache a saída do labirinto",
+      "variantes": 4,
+      "atalhos": [
+        "jogo225",
+        "jogo226",
+        "jogo227",
+        "jogo228"
+      ]
+    },
+    {
+      "nome": "logica",
+      "arquivo": "src/commands/fun/jogo-logica.js",
+      "motor": "logica",
+      "subcategory": "Jogos & Quizzes",
+      "description": "Quebra-cabeça de lógica com tentativas contadas",
+      "variantes": 5,
+      "atalhos": [
+        "jogo229",
+        "jogo230",
+        "jogo231",
+        "jogo232",
+        "jogo233",
+        "jogo234",
+        "jogo235"
+      ]
+    },
+    {
+      "nome": "sequencialogica",
+      "arquivo": "src/commands/fun/jogo-sequencialogica.js",
+      "motor": "sequencia",
+      "subcategory": "Jogos & Quizzes",
+      "description": "Descubra o próximo termo da sequência",
+      "variantes": 5,
+      "atalhos": [
+        "jogo236",
+        "jogo237",
+        "jogo238",
+        "jogo239",
+        "jogo240",
+        "jogo241"
+      ]
+    },
+    {
+      "nome": "reflexo",
+      "arquivo": "src/commands/fun/jogo-reflexo.js",
+      "motor": "reflexo",
+      "subcategory": "Jogos & Quizzes",
+      "description": "Mede o seu tempo de resposta",
+      "variantes": 1,
+      "atalhos": [
+        "jogo242",
+        "jogo243"
+      ]
+    },
+    {
+      "nome": "contas",
+      "arquivo": "src/commands/fun/jogo-contas.js",
+      "motor": "contas",
+      "subcategory": "Jogos & Quizzes",
+      "description": "Contas de cabeça no cronômetro, em 5 níveis",
+      "variantes": 7,
+      "atalhos": [
+        "jogo244",
+        "jogo245",
+        "jogo246",
+        "jogo247",
+        "jogo248",
+        "jogo249",
+        "jogo250"
+      ]
+    }
+  ]
+}

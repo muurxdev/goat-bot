@@ -1,0 +1,35 @@
+/**
+ * Agente Especialista IA #98: Desenvolvimento Mobile
+ */
+const M = require('../../../utils/moldura');
+const iaEngine = require('../../../services/iaEngine');
+
+module.exports = {
+    name: 'ia_agente_98',
+    aliases: ["agente_ia_98"],
+    category: 'general',
+    subcategory: 'Consultores Especialistas IA',
+    description: 'Consultor especializado em Desenvolvimento Mobile (#98)',
+    cooldownMs: 3000,
+    loreExempt: true,
+    execute: async ({ reply, args, text }) => {
+        const query = (text || args.join(' ')).trim();
+        if (!query) {
+            return reply(
+                M.cabecalho('🤖', 'Consultor Especialista IA #98') + '\n\n' +
+                '🎯 *Especialidade:* Desenvolvimento Mobile\n' +
+                '💡 *Uso:* Digite `.ia_agente_98 <sua dúvida sobre Desenvolvimento Mobile>`'
+            );
+        }
+        await reply('🔬 *Analisando através da ótica de Desenvolvimento Mobile...*');
+        const prompt = 'Você é um consultor renomado especialista em Desenvolvimento Mobile. Responda com rigor conceitual e clareza didática:\n' + query;
+        const res = await iaEngine.responder(prompt);
+        const doc = [
+            M.cabecalho('🤖', 'Consultoria: Desenvolvimento Mobile'),
+            '📌 *Pergunta:* _"' + query.slice(0, 100) + '"_',
+            '💡 *Parecer Especializado:*\n' + (res.texto || 'Análise concluída com sucesso.'),
+            M.assinatura('GOAT Intelligence Hub')
+        ].join('\n\n');
+        return reply(doc);
+    }
+};

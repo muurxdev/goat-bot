@@ -1,0 +1,1064 @@
+{
+  "familia": "português, redação e literatura",
+  "servico": "src/services/portugueseService.js",
+  "gerador": "scripts/gen-portugues.js",
+  "geradoEm": "2026-09-18T04:57:02.176Z",
+  "total": 150,
+  "porSubcategoria": {
+    "Português": 70,
+    "Redação": 40,
+    "Literatura": 40
+  },
+  "arquivos": [
+    {
+      "arquivo": "src/commands/escola/port1.js",
+      "nome": "port1",
+      "operacao": "conjugar",
+      "subcategoria": "Português",
+      "descricao": "Conjuga o verbo nos tempos que mais caem"
+    },
+    {
+      "arquivo": "src/commands/escola/port2.js",
+      "nome": "port2",
+      "operacao": "conjpresente",
+      "subcategoria": "Português",
+      "descricao": "Mostra o presente do indicativo do verbo"
+    },
+    {
+      "arquivo": "src/commands/escola/port3.js",
+      "nome": "port3",
+      "operacao": "conjpassado",
+      "subcategoria": "Português",
+      "descricao": "Mostra perfeito, imperfeito e mais-que-perfeito"
+    },
+    {
+      "arquivo": "src/commands/escola/port4.js",
+      "nome": "port4",
+      "operacao": "conjfuturo",
+      "subcategoria": "Português",
+      "descricao": "Mostra futuro do presente e do pretérito"
+    },
+    {
+      "arquivo": "src/commands/escola/port5.js",
+      "nome": "port5",
+      "operacao": "conjsubjuntivo",
+      "subcategoria": "Português",
+      "descricao": "Conjuga o verbo nos três tempos do subjuntivo"
+    },
+    {
+      "arquivo": "src/commands/escola/port6.js",
+      "nome": "port6",
+      "operacao": "conjimperativo",
+      "subcategoria": "Português",
+      "descricao": "Mostra o imperativo afirmativo e o negativo"
+    },
+    {
+      "arquivo": "src/commands/escola/port7.js",
+      "nome": "port7",
+      "operacao": "formasnominais",
+      "subcategoria": "Português",
+      "descricao": "Mostra as três formas nominais do verbo"
+    },
+    {
+      "arquivo": "src/commands/escola/port8.js",
+      "nome": "port8",
+      "operacao": "infinitivopessoal",
+      "subcategoria": "Português",
+      "descricao": "Mostra o infinitivo flexionado por pessoa"
+    },
+    {
+      "arquivo": "src/commands/escola/port9.js",
+      "nome": "port9",
+      "operacao": "verbotipo",
+      "subcategoria": "Português",
+      "descricao": "Diz se o verbo é regular ou irregular"
+    },
+    {
+      "arquivo": "src/commands/escola/port10.js",
+      "nome": "port10",
+      "operacao": "silabas",
+      "subcategoria": "Português",
+      "descricao": "Separa a palavra em sílabas, com a regra"
+    },
+    {
+      "arquivo": "src/commands/escola/port11.js",
+      "nome": "port11",
+      "operacao": "contarsilabas",
+      "subcategoria": "Português",
+      "descricao": "Conta as sílabas e classifica pelo número"
+    },
+    {
+      "arquivo": "src/commands/escola/port12.js",
+      "nome": "port12",
+      "operacao": "tonica",
+      "subcategoria": "Português",
+      "descricao": "Mostra qual sílaba é a mais forte da palavra"
+    },
+    {
+      "arquivo": "src/commands/escola/port13.js",
+      "nome": "port13",
+      "operacao": "classetonica",
+      "subcategoria": "Português",
+      "descricao": "Classifica a palavra pela posição da tônica"
+    },
+    {
+      "arquivo": "src/commands/escola/port14.js",
+      "nome": "port14",
+      "operacao": "acentuacao",
+      "subcategoria": "Português",
+      "descricao": "Explica a regra de acento da palavra digitada"
+    },
+    {
+      "arquivo": "src/commands/escola/port15.js",
+      "nome": "port15",
+      "operacao": "encontrosvocalicos",
+      "subcategoria": "Português",
+      "descricao": "Aponta os encontros vocálicos da palavra"
+    },
+    {
+      "arquivo": "src/commands/escola/port16.js",
+      "nome": "port16",
+      "operacao": "encontrosconsonantais",
+      "subcategoria": "Português",
+      "descricao": "Mostra dígrafos e grupos de consoantes"
+    },
+    {
+      "arquivo": "src/commands/escola/port17.js",
+      "nome": "port17",
+      "operacao": "regrahiato",
+      "subcategoria": "Português",
+      "descricao": "Explica o acento de I e U tônicos no hiato"
+    },
+    {
+      "arquivo": "src/commands/escola/port18.js",
+      "nome": "port18",
+      "operacao": "fichapalavra",
+      "subcategoria": "Português",
+      "descricao": "Analisa sílaba, tônica, acento, plural e classe"
+    },
+    {
+      "arquivo": "src/commands/escola/port19.js",
+      "nome": "port19",
+      "operacao": "plural",
+      "subcategoria": "Português",
+      "descricao": "Põe a palavra no plural e explica a regra"
+    },
+    {
+      "arquivo": "src/commands/escola/port20.js",
+      "nome": "port20",
+      "operacao": "pluralcomposto",
+      "subcategoria": "Português",
+      "descricao": "Faz o plural de palavra com hífen"
+    },
+    {
+      "arquivo": "src/commands/escola/port21.js",
+      "nome": "port21",
+      "operacao": "feminino",
+      "subcategoria": "Português",
+      "descricao": "Passa a palavra para o feminino com a regra"
+    },
+    {
+      "arquivo": "src/commands/escola/port22.js",
+      "nome": "port22",
+      "operacao": "masculino",
+      "subcategoria": "Português",
+      "descricao": "Passa a palavra do feminino para o masculino"
+    },
+    {
+      "arquivo": "src/commands/escola/port23.js",
+      "nome": "port23",
+      "operacao": "aumentativo",
+      "subcategoria": "Português",
+      "descricao": "Forma o aumentativo e explica a construção"
+    },
+    {
+      "arquivo": "src/commands/escola/port24.js",
+      "nome": "port24",
+      "operacao": "diminutivo",
+      "subcategoria": "Português",
+      "descricao": "Forma o diminutivo e explica INHO x ZINHO"
+    },
+    {
+      "arquivo": "src/commands/escola/port25.js",
+      "nome": "port25",
+      "operacao": "grau",
+      "subcategoria": "Português",
+      "descricao": "Mostra comparativo e superlativo do adjetivo"
+    },
+    {
+      "arquivo": "src/commands/escola/port26.js",
+      "nome": "port26",
+      "operacao": "crase",
+      "subcategoria": "Português",
+      "descricao": "Analisa a crase na frase que você escrever"
+    },
+    {
+      "arquivo": "src/commands/escola/port27.js",
+      "nome": "port27",
+      "operacao": "crasesim",
+      "subcategoria": "Português",
+      "descricao": "Lista os casos em que a crase é obrigatória"
+    },
+    {
+      "arquivo": "src/commands/escola/port28.js",
+      "nome": "port28",
+      "operacao": "crasenao",
+      "subcategoria": "Português",
+      "descricao": "Lista os casos em que não pode haver crase"
+    },
+    {
+      "arquivo": "src/commands/escola/port29.js",
+      "nome": "port29",
+      "operacao": "porque",
+      "subcategoria": "Português",
+      "descricao": "Analisa qual das quatro formas cabe na frase"
+    },
+    {
+      "arquivo": "src/commands/escola/port30.js",
+      "nome": "port30",
+      "operacao": "paronimos",
+      "subcategoria": "Português",
+      "descricao": "Distingue palavras parecidas de sentido diferente"
+    },
+    {
+      "arquivo": "src/commands/escola/port31.js",
+      "nome": "port31",
+      "operacao": "homonimos",
+      "subcategoria": "Português",
+      "descricao": "Distingue palavras iguais no som e diferentes"
+    },
+    {
+      "arquivo": "src/commands/escola/port32.js",
+      "nome": "port32",
+      "operacao": "concordanciaverbal",
+      "subcategoria": "Português",
+      "descricao": "Confere se o verbo combina com o sujeito"
+    },
+    {
+      "arquivo": "src/commands/escola/port33.js",
+      "nome": "port33",
+      "operacao": "concordancianominal",
+      "subcategoria": "Português",
+      "descricao": "Confere artigo, substantivo e adjetivo na frase"
+    },
+    {
+      "arquivo": "src/commands/escola/port34.js",
+      "nome": "port34",
+      "operacao": "regenciaverbal",
+      "subcategoria": "Português",
+      "descricao": "Diz qual preposição o verbo pede"
+    },
+    {
+      "arquivo": "src/commands/escola/port35.js",
+      "nome": "port35",
+      "operacao": "regencianominal",
+      "subcategoria": "Português",
+      "descricao": "Mostra a preposição que cada nome exige"
+    },
+    {
+      "arquivo": "src/commands/escola/port36.js",
+      "nome": "port36",
+      "operacao": "colocacao",
+      "subcategoria": "Português",
+      "descricao": "Diz se cabe próclise, mesóclise ou ênclise"
+    },
+    {
+      "arquivo": "src/commands/escola/port37.js",
+      "nome": "port37",
+      "operacao": "virgula",
+      "subcategoria": "Português",
+      "descricao": "Aponta vírgula faltando ou sobrando na frase"
+    },
+    {
+      "arquivo": "src/commands/escola/port38.js",
+      "nome": "port38",
+      "operacao": "pontuacao",
+      "subcategoria": "Português",
+      "descricao": "Explica para que serve cada sinal de pontuação"
+    },
+    {
+      "arquivo": "src/commands/escola/port39.js",
+      "nome": "port39",
+      "operacao": "classes",
+      "subcategoria": "Português",
+      "descricao": "Classifica cada palavra da frase que você mandar"
+    },
+    {
+      "arquivo": "src/commands/escola/port40.js",
+      "nome": "port40",
+      "operacao": "sintaxe",
+      "subcategoria": "Português",
+      "descricao": "Separa sujeito e predicado da frase simples"
+    },
+    {
+      "arquivo": "src/commands/escola/port41.js",
+      "nome": "port41",
+      "operacao": "periodo",
+      "subcategoria": "Português",
+      "descricao": "Conta as orações e classifica o período"
+    },
+    {
+      "arquivo": "src/commands/escola/port42.js",
+      "nome": "port42",
+      "operacao": "vozes",
+      "subcategoria": "Português",
+      "descricao": "Passa a frase da voz ativa para a passiva"
+    },
+    {
+      "arquivo": "src/commands/escola/port43.js",
+      "nome": "port43",
+      "operacao": "sinonimos",
+      "subcategoria": "Português",
+      "descricao": "Dá sinônimos da palavra que você mandar"
+    },
+    {
+      "arquivo": "src/commands/escola/port44.js",
+      "nome": "port44",
+      "operacao": "antonimos",
+      "subcategoria": "Português",
+      "descricao": "Dá o contrário da palavra que você mandar"
+    },
+    {
+      "arquivo": "src/commands/escola/port45.js",
+      "nome": "port45",
+      "operacao": "coletivos",
+      "subcategoria": "Português",
+      "descricao": "Diz o coletivo da palavra que você mandar"
+    },
+    {
+      "arquivo": "src/commands/escola/port46.js",
+      "nome": "port46",
+      "operacao": "figuras",
+      "subcategoria": "Português",
+      "descricao": "Procura figuras de linguagem na frase"
+    },
+    {
+      "arquivo": "src/commands/escola/port47.js",
+      "nome": "port47",
+      "operacao": "fichafigura",
+      "subcategoria": "Português",
+      "descricao": "Explica uma figura de linguagem pelo nome"
+    },
+    {
+      "arquivo": "src/commands/escola/port48.js",
+      "nome": "port48",
+      "operacao": "vicios",
+      "subcategoria": "Português",
+      "descricao": "Procura vícios de linguagem no seu texto"
+    },
+    {
+      "arquivo": "src/commands/escola/port49.js",
+      "nome": "port49",
+      "operacao": "pleonasmo",
+      "subcategoria": "Português",
+      "descricao": "Separa pleonasmo vicioso de pleonasmo literário"
+    },
+    {
+      "arquivo": "src/commands/escola/port50.js",
+      "nome": "port50",
+      "operacao": "ortografia",
+      "subcategoria": "Português",
+      "descricao": "Procura erros de escrita conhecidos no texto"
+    },
+    {
+      "arquivo": "src/commands/escola/port51.js",
+      "nome": "port51",
+      "operacao": "hifen",
+      "subcategoria": "Português",
+      "descricao": "Confere o hífen da palavra pelo Acordo de 2009"
+    },
+    {
+      "arquivo": "src/commands/escola/port52.js",
+      "nome": "port52",
+      "operacao": "numeroextenso",
+      "subcategoria": "Português",
+      "descricao": "Escreve o número por extenso em português"
+    },
+    {
+      "arquivo": "src/commands/escola/port53.js",
+      "nome": "port53",
+      "operacao": "ordinal",
+      "subcategoria": "Português",
+      "descricao": "Escreve o ordinal do número por extenso"
+    },
+    {
+      "arquivo": "src/commands/escola/port54.js",
+      "nome": "port54",
+      "operacao": "par_maumal",
+      "subcategoria": "Português",
+      "descricao": "Quando usar mau ou mal"
+    },
+    {
+      "arquivo": "src/commands/escola/port55.js",
+      "nome": "port55",
+      "operacao": "par_masmais",
+      "subcategoria": "Português",
+      "descricao": "Quando usar mas ou mais"
+    },
+    {
+      "arquivo": "src/commands/escola/port56.js",
+      "nome": "port56",
+      "operacao": "par_haa",
+      "subcategoria": "Português",
+      "descricao": "Quando usar há ou a"
+    },
+    {
+      "arquivo": "src/commands/escola/port57.js",
+      "nome": "port57",
+      "operacao": "par_ondeaonde",
+      "subcategoria": "Português",
+      "descricao": "Quando usar onde ou aonde"
+    },
+    {
+      "arquivo": "src/commands/escola/port58.js",
+      "nome": "port58",
+      "operacao": "par_senaose",
+      "subcategoria": "Português",
+      "descricao": "Quando usar senão ou se não"
+    },
+    {
+      "arquivo": "src/commands/escola/port59.js",
+      "nome": "port59",
+      "operacao": "par_afimfim",
+      "subcategoria": "Português",
+      "descricao": "Quando usar a fim ou afim"
+    },
+    {
+      "arquivo": "src/commands/escola/port60.js",
+      "nome": "port60",
+      "operacao": "par_demais",
+      "subcategoria": "Português",
+      "descricao": "Quando usar demais ou de mais"
+    },
+    {
+      "arquivo": "src/commands/escola/port61.js",
+      "nome": "port61",
+      "operacao": "par_acercade",
+      "subcategoria": "Português",
+      "descricao": "Quando usar acerca de, a cerca de, há cerca de"
+    },
+    {
+      "arquivo": "src/commands/escola/port62.js",
+      "nome": "port62",
+      "operacao": "par_emvez",
+      "subcategoria": "Português",
+      "descricao": "Quando usar em vez de ou ao invés de"
+    },
+    {
+      "arquivo": "src/commands/escola/port63.js",
+      "nome": "port63",
+      "operacao": "par_aopar",
+      "subcategoria": "Português",
+      "descricao": "Quando usar a par ou ao par"
+    },
+    {
+      "arquivo": "src/commands/escola/port64.js",
+      "nome": "port64",
+      "operacao": "par_tampouco",
+      "subcategoria": "Português",
+      "descricao": "Quando usar tampouco ou tão pouco"
+    },
+    {
+      "arquivo": "src/commands/escola/port65.js",
+      "nome": "port65",
+      "operacao": "par_esteesse",
+      "subcategoria": "Português",
+      "descricao": "Quando usar este, esse e aquele"
+    },
+    {
+      "arquivo": "src/commands/escola/port66.js",
+      "nome": "port66",
+      "operacao": "par_mimeu",
+      "subcategoria": "Português",
+      "descricao": "Quando usar para mim ou para eu"
+    },
+    {
+      "arquivo": "src/commands/escola/port67.js",
+      "nome": "port67",
+      "operacao": "par_encontro",
+      "subcategoria": "Português",
+      "descricao": "Quando usar ao encontro de ou de encontro a"
+    },
+    {
+      "arquivo": "src/commands/escola/port68.js",
+      "nome": "port68",
+      "operacao": "par_meiomeia",
+      "subcategoria": "Português",
+      "descricao": "Quando usar meio ou meia"
+    },
+    {
+      "arquivo": "src/commands/escola/port69.js",
+      "nome": "port69",
+      "operacao": "par_anexo",
+      "subcategoria": "Português",
+      "descricao": "Quando usar anexo, em anexo"
+    },
+    {
+      "arquivo": "src/commands/escola/port70.js",
+      "nome": "port70",
+      "operacao": "par_obrigado",
+      "subcategoria": "Português",
+      "descricao": "Quando usar obrigado ou obrigada"
+    },
+    {
+      "arquivo": "src/commands/escola/port71.js",
+      "nome": "port71",
+      "operacao": "dissertacao",
+      "subcategoria": "Redação",
+      "descricao": "Mostra a estrutura da dissertação do ENEM"
+    },
+    {
+      "arquivo": "src/commands/escola/port72.js",
+      "nome": "port72",
+      "operacao": "tese",
+      "subcategoria": "Redação",
+      "descricao": "Ajuda a montar a tese a partir do tema"
+    },
+    {
+      "arquivo": "src/commands/escola/port73.js",
+      "nome": "port73",
+      "operacao": "argumento",
+      "subcategoria": "Redação",
+      "descricao": "Monta o esqueleto do parágrafo argumentativo"
+    },
+    {
+      "arquivo": "src/commands/escola/port74.js",
+      "nome": "port74",
+      "operacao": "repertorio",
+      "subcategoria": "Redação",
+      "descricao": "Sugere repertório legitimado para o tema"
+    },
+    {
+      "arquivo": "src/commands/escola/port75.js",
+      "nome": "port75",
+      "operacao": "intervencao",
+      "subcategoria": "Redação",
+      "descricao": "Monta a proposta com os cinco elementos"
+    },
+    {
+      "arquivo": "src/commands/escola/port76.js",
+      "nome": "port76",
+      "operacao": "introducao",
+      "subcategoria": "Redação",
+      "descricao": "Ensina a montar o parágrafo de introdução"
+    },
+    {
+      "arquivo": "src/commands/escola/port77.js",
+      "nome": "port77",
+      "operacao": "desenvolvimento",
+      "subcategoria": "Redação",
+      "descricao": "Ensina a construir o parágrafo do meio"
+    },
+    {
+      "arquivo": "src/commands/escola/port78.js",
+      "nome": "port78",
+      "operacao": "conclusao",
+      "subcategoria": "Redação",
+      "descricao": "Ensina a montar o parágrafo de conclusão"
+    },
+    {
+      "arquivo": "src/commands/escola/port79.js",
+      "nome": "port79",
+      "operacao": "conectivos",
+      "subcategoria": "Redação",
+      "descricao": "Lista conectivos separados pela função"
+    },
+    {
+      "arquivo": "src/commands/escola/port80.js",
+      "nome": "port80",
+      "operacao": "paragrafo",
+      "subcategoria": "Redação",
+      "descricao": "Mede o parágrafo que você escrever"
+    },
+    {
+      "arquivo": "src/commands/escola/port81.js",
+      "nome": "port81",
+      "operacao": "repeticao",
+      "subcategoria": "Redação",
+      "descricao": "Mostra as palavras repetidas no seu texto"
+    },
+    {
+      "arquivo": "src/commands/escola/port82.js",
+      "nome": "port82",
+      "operacao": "fraselonga",
+      "subcategoria": "Redação",
+      "descricao": "Aponta as frases longas demais do texto"
+    },
+    {
+      "arquivo": "src/commands/escola/port83.js",
+      "nome": "port83",
+      "operacao": "oralidade",
+      "subcategoria": "Redação",
+      "descricao": "Aponta gíria e fala coloquial no texto"
+    },
+    {
+      "arquivo": "src/commands/escola/port84.js",
+      "nome": "port84",
+      "operacao": "contarpalavras",
+      "subcategoria": "Redação",
+      "descricao": "Conta palavras e estima as linhas na folha"
+    },
+    {
+      "arquivo": "src/commands/escola/port85.js",
+      "nome": "port85",
+      "operacao": "coesao",
+      "subcategoria": "Redação",
+      "descricao": "Confere os conectivos e as retomadas do texto"
+    },
+    {
+      "arquivo": "src/commands/escola/port86.js",
+      "nome": "port86",
+      "operacao": "errosnota",
+      "subcategoria": "Redação",
+      "descricao": "Lista os erros que mais derrubam a nota"
+    },
+    {
+      "arquivo": "src/commands/escola/port87.js",
+      "nome": "port87",
+      "operacao": "cronograma",
+      "subcategoria": "Redação",
+      "descricao": "Divide o tempo da redação minuto a minuto"
+    },
+    {
+      "arquivo": "src/commands/escola/port88.js",
+      "nome": "port88",
+      "operacao": "titulo",
+      "subcategoria": "Redação",
+      "descricao": "Ajuda a criar o título e diz quando usar"
+    },
+    {
+      "arquivo": "src/commands/escola/port89.js",
+      "nome": "port89",
+      "operacao": "temas",
+      "subcategoria": "Redação",
+      "descricao": "Sugere temas de redação para treinar"
+    },
+    {
+      "arquivo": "src/commands/escola/port90.js",
+      "nome": "port90",
+      "operacao": "checklist",
+      "subcategoria": "Redação",
+      "descricao": "Lista de conferência antes de entregar a prova"
+    },
+    {
+      "arquivo": "src/commands/escola/port91.js",
+      "nome": "port91",
+      "operacao": "reescrever",
+      "subcategoria": "Redação",
+      "descricao": "Mostra como formalizar a frase que você mandar"
+    },
+    {
+      "arquivo": "src/commands/escola/port92.js",
+      "nome": "port92",
+      "operacao": "comp1",
+      "subcategoria": "Redação",
+      "descricao": "Competência 1: Domínio da norma culta"
+    },
+    {
+      "arquivo": "src/commands/escola/port93.js",
+      "nome": "port93",
+      "operacao": "comp2",
+      "subcategoria": "Redação",
+      "descricao": "Competência 2: Compreender a proposta e o tema"
+    },
+    {
+      "arquivo": "src/commands/escola/port94.js",
+      "nome": "port94",
+      "operacao": "comp3",
+      "subcategoria": "Redação",
+      "descricao": "Competência 3: Selecionar e organizar argumentos"
+    },
+    {
+      "arquivo": "src/commands/escola/port95.js",
+      "nome": "port95",
+      "operacao": "comp4",
+      "subcategoria": "Redação",
+      "descricao": "Competência 4: Coesão: amarrar o texto"
+    },
+    {
+      "arquivo": "src/commands/escola/port96.js",
+      "nome": "port96",
+      "operacao": "comp5",
+      "subcategoria": "Redação",
+      "descricao": "Competência 5: Proposta de intervenção"
+    },
+    {
+      "arquivo": "src/commands/escola/port97.js",
+      "nome": "port97",
+      "operacao": "conec_adicao",
+      "subcategoria": "Redação",
+      "descricao": "Conectivos de adição para a redação"
+    },
+    {
+      "arquivo": "src/commands/escola/port98.js",
+      "nome": "port98",
+      "operacao": "conec_oposicao",
+      "subcategoria": "Redação",
+      "descricao": "Conectivos de oposição para a redação"
+    },
+    {
+      "arquivo": "src/commands/escola/port99.js",
+      "nome": "port99",
+      "operacao": "conec_causa",
+      "subcategoria": "Redação",
+      "descricao": "Conectivos de causa para a redação"
+    },
+    {
+      "arquivo": "src/commands/escola/port100.js",
+      "nome": "port100",
+      "operacao": "conec_conclusao",
+      "subcategoria": "Redação",
+      "descricao": "Conectivos de conclusão para a redação"
+    },
+    {
+      "arquivo": "src/commands/escola/port101.js",
+      "nome": "port101",
+      "operacao": "conec_exemplificacao",
+      "subcategoria": "Redação",
+      "descricao": "Conectivos de exemplificação para a redação"
+    },
+    {
+      "arquivo": "src/commands/escola/port102.js",
+      "nome": "port102",
+      "operacao": "conec_finalidade",
+      "subcategoria": "Redação",
+      "descricao": "Conectivos de finalidade para a redação"
+    },
+    {
+      "arquivo": "src/commands/escola/port103.js",
+      "nome": "port103",
+      "operacao": "modelo_carta",
+      "subcategoria": "Redação",
+      "descricao": "Como escrever: carta argumentativa"
+    },
+    {
+      "arquivo": "src/commands/escola/port104.js",
+      "nome": "port104",
+      "operacao": "modelo_email",
+      "subcategoria": "Redação",
+      "descricao": "Como escrever: e-mail formal"
+    },
+    {
+      "arquivo": "src/commands/escola/port105.js",
+      "nome": "port105",
+      "operacao": "modelo_resumo",
+      "subcategoria": "Redação",
+      "descricao": "Como escrever: resumo"
+    },
+    {
+      "arquivo": "src/commands/escola/port106.js",
+      "nome": "port106",
+      "operacao": "modelo_resenha",
+      "subcategoria": "Redação",
+      "descricao": "Como escrever: resenha crítica"
+    },
+    {
+      "arquivo": "src/commands/escola/port107.js",
+      "nome": "port107",
+      "operacao": "modelo_relatorio",
+      "subcategoria": "Redação",
+      "descricao": "Como escrever: relatório"
+    },
+    {
+      "arquivo": "src/commands/escola/port108.js",
+      "nome": "port108",
+      "operacao": "modelo_requerimento",
+      "subcategoria": "Redação",
+      "descricao": "Como escrever: requerimento"
+    },
+    {
+      "arquivo": "src/commands/escola/port109.js",
+      "nome": "port109",
+      "operacao": "modelo_artigo",
+      "subcategoria": "Redação",
+      "descricao": "Como escrever: artigo de opinião"
+    },
+    {
+      "arquivo": "src/commands/escola/port110.js",
+      "nome": "port110",
+      "operacao": "modelo_cronica",
+      "subcategoria": "Redação",
+      "descricao": "Como escrever: crônica"
+    },
+    {
+      "arquivo": "src/commands/escola/port111.js",
+      "nome": "port111",
+      "operacao": "esc_trovadorismo",
+      "subcategoria": "Literatura",
+      "descricao": "Escola literária: Trovadorismo"
+    },
+    {
+      "arquivo": "src/commands/escola/port112.js",
+      "nome": "port112",
+      "operacao": "esc_humanismo",
+      "subcategoria": "Literatura",
+      "descricao": "Escola literária: Humanismo"
+    },
+    {
+      "arquivo": "src/commands/escola/port113.js",
+      "nome": "port113",
+      "operacao": "esc_classicismo",
+      "subcategoria": "Literatura",
+      "descricao": "Escola literária: Classicismo"
+    },
+    {
+      "arquivo": "src/commands/escola/port114.js",
+      "nome": "port114",
+      "operacao": "esc_quinhentismo",
+      "subcategoria": "Literatura",
+      "descricao": "Escola literária: Quinhentismo"
+    },
+    {
+      "arquivo": "src/commands/escola/port115.js",
+      "nome": "port115",
+      "operacao": "esc_barroco",
+      "subcategoria": "Literatura",
+      "descricao": "Escola literária: Barroco"
+    },
+    {
+      "arquivo": "src/commands/escola/port116.js",
+      "nome": "port116",
+      "operacao": "esc_arcadismo",
+      "subcategoria": "Literatura",
+      "descricao": "Escola literária: Arcadismo"
+    },
+    {
+      "arquivo": "src/commands/escola/port117.js",
+      "nome": "port117",
+      "operacao": "esc_romantismo1",
+      "subcategoria": "Literatura",
+      "descricao": "Escola literária: Romantismo, primeira geração"
+    },
+    {
+      "arquivo": "src/commands/escola/port118.js",
+      "nome": "port118",
+      "operacao": "esc_romantismo2",
+      "subcategoria": "Literatura",
+      "descricao": "Escola literária: Romantismo, segunda geração"
+    },
+    {
+      "arquivo": "src/commands/escola/port119.js",
+      "nome": "port119",
+      "operacao": "esc_romantismo3",
+      "subcategoria": "Literatura",
+      "descricao": "Escola literária: Romantismo, terceira geração"
+    },
+    {
+      "arquivo": "src/commands/escola/port120.js",
+      "nome": "port120",
+      "operacao": "esc_realismo",
+      "subcategoria": "Literatura",
+      "descricao": "Escola literária: Realismo"
+    },
+    {
+      "arquivo": "src/commands/escola/port121.js",
+      "nome": "port121",
+      "operacao": "esc_naturalismo",
+      "subcategoria": "Literatura",
+      "descricao": "Escola literária: Naturalismo"
+    },
+    {
+      "arquivo": "src/commands/escola/port122.js",
+      "nome": "port122",
+      "operacao": "esc_parnasianismo",
+      "subcategoria": "Literatura",
+      "descricao": "Escola literária: Parnasianismo"
+    },
+    {
+      "arquivo": "src/commands/escola/port123.js",
+      "nome": "port123",
+      "operacao": "esc_simbolismo",
+      "subcategoria": "Literatura",
+      "descricao": "Escola literária: Simbolismo"
+    },
+    {
+      "arquivo": "src/commands/escola/port124.js",
+      "nome": "port124",
+      "operacao": "esc_premodernismo",
+      "subcategoria": "Literatura",
+      "descricao": "Escola literária: Pré-modernismo"
+    },
+    {
+      "arquivo": "src/commands/escola/port125.js",
+      "nome": "port125",
+      "operacao": "esc_modernismo1",
+      "subcategoria": "Literatura",
+      "descricao": "Escola literária: Modernismo, primeira fase"
+    },
+    {
+      "arquivo": "src/commands/escola/port126.js",
+      "nome": "port126",
+      "operacao": "esc_modernismo2",
+      "subcategoria": "Literatura",
+      "descricao": "Escola literária: Modernismo, segunda fase"
+    },
+    {
+      "arquivo": "src/commands/escola/port127.js",
+      "nome": "port127",
+      "operacao": "esc_modernismo3",
+      "subcategoria": "Literatura",
+      "descricao": "Escola literária: Modernismo, terceira fase"
+    },
+    {
+      "arquivo": "src/commands/escola/port128.js",
+      "nome": "port128",
+      "operacao": "esc_contemporanea",
+      "subcategoria": "Literatura",
+      "descricao": "Escola literária: Literatura contemporânea"
+    },
+    {
+      "arquivo": "src/commands/escola/port129.js",
+      "nome": "port129",
+      "operacao": "esc_realismoportugues",
+      "subcategoria": "Literatura",
+      "descricao": "Escola literária: Realismo português"
+    },
+    {
+      "arquivo": "src/commands/escola/port130.js",
+      "nome": "port130",
+      "operacao": "esc_modernismoportugues",
+      "subcategoria": "Literatura",
+      "descricao": "Escola literária: Modernismo português"
+    },
+    {
+      "arquivo": "src/commands/escola/port131.js",
+      "nome": "port131",
+      "operacao": "obra_domcasmurro",
+      "subcategoria": "Literatura",
+      "descricao": "Ficha da obra: Dom Casmurro"
+    },
+    {
+      "arquivo": "src/commands/escola/port132.js",
+      "nome": "port132",
+      "operacao": "obra_memoriaspostumas",
+      "subcategoria": "Literatura",
+      "descricao": "Ficha da obra: Memórias Póstumas de Brás Cubas"
+    },
+    {
+      "arquivo": "src/commands/escola/port133.js",
+      "nome": "port133",
+      "operacao": "obra_ocortico",
+      "subcategoria": "Literatura",
+      "descricao": "Ficha da obra: O Cortiço"
+    },
+    {
+      "arquivo": "src/commands/escola/port134.js",
+      "nome": "port134",
+      "operacao": "obra_iracema",
+      "subcategoria": "Literatura",
+      "descricao": "Ficha da obra: Iracema"
+    },
+    {
+      "arquivo": "src/commands/escola/port135.js",
+      "nome": "port135",
+      "operacao": "obra_oguarani",
+      "subcategoria": "Literatura",
+      "descricao": "Ficha da obra: O Guarani"
+    },
+    {
+      "arquivo": "src/commands/escola/port136.js",
+      "nome": "port136",
+      "operacao": "obra_memoriassargento",
+      "subcategoria": "Literatura",
+      "descricao": "Ficha da obra: Memórias de um Sargento de Milícias"
+    },
+    {
+      "arquivo": "src/commands/escola/port137.js",
+      "nome": "port137",
+      "operacao": "obra_vidassecas",
+      "subcategoria": "Literatura",
+      "descricao": "Ficha da obra: Vidas Secas"
+    },
+    {
+      "arquivo": "src/commands/escola/port138.js",
+      "nome": "port138",
+      "operacao": "obra_capitaesdaareia",
+      "subcategoria": "Literatura",
+      "descricao": "Ficha da obra: Capitães da Areia"
+    },
+    {
+      "arquivo": "src/commands/escola/port139.js",
+      "nome": "port139",
+      "operacao": "obra_macunaima",
+      "subcategoria": "Literatura",
+      "descricao": "Ficha da obra: Macunaíma"
+    },
+    {
+      "arquivo": "src/commands/escola/port140.js",
+      "nome": "port140",
+      "operacao": "obra_grandesertao",
+      "subcategoria": "Literatura",
+      "descricao": "Ficha da obra: Grande Sertão: Veredas"
+    },
+    {
+      "arquivo": "src/commands/escola/port141.js",
+      "nome": "port141",
+      "operacao": "obra_horadaestrela",
+      "subcategoria": "Literatura",
+      "descricao": "Ficha da obra: A Hora da Estrela"
+    },
+    {
+      "arquivo": "src/commands/escola/port142.js",
+      "nome": "port142",
+      "operacao": "obra_ossertoes",
+      "subcategoria": "Literatura",
+      "descricao": "Ficha da obra: Os Sertões"
+    },
+    {
+      "arquivo": "src/commands/escola/port143.js",
+      "nome": "port143",
+      "operacao": "obra_oslusiadas",
+      "subcategoria": "Literatura",
+      "descricao": "Ficha da obra: Os Lusíadas"
+    },
+    {
+      "arquivo": "src/commands/escola/port144.js",
+      "nome": "port144",
+      "operacao": "obra_tortoarado",
+      "subcategoria": "Literatura",
+      "descricao": "Ficha da obra: Torto Arado"
+    },
+    {
+      "arquivo": "src/commands/escola/port145.js",
+      "nome": "port145",
+      "operacao": "obra",
+      "subcategoria": "Literatura",
+      "descricao": "Procura a ficha de qualquer obra da lista"
+    },
+    {
+      "arquivo": "src/commands/escola/port146.js",
+      "nome": "port146",
+      "operacao": "glossarioliterario",
+      "subcategoria": "Literatura",
+      "descricao": "Explica os termos usados em literatura"
+    },
+    {
+      "arquivo": "src/commands/escola/port147.js",
+      "nome": "port147",
+      "operacao": "narrador",
+      "subcategoria": "Literatura",
+      "descricao": "Explica os tipos de narrador e foco narrativo"
+    },
+    {
+      "arquivo": "src/commands/escola/port148.js",
+      "nome": "port148",
+      "operacao": "versificacao",
+      "subcategoria": "Literatura",
+      "descricao": "Explica verso, estrofe, rima e contagem poética"
+    },
+    {
+      "arquivo": "src/commands/escola/port149.js",
+      "nome": "port149",
+      "operacao": "generos",
+      "subcategoria": "Literatura",
+      "descricao": "Explica os gêneros lírico, épico e dramático"
+    },
+    {
+      "arquivo": "src/commands/escola/port150.js",
+      "nome": "port150",
+      "operacao": "vestibular",
+      "subcategoria": "Literatura",
+      "descricao": "Diz o que mais cai de literatura na prova"
+    }
+  ]
+}

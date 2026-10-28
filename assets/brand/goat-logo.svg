@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 96" width="320" height="96" role="img" aria-label="GOAT">
+  <title>GOAT</title>
+  <!-- Logo com placa própria (#111827) e destaque dourado (#F5B700): legível em fundo claro e escuro. -->
+  <rect x="0" y="0" width="320" height="96" rx="20" fill="#111827"/>
+  <path d="M48 16 L80 34 L80 62 L48 80 L16 62 L16 34 Z" fill="none" stroke="#F5B700" stroke-width="6" stroke-linejoin="round" transform="translate(0 0)"/>
+  <path d="M60 44 H48 V56 H58" fill="none" stroke="#F5B700" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="116" y="66" font-family="Arial Black, Arial, Helvetica, sans-serif" font-size="46" font-weight="900" letter-spacing="2" fill="#F5B700">GOAT</text>
+</svg>

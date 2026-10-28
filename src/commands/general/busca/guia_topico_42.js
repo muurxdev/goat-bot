@@ -1,0 +1,22 @@
+/**
+ * Guia Temático de Descoberta #42
+ */
+const M = require('../../../utils/moldura');
+
+module.exports = {
+    name: 'guia_topico_42',
+    aliases: ["mapa_cmd_42"],
+    category: 'general',
+    subcategory: 'Guias de Descoberta',
+    description: 'Guia de navegação rápida para tópicos do catálogo #42',
+    cooldownMs: 2000,
+    execute: async ({ reply }) => {
+        const doc = [
+            M.cabecalho('🧭', 'Guia de Navegação #42'),
+            '🗺️ *Trilha do Conhecimento:* GOATBOT 10.000 Comandos',
+            '💡 Use `.buscar <termo>` para localizar comandos específicos instantaneamente.',
+            M.assinatura('GOATBOT')
+        ].join('\n\n');
+        return reply(doc);
+    }
+};

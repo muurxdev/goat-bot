@@ -1,0 +1,8 @@
+# Scripts que rodam no Linux (VPS, Docker) precisam de LF mesmo com o
+# core.autocrlf=true do Windows: bash quebra com CRLF ("$'\r': command not found").
+*.sh            text eol=lf
+Dockerfile      text eol=lf
+docker-compose*.yml text eol=lf
+
+# PowerShell do Windows.
+*.ps1           text eol=crlf

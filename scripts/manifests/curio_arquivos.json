@@ -1,0 +1,2017 @@
+{
+  "familia": "curiosidades",
+  "prefixo": "curio",
+  "total": 250,
+  "fichas": 1503,
+  "porSub": {
+    "Mundo": 55,
+    "Brasil": 45,
+    "Ciência": 40,
+    "História": 38,
+    "Bicho e Planta": 36,
+    "Cultura": 36
+  },
+  "geradoPor": "scripts/gen-curiosidades.js",
+  "comandos": [
+    {
+      "nome": "curio1",
+      "arquivo": "src/commands/curiosidades/curio1.js",
+      "tema": "desertos",
+      "subcategory": "Mundo",
+      "description": "Os maiores desertos do mundo",
+      "fichas": 6
+    },
+    {
+      "nome": "curio2",
+      "arquivo": "src/commands/curiosidades/curio2.js",
+      "tema": "montanhas",
+      "subcategory": "Mundo",
+      "description": "As montanhas mais altas do mundo",
+      "fichas": 6
+    },
+    {
+      "nome": "curio3",
+      "arquivo": "src/commands/curiosidades/curio3.js",
+      "tema": "rios",
+      "subcategory": "Mundo",
+      "description": "Os rios mais longos do mundo",
+      "fichas": 6
+    },
+    {
+      "nome": "curio4",
+      "arquivo": "src/commands/curiosidades/curio4.js",
+      "tema": "oceanos",
+      "subcategory": "Mundo",
+      "description": "Os oceanos e os mares do planeta",
+      "fichas": 6
+    },
+    {
+      "nome": "curio5",
+      "arquivo": "src/commands/curiosidades/curio5.js",
+      "tema": "vulcoes",
+      "subcategory": "Mundo",
+      "description": "Vulcões que mudaram a história",
+      "fichas": 6
+    },
+    {
+      "nome": "curio6",
+      "arquivo": "src/commands/curiosidades/curio6.js",
+      "tema": "ilhas",
+      "subcategory": "Mundo",
+      "description": "As maiores ilhas do mundo",
+      "fichas": 6
+    },
+    {
+      "nome": "curio7",
+      "arquivo": "src/commands/curiosidades/curio7.js",
+      "tema": "lagos",
+      "subcategory": "Mundo",
+      "description": "Lagos que quebram recordes",
+      "fichas": 6
+    },
+    {
+      "nome": "curio8",
+      "arquivo": "src/commands/curiosidades/curio8.js",
+      "tema": "quedas",
+      "subcategory": "Mundo",
+      "description": "Quedas de água e cataratas",
+      "fichas": 6
+    },
+    {
+      "nome": "curio9",
+      "arquivo": "src/commands/curiosidades/curio9.js",
+      "tema": "extremos",
+      "subcategory": "Mundo",
+      "description": "Os pontos extremos do planeta",
+      "fichas": 7
+    },
+    {
+      "nome": "curio10",
+      "arquivo": "src/commands/curiosidades/curio10.js",
+      "tema": "maravilhasantigas",
+      "subcategory": "Mundo",
+      "description": "As sete maravilhas do mundo antigo",
+      "fichas": 7
+    },
+    {
+      "nome": "curio11",
+      "arquivo": "src/commands/curiosidades/curio11.js",
+      "tema": "maravilhasnovas",
+      "subcategory": "Mundo",
+      "description": "As sete maravilhas do mundo moderno",
+      "fichas": 7
+    },
+    {
+      "nome": "curio12",
+      "arquivo": "src/commands/curiosidades/curio12.js",
+      "tema": "bandeirasamerica",
+      "subcategory": "Mundo",
+      "description": "Bandeiras da América, explicadas",
+      "fichas": 6
+    },
+    {
+      "nome": "curio13",
+      "arquivo": "src/commands/curiosidades/curio13.js",
+      "tema": "bandeiraseuropa",
+      "subcategory": "Mundo",
+      "description": "Bandeiras da Europa, explicadas",
+      "fichas": 6
+    },
+    {
+      "nome": "curio14",
+      "arquivo": "src/commands/curiosidades/curio14.js",
+      "tema": "bandeirasestranhas",
+      "subcategory": "Mundo",
+      "description": "As bandeiras mais fora do padrão",
+      "fichas": 6
+    },
+    {
+      "nome": "curio15",
+      "arquivo": "src/commands/curiosidades/curio15.js",
+      "tema": "fusos",
+      "subcategory": "Mundo",
+      "description": "Fusos horários pelo mundo",
+      "fichas": 6
+    },
+    {
+      "nome": "curio16",
+      "arquivo": "src/commands/curiosidades/curio16.js",
+      "tema": "linhadata",
+      "subcategory": "Mundo",
+      "description": "A linha internacional da data",
+      "fichas": 6
+    },
+    {
+      "nome": "curio17",
+      "arquivo": "src/commands/curiosidades/curio17.js",
+      "tema": "idiomas",
+      "subcategory": "Mundo",
+      "description": "Os idiomas mais falados do mundo",
+      "fichas": 6
+    },
+    {
+      "nome": "curio18",
+      "arquivo": "src/commands/curiosidades/curio18.js",
+      "tema": "escritas",
+      "subcategory": "Mundo",
+      "description": "Alfabetos e sistemas de escrita",
+      "fichas": 6
+    },
+    {
+      "nome": "curio19",
+      "arquivo": "src/commands/curiosidades/curio19.js",
+      "tema": "moedas",
+      "subcategory": "Mundo",
+      "description": "De onde vem o nome das moedas",
+      "fichas": 6
+    },
+    {
+      "nome": "curio20",
+      "arquivo": "src/commands/curiosidades/curio20.js",
+      "tema": "paisespequenos",
+      "subcategory": "Mundo",
+      "description": "Os menores países do mundo",
+      "fichas": 6
+    },
+    {
+      "nome": "curio21",
+      "arquivo": "src/commands/curiosidades/curio21.js",
+      "tema": "semlitoral",
+      "subcategory": "Mundo",
+      "description": "Países sem saída para o mar",
+      "fichas": 6
+    },
+    {
+      "nome": "curio22",
+      "arquivo": "src/commands/curiosidades/curio22.js",
+      "tema": "fronteiras",
+      "subcategory": "Mundo",
+      "description": "Fronteiras que contam uma história",
+      "fichas": 6
+    },
+    {
+      "nome": "curio23",
+      "arquivo": "src/commands/curiosidades/curio23.js",
+      "tema": "capitaisnaomaiores",
+      "subcategory": "Mundo",
+      "description": "Capitais que não são a maior cidade",
+      "fichas": 6
+    },
+    {
+      "nome": "curio24",
+      "arquivo": "src/commands/curiosidades/curio24.js",
+      "tema": "capitaisduplas",
+      "subcategory": "Mundo",
+      "description": "Países com mais de uma capital",
+      "fichas": 6
+    },
+    {
+      "nome": "curio25",
+      "arquivo": "src/commands/curiosidades/curio25.js",
+      "tema": "cidadesgrandes",
+      "subcategory": "Mundo",
+      "description": "As maiores cidades do mundo",
+      "fichas": 6
+    },
+    {
+      "nome": "curio26",
+      "arquivo": "src/commands/curiosidades/curio26.js",
+      "tema": "cidadesantigas",
+      "subcategory": "Mundo",
+      "description": "Cidades habitadas há mais tempo",
+      "fichas": 6
+    },
+    {
+      "nome": "curio27",
+      "arquivo": "src/commands/curiosidades/curio27.js",
+      "tema": "metros",
+      "subcategory": "Mundo",
+      "description": "Os metrôs mais notáveis do mundo",
+      "fichas": 6
+    },
+    {
+      "nome": "curio28",
+      "arquivo": "src/commands/curiosidades/curio28.js",
+      "tema": "pontes",
+      "subcategory": "Mundo",
+      "description": "Pontes que desafiam o bom senso",
+      "fichas": 6
+    },
+    {
+      "nome": "curio29",
+      "arquivo": "src/commands/curiosidades/curio29.js",
+      "tema": "tuneis",
+      "subcategory": "Mundo",
+      "description": "Os túneis mais impressionantes",
+      "fichas": 6
+    },
+    {
+      "nome": "curio30",
+      "arquivo": "src/commands/curiosidades/curio30.js",
+      "tema": "canais",
+      "subcategory": "Mundo",
+      "description": "Canais que encurtaram o mundo",
+      "fichas": 6
+    },
+    {
+      "nome": "curio31",
+      "arquivo": "src/commands/curiosidades/curio31.js",
+      "tema": "estreitos",
+      "subcategory": "Mundo",
+      "description": "Estreitos que o mundo inteiro vigia",
+      "fichas": 6
+    },
+    {
+      "nome": "curio32",
+      "arquivo": "src/commands/curiosidades/curio32.js",
+      "tema": "predios",
+      "subcategory": "Mundo",
+      "description": "Os prédios mais altos do mundo",
+      "fichas": 6
+    },
+    {
+      "nome": "curio33",
+      "arquivo": "src/commands/curiosidades/curio33.js",
+      "tema": "estadios",
+      "subcategory": "Mundo",
+      "description": "Os maiores estádios do mundo",
+      "fichas": 6
+    },
+    {
+      "nome": "curio34",
+      "arquivo": "src/commands/curiosidades/curio34.js",
+      "tema": "aeroportos",
+      "subcategory": "Mundo",
+      "description": "Os aeroportos que mais movimentam o mundo",
+      "fichas": 6
+    },
+    {
+      "nome": "curio35",
+      "arquivo": "src/commands/curiosidades/curio35.js",
+      "tema": "voos",
+      "subcategory": "Mundo",
+      "description": "Os voos comerciais mais longos",
+      "fichas": 6
+    },
+    {
+      "nome": "curio36",
+      "arquivo": "src/commands/curiosidades/curio36.js",
+      "tema": "antartida",
+      "subcategory": "Mundo",
+      "description": "Antártida, o continente sem país",
+      "fichas": 6
+    },
+    {
+      "nome": "curio37",
+      "arquivo": "src/commands/curiosidades/curio37.js",
+      "tema": "geleiras",
+      "subcategory": "Mundo",
+      "description": "Geleiras e calotas de gelo",
+      "fichas": 6
+    },
+    {
+      "nome": "curio38",
+      "arquivo": "src/commands/curiosidades/curio38.js",
+      "tema": "florestas",
+      "subcategory": "Mundo",
+      "description": "As grandes florestas do planeta",
+      "fichas": 6
+    },
+    {
+      "nome": "curio39",
+      "arquivo": "src/commands/curiosidades/curio39.js",
+      "tema": "cavernas",
+      "subcategory": "Mundo",
+      "description": "Cavernas que parecem outro planeta",
+      "fichas": 6
+    },
+    {
+      "nome": "curio40",
+      "arquivo": "src/commands/curiosidades/curio40.js",
+      "tema": "terremotos",
+      "subcategory": "Mundo",
+      "description": "Terremotos e as escalas que os medem",
+      "fichas": 6
+    },
+    {
+      "nome": "curio41",
+      "arquivo": "src/commands/curiosidades/curio41.js",
+      "tema": "tempestades",
+      "subcategory": "Mundo",
+      "description": "Furacão, tufão e ciclone",
+      "fichas": 6
+    },
+    {
+      "nome": "curio42",
+      "arquivo": "src/commands/curiosidades/curio42.js",
+      "tema": "climas",
+      "subcategory": "Mundo",
+      "description": "Os climas do mundo, em ordem",
+      "fichas": 6
+    },
+    {
+      "nome": "curio43",
+      "arquivo": "src/commands/curiosidades/curio43.js",
+      "tema": "placas",
+      "subcategory": "Mundo",
+      "description": "As placas tectônicas",
+      "fichas": 6
+    },
+    {
+      "nome": "curio44",
+      "arquivo": "src/commands/curiosidades/curio44.js",
+      "tema": "cordilheiras",
+      "subcategory": "Mundo",
+      "description": "As grandes cordilheiras",
+      "fichas": 6
+    },
+    {
+      "nome": "curio45",
+      "arquivo": "src/commands/curiosidades/curio45.js",
+      "tema": "peninsulas",
+      "subcategory": "Mundo",
+      "description": "Penínsulas, istmos e cabos",
+      "fichas": 6
+    },
+    {
+      "nome": "curio46",
+      "arquivo": "src/commands/curiosidades/curio46.js",
+      "tema": "arquipelagos",
+      "subcategory": "Mundo",
+      "description": "Os arquipélagos do mundo",
+      "fichas": 6
+    },
+    {
+      "nome": "curio47",
+      "arquivo": "src/commands/curiosidades/curio47.js",
+      "tema": "mares",
+      "subcategory": "Mundo",
+      "description": "Mares fechados e mares estranhos",
+      "fichas": 6
+    },
+    {
+      "nome": "curio48",
+      "arquivo": "src/commands/curiosidades/curio48.js",
+      "tema": "enclaves",
+      "subcategory": "Mundo",
+      "description": "Enclaves, exclaves e pedaços soltos",
+      "fichas": 6
+    },
+    {
+      "nome": "curio49",
+      "arquivo": "src/commands/curiosidades/curio49.js",
+      "tema": "ultramar",
+      "subcategory": "Mundo",
+      "description": "Territórios que ficam longe do próprio país",
+      "fichas": 6
+    },
+    {
+      "nome": "curio50",
+      "arquivo": "src/commands/curiosidades/curio50.js",
+      "tema": "paisesnovos",
+      "subcategory": "Mundo",
+      "description": "Os países mais novos do mundo",
+      "fichas": 6
+    },
+    {
+      "nome": "curio51",
+      "arquivo": "src/commands/curiosidades/curio51.js",
+      "tema": "estradas",
+      "subcategory": "Mundo",
+      "description": "Estradas lendárias do planeta",
+      "fichas": 6
+    },
+    {
+      "nome": "curio52",
+      "arquivo": "src/commands/curiosidades/curio52.js",
+      "tema": "ferrovias",
+      "subcategory": "Mundo",
+      "description": "Ferrovias que atravessam continentes",
+      "fichas": 6
+    },
+    {
+      "nome": "curio53",
+      "arquivo": "src/commands/curiosidades/curio53.js",
+      "tema": "continentes",
+      "subcategory": "Mundo",
+      "description": "Os continentes em números",
+      "fichas": 6
+    },
+    {
+      "nome": "curio54",
+      "arquivo": "src/commands/curiosidades/curio54.js",
+      "tema": "remotos",
+      "subcategory": "Mundo",
+      "description": "Os lugares mais isolados do planeta",
+      "fichas": 6
+    },
+    {
+      "nome": "curio55",
+      "arquivo": "src/commands/curiosidades/curio55.js",
+      "tema": "muros",
+      "subcategory": "Mundo",
+      "description": "Muros que dividiram o mundo",
+      "fichas": 6
+    },
+    {
+      "nome": "curio56",
+      "arquivo": "src/commands/curiosidades/curio56.js",
+      "tema": "praias",
+      "subcategory": "Brasil",
+      "description": "Praias brasileiras que valem a viagem",
+      "fichas": 6
+    },
+    {
+      "nome": "curio57",
+      "arquivo": "src/commands/curiosidades/curio57.js",
+      "tema": "parques",
+      "subcategory": "Brasil",
+      "description": "Parques nacionais do Brasil",
+      "fichas": 6
+    },
+    {
+      "nome": "curio58",
+      "arquivo": "src/commands/curiosidades/curio58.js",
+      "tema": "cachoeiras",
+      "subcategory": "Brasil",
+      "description": "As cachoeiras brasileiras que impressionam",
+      "fichas": 6
+    },
+    {
+      "nome": "curio59",
+      "arquivo": "src/commands/curiosidades/curio59.js",
+      "tema": "montanhasbr",
+      "subcategory": "Brasil",
+      "description": "Os pontos mais altos do Brasil",
+      "fichas": 6
+    },
+    {
+      "nome": "curio60",
+      "arquivo": "src/commands/curiosidades/curio60.js",
+      "tema": "riosbr",
+      "subcategory": "Brasil",
+      "description": "Os rios brasileiros que moldaram o país",
+      "fichas": 6
+    },
+    {
+      "nome": "curio61",
+      "arquivo": "src/commands/curiosidades/curio61.js",
+      "tema": "ilhasbr",
+      "subcategory": "Brasil",
+      "description": "Ilhas brasileiras",
+      "fichas": 6
+    },
+    {
+      "nome": "curio62",
+      "arquivo": "src/commands/curiosidades/curio62.js",
+      "tema": "grutas",
+      "subcategory": "Brasil",
+      "description": "Cavernas e grutas do Brasil",
+      "fichas": 6
+    },
+    {
+      "nome": "curio63",
+      "arquivo": "src/commands/curiosidades/curio63.js",
+      "tema": "comidanorte",
+      "subcategory": "Brasil",
+      "description": "Comidas típicas do Norte",
+      "fichas": 6
+    },
+    {
+      "nome": "curio64",
+      "arquivo": "src/commands/curiosidades/curio64.js",
+      "tema": "comidanordeste",
+      "subcategory": "Brasil",
+      "description": "Comidas típicas do Nordeste",
+      "fichas": 6
+    },
+    {
+      "nome": "curio65",
+      "arquivo": "src/commands/curiosidades/curio65.js",
+      "tema": "comidacentro",
+      "subcategory": "Brasil",
+      "description": "Comidas típicas do Centro-Oeste",
+      "fichas": 6
+    },
+    {
+      "nome": "curio66",
+      "arquivo": "src/commands/curiosidades/curio66.js",
+      "tema": "comidasudeste",
+      "subcategory": "Brasil",
+      "description": "Comidas típicas do Sudeste",
+      "fichas": 6
+    },
+    {
+      "nome": "curio67",
+      "arquivo": "src/commands/curiosidades/curio67.js",
+      "tema": "comidasul",
+      "subcategory": "Brasil",
+      "description": "Comidas típicas do Sul",
+      "fichas": 6
+    },
+    {
+      "nome": "curio68",
+      "arquivo": "src/commands/curiosidades/curio68.js",
+      "tema": "doces",
+      "subcategory": "Brasil",
+      "description": "Doces brasileiros e de onde vieram",
+      "fichas": 6
+    },
+    {
+      "nome": "curio69",
+      "arquivo": "src/commands/curiosidades/curio69.js",
+      "tema": "bebidas",
+      "subcategory": "Brasil",
+      "description": "Bebidas que nasceram no Brasil",
+      "fichas": 6
+    },
+    {
+      "nome": "curio70",
+      "arquivo": "src/commands/curiosidades/curio70.js",
+      "tema": "festas",
+      "subcategory": "Brasil",
+      "description": "As grandes festas populares do Brasil",
+      "fichas": 6
+    },
+    {
+      "nome": "curio71",
+      "arquivo": "src/commands/curiosidades/curio71.js",
+      "tema": "carnaval",
+      "subcategory": "Brasil",
+      "description": "O carnaval de cada canto do Brasil",
+      "fichas": 6
+    },
+    {
+      "nome": "curio72",
+      "arquivo": "src/commands/curiosidades/curio72.js",
+      "tema": "juninas",
+      "subcategory": "Brasil",
+      "description": "As festas juninas",
+      "fichas": 6
+    },
+    {
+      "nome": "curio73",
+      "arquivo": "src/commands/curiosidades/curio73.js",
+      "tema": "brincadeiras",
+      "subcategory": "Brasil",
+      "description": "Brincadeiras tradicionais brasileiras",
+      "fichas": 6
+    },
+    {
+      "nome": "curio74",
+      "arquivo": "src/commands/curiosidades/curio74.js",
+      "tema": "dancas",
+      "subcategory": "Brasil",
+      "description": "Danças tradicionais do Brasil",
+      "fichas": 6
+    },
+    {
+      "nome": "curio75",
+      "arquivo": "src/commands/curiosidades/curio75.js",
+      "tema": "artesanato",
+      "subcategory": "Brasil",
+      "description": "Artesanato brasileiro por região",
+      "fichas": 6
+    },
+    {
+      "nome": "curio76",
+      "arquivo": "src/commands/curiosidades/curio76.js",
+      "tema": "girias",
+      "subcategory": "Brasil",
+      "description": "Gírias e palavras de cada estado",
+      "fichas": 6
+    },
+    {
+      "nome": "curio77",
+      "arquivo": "src/commands/curiosidades/curio77.js",
+      "tema": "sotaques",
+      "subcategory": "Brasil",
+      "description": "Os sotaques do português brasileiro",
+      "fichas": 6
+    },
+    {
+      "nome": "curio78",
+      "arquivo": "src/commands/curiosidades/curio78.js",
+      "tema": "tupi",
+      "subcategory": "Brasil",
+      "description": "Palavras do dia a dia que vêm do tupi",
+      "fichas": 6
+    },
+    {
+      "nome": "curio79",
+      "arquivo": "src/commands/curiosidades/curio79.js",
+      "tema": "africanas",
+      "subcategory": "Brasil",
+      "description": "Palavras de origem africana no português",
+      "fichas": 6
+    },
+    {
+      "nome": "curio80",
+      "arquivo": "src/commands/curiosidades/curio80.js",
+      "tema": "simbolos",
+      "subcategory": "Brasil",
+      "description": "Os símbolos nacionais do Brasil",
+      "fichas": 6
+    },
+    {
+      "nome": "curio81",
+      "arquivo": "src/commands/curiosidades/curio81.js",
+      "tema": "hino",
+      "subcategory": "Brasil",
+      "description": "O Hino Nacional, verso por verso",
+      "fichas": 6
+    },
+    {
+      "nome": "curio82",
+      "arquivo": "src/commands/curiosidades/curio82.js",
+      "tema": "bandeirabr",
+      "subcategory": "Brasil",
+      "description": "A bandeira do Brasil, elemento por elemento",
+      "fichas": 6
+    },
+    {
+      "nome": "curio83",
+      "arquivo": "src/commands/curiosidades/curio83.js",
+      "tema": "feriados",
+      "subcategory": "Brasil",
+      "description": "Os feriados nacionais e a origem de cada um",
+      "fichas": 6
+    },
+    {
+      "nome": "curio84",
+      "arquivo": "src/commands/curiosidades/curio84.js",
+      "tema": "cidadeshistoricas",
+      "subcategory": "Brasil",
+      "description": "As cidades históricas brasileiras",
+      "fichas": 6
+    },
+    {
+      "nome": "curio85",
+      "arquivo": "src/commands/curiosidades/curio85.js",
+      "tema": "patrimonios",
+      "subcategory": "Brasil",
+      "description": "Patrimônios da Humanidade no Brasil",
+      "fichas": 6
+    },
+    {
+      "nome": "curio86",
+      "arquivo": "src/commands/curiosidades/curio86.js",
+      "tema": "arquiteturabr",
+      "subcategory": "Brasil",
+      "description": "Arquitetos que desenharam o Brasil",
+      "fichas": 6
+    },
+    {
+      "nome": "curio87",
+      "arquivo": "src/commands/curiosidades/curio87.js",
+      "tema": "museusbr",
+      "subcategory": "Brasil",
+      "description": "Museus brasileiros que valem a fila",
+      "fichas": 6
+    },
+    {
+      "nome": "curio88",
+      "arquivo": "src/commands/curiosidades/curio88.js",
+      "tema": "teatros",
+      "subcategory": "Brasil",
+      "description": "Os grandes teatros brasileiros",
+      "fichas": 6
+    },
+    {
+      "nome": "curio89",
+      "arquivo": "src/commands/curiosidades/curio89.js",
+      "tema": "pontesbr",
+      "subcategory": "Brasil",
+      "description": "As pontes brasileiras que impressionam",
+      "fichas": 6
+    },
+    {
+      "nome": "curio90",
+      "arquivo": "src/commands/curiosidades/curio90.js",
+      "tema": "estradasbr",
+      "subcategory": "Brasil",
+      "description": "As grandes rodovias brasileiras",
+      "fichas": 6
+    },
+    {
+      "nome": "curio91",
+      "arquivo": "src/commands/curiosidades/curio91.js",
+      "tema": "trensbr",
+      "subcategory": "Brasil",
+      "description": "Ferrovias e trens brasileiros",
+      "fichas": 6
+    },
+    {
+      "nome": "curio92",
+      "arquivo": "src/commands/curiosidades/curio92.js",
+      "tema": "aeroportosbr",
+      "subcategory": "Brasil",
+      "description": "Os aeroportos brasileiros",
+      "fichas": 6
+    },
+    {
+      "nome": "curio93",
+      "arquivo": "src/commands/curiosidades/curio93.js",
+      "tema": "portosbr",
+      "subcategory": "Brasil",
+      "description": "Os portos que movimentam o Brasil",
+      "fichas": 6
+    },
+    {
+      "nome": "curio94",
+      "arquivo": "src/commands/curiosidades/curio94.js",
+      "tema": "metrosbr",
+      "subcategory": "Brasil",
+      "description": "Os metrôs e trens urbanos do Brasil",
+      "fichas": 6
+    },
+    {
+      "nome": "curio95",
+      "arquivo": "src/commands/curiosidades/curio95.js",
+      "tema": "classicos",
+      "subcategory": "Brasil",
+      "description": "Os clássicos do futebol brasileiro",
+      "fichas": 6
+    },
+    {
+      "nome": "curio96",
+      "arquivo": "src/commands/curiosidades/curio96.js",
+      "tema": "estadiosbr",
+      "subcategory": "Brasil",
+      "description": "Os estádios brasileiros",
+      "fichas": 6
+    },
+    {
+      "nome": "curio97",
+      "arquivo": "src/commands/curiosidades/curio97.js",
+      "tema": "parquesurbanos",
+      "subcategory": "Brasil",
+      "description": "Parques urbanos brasileiros",
+      "fichas": 6
+    },
+    {
+      "nome": "curio98",
+      "arquivo": "src/commands/curiosidades/curio98.js",
+      "tema": "mercados",
+      "subcategory": "Brasil",
+      "description": "Mercados públicos brasileiros",
+      "fichas": 6
+    },
+    {
+      "nome": "curio99",
+      "arquivo": "src/commands/curiosidades/curio99.js",
+      "tema": "farois",
+      "subcategory": "Brasil",
+      "description": "Faróis do litoral brasileiro",
+      "fichas": 6
+    },
+    {
+      "nome": "curio100",
+      "arquivo": "src/commands/curiosidades/curio100.js",
+      "tema": "cidadesbr",
+      "subcategory": "Brasil",
+      "description": "As maiores cidades do Brasil",
+      "fichas": 6
+    },
+    {
+      "nome": "curio101",
+      "arquivo": "src/commands/curiosidades/curio101.js",
+      "tema": "estrelas",
+      "subcategory": "Ciência",
+      "description": "Estrelas que dá para achar no céu",
+      "fichas": 6
+    },
+    {
+      "nome": "curio102",
+      "arquivo": "src/commands/curiosidades/curio102.js",
+      "tema": "tiposestrela",
+      "subcategory": "Ciência",
+      "description": "Os tipos de estrela e como cada uma acaba",
+      "fichas": 6
+    },
+    {
+      "nome": "curio103",
+      "arquivo": "src/commands/curiosidades/curio103.js",
+      "tema": "buracosnegros",
+      "subcategory": "Ciência",
+      "description": "Buracos negros, sem mistificação",
+      "fichas": 6
+    },
+    {
+      "nome": "curio104",
+      "arquivo": "src/commands/curiosidades/curio104.js",
+      "tema": "galaxias",
+      "subcategory": "Ciência",
+      "description": "Galáxias e o lugar da Terra no universo",
+      "fichas": 6
+    },
+    {
+      "nome": "curio105",
+      "arquivo": "src/commands/curiosidades/curio105.js",
+      "tema": "nebulosas",
+      "subcategory": "Ciência",
+      "description": "Nebulosas, onde nascem e morrem estrelas",
+      "fichas": 6
+    },
+    {
+      "nome": "curio106",
+      "arquivo": "src/commands/curiosidades/curio106.js",
+      "tema": "distancias",
+      "subcategory": "Ciência",
+      "description": "As distâncias do universo em escala",
+      "fichas": 6
+    },
+    {
+      "nome": "curio107",
+      "arquivo": "src/commands/curiosidades/curio107.js",
+      "tema": "tamanhos",
+      "subcategory": "Ciência",
+      "description": "Do átomo à galáxia, em degraus",
+      "fichas": 6
+    },
+    {
+      "nome": "curio108",
+      "arquivo": "src/commands/curiosidades/curio108.js",
+      "tema": "velocidades",
+      "subcategory": "Ciência",
+      "description": "A velocidade das coisas",
+      "fichas": 6
+    },
+    {
+      "nome": "curio109",
+      "arquivo": "src/commands/curiosidades/curio109.js",
+      "tema": "temperaturas",
+      "subcategory": "Ciência",
+      "description": "A temperatura das coisas",
+      "fichas": 6
+    },
+    {
+      "nome": "curio110",
+      "arquivo": "src/commands/curiosidades/curio110.js",
+      "tema": "pressao",
+      "subcategory": "Ciência",
+      "description": "Pressão, do vácuo ao fundo do mar",
+      "fichas": 6
+    },
+    {
+      "nome": "curio111",
+      "arquivo": "src/commands/curiosidades/curio111.js",
+      "tema": "decibeis",
+      "subcategory": "Ciência",
+      "description": "O som medido em decibéis",
+      "fichas": 6
+    },
+    {
+      "nome": "curio112",
+      "arquivo": "src/commands/curiosidades/curio112.js",
+      "tema": "espectro",
+      "subcategory": "Ciência",
+      "description": "A luz que você vê e a que não vê",
+      "fichas": 6
+    },
+    {
+      "nome": "curio113",
+      "arquivo": "src/commands/curiosidades/curio113.js",
+      "tema": "corponumeros",
+      "subcategory": "Ciência",
+      "description": "O corpo humano em números",
+      "fichas": 6
+    },
+    {
+      "nome": "curio114",
+      "arquivo": "src/commands/curiosidades/curio114.js",
+      "tema": "sentidos",
+      "subcategory": "Ciência",
+      "description": "Os limites dos cinco sentidos",
+      "fichas": 6
+    },
+    {
+      "nome": "curio115",
+      "arquivo": "src/commands/curiosidades/curio115.js",
+      "tema": "sono",
+      "subcategory": "Ciência",
+      "description": "As fases do sono e o que acontece em cada uma",
+      "fichas": 6
+    },
+    {
+      "nome": "curio116",
+      "arquivo": "src/commands/curiosidades/curio116.js",
+      "tema": "dna",
+      "subcategory": "Ciência",
+      "description": "DNA e genética em números",
+      "fichas": 6
+    },
+    {
+      "nome": "curio117",
+      "arquivo": "src/commands/curiosidades/curio117.js",
+      "tema": "celulas",
+      "subcategory": "Ciência",
+      "description": "Os tipos de célula e quanto cada uma dura",
+      "fichas": 6
+    },
+    {
+      "nome": "curio118",
+      "arquivo": "src/commands/curiosidades/curio118.js",
+      "tema": "microbios",
+      "subcategory": "Ciência",
+      "description": "Bactéria, vírus e fungo: quem é quem",
+      "fichas": 6
+    },
+    {
+      "nome": "curio119",
+      "arquivo": "src/commands/curiosidades/curio119.js",
+      "tema": "vacinashistoria",
+      "subcategory": "Ciência",
+      "description": "As vacinas que mudaram o mundo",
+      "fichas": 6
+    },
+    {
+      "nome": "curio120",
+      "arquivo": "src/commands/curiosidades/curio120.js",
+      "tema": "remedios",
+      "subcategory": "Ciência",
+      "description": "Remédios que mudaram a medicina",
+      "fichas": 6
+    },
+    {
+      "nome": "curio121",
+      "arquivo": "src/commands/curiosidades/curio121.js",
+      "tema": "cirurgias",
+      "subcategory": "Ciência",
+      "description": "Marcos da cirurgia",
+      "fichas": 6
+    },
+    {
+      "nome": "curio122",
+      "arquivo": "src/commands/curiosidades/curio122.js",
+      "tema": "evolucao",
+      "subcategory": "Ciência",
+      "description": "A evolução da vida em degraus",
+      "fichas": 6
+    },
+    {
+      "nome": "curio123",
+      "arquivo": "src/commands/curiosidades/curio123.js",
+      "tema": "extincoes",
+      "subcategory": "Ciência",
+      "description": "As cinco grandes extinções, e a sexta",
+      "fichas": 6
+    },
+    {
+      "nome": "curio124",
+      "arquivo": "src/commands/curiosidades/curio124.js",
+      "tema": "fosseis",
+      "subcategory": "Ciência",
+      "description": "Fósseis e como se data o passado",
+      "fichas": 6
+    },
+    {
+      "nome": "curio125",
+      "arquivo": "src/commands/curiosidades/curio125.js",
+      "tema": "rochas",
+      "subcategory": "Ciência",
+      "description": "Rochas, minerais e a escala de dureza",
+      "fichas": 6
+    },
+    {
+      "nome": "curio126",
+      "arquivo": "src/commands/curiosidades/curio126.js",
+      "tema": "atmosfera",
+      "subcategory": "Ciência",
+      "description": "As camadas do ar, da troposfera ao espaço",
+      "fichas": 6
+    },
+    {
+      "nome": "curio127",
+      "arquivo": "src/commands/curiosidades/curio127.js",
+      "tema": "invencoes",
+      "subcategory": "Ciência",
+      "description": "Invenções que mudaram o dia a dia",
+      "fichas": 6
+    },
+    {
+      "nome": "curio128",
+      "arquivo": "src/commands/curiosidades/curio128.js",
+      "tema": "invencoesacaso",
+      "subcategory": "Ciência",
+      "description": "Invenções que nasceram de um erro",
+      "fichas": 6
+    },
+    {
+      "nome": "curio129",
+      "arquivo": "src/commands/curiosidades/curio129.js",
+      "tema": "materiais",
+      "subcategory": "Ciência",
+      "description": "Os materiais que sustentam o mundo",
+      "fichas": 6
+    },
+    {
+      "nome": "curio130",
+      "arquivo": "src/commands/curiosidades/curio130.js",
+      "tema": "plasticos",
+      "subcategory": "Ciência",
+      "description": "Os plásticos e quanto tempo ficam por aí",
+      "fichas": 6
+    },
+    {
+      "nome": "curio131",
+      "arquivo": "src/commands/curiosidades/curio131.js",
+      "tema": "energia",
+      "subcategory": "Ciência",
+      "description": "As fontes de energia, o forte e o fraco",
+      "fichas": 6
+    },
+    {
+      "nome": "curio132",
+      "arquivo": "src/commands/curiosidades/curio132.js",
+      "tema": "combustiveis",
+      "subcategory": "Ciência",
+      "description": "Combustíveis e o que cada um rende",
+      "fichas": 6
+    },
+    {
+      "nome": "curio133",
+      "arquivo": "src/commands/curiosidades/curio133.js",
+      "tema": "motores",
+      "subcategory": "Ciência",
+      "description": "Os motores e o truque de cada um",
+      "fichas": 6
+    },
+    {
+      "nome": "curio134",
+      "arquivo": "src/commands/curiosidades/curio134.js",
+      "tema": "computacao",
+      "subcategory": "Ciência",
+      "description": "Marcos da computação, degrau por degrau",
+      "fichas": 6
+    },
+    {
+      "nome": "curio135",
+      "arquivo": "src/commands/curiosidades/curio135.js",
+      "tema": "internet",
+      "subcategory": "Ciência",
+      "description": "A internet por dentro",
+      "fichas": 6
+    },
+    {
+      "nome": "curio136",
+      "arquivo": "src/commands/curiosidades/curio136.js",
+      "tema": "armazenamento",
+      "subcategory": "Ciência",
+      "description": "A memória dos computadores em degraus",
+      "fichas": 6
+    },
+    {
+      "nome": "curio137",
+      "arquivo": "src/commands/curiosidades/curio137.js",
+      "tema": "radioatividade",
+      "subcategory": "Ciência",
+      "description": "Radiação sem pânico e sem descuido",
+      "fichas": 6
+    },
+    {
+      "nome": "curio138",
+      "arquivo": "src/commands/curiosidades/curio138.js",
+      "tema": "relogios",
+      "subcategory": "Ciência",
+      "description": "Como a humanidade mediu o tempo",
+      "fichas": 6
+    },
+    {
+      "nome": "curio139",
+      "arquivo": "src/commands/curiosidades/curio139.js",
+      "tema": "agua",
+      "subcategory": "Ciência",
+      "description": "A água do planeta em números",
+      "fichas": 6
+    },
+    {
+      "nome": "curio140",
+      "arquivo": "src/commands/curiosidades/curio140.js",
+      "tema": "cores",
+      "subcategory": "Ciência",
+      "description": "Como as cores se formam",
+      "fichas": 6
+    },
+    {
+      "nome": "curio141",
+      "arquivo": "src/commands/curiosidades/curio141.js",
+      "tema": "mesopotamia",
+      "subcategory": "História",
+      "description": "A Mesopotâmia, onde a escrita nasceu",
+      "fichas": 6
+    },
+    {
+      "nome": "curio142",
+      "arquivo": "src/commands/curiosidades/curio142.js",
+      "tema": "egitoantigo",
+      "subcategory": "História",
+      "description": "O Egito Antigo, do Nilo às pirâmides",
+      "fichas": 6
+    },
+    {
+      "nome": "curio143",
+      "arquivo": "src/commands/curiosidades/curio143.js",
+      "tema": "greciaantiga",
+      "subcategory": "História",
+      "description": "A Grécia Antiga, cidade por cidade",
+      "fichas": 6
+    },
+    {
+      "nome": "curio144",
+      "arquivo": "src/commands/curiosidades/curio144.js",
+      "tema": "romarepublica",
+      "subcategory": "História",
+      "description": "Roma, da aldeia de pastores à república",
+      "fichas": 6
+    },
+    {
+      "nome": "curio145",
+      "arquivo": "src/commands/curiosidades/curio145.js",
+      "tema": "imperioromano",
+      "subcategory": "História",
+      "description": "O Império Romano e seus imperadores",
+      "fichas": 6
+    },
+    {
+      "nome": "curio146",
+      "arquivo": "src/commands/curiosidades/curio146.js",
+      "tema": "chinaimperial",
+      "subcategory": "História",
+      "description": "A China imperial, dinastia por dinastia",
+      "fichas": 6
+    },
+    {
+      "nome": "curio147",
+      "arquivo": "src/commands/curiosidades/curio147.js",
+      "tema": "indiaantiga",
+      "subcategory": "História",
+      "description": "A Índia antiga e seus impérios",
+      "fichas": 6
+    },
+    {
+      "nome": "curio148",
+      "arquivo": "src/commands/curiosidades/curio148.js",
+      "tema": "persia",
+      "subcategory": "História",
+      "description": "O Império Persa, de Ciro a Dario",
+      "fichas": 6
+    },
+    {
+      "nome": "curio149",
+      "arquivo": "src/commands/curiosidades/curio149.js",
+      "tema": "fenicios",
+      "subcategory": "História",
+      "description": "Fenícios, Cartago e o mar Mediterrâneo",
+      "fichas": 6
+    },
+    {
+      "nome": "curio150",
+      "arquivo": "src/commands/curiosidades/curio150.js",
+      "tema": "maias",
+      "subcategory": "História",
+      "description": "Os maias, cidades dentro da floresta",
+      "fichas": 6
+    },
+    {
+      "nome": "curio151",
+      "arquivo": "src/commands/curiosidades/curio151.js",
+      "tema": "astecas",
+      "subcategory": "História",
+      "description": "Os astecas e a cidade sobre o lago",
+      "fichas": 6
+    },
+    {
+      "nome": "curio152",
+      "arquivo": "src/commands/curiosidades/curio152.js",
+      "tema": "incas",
+      "subcategory": "História",
+      "description": "Os incas e o império dos caminhos",
+      "fichas": 6
+    },
+    {
+      "nome": "curio153",
+      "arquivo": "src/commands/curiosidades/curio153.js",
+      "tema": "africaantiga",
+      "subcategory": "História",
+      "description": "Reinos africanos antes da colonização",
+      "fichas": 6
+    },
+    {
+      "nome": "curio154",
+      "arquivo": "src/commands/curiosidades/curio154.js",
+      "tema": "idademedia",
+      "subcategory": "História",
+      "description": "A Idade Média sem o mito das trevas",
+      "fichas": 6
+    },
+    {
+      "nome": "curio155",
+      "arquivo": "src/commands/curiosidades/curio155.js",
+      "tema": "feudalismo",
+      "subcategory": "História",
+      "description": "Como o feudalismo funcionava de verdade",
+      "fichas": 6
+    },
+    {
+      "nome": "curio156",
+      "arquivo": "src/commands/curiosidades/curio156.js",
+      "tema": "cruzadas",
+      "subcategory": "História",
+      "description": "As Cruzadas, expedição por expedição",
+      "fichas": 6
+    },
+    {
+      "nome": "curio157",
+      "arquivo": "src/commands/curiosidades/curio157.js",
+      "tema": "islamicomedieval",
+      "subcategory": "História",
+      "description": "A era de ouro islâmica, de Bagdá a Córdoba",
+      "fichas": 6
+    },
+    {
+      "nome": "curio158",
+      "arquivo": "src/commands/curiosidades/curio158.js",
+      "tema": "vikings",
+      "subcategory": "História",
+      "description": "Os vikings, entre o remo e o arado",
+      "fichas": 6
+    },
+    {
+      "nome": "curio159",
+      "arquivo": "src/commands/curiosidades/curio159.js",
+      "tema": "pestenegra",
+      "subcategory": "História",
+      "description": "A Peste Negra e o mundo que ela mudou",
+      "fichas": 6
+    },
+    {
+      "nome": "curio160",
+      "arquivo": "src/commands/curiosidades/curio160.js",
+      "tema": "renascimento",
+      "subcategory": "História",
+      "description": "O Renascimento",
+      "fichas": 6
+    },
+    {
+      "nome": "curio161",
+      "arquivo": "src/commands/curiosidades/curio161.js",
+      "tema": "grandesnavegacoes",
+      "subcategory": "História",
+      "description": "As Grandes Navegações",
+      "fichas": 6
+    },
+    {
+      "nome": "curio162",
+      "arquivo": "src/commands/curiosidades/curio162.js",
+      "tema": "reforma",
+      "subcategory": "História",
+      "description": "Reforma e Contrarreforma",
+      "fichas": 6
+    },
+    {
+      "nome": "curio163",
+      "arquivo": "src/commands/curiosidades/curio163.js",
+      "tema": "iluminismo",
+      "subcategory": "História",
+      "description": "O Iluminismo",
+      "fichas": 6
+    },
+    {
+      "nome": "curio164",
+      "arquivo": "src/commands/curiosidades/curio164.js",
+      "tema": "revolucaoindustrial",
+      "subcategory": "História",
+      "description": "A Revolução Industrial",
+      "fichas": 6
+    },
+    {
+      "nome": "curio165",
+      "arquivo": "src/commands/curiosidades/curio165.js",
+      "tema": "independenciaeua",
+      "subcategory": "História",
+      "description": "A independência dos Estados Unidos",
+      "fichas": 6
+    },
+    {
+      "nome": "curio166",
+      "arquivo": "src/commands/curiosidades/curio166.js",
+      "tema": "revolucaofrancesa",
+      "subcategory": "História",
+      "description": "A Revolução Francesa",
+      "fichas": 6
+    },
+    {
+      "nome": "curio167",
+      "arquivo": "src/commands/curiosidades/curio167.js",
+      "tema": "napoleao",
+      "subcategory": "História",
+      "description": "A era napoleônica",
+      "fichas": 6
+    },
+    {
+      "nome": "curio168",
+      "arquivo": "src/commands/curiosidades/curio168.js",
+      "tema": "imperialismo",
+      "subcategory": "História",
+      "description": "A partilha da África e o imperialismo",
+      "fichas": 6
+    },
+    {
+      "nome": "curio169",
+      "arquivo": "src/commands/curiosidades/curio169.js",
+      "tema": "primeiraguerra",
+      "subcategory": "História",
+      "description": "A Primeira Guerra Mundial",
+      "fichas": 6
+    },
+    {
+      "nome": "curio170",
+      "arquivo": "src/commands/curiosidades/curio170.js",
+      "tema": "revolucaorussa",
+      "subcategory": "História",
+      "description": "A Revolução Russa",
+      "fichas": 6
+    },
+    {
+      "nome": "curio171",
+      "arquivo": "src/commands/curiosidades/curio171.js",
+      "tema": "crise1929",
+      "subcategory": "História",
+      "description": "A crise de 1929 e a Grande Depressão",
+      "fichas": 6
+    },
+    {
+      "nome": "curio172",
+      "arquivo": "src/commands/curiosidades/curio172.js",
+      "tema": "segundaguerra",
+      "subcategory": "História",
+      "description": "A Segunda Guerra Mundial",
+      "fichas": 6
+    },
+    {
+      "nome": "curio173",
+      "arquivo": "src/commands/curiosidades/curio173.js",
+      "tema": "guerrafria",
+      "subcategory": "História",
+      "description": "A Guerra Fria",
+      "fichas": 6
+    },
+    {
+      "nome": "curio174",
+      "arquivo": "src/commands/curiosidades/curio174.js",
+      "tema": "descolonizacao",
+      "subcategory": "História",
+      "description": "A descolonização da África e da Ásia",
+      "fichas": 6
+    },
+    {
+      "nome": "curio175",
+      "arquivo": "src/commands/curiosidades/curio175.js",
+      "tema": "direitoscivis",
+      "subcategory": "História",
+      "description": "As lutas por direitos civis no mundo",
+      "fichas": 6
+    },
+    {
+      "nome": "curio176",
+      "arquivo": "src/commands/curiosidades/curio176.js",
+      "tema": "pandemias",
+      "subcategory": "História",
+      "description": "As grandes pandemias da história",
+      "fichas": 6
+    },
+    {
+      "nome": "curio177",
+      "arquivo": "src/commands/curiosidades/curio177.js",
+      "tema": "datascomemorativas",
+      "subcategory": "História",
+      "description": "De onde vêm as datas comemorativas",
+      "fichas": 6
+    },
+    {
+      "nome": "curio178",
+      "arquivo": "src/commands/curiosidades/curio178.js",
+      "tema": "dinheirohistoria",
+      "subcategory": "História",
+      "description": "A história do dinheiro",
+      "fichas": 6
+    },
+    {
+      "nome": "curio179",
+      "arquivo": "src/commands/curiosidades/curio179.js",
+      "tema": "recordistas",
+      "subcategory": "Bicho e Planta",
+      "description": "Os recordistas do reino animal",
+      "fichas": 6
+    },
+    {
+      "nome": "curio180",
+      "arquivo": "src/commands/curiosidades/curio180.js",
+      "tema": "maioresanimais",
+      "subcategory": "Bicho e Planta",
+      "description": "Os maiores animais do planeta",
+      "fichas": 6
+    },
+    {
+      "nome": "curio181",
+      "arquivo": "src/commands/curiosidades/curio181.js",
+      "tema": "menoresanimais",
+      "subcategory": "Bicho e Planta",
+      "description": "Os menores vertebrados do mundo",
+      "fichas": 6
+    },
+    {
+      "nome": "curio182",
+      "arquivo": "src/commands/curiosidades/curio182.js",
+      "tema": "maisrapidos",
+      "subcategory": "Bicho e Planta",
+      "description": "Os mais rápidos por terra, mar e ar",
+      "fichas": 6
+    },
+    {
+      "nome": "curio183",
+      "arquivo": "src/commands/curiosidades/curio183.js",
+      "tema": "maislongevos",
+      "subcategory": "Bicho e Planta",
+      "description": "Os animais que vivem mais",
+      "fichas": 6
+    },
+    {
+      "nome": "curio184",
+      "arquivo": "src/commands/curiosidades/curio184.js",
+      "tema": "peconhentos",
+      "subcategory": "Bicho e Planta",
+      "description": "Peçonhentos e venenosos: quem é quem",
+      "fichas": 6
+    },
+    {
+      "nome": "curio185",
+      "arquivo": "src/commands/curiosidades/curio185.js",
+      "tema": "ameacados",
+      "subcategory": "Bicho e Planta",
+      "description": "Bichos à beira do fim",
+      "fichas": 6
+    },
+    {
+      "nome": "curio186",
+      "arquivo": "src/commands/curiosidades/curio186.js",
+      "tema": "extintosrecentes",
+      "subcategory": "Bicho e Planta",
+      "description": "Os que sumiram na nossa frente",
+      "fichas": 6
+    },
+    {
+      "nome": "curio187",
+      "arquivo": "src/commands/curiosidades/curio187.js",
+      "tema": "dinossauros",
+      "subcategory": "Bicho e Planta",
+      "description": "Dinossauros, ficha por ficha",
+      "fichas": 6
+    },
+    {
+      "nome": "curio188",
+      "arquivo": "src/commands/curiosidades/curio188.js",
+      "tema": "baleias",
+      "subcategory": "Bicho e Planta",
+      "description": "Baleias e golfinhos, ficha a ficha",
+      "fichas": 6
+    },
+    {
+      "nome": "curio189",
+      "arquivo": "src/commands/curiosidades/curio189.js",
+      "tema": "tubaroes",
+      "subcategory": "Bicho e Planta",
+      "description": "Os tubarões, ficha a ficha",
+      "fichas": 6
+    },
+    {
+      "nome": "curio190",
+      "arquivo": "src/commands/curiosidades/curio190.js",
+      "tema": "cefalopodes",
+      "subcategory": "Bicho e Planta",
+      "description": "Polvos, lulas e sépias",
+      "fichas": 6
+    },
+    {
+      "nome": "curio191",
+      "arquivo": "src/commands/curiosidades/curio191.js",
+      "tema": "felinos",
+      "subcategory": "Bicho e Planta",
+      "description": "Os grandes felinos",
+      "fichas": 6
+    },
+    {
+      "nome": "curio192",
+      "arquivo": "src/commands/curiosidades/curio192.js",
+      "tema": "primatas",
+      "subcategory": "Bicho e Planta",
+      "description": "Os primatas",
+      "fichas": 6
+    },
+    {
+      "nome": "curio193",
+      "arquivo": "src/commands/curiosidades/curio193.js",
+      "tema": "ursos",
+      "subcategory": "Bicho e Planta",
+      "description": "Os ursos do mundo",
+      "fichas": 6
+    },
+    {
+      "nome": "curio194",
+      "arquivo": "src/commands/curiosidades/curio194.js",
+      "tema": "canideos",
+      "subcategory": "Bicho e Planta",
+      "description": "Lobos, raposas e parentes",
+      "fichas": 6
+    },
+    {
+      "nome": "curio195",
+      "arquivo": "src/commands/curiosidades/curio195.js",
+      "tema": "aves",
+      "subcategory": "Bicho e Planta",
+      "description": "Aves que impressionam",
+      "fichas": 6
+    },
+    {
+      "nome": "curio196",
+      "arquivo": "src/commands/curiosidades/curio196.js",
+      "tema": "pinguins",
+      "subcategory": "Bicho e Planta",
+      "description": "Os pinguins",
+      "fichas": 6
+    },
+    {
+      "nome": "curio197",
+      "arquivo": "src/commands/curiosidades/curio197.js",
+      "tema": "cobras",
+      "subcategory": "Bicho e Planta",
+      "description": "As serpentes, cobra por cobra",
+      "fichas": 6
+    },
+    {
+      "nome": "curio198",
+      "arquivo": "src/commands/curiosidades/curio198.js",
+      "tema": "crocodilianos",
+      "subcategory": "Bicho e Planta",
+      "description": "Crocodilos, jacarés e gaviais",
+      "fichas": 6
+    },
+    {
+      "nome": "curio199",
+      "arquivo": "src/commands/curiosidades/curio199.js",
+      "tema": "anfibios",
+      "subcategory": "Bicho e Planta",
+      "description": "Sapos, rãs, pererecas e salamandras",
+      "fichas": 6
+    },
+    {
+      "nome": "curio200",
+      "arquivo": "src/commands/curiosidades/curio200.js",
+      "tema": "tartarugas",
+      "subcategory": "Bicho e Planta",
+      "description": "Tartarugas, jabutis e cágados",
+      "fichas": 6
+    },
+    {
+      "nome": "curio201",
+      "arquivo": "src/commands/curiosidades/curio201.js",
+      "tema": "insetos",
+      "subcategory": "Bicho e Planta",
+      "description": "Os insetos em números",
+      "fichas": 6
+    },
+    {
+      "nome": "curio202",
+      "arquivo": "src/commands/curiosidades/curio202.js",
+      "tema": "abelhas",
+      "subcategory": "Bicho e Planta",
+      "description": "As abelhas e a polinização",
+      "fichas": 6
+    },
+    {
+      "nome": "curio203",
+      "arquivo": "src/commands/curiosidades/curio203.js",
+      "tema": "formigas",
+      "subcategory": "Bicho e Planta",
+      "description": "Formigas e cupins",
+      "fichas": 6
+    },
+    {
+      "nome": "curio204",
+      "arquivo": "src/commands/curiosidades/curio204.js",
+      "tema": "aranhas",
+      "subcategory": "Bicho e Planta",
+      "description": "Aranhas e escorpiões",
+      "fichas": 6
+    },
+    {
+      "nome": "curio205",
+      "arquivo": "src/commands/curiosidades/curio205.js",
+      "tema": "peixes",
+      "subcategory": "Bicho e Planta",
+      "description": "Peixes de água doce e de mar",
+      "fichas": 6
+    },
+    {
+      "nome": "curio206",
+      "arquivo": "src/commands/curiosidades/curio206.js",
+      "tema": "corais",
+      "subcategory": "Bicho e Planta",
+      "description": "Corais e recifes",
+      "fichas": 6
+    },
+    {
+      "nome": "curio207",
+      "arquivo": "src/commands/curiosidades/curio207.js",
+      "tema": "migracoes",
+      "subcategory": "Bicho e Planta",
+      "description": "As grandes migrações animais",
+      "fichas": 6
+    },
+    {
+      "nome": "curio208",
+      "arquivo": "src/commands/curiosidades/curio208.js",
+      "tema": "bichosbrasil",
+      "subcategory": "Bicho e Planta",
+      "description": "Bichos que só existem no Brasil",
+      "fichas": 6
+    },
+    {
+      "nome": "curio209",
+      "arquivo": "src/commands/curiosidades/curio209.js",
+      "tema": "arvores",
+      "subcategory": "Bicho e Planta",
+      "description": "As árvores mais notáveis do mundo",
+      "fichas": 6
+    },
+    {
+      "nome": "curio210",
+      "arquivo": "src/commands/curiosidades/curio210.js",
+      "tema": "arvoresbr",
+      "subcategory": "Bicho e Planta",
+      "description": "Árvores brasileiras e suas histórias",
+      "fichas": 6
+    },
+    {
+      "nome": "curio211",
+      "arquivo": "src/commands/curiosidades/curio211.js",
+      "tema": "frutas",
+      "subcategory": "Bicho e Planta",
+      "description": "Frutas e de onde elas vieram",
+      "fichas": 6
+    },
+    {
+      "nome": "curio212",
+      "arquivo": "src/commands/curiosidades/curio212.js",
+      "tema": "frutasbr",
+      "subcategory": "Bicho e Planta",
+      "description": "As frutas nativas do Brasil",
+      "fichas": 6
+    },
+    {
+      "nome": "curio213",
+      "arquivo": "src/commands/curiosidades/curio213.js",
+      "tema": "temperos",
+      "subcategory": "Bicho e Planta",
+      "description": "Temperos e especiarias",
+      "fichas": 6
+    },
+    {
+      "nome": "curio214",
+      "arquivo": "src/commands/curiosidades/curio214.js",
+      "tema": "cogumelos",
+      "subcategory": "Bicho e Planta",
+      "description": "Fungos e cogumelos",
+      "fichas": 6
+    },
+    {
+      "nome": "curio215",
+      "arquivo": "src/commands/curiosidades/curio215.js",
+      "tema": "cinemaclassicos",
+      "subcategory": "Cultura",
+      "description": "Filmes que mudaram o cinema",
+      "fichas": 6
+    },
+    {
+      "nome": "curio216",
+      "arquivo": "src/commands/curiosidades/curio216.js",
+      "tema": "oscar",
+      "subcategory": "Cultura",
+      "description": "O Oscar e seus recordes",
+      "fichas": 6
+    },
+    {
+      "nome": "curio217",
+      "arquivo": "src/commands/curiosidades/curio217.js",
+      "tema": "diretores",
+      "subcategory": "Cultura",
+      "description": "Diretores que criaram uma linguagem",
+      "fichas": 6
+    },
+    {
+      "nome": "curio218",
+      "arquivo": "src/commands/curiosidades/curio218.js",
+      "tema": "animacao",
+      "subcategory": "Cultura",
+      "description": "A história da animação",
+      "fichas": 6
+    },
+    {
+      "nome": "curio219",
+      "arquivo": "src/commands/curiosidades/curio219.js",
+      "tema": "efeitosespeciais",
+      "subcategory": "Cultura",
+      "description": "Os efeitos especiais no cinema",
+      "fichas": 6
+    },
+    {
+      "nome": "curio220",
+      "arquivo": "src/commands/curiosidades/curio220.js",
+      "tema": "cinemabrasileiro",
+      "subcategory": "Cultura",
+      "description": "O cinema brasileiro",
+      "fichas": 6
+    },
+    {
+      "nome": "curio221",
+      "arquivo": "src/commands/curiosidades/curio221.js",
+      "tema": "generoscinema",
+      "subcategory": "Cultura",
+      "description": "Os gêneros do cinema e de onde saíram",
+      "fichas": 6
+    },
+    {
+      "nome": "curio222",
+      "arquivo": "src/commands/curiosidades/curio222.js",
+      "tema": "series",
+      "subcategory": "Cultura",
+      "description": "Séries que marcaram a televisão",
+      "fichas": 6
+    },
+    {
+      "nome": "curio223",
+      "arquivo": "src/commands/curiosidades/curio223.js",
+      "tema": "discos",
+      "subcategory": "Cultura",
+      "description": "Discos que mudaram a música",
+      "fichas": 6
+    },
+    {
+      "nome": "curio224",
+      "arquivo": "src/commands/curiosidades/curio224.js",
+      "tema": "rock",
+      "subcategory": "Cultura",
+      "description": "A história do rock",
+      "fichas": 6
+    },
+    {
+      "nome": "curio225",
+      "arquivo": "src/commands/curiosidades/curio225.js",
+      "tema": "jazzblues",
+      "subcategory": "Cultura",
+      "description": "O jazz e o blues",
+      "fichas": 6
+    },
+    {
+      "nome": "curio226",
+      "arquivo": "src/commands/curiosidades/curio226.js",
+      "tema": "compositoresclassicos",
+      "subcategory": "Cultura",
+      "description": "Os compositores da música clássica",
+      "fichas": 6
+    },
+    {
+      "nome": "curio227",
+      "arquivo": "src/commands/curiosidades/curio227.js",
+      "tema": "opera",
+      "subcategory": "Cultura",
+      "description": "A ópera e suas obras",
+      "fichas": 6
+    },
+    {
+      "nome": "curio228",
+      "arquivo": "src/commands/curiosidades/curio228.js",
+      "tema": "hiphop",
+      "subcategory": "Cultura",
+      "description": "O hip-hop",
+      "fichas": 6
+    },
+    {
+      "nome": "curio229",
+      "arquivo": "src/commands/curiosidades/curio229.js",
+      "tema": "musicaeletronica",
+      "subcategory": "Cultura",
+      "description": "A música eletrônica",
+      "fichas": 6
+    },
+    {
+      "nome": "curio230",
+      "arquivo": "src/commands/curiosidades/curio230.js",
+      "tema": "quadrinhos",
+      "subcategory": "Cultura",
+      "description": "A história dos quadrinhos",
+      "fichas": 6
+    },
+    {
+      "nome": "curio231",
+      "arquivo": "src/commands/curiosidades/curio231.js",
+      "tema": "mangaanime",
+      "subcategory": "Cultura",
+      "description": "Mangá e anime",
+      "fichas": 6
+    },
+    {
+      "nome": "curio232",
+      "arquivo": "src/commands/curiosidades/curio232.js",
+      "tema": "videogames",
+      "subcategory": "Cultura",
+      "description": "A história dos videogames",
+      "fichas": 6
+    },
+    {
+      "nome": "curio233",
+      "arquivo": "src/commands/curiosidades/curio233.js",
+      "tema": "literaturamundial",
+      "subcategory": "Cultura",
+      "description": "Livros que mudaram o mundo",
+      "fichas": 6
+    },
+    {
+      "nome": "curio234",
+      "arquivo": "src/commands/curiosidades/curio234.js",
+      "tema": "autoresmundiais",
+      "subcategory": "Cultura",
+      "description": "Autores da literatura mundial",
+      "fichas": 6
+    },
+    {
+      "nome": "curio235",
+      "arquivo": "src/commands/curiosidades/curio235.js",
+      "tema": "nobel",
+      "subcategory": "Cultura",
+      "description": "O Nobel e seus laureados",
+      "fichas": 6
+    },
+    {
+      "nome": "curio236",
+      "arquivo": "src/commands/curiosidades/curio236.js",
+      "tema": "personagensliterarios",
+      "subcategory": "Cultura",
+      "description": "Personagens que saíram dos livros e viraram gente",
+      "fichas": 6
+    },
+    {
+      "nome": "curio237",
+      "arquivo": "src/commands/curiosidades/curio237.js",
+      "tema": "pintura",
+      "subcategory": "Cultura",
+      "description": "Quadros que todo mundo conhece",
+      "fichas": 6
+    },
+    {
+      "nome": "curio238",
+      "arquivo": "src/commands/curiosidades/curio238.js",
+      "tema": "pintores",
+      "subcategory": "Cultura",
+      "description": "Pintores e seus estilos",
+      "fichas": 6
+    },
+    {
+      "nome": "curio239",
+      "arquivo": "src/commands/curiosidades/curio239.js",
+      "tema": "movimentosarte",
+      "subcategory": "Cultura",
+      "description": "Os movimentos da arte",
+      "fichas": 6
+    },
+    {
+      "nome": "curio240",
+      "arquivo": "src/commands/curiosidades/curio240.js",
+      "tema": "esculturas",
+      "subcategory": "Cultura",
+      "description": "Esculturas famosas",
+      "fichas": 6
+    },
+    {
+      "nome": "curio241",
+      "arquivo": "src/commands/curiosidades/curio241.js",
+      "tema": "estilosarquitetura",
+      "subcategory": "Cultura",
+      "description": "Os estilos da arquitetura",
+      "fichas": 6
+    },
+    {
+      "nome": "curio242",
+      "arquivo": "src/commands/curiosidades/curio242.js",
+      "tema": "museusmundo",
+      "subcategory": "Cultura",
+      "description": "Os grandes museus do mundo",
+      "fichas": 6
+    },
+    {
+      "nome": "curio243",
+      "arquivo": "src/commands/curiosidades/curio243.js",
+      "tema": "fotografia",
+      "subcategory": "Cultura",
+      "description": "A história da fotografia",
+      "fichas": 6
+    },
+    {
+      "nome": "curio244",
+      "arquivo": "src/commands/curiosidades/curio244.js",
+      "tema": "teatromundial",
+      "subcategory": "Cultura",
+      "description": "O teatro através dos séculos",
+      "fichas": 6
+    },
+    {
+      "nome": "curio245",
+      "arquivo": "src/commands/curiosidades/curio245.js",
+      "tema": "moda",
+      "subcategory": "Cultura",
+      "description": "A moda através das décadas",
+      "fichas": 6
+    },
+    {
+      "nome": "curio246",
+      "arquivo": "src/commands/curiosidades/curio246.js",
+      "tema": "olimpiadas",
+      "subcategory": "Cultura",
+      "description": "Os Jogos Olímpicos",
+      "fichas": 6
+    },
+    {
+      "nome": "curio247",
+      "arquivo": "src/commands/curiosidades/curio247.js",
+      "tema": "modalidades",
+      "subcategory": "Cultura",
+      "description": "Modalidades olímpicas pouco conhecidas",
+      "fichas": 6
+    },
+    {
+      "nome": "curio248",
+      "arquivo": "src/commands/curiosidades/curio248.js",
+      "tema": "copas",
+      "subcategory": "Cultura",
+      "description": "As Copas do Mundo",
+      "fichas": 6
+    },
+    {
+      "nome": "curio249",
+      "arquivo": "src/commands/curiosidades/curio249.js",
+      "tema": "automobilismo",
+      "subcategory": "Cultura",
+      "description": "O automobilismo e a Fórmula 1",
+      "fichas": 6
+    },
+    {
+      "nome": "curio250",
+      "arquivo": "src/commands/curiosidades/curio250.js",
+      "tema": "xadrez",
+      "subcategory": "Cultura",
+      "description": "O xadrez e seus campeões",
+      "fichas": 6
+    }
+  ]
+}

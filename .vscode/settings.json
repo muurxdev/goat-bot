@@ -1,0 +1,28 @@
+{
+    "git.enabled": true,
+    "git.autorefresh": false,
+    "git.autofetch": false,
+    "git.detectSubmodules": false,
+    "git.showProgress": false,
+    "git.commands.showCommandOutputOnError": false,
+    "git.openRepositoryInParentFolders": "never",
+    "git.confirmSync": false,
+    "git.ignoreLimitWarning": true,
+    "git.decorations.enabled": false,
+    "git.status.showProgress": false,
+    "gitlens.views.repositories.autoRefresh": false,
+    "gitlens.showWhatsNewOnUpgrade": false,
+    "gitlens.graph.autoFetch": false,
+    "gitlens.plusFeatures.enabled": false,
+    "files.watcherExclude": {
+        "**/.git/objects/**": true,
+        "**/.git/subtree-cache/**": true,
+        "**/node_modules/**": true,
+        "**/data/**": true,
+        "**/sessao/**": true,
+        "**/temp/**": true,
+        "**/logs/**": true,
+        "**/backups/**": true,
+        "**/.system_generated/**": true
+    }
+}

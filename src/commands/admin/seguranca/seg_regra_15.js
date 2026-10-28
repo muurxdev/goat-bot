@@ -1,0 +1,24 @@
+/**
+ * Regra de Segurança #15
+ */
+const M = require('../../../utils/moldura');
+
+module.exports = {
+    name: 'seg_regra_15',
+    aliases: ["regra_seg_15","cmd_seg_regra_15","alt_seg_regra_15","atalho_seg_regra_15","abrev_seg_regra_15","call_seg_regra_15","func_seg_regra_15"],
+    category: 'admin',
+    subcategory: 'Regras de Segurança',
+    description: 'Parâmetro de proteção e compliance de grupo #15',
+    groupOnly: true,
+    adminOnly: true,
+    cooldownMs: 2000,
+    execute: async ({ reply, args }) => {
+        const doc = [
+            M.cabecalho('🛡️', 'Regra de Segurança #15'),
+            '⚙️ *Parâmetro:* Defesa Ativa e Integridade do Grupo #15',
+            '🔒 *Status:* Ativo e em conformidade com as diretrizes do reino.',
+            M.assinatura('GOAT Security Shield')
+        ].join('\n\n');
+        return reply(doc);
+    }
+};

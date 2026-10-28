@@ -1,0 +1,33 @@
+# Dependências locais
+node_modules
+
+# Git e controle de versão
+.git
+.gitignore
+
+# Sessões e credenciais
+sessao
+auth_info_baileys
+
+# Temporários e Logs
+temp
+logs
+*.log
+npm-debug.log*
+
+# Banco de dados e backups locais
+backups
+data/*.sqlite
+data/*.sqlite-wal
+data/*.sqlite-shm
+tests/test_db.sqlite
+
+# Variáveis de ambiente sensíveis
+.env
+.env.local
+
+# Backups e lixo
+*.bak
+indexxxxx
+database
+

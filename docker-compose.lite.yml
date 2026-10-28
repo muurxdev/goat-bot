@@ -1,0 +1,110 @@
+version: '3.8'
+
+networks:
+  bot-net:
+    driver: bridge
+
+services:
+  goat-bot:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: goat_bot_xp
+    restart: unless-stopped
+    networks:
+      - bot-net
+    # Painel do QR de pareamento do WhatsApp: SÓ na própria VPS. Quem abrisse
+    # essa página de fora poderia parear o número do bot no aparelho dele.
+    # Antes a trava estava só no docker-compose.override.yml, que não entra
+    # quando se sobe com -f docker-compose.lite.yml.
+    ports:
+      - "127.0.0.1:3000:3000"
+    env_file:
+      - .env
+    environment:
+      - NODE_ENV=production
+      - PORT=3000
+      - TZ=America/Sao_Paulo
+      # Transcrição (.transcrever e áudios): faster-whisper local, abaixo. Se o container cair, o
+      # transcriptionService segue para Groq/Gemini quando houver chave.
+      - WHISPER_API_URL=http://whisper:8000/v1/audio/transcriptions
+      - WHISPER_API_MODEL=${WHISPER_MODEL:-Systran/faster-whisper-small}
+    volumes:
+      - ./data:/app/data
+      - ./sessao:/app/sessao
+      - ./backups:/app/backups
+      - ./logs:/app/logs
+      - ./temp:/app/temp
+      - ./src:/app/src
+      - ./assets:/app/assets
+    deploy:
+      resources:
+        limits:
+          # 1.0: o Docker recusa criar o container com limite acima dos núcleos do host,
+          # e as VPS deste projeto têm 1 vCPU.
+          cpus: '1.0'
+          memory: 1024M
+        reservations:
+          memory: 180M
+    logging:
+      driver: 'json-file'
+      options:
+        max-size: '10m'
+        max-file: '3'
+    depends_on:
+      - bgutil-pot-provider
+
+  # Transcrição local (faster-whisper, API compatível com a da OpenAI). `small` entende bem o
+  # português falado e cabe nos 3,9 GB da VPS (~1 GB de RAM); WHISPER_MODEL no .env troca
+  # (`Systran/faster-whisper-base` é mais leve, `-medium` mais exato e bem mais lento em 1 vCPU).
+  whisper:
+    image: fedirz/faster-whisper-server:latest-cpu
+    container_name: goat_whisper
+    restart: unless-stopped
+    networks:
+      - bot-net
+    volumes:
+      - whisper_models:/root/.cache/huggingface
+    environment:
+      - WHISPER__MODEL=${WHISPER_MODEL:-Systran/faster-whisper-small}
+      - WHISPER__INFERENCE_DEVICE=cpu
+      # Sem isto o modelo carrega em float16, que a CPU não acelera: 1,3 GB de RAM e lento.
+      # int8 é o padrão para CPU no faster-whisper: ~3× menos memória, mais rápido, mesma qualidade prática.
+      - WHISPER__COMPUTE_TYPE=int8
+    deploy:
+      resources:
+        limits:
+          cpus: '1.0'
+          memory: 1536M
+        reservations:
+          memory: 128M
+    logging:
+      driver: 'json-file'
+      options:
+        max-size: '5m'
+        max-file: '2'
+
+  # Provedor de PO-Tokens para o YouTube (baixo consumo de RAM: ~80MB)
+  bgutil-pot-provider:
+    image: brainicism/bgutil-ytdlp-pot-provider
+    container_name: bgutil_pot_provider
+    restart: unless-stopped
+    networks:
+      - bot-net
+    ports:
+      - "127.0.0.1:4416:4416"
+    deploy:
+      resources:
+        limits:
+          cpus: '0.5'
+          memory: 192M
+        reservations:
+          memory: 64M
+    logging:
+      driver: 'json-file'
+      options:
+        max-size: '5m'
+        max-file: '2'
+
+volumes:
+  whisper_models:
