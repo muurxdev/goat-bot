@@ -78,7 +78,7 @@ module.exports = {
                         emoji: "✍️",
                         titulo: "Digite assim",
                         linhas: [
-                            `• ${F.cmd(prefix, "setmenuname", "global Taverna do GOAT")} — título principal`,
+                            `• ${F.cmd(prefix, "setmenuname", "global Taverna do ➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤")} — título principal`,
                             `• ${F.cmd(prefix, "setmenuname", "rpg Aventuras no Reino")} — menu de RPG`,
                             `• ${F.cmd(prefix, "setmenuname", "reset rpg")} — volta ao padrão`
                         ]

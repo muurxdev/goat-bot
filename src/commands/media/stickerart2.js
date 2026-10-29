@@ -19,7 +19,7 @@ module.exports = {
     subcategory: 'Figurinhas',
     description: 'Define quem assina suas figurinhas',
     usage: '<autor>',
-    examples: [' — mostra o autor atual', 'GOAT — define o autor'],
+    examples: [' — mostra o autor atual', '➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤ — define o autor'],
     cooldownMs: 2500,
     execute: async ({ reply, sender, args = [], prefix = '.' }) => {
     if (!args.length) {
@@ -31,7 +31,7 @@ module.exports = {
             secoes: [
                 { emoji: '📋', titulo: 'Seu pacote', linhas: [F.campo('Nome', p.nome || 'padrão'), F.campo('Autor', p.autor || 'padrão')] },
                 { emoji: '⌨️', titulo: 'Digite assim', linhas: [F.cmd(prefix, 'packautor', '<autor>') + ' (até 40 caracteres)'] },
-                { emoji: '📝', titulo: 'Exemplos', linhas: F.lista([F.cmd(prefix, 'packautor', 'GOAT'), F.cmd(prefix, 'packautor', '@seuinsta')]) }
+                { emoji: '📝', titulo: 'Exemplos', linhas: F.lista([F.cmd(prefix, 'packautor', '➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤'), F.cmd(prefix, 'packautor', '@seuinsta')]) }
             ],
             dica: 'O autor aparece embaixo do nome do pacote quando alguém toca na figurinha.',
             proximos: [
@@ -47,7 +47,7 @@ module.exports = {
             emoji: '✍️',
             titulo: 'Autor não salvo',
             intro: erroSimples(r.erro),
-            secoes: [{ emoji: '📝', titulo: 'Exemplo', linhas: [F.cmd(prefix, 'packautor', 'GOAT')] }],
+            secoes: [{ emoji: '📝', titulo: 'Exemplo', linhas: [F.cmd(prefix, 'packautor', '➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤')] }],
             prefix
         }))
     }

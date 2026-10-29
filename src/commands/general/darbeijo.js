@@ -26,7 +26,7 @@ module.exports = {
     subcategory: "Interação",
     description: "Dá um beijo carinhoso na bochecha de alguém",
     usage: "<@pessoa ou nome>",
-    examples: ["@pessoa — marca alguém do grupo", "GOAT — usa um nome qualquer"],
+    examples: ["@pessoa — marca alguém do grupo", "➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤ — usa um nome qualquer"],
     cooldownMs: 2000,
     execute: async ({ reply, args = [], sender, mentionedJid, prefix = '.' }) => {
         const alvo = alvoDe(mentionedJid, args, sender)
@@ -37,7 +37,7 @@ module.exports = {
                 intro: "Um beijinho na bochecha, daqueles de carinho. O clima da taverna agradece. Só falta dizer para quem.",
                 secoes: [{ emoji: '✍️', titulo: 'Digite assim', linhas: [
                     `• ${F.cmd(prefix, "darbeijo", '@pessoa')} — marca alguém do grupo`,
-                    `• ${F.cmd(prefix, "darbeijo", 'GOAT')} — usa um nome qualquer`
+                    `• ${F.cmd(prefix, "darbeijo", '➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤')} — usa um nome qualquer`
                 ] }],
                 proximos: [
                 { nome: "testeafinidade", args: "@pessoa", oque: "medir a sintonia do casal" },

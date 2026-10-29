@@ -23,7 +23,7 @@ module.exports = {
                 '• Os eventos de segurança são registrados na auditoria do bot.',
                 '• Em caso de emergência, use `.seg_lockdown_grupo` para trancar o chat.'
             ]),
-            M.assinatura('GOAT Security Shield')
+            M.assinatura('➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤ Security Shield')
         ].join('\n\n');
         return reply(doc);
     }

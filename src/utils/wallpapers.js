@@ -1,5 +1,5 @@
 /**
- * Local GOAT & Football Wallpapers & Media Banner Catalog
+ * Local ➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤ & Football Wallpapers & Media Banner Catalog
  * Gerencia papéis de parede fixos e vídeos animados para TODOS os menus do bot
  */
 

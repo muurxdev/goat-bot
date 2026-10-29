@@ -20,7 +20,7 @@ module.exports = {
                 M.cabecalho('🧩', 'Desafio de Raciocínio #82'),
                 'Quanto é a soma: *25 + 17*?',
                 '👉 Envie sua resposta com: `.desafio_logica_82 <resultado>`',
-                M.assinatura('GOAT Mental Lab')
+                M.assinatura('➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤ Mental Lab')
             ].join('\n\n');
             return reply(doc);
         }

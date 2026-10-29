@@ -53,12 +53,12 @@ module.exports = {
 
         try {
             if (!(await gerarTom(mp3))) return reply('❌ Não consegui gerar o áudio de teste (ffmpeg).')
-            const capa = await capaQuadrada(null, 'Teste de capa', 'GOAT')
+            const capa = await capaQuadrada(null, 'Teste de capa', '➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤')
             if (!capa) return reply('❌ Não consegui montar a capa de teste.')
             const leve = await capaLeve(capa)
             const ficha = legendaDoAudio({
-                caption: '🎵 *Teste de capa*\nArtista: GOAT\nDuração: 0:06\nArquivo: MP3 · 320 kbps · 0,2 MB\nOrigem: teste',
-                title: 'Teste de capa', author: 'GOAT', filePath: mp3, url: ''
+                caption: '🎵 *Teste de capa*\nArtista: ➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤\nDuração: 0:06\nArquivo: MP3 · 320 kbps · 0,2 MB\nOrigem: teste',
+                title: 'Teste de capa', author: '➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤', filePath: mp3, url: ''
             })
             const enviar = (conteudo, opcoes = {}) => client.sendMessage(from, conteudo, { quoted: info, mediaUploadTimeoutMs: 120000, ...opcoes })
 

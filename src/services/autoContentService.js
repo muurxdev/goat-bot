@@ -174,7 +174,7 @@ async function entregarVagas(groupJid, consulta) {
         const repo = 'backend-br/vagas'
         const res = await axios.get(`https://api.github.com/repos/${repo}/issues?state=open&per_page=3`, {
             timeout: 6000,
-            headers: { 'User-Agent': 'GOATBOT/2.0 (Skycode Community)' }
+            headers: { 'User-Agent': '➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤/2.0 (Skycode Community)' }
         })
         const items = res.data || []
         if (!items.length) return { ok: false, motivo: 'nenhuma vaga encontrada' }
@@ -209,7 +209,7 @@ async function entregarVendas(groupJid, consulta) {
     return { ok: true, item: consulta }
 }
 
-/** Entrega de FUTEBOL & TABELAS DO GOAT */
+/** Entrega de FUTEBOL & TABELAS DO ➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤ */
 async function entregarFutebol(groupJid, consulta) {
     const futebolService = require('./futebolService')
     const standings = await futebolService.getStandings(consulta || 'brasileirao')

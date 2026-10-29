@@ -67,7 +67,7 @@ const TEMAS = [
     {
         chave: 'futebol',
         emoji: '⚽',
-        label: 'Resenha Esportiva do GOAT // Skycode',
+        label: 'Resenha Esportiva do ➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤ // Skycode',
         deteccao: /futebol|goat|resenha|campeonato|bola|esporte/i,
         tipo: 'futebol',
         consultas: ['brasileirao', 'champions', 'premier', 'laliga']

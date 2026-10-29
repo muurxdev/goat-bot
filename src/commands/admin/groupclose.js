@@ -49,7 +49,7 @@ module.exports = {
                         `╔══════════════════════════════════════╗\n` +
                         `║  🔒  CONTROLE & FECHAMENTO DE GRUPO  ║\n` +
                         `╚══════════════════════════════════════╝\n` +
-                        `       GOAT SKYCODE PROTOCOL\n\n` +
+                        `       ➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤ SKYCODE PROTOCOL\n\n` +
                         `⏱️ *Tempo ou horário não reconhecido:* "${fullInput}"\n\n` +
                         `📋 *Exemplos de minutos, horas e horários aceitos:*\n` +
                         `• \`${prefix}fechar 10 minutos\` — fecha e reabre em 10 minutos\n` +
@@ -68,7 +68,7 @@ module.exports = {
                     `╔══════════════════════════════════════╗\n` +
                     `║  ⏳  FECHAMENTO AGENDADO COM SUCESSO ║\n` +
                     `╚══════════════════════════════════════╝\n` +
-                    `       GOAT SKYCODE PROTOCOL\n\n` +
+                    `       ➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤ SKYCODE PROTOCOL\n\n` +
                     `🔒 *O grupo fechará automaticamente no tempo programado:*\n\n` +
                     `• 📅 *Data e Horário:* ${targetFmt}\n` +
                     `• ⏱️ *Parâmetro Definido:* "${fullInput}"\n` +

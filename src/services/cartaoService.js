@@ -47,7 +47,7 @@ function esc(t) {
 
 /**
  * Normaliza e limpa texto para renderização segura em SVG sem perder caracteres legítimos.
- * Aplica normalização NFKC para converter fontes estilizadas (ex: GOAT -> GOAT).
+ * Aplica normalização NFKC para converter fontes estilizadas (ex: ➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤ -> ➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤).
  */
 function cortar(t, max, reserva = '') {
     const normalizado = String(t ?? '').normalize('NFKC')
@@ -194,7 +194,7 @@ async function cartaoPerfil(d) {
       ${texto(L - 70, 316, `${Math.round(Math.min(1, fracao) * 100)}% · ${cortar(d.rank, 24)}`, { tam: 24, cor: TEMA.ouroClaro, ancora: 'end' })}
       ${barra(330, 330, L - 400, 30, fracao)}
       ${grade}
-      ${rodape('GOAT · GOAT BOT', cortar(d.rodape, 60))}
+      ${rodape('➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤ · ➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤ BOT', cortar(d.rodape, 60))}
     `)
     return comAvatar(svg, { cx: 190, cy: 225, r: 115, foto: d.foto, nome })
 }
@@ -232,7 +232,7 @@ async function cartaoNivel(d) {
       ${linhas}
       ${texto(360, 588, `Rumo ao nível ${num((Number(d.nivelDepois) || 0) + 1)}${faltamTexto}`, { tam: 22, cor: TEMA.suave })}
       ${barra(360, 600, L - 430, 22, d.fracaoProximo || 0)}
-      ${rodape('GOAT · GOAT BOT', grupo)}
+      ${rodape('➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤ · ➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤ BOT', grupo)}
     `)
     return comAvatar(svg, { cx: 200, cy: 330, r: 120, foto: d.foto, nome })
 }
@@ -268,7 +268,7 @@ async function cartaoRanking(d) {
       ${texto(70, 110, cortar(d.subtitulo, 50).toUpperCase(), { tam: 22, cor: TEMA.ouro, peso: 700, espaco: 4 })}
       ${texto(70, 164, cortar(d.titulo, 38, 'Ranking'), { tam: 52, peso: 700 })}
       ${corpo}
-      ${rodape('GOAT · GOAT BOT', cortar(d.rodape, 60))}
+      ${rodape('➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤ · ➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤ BOT', cortar(d.rodape, 60))}
     `)
     return renderizar(svg)
 }

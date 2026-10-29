@@ -13,7 +13,7 @@ module.exports = {
     execute: async ({ reply, args, text }) => {
         const input = (text || args.join(' ')).trim();
         if (!input) {
-            return reply('✍️ *Fonte Gótica Bold*\n\nDigite seu texto após o comando para estilizar.\nExemplo: `.txt_gothic_bold GOATBOT`');
+            return reply('✍️ *Fonte Gótica Bold*\n\nDigite seu texto após o comando para estilizar.\nExemplo: `.txt_gothic_bold ➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤`');
         }
         const transformed = ts.toUnicodeFont(input, 'gothic_bold');
         return reply(transformed);

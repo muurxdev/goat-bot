@@ -20,7 +20,7 @@ module.exports = {
     subcategory: "Social",
     description: "Mede no cristal a sua sintonia com alguém",
     usage: "<@pessoa ou nome>",
-    examples: ["@pessoa — marca alguém do grupo", "GOAT — usa um nome qualquer"],
+    examples: ["@pessoa — marca alguém do grupo", "➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤ — usa um nome qualquer"],
     cooldownMs: 2000,
     execute: async ({ reply, args = [], sender, mentionedJid, prefix = '.' }) => {
         const alvo = alvoDe(mentionedJid, args, sender)
@@ -31,7 +31,7 @@ module.exports = {
                 intro: "O cristal mágico da taverna mede a sintonia entre duas almas. O resultado é sorteado a cada consulta. Só falta dizer para quem.",
                 secoes: [{ emoji: '✍️', titulo: 'Digite assim', linhas: [
                     `• ${F.cmd(prefix, "testeafinidade", '@pessoa')} — marca alguém do grupo`,
-                    `• ${F.cmd(prefix, "testeafinidade", 'GOAT')} — usa um nome qualquer`
+                    `• ${F.cmd(prefix, "testeafinidade", '➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤')} — usa um nome qualquer`
                 ] }],
                 proximos: [
                 { nome: "darbeijo", args: "@pessoa", oque: "mandar um beijo de afeto" },

@@ -1,6 +1,6 @@
 /**
  * Comando .contraataquetotal
- * Habilidade Suprema de GOAT: Reflete ataques mágicos multiplicando o dano com força avassaladora
+ * Habilidade Suprema de ➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤: Reflete ataques mágicos multiplicando o dano com força avassaladora
  */
 
 const dataService = require("../../services/dataService");
@@ -12,7 +12,7 @@ module.exports = {
     name: "contraataquetotal",
     aliases: ["reagir", "contraataque", "full-counter", "refletir"],
     category: "rpg",
-    description: "Ativa o Contra-ataque Total de GOAT refletindo ataques mágicos com dano multiplicado",
+    description: "Ativa o Contra-ataque Total de ➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤ refletindo ataques mágicos com dano multiplicado",
     cooldownMs: 8000,
     execute: async ({ sender, reply, args }) => {
         const botName = getBotName();
@@ -27,7 +27,7 @@ module.exports = {
         let doc = `╔══════════════════════════════╗\n`;
         doc += `║   ⚡ *FULL COUNTER ATIVADO!* ⚡   \n`;
         doc += `╚══════════════════════════════╝\n\n`;
-        doc += `⚔️ *GOAT empunha a Sombria e assume a postura de reflexão mágica absoluta!*\n\n`;
+        doc += `⚔️ *➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤ empunha a Sombria e assume a postura de reflexão mágica absoluta!*\n\n`;
         doc += `╭━〔 💥 REFLEXÃO MÁGICA 〕━⬣\n`;
         doc += `┃ 👤 *Guerreiro:* @${sender.split("@")[0]}\n`;
         doc += `┃ 🗡️ *Técnica:* Contra-ataque Total (全反撃)\n`;

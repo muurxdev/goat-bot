@@ -11,7 +11,7 @@ module.exports = {
     name: "setnickrpg",
     aliases: ["nomerrpg", "codinomerpg", "mudarnickrpg", "titulorpg", "nickrpg"],
     category: "rpg",
-    description: "Configura ou altera o seu codinome oficial no RPG (ex: .setnickrpg GOAT, O Camisa 10)",
+    description: "Configura ou altera o seu codinome oficial no RPG (ex: .setnickrpg ➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤, O Camisa 10)",
     cooldownMs: 2000,
     execute: async ({ sender, text, reply }) => {
         const botName = getBotName();

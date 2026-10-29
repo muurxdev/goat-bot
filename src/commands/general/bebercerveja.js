@@ -5,7 +5,7 @@ const F = require('../../utils/formato')
 
 const FRASES = [
     "Cerveja gelada e encorpada de Bernia: amarga, fresca e revigorante.",
-    "A espuma escorreu pela caneca e o GOAT encheu de novo.",
+    "A espuma escorreu pela caneca e o ➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤ encheu de novo.",
     "Um gole tão bom que você bateu a caneca no balcão."
 ]
 

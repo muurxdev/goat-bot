@@ -23,7 +23,7 @@ module.exports = {
         const doc = [
             M.cabecalho('🏆', 'Top 10 Mestres do Conhecimento'),
             lines.join('\n'),
-            M.assinatura('GOAT Academy')
+            M.assinatura('➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤ Academy')
         ].join('\n\n');
         return reply(doc);
     }

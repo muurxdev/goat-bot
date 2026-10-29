@@ -29,9 +29,9 @@ const LIMITES = {
 
 /** Nomes de pacote sugeridos, para quem não quer pensar num. */
 const SUGESTOES_NOME = [
-    'GOAT', 'Camisa 10', 'Inter Miami', 'Seleção Argentina',
+    '➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤', 'Camisa 10', 'Inter Miami', 'Seleção Argentina',
     'La Pulga', 'Balón de Oro', 'Campeón del Mundo', 'D10S',
-    'Rei do Futebol', 'GOAT GOAT'
+    'Rei do Futebol', '➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤ ➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤'
 ]
 
 function escopoDe(jid) {

@@ -23,7 +23,7 @@ module.exports = {
             return reply(
                 "❌ *Formato inválido para enquete!*\n\n" +
                 "📌 *Uso:* `.enquete Pergunta? | Opção 1 | Opção 2 | Opção 3`\n\n" +
-                "💡 *Exemplo:* `.enquete Qual o melhor Traço Marcante? | GOAT | Herói | Ban`"
+                "💡 *Exemplo:* `.enquete Qual o melhor Traço Marcante? | ➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤ | Herói | Ban`"
             );
         }
 

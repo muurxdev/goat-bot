@@ -1,5 +1,5 @@
 /**
- * Fonte única das categorias de comando estratégicas do GOATBOT.
+ * Fonte única das categorias de comando estratégicas do ➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤.
  * Consumida pelo gerador de menu dinâmico e pelo dispatcher de comandos.
  *
  * Cada categoria possui:

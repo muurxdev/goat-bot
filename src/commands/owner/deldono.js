@@ -108,7 +108,7 @@ module.exports = {
                         `• Responda a mensagem do dono com ${F.cmd(prefix, "deldono")}`,
                         `• ${F.cmd(prefix, "deldono", "sargento")} — pela patente`,
                         `• ${F.cmd(prefix, "deldono", "5511999999999")} — pelo número`,
-                        `• ${F.cmd(prefix, "deldono", "GOAT")} — pelo apelido cadastrado comigo`
+                        `• ${F.cmd(prefix, "deldono", "➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤")} — pelo apelido cadastrado comigo`
                     ] },
                     { emoji: "🛡️", titulo: "Quem pode remover quem", linhas: [
                         "• 👑 *Capitão:* remove qualquer patente.",

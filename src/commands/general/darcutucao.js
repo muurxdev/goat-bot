@@ -26,7 +26,7 @@ module.exports = {
     subcategory: "Interação",
     description: "Cutuca alguém distraído no grupo",
     usage: "<@pessoa ou nome>",
-    examples: ["@pessoa — marca alguém do grupo", "GOAT — usa um nome qualquer"],
+    examples: ["@pessoa — marca alguém do grupo", "➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤ — usa um nome qualquer"],
     cooldownMs: 2000,
     execute: async ({ reply, args = [], sender, mentionedJid, prefix = '.' }) => {
         const alvo = alvoDe(mentionedJid, args, sender)
@@ -37,7 +37,7 @@ module.exports = {
                 intro: "Aquela cutucada nas costelas para acordar quem está no mundo da lua. Só falta dizer para quem.",
                 secoes: [{ emoji: '✍️', titulo: 'Digite assim', linhas: [
                     `• ${F.cmd(prefix, "darcutucao", '@pessoa')} — marca alguém do grupo`,
-                    `• ${F.cmd(prefix, "darcutucao", 'GOAT')} — usa um nome qualquer`
+                    `• ${F.cmd(prefix, "darcutucao", '➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤')} — usa um nome qualquer`
                 ] }],
                 proximos: [
                 { nome: "assustar", args: "@pessoa", oque: "dar um susto de verdade" },

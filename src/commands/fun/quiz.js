@@ -10,10 +10,10 @@ const { initializeUser, adicionarXp } = require("../../services/xpService");
 const interactionService = require("../../services/interactionService");
 
 const QUESTIONS = [
-    { q: "Qual é o Tesouro Sagrado de GOAT?", a: "SOMBRIA", opts: ["Rhitta", "Sombria", "Espiritual", "Sagrado"] },
+    { q: "Qual é o Tesouro Sagrado de ➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤?", a: "SOMBRIA", opts: ["Rhitta", "Sombria", "Espiritual", "Sagrado"] },
     { q: "Qual o nome da espada empunhada por Arthur Pendragon?", a: "EXCALIBUR", opts: ["Dragon Handle", "Excalibur", "Muramasa", "Courechouse"] },
     { q: "Qual o Traço Marcante de Herói?", a: "ORGULHO", opts: ["Ira", "Ganância", "Orgulho", "Gula"] },
-    { q: "Quantas Bolas de Ouro oficiais GOAT conquistou na carreira?", a: "8", opts: ["5", "7", "8", "9"] },
+    { q: "Quantas Bolas de Ouro oficiais ➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤ conquistou na carreira?", a: "8", opts: ["5", "7", "8", "9"] },
     { q: "Qual o mandamento de Sombra?", a: "PIEDADE", opts: ["Verdade", "Piedade", "Amor", "Pureza"] }
 ];
 

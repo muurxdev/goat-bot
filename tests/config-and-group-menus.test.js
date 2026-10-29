@@ -121,7 +121,7 @@ async function runTests() {
         sender: '551199999999@s.whatsapp.net',
         prefix: '.'
     });
-    assert.ok(replyMsg.includes('COMANDOS DE GRUPO // GOAT 10'));
+    assert.ok(replyMsg.includes('COMANDOS DE GRUPO // ➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤ 10'));
     assert.ok(replyMsg.includes('ABERTURA & FECHAMENTO'));
     assert.ok(replyMsg.includes('CONFIGURAÇÕES & MENSAGENS'));
     assert.ok(replyMsg.includes('SEGURANÇA & PRESETS'));

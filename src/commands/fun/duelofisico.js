@@ -1,12 +1,12 @@
 /**
- * Comando .duelofisico — Simula queda de braço épica como GOAT vs Ban: .duelofisico
+ * Comando .duelofisico — Simula queda de braço épica como ➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤ vs Ban: .duelofisico
  */
 module.exports = {
     name: "duelofisico",
     aliases: ["duelofisico-cmd","cmd-duelofisico"],
     category: "fun",
     subcategory: "Jogos",
-    description: "Simula queda de braço épica como GOAT vs Ban: .duelofisico",
+    description: "Simula queda de braço épica como ➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤ vs Ban: .duelofisico",
     cooldownMs: 2500,
     execute: async ({ reply }) => {
             const placar = Math.floor(Math.random() * 500) + 200;

@@ -1,6 +1,6 @@
 /**
  * Comando .salaotaberna / .vestiario
- * Descanso no Vestiário dos Campeões com recuperação de energia do GOAT
+ * Descanso no Vestiário dos Campeões com recuperação de energia do ➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤
  */
 
 const { getBotName } = require("../../config/botConfig");

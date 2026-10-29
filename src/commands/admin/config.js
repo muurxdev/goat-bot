@@ -196,7 +196,7 @@ module.exports = {
             let doc = `╔══════════════════════════════════════╗\n`;
             doc += `║ ⚙️  CONFIG: MENSAGEM DE ABERTURA     ║\n`;
             doc += `╚══════════════════════════════════════╝\n`;
-            doc += `       GOAT SKYCODE PROTOCOL\n\n`;
+            doc += `       ➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤ SKYCODE PROTOCOL\n\n`;
             doc += `📌 *Status:* ${isActive ? "🟢 Ativado" : "🔴 Desativado"} | 📝 *Modelo:* ${groupConfig.aberturaMsg ? "Personalizado" : "Padrão Oficial"}\n`;
             doc += `👥 *Grupo:* ${vars.groupName} (${vars.memberCount} membros)\n\n`;
             doc += `━━━━━ [ PRÉVIA DA NOTIFICAÇÃO ] ━━━━━\n\n`;
@@ -287,7 +287,7 @@ module.exports = {
             let doc = `╔══════════════════════════════════════╗\n`;
             doc += `║ ⚙️  CONFIG: MENSAGEM DE FECHAMENTO   ║\n`;
             doc += `╚══════════════════════════════════════╝\n`;
-            doc += `       GOAT SKYCODE PROTOCOL\n\n`;
+            doc += `       ➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤ SKYCODE PROTOCOL\n\n`;
             doc += `📌 *Status:* ${isActive ? "🟢 Ativado" : "🔴 Desativado"} | 📝 *Modelo:* ${groupConfig.fechamentoMsg ? "Personalizado" : "Padrão Oficial"}\n`;
             doc += `👥 *Grupo:* ${vars.groupName} (${vars.memberCount} membros)\n\n`;
             doc += `━━━━━ [ PRÉVIA DA NOTIFICAÇÃO ] ━━━━━\n\n`;
@@ -379,7 +379,7 @@ module.exports = {
                     return reply(F.tela({
                         emoji: "🎨",
                         titulo: "Figurinha de Boas-Vindas Ativada",
-                        intro: `A figurinha exclusiva do GOAT será enviada com o anúncio de entrada!\n\n✨ *Garantia:* A figurinha é 100% diferente do wallpaper da notificação.`,
+                        intro: `A figurinha exclusiva do ➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤ será enviada com o anúncio de entrada!\n\n✨ *Garantia:* A figurinha é 100% diferente do wallpaper da notificação.`,
                         proximos: [
                             { nome: "config boasvindas preview", oque: "ver prévia atual" },
                             { nome: "config boasvindas figurinha off", oque: "desativar envio da figurinha" },
@@ -420,7 +420,7 @@ module.exports = {
             let doc = `╔══════════════════════════════════════╗\n`;
             doc += `║ ⚙️  CONFIG: BOAS-VINDAS (WELCOME)    ║\n`;
             doc += `╚══════════════════════════════════════╝\n`;
-            doc += `       GOAT SKYCODE PROTOCOL\n\n`;
+            doc += `       ➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤ SKYCODE PROTOCOL\n\n`;
             doc += `📌 *Status:* ${isActive ? "🟢 Ativado" : "🔴 Desativado"} | 📝 *Modelo:* ${groupConfig.welcomeMessage ? "Personalizado" : "Padrão Oficial"}\n`;
             doc += `🎨 *Figurinha Exclusiva:* ${isFigOn ? "🟢 Ativada (Diferenciada do Wallpaper)" : "🔴 Desativada"}\n`;
             doc += `👥 *Grupo:* ${vars.groupName} (${vars.memberCount} membros)\n\n`;
@@ -514,7 +514,7 @@ module.exports = {
                     return reply(F.tela({
                         emoji: "🎨",
                         titulo: "Figurinha de Despedida Ativada",
-                        intro: `A saída de participantes será acompanhada de figurinha exclusiva do GOAT!\n\n✨ *Garantia:* A figurinha é 100% diferente do wallpaper de saída.`,
+                        intro: `A saída de participantes será acompanhada de figurinha exclusiva do ➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤!\n\n✨ *Garantia:* A figurinha é 100% diferente do wallpaper de saída.`,
                         proximos: [
                             { nome: "config despedida preview", oque: "ver status atual" },
                             { nome: "config despedida figurinha off", oque: "desativar figurinha" },
@@ -555,7 +555,7 @@ module.exports = {
             let doc = `╔══════════════════════════════════════╗\n`;
             doc += `║ ⚙️  CONFIG: DESPEDIDA / SAÍDA        ║\n`;
             doc += `╚══════════════════════════════════════╝\n`;
-            doc += `       GOAT SKYCODE PROTOCOL\n\n`;
+            doc += `       ➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤ SKYCODE PROTOCOL\n\n`;
             doc += `📌 *Status:* ${isActive ? "🟢 Ativado" : "🔴 Desativado"} | 📝 *Modelo:* ${groupConfig.leaveMessage ? "Personalizado" : "Padrão Oficial"}\n`;
             doc += `🎨 *Figurinha Exclusiva:* ${isFigOn ? "🟢 Ativada (Diferenciada do Wallpaper)" : "🔴 Desativada"}\n`;
             doc += `👥 *Grupo:* ${vars.groupName} (${vars.memberCount} membros)\n\n`;
@@ -617,7 +617,7 @@ module.exports = {
             let doc = `╔══════════════════════════════════════╗\n`;
             doc += `║ 🎨  CONFIG: FIGURINHAS DE EVENTOS    ║\n`;
             doc += `╚══════════════════════════════════════╝\n`;
-            doc += `       GOAT SKYCODE PROTOCOL\n\n`;
+            doc += `       ➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤ SKYCODE PROTOCOL\n\n`;
             doc += `📌 *Status Geral:* ${isGlobalOn ? "🟢 Ativadas" : "🔴 Desativadas"}\n`;
             doc += `🖼️ *Diferenciação de Mídia:* 🟢 Ativa (100% distintas dos wallpapers)\n\n`;
             doc += `📋 *ESTADO POR EVENTO:*\n`;
@@ -625,7 +625,7 @@ module.exports = {
             doc += `• 🚪 *Saída (Despedida):* ${isLeaveOn ? "🟢 Ativada" : "🔴 Desativada"}\n`;
             doc += `• 👢 *Banimento:* ${isGlobalOn ? "🟢 Ativada" : "🔴 Desativada"}\n`;
             doc += `• ⭐ *Promoção/Admin:* ${isGlobalOn ? "🟢 Ativada" : "🔴 Desativada"}\n\n`;
-            doc += `📦 *PACOTE DE FIGURINHAS DO GOAT:*\n`;
+            doc += `📦 *PACOTE DE FIGURINHAS DO ➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤:*\n`;
             for (const item of figStatus) {
                 doc += `• ${item.emoji} *${item.rotulo}:* ${item.total} figurinhas exclusivas\n`;
             }
@@ -853,7 +853,7 @@ module.exports = {
             let doc = `╔══════════════════════════════════════╗\n`;
             doc += `║ ⚙️  CONFIG: AGENDA AUTOMÁTICA        ║\n`;
             doc += `╚══════════════════════════════════════╝\n`;
-            doc += `       GOAT SKYCODE PROTOCOL\n\n`;
+            doc += `       ➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤ SKYCODE PROTOCOL\n\n`;
             doc += `📌 *Status:* ${isActive ? "🟢 Ativada" : "🔴 Desativada"} | ⏳ *Ciclo:* ${cicloFmt}\n`;
             doc += `⏰ *Horários:* 🔒 Fechar: ${sched.closeTime} | 🔓 Abrir: ${sched.openTime}\n`;
             doc += `📅 *Dias:* ${diasFmt}\n`;
@@ -1031,9 +1031,9 @@ module.exports = {
         const isFigLeave = isFigEventos && Boolean(groupConfig.leaveFigurinha || groupConfig.leaveSticker);
 
         let doc = `╔══════════════════════════════════════╗\n`;
-        doc += `║  ⚙️  CONFIGURAÇÕES DO GRUPO // GOAT  ║\n`;
+        doc += `║  ⚙️  CONFIGURAÇÕES DO GRUPO // ➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤  ║\n`;
         doc += `╚══════════════════════════════════════╝\n`;
-        doc += `       GOAT SKYCODE PROTOCOL\n\n`;
+        doc += `       ➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤ SKYCODE PROTOCOL\n\n`;
 
         doc += `📬 *MENSAGENS AUTOMÁTICAS:*\n`;
         doc += `• 🔓 *Abertura:* ${isAbertura ? "🟢 Ativado" : "🔴 Desativado"} · ${groupConfig.aberturaMsg ? "Personalizada" : "Padrão"}\n`;

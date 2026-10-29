@@ -4,7 +4,7 @@
 const logger = require('../core/logger')
 const { getDatabase } = require("../database/connection")
 
-const DEFAULT_BOT_NAME = process.env.BOT_NAME || "GOAT"
+const DEFAULT_BOT_NAME = process.env.BOT_NAME || "➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤"
 
 function getBotName() {
     try {

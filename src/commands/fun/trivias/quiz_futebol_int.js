@@ -24,7 +24,7 @@ module.exports = {
                 '❓ *' + q.q + '*',
                 M.secao('📋', 'Alternativas', optLines),
                 '👉 Responda digitando: `.quiz_futebol_int <número ou texto da resposta>`',
-                M.assinatura('GOAT Quiz')
+                M.assinatura('➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤ Quiz')
             ].join('\n\n');
             return reply(doc);
         }

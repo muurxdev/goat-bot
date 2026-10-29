@@ -13,7 +13,7 @@ module.exports = {
     execute: async ({ reply, args, text }) => {
         const input = (text || args.join(' ')).trim();
         if (!input) {
-            return reply('✍️ *Texto Circular*\n\nDigite seu texto após o comando para estilizar.\nExemplo: `.txt_circled GOATBOT`');
+            return reply('✍️ *Texto Circular*\n\nDigite seu texto após o comando para estilizar.\nExemplo: `.txt_circled ➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤`');
         }
         const transformed = ts.toUnicodeFont(input, 'circled');
         return reply(transformed);

@@ -26,7 +26,7 @@ module.exports = {
     subcategory: "Magia",
     description: "Lança uma maldição de brincadeira em alguém do grupo",
     usage: "<@pessoa ou nome>",
-    examples: ["@pessoa — marca alguém do grupo", "GOAT — usa um nome qualquer"],
+    examples: ["@pessoa — marca alguém do grupo", "➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤ — usa um nome qualquer"],
     cooldownMs: 2000,
     execute: async ({ reply, args = [], sender, mentionedJid, prefix = '.' }) => {
         const alvo = alvoDe(mentionedJid, args, sender)
@@ -37,7 +37,7 @@ module.exports = {
                 intro: "Uma maldição só de zoeira: nada de dano, só constrangimento. Escolha a vítima com carinho. Só falta dizer para quem.",
                 secoes: [{ emoji: '✍️', titulo: 'Digite assim', linhas: [
                     `• ${F.cmd(prefix, "amaldicoaramigo", '@pessoa')} — marca alguém do grupo`,
-                    `• ${F.cmd(prefix, "amaldicoaramigo", 'GOAT')} — usa um nome qualquer`
+                    `• ${F.cmd(prefix, "amaldicoaramigo", '➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤')} — usa um nome qualquer`
                 ] }],
                 proximos: [
                 { nome: "pedirdesculpas", args: "@pessoa", oque: "fazer as pazes" },

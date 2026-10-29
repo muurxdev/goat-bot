@@ -13,7 +13,7 @@ module.exports = {
     execute: async ({ reply, args, text }) => {
         const input = (text || args.join(' ')).trim();
         if (!input) {
-            return reply('✍️ *Texto Sublinhado*\n\nDigite seu texto após o comando para estilizar.\nExemplo: `.txt_underline GOATBOT`');
+            return reply('✍️ *Texto Sublinhado*\n\nDigite seu texto após o comando para estilizar.\nExemplo: `.txt_underline ➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤`');
         }
         const transformed = ts.toUnderline(input);
         return reply(transformed);

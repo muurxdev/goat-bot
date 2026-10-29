@@ -16,7 +16,7 @@ module.exports = {
     usage: '<novo nome>',
     examples: [
         ' — mostra meu nome atual',
-        'GOAT — passo a me chamar GOAT'
+        '➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤ — passo a me chamar ➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤'
     ],
     ownerOnly: true,
     execute: async ({ text, reply, sender, prefix = '.' }) => {
@@ -30,7 +30,7 @@ module.exports = {
                     emoji: '✍️',
                     titulo: 'Para trocar, digite assim',
                     linhas: [
-                        `• ${F.cmd(prefix, 'setname', 'GOAT')}`,
+                        `• ${F.cmd(prefix, 'setname', '➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤')}`,
                         `• ${F.cmd(prefix, 'setname', 'ᶜᴿᴬᶻᵞ𝙈𝙚𝙡𝙞𝙤𝙙𝙖𝙨✖️‿✖️•')}`
                     ]
                 }],

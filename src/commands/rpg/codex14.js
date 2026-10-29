@@ -1,7 +1,7 @@
 /**
- * Comando .lendariagoatassault — GOAT  MODO ASSALTO REI DEMÔNIO
+ * Comando .lendariagoatassault — ➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤  MODO ASSALTO REI DEMÔNIO
  *
- * Ficha de classe lendária: GOAT  Modo Assalto Rei Demônio.
+ * Ficha de classe lendária: ➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤  Modo Assalto Rei Demônio.
  */
 
 const C = require('../../services/rpgCodexService')
@@ -39,7 +39,7 @@ module.exports = {
     aliases: ["fichalendariagoatassault"],
     category: 'rpg',
     subcategory: 'Códice',
-    description: 'Ficha de classe lendária: GOAT  Modo Assalto Rei Demônio',
+    description: 'Ficha de classe lendária: ➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤  Modo Assalto Rei Demônio',
     cooldownMs: 2500,
     execute: async ({ reply, args = [], prefix = '.' }) => {
     return reply(ficha(C.fichaLendaria('goat_assault'), prefix))

@@ -13,7 +13,7 @@ module.exports = {
     execute: async ({ reply, args, text }) => {
         const input = (text || args.join(' ')).trim();
         if (!input) {
-            return reply('✍️ *Fonte Double Struck*\n\nDigite seu texto após o comando para estilizar.\nExemplo: `.txt_double_struck GOATBOT`');
+            return reply('✍️ *Fonte Double Struck*\n\nDigite seu texto após o comando para estilizar.\nExemplo: `.txt_double_struck ➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤`');
         }
         const transformed = ts.toUnicodeFont(input, 'double_struck');
         return reply(transformed);

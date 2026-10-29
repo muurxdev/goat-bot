@@ -13,7 +13,7 @@ module.exports = {
         const M = require('../../../utils/moldura');
         const doc = [
             M.cabecalho('🚀', 'Expansão Épica de 10.000 Comandos'),
-            '✨ *GOATBOT atinge sua capacidade máxima!*',
+            '✨ *➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤ atinge sua capacidade máxima!*',
             M.secao('🌟', 'Grandes Destaques', [
                 '• Bolsa de Valores e Empresas Tycoon (.bolsa, .empresas)',
                 '• Sistema Bancário e Empréstimos (.banco, .cdb)',
@@ -23,7 +23,7 @@ module.exports = {
                 '• Mais de 500 Trivias e Minigames (.quiz, .jogo_d20)',
                 '• Vitrine de Conquistas e Busca Universal (.badge_vitrine, .buscar)'
             ]),
-            M.assinatura('GOATBOT')
+            M.assinatura('➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤')
         ].join('\n\n');
         return reply(doc);
     }

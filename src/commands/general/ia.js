@@ -1,6 +1,6 @@
 /**
  * Comando .ia / .gpt / .perguntar / .pesquisar
- * Inteligência Artificial GOAT — Respostas diretas, naturais e sem disclaimers
+ * Inteligência Artificial ➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤ — Respostas diretas, naturais e sem disclaimers
  */
 
 const { getBotName } = require('../../config/botConfig')

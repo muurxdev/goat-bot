@@ -8,12 +8,12 @@ const logger = require('../core/logger');
 
 const TRIVIA_BANKS = {
     saga: [
-        { q: 'Quantas Bolas de Ouro GOAT conquistou ao longo da carreira?', opts: ['8', '7', '5', '6'], a: '8' },
-        { q: 'Em qual ano GOAT conquistou a Copa do Mundo FIFA com a Argentina?', opts: ['2022', '2014', '2018', '2026'], a: '2022' },
-        { q: 'Qual número de camisa consagrou GOAT no Barcelona e na Seleção Argentina?', opts: ['10', '7', '9', '11'], a: '10' },
-        { q: 'Por qual clube GOAT conquistou 4 títulos da UEFA Champions League?', opts: ['Barcelona', 'PSG', 'Inter Miami', "Newell's Old Boys"], a: 'Barcelona' },
-        { q: 'Qual apelido mundialmente consagrado é dado a GOAT como o melhor de todos os tempos?', opts: ['GOAT', 'Fenômeno', 'Imperador', 'Rei'], a: 'GOAT' },
-        { q: 'Em qual clube dos Estados Unidos GOAT joga atualmente?', opts: ['Inter Miami', 'LA Galaxy', 'NYC FC', 'Orlando City'], a: 'Inter Miami' }
+        { q: 'Quantas Bolas de Ouro ➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤ conquistou ao longo da carreira?', opts: ['8', '7', '5', '6'], a: '8' },
+        { q: 'Em qual ano ➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤ conquistou a Copa do Mundo FIFA com a Argentina?', opts: ['2022', '2014', '2018', '2026'], a: '2022' },
+        { q: 'Qual número de camisa consagrou ➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤ no Barcelona e na Seleção Argentina?', opts: ['10', '7', '9', '11'], a: '10' },
+        { q: 'Por qual clube ➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤ conquistou 4 títulos da UEFA Champions League?', opts: ['Barcelona', 'PSG', 'Inter Miami', "Newell's Old Boys"], a: 'Barcelona' },
+        { q: 'Qual apelido mundialmente consagrado é dado a ➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤ como o melhor de todos os tempos?', opts: ['➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤', 'Fenômeno', 'Imperador', 'Rei'], a: '➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤' },
+        { q: 'Em qual clube dos Estados Unidos ➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤ joga atualmente?', opts: ['Inter Miami', 'LA Galaxy', 'NYC FC', 'Orlando City'], a: 'Inter Miami' }
     ],
     futebol_br: [
         { q: 'Qual clube brasileiro conquistou a Copa Libertadores de 2019 de virada nos minutos finais?', opts: ['Flamengo', 'River Plate', 'Palmeiras', 'Grêmio'], a: 'Flamengo' },
@@ -25,7 +25,7 @@ const TRIVIA_BANKS = {
     futebol_int: [
         { q: 'Qual clube possui mais títulos da UEFA Champions League na história?', opts: ['Real Madrid', 'Milan', 'Bayern de Munique', 'Liverpool'], a: 'Real Madrid' },
         { q: 'Qual seleção venceu a Copa do Mundo de 2022 no Catar?', opts: ['Argentina', 'França', 'Croácia', 'Marrocos'], a: 'Argentina' },
-        { q: 'Quem marcou 91 gols em um único ano civil (2012)?', opts: ['GOAT', 'Cristiano Ronaldo', 'Lewandowski', 'Gerd Müller'], a: 'GOAT' },
+        { q: 'Quem marcou 91 gols em um único ano civil (2012)?', opts: ['➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤', 'Cristiano Ronaldo', 'Lewandowski', 'Gerd Müller'], a: '➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤' },
         { q: 'Em qual estádio britânico a Inglaterra conquistou a Copa de 1966?', opts: ['Wembley', 'Old Trafford', 'Anfield', 'Emirates'], a: 'Wembley' }
     ],
     games: [

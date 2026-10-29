@@ -12,7 +12,7 @@ const logger = require('../core/logger')
 // Catálogo de Ações, Commodities, Criptos e FIIs da Bolsa de Reino
 const STOCKS_CATALOG = {
     // Ações do Reino & Lore (Futebol & Comunidade Global)
-    'MELI3': { code: 'MELI3', name: 'GOAT Inter Holdings', sector: 'Esportes & Franquias', basePrice: 142.50, volatility: 0.05, divYield: 0.08 },
+    'MELI3': { code: 'MELI3', name: '➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤ Inter Holdings', sector: 'Esportes & Franquias', basePrice: 142.50, volatility: 0.05, divYield: 0.08 },
     'LION4': { code: 'LION4', name: 'Reino Central S.A.', sector: 'Governo & Defesa', basePrice: 88.20, volatility: 0.03, divYield: 0.09 },
     'FAIRY3': { code: 'FAIRY3', name: 'Floresta das Fadas Papéis', sector: 'Madeira & Celulose', basePrice: 215.00, volatility: 0.06, divYield: 0.05 },
     'PURG1': { code: 'PURG1', name: 'Mineração Purgatório', sector: 'Mineração Extrema', basePrice: 46.80, volatility: 0.12, divYield: 0.02 },

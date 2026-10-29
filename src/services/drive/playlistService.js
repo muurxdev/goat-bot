@@ -144,7 +144,7 @@ async function baixarPlaylistParaDrive({ url, quality = 'max', userJid = null, o
     onEvento({ fase: 'listada', total: pl.itens.length, titulo: pl.titulo })
 
     // Uma subpasta por playlist, dentro da pasta raiz do bot.
-    const raiz = process.env.GDRIVE_FOLDER_ID || await drive.garantirPasta(process.env.GDRIVE_FOLDER_NAME || 'GOAT Bot')
+    const raiz = process.env.GDRIVE_FOLDER_ID || await drive.garantirPasta(process.env.GDRIVE_FOLDER_NAME || '➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤ Bot')
     const pastaId = await drive.garantirPasta(nomeSeguro(pl.titulo, 80), raiz)
     await drive.tornarPublico(pastaId)
 

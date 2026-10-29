@@ -1,7 +1,7 @@
 const { nomeDoMembro } = require('../utils/nomeMembro');
 /**
  * Serviço de Automação e Resposta Autônoma Contextual por Grupo (24H Engine)
- * GOATBOT // GOAT Prime (GOAT)
+ * ➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤ // ➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤ Prime (➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤)
  *
  * Responsável por:
  * 1. Identificar o nicho do grupo (Vagas, Vendas, Estudos, Divulgação, Resenha/Futebol, Comandos)
@@ -160,7 +160,7 @@ const NICHES = Object.freeze({
 
     resenha: {
         id: 'resenha',
-        label: 'Resenha & Clube dos Campeões (GOAT)',
+        label: 'Resenha & Clube dos Campeões (➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤)',
         emoji: '⚽',
         keywords: [
             'futebol', 'goat', 'bola de ouro', 'champions', 'libertadores',
@@ -171,7 +171,7 @@ const NICHES = Object.freeze({
             {
                 trigger: /(goat|melhor\s+do\s+mundo|goat|camisa\s+10|bola\s+de\s+ouro)/i,
                 response: (prefix) =>
-                    `🐐 *GOAT // O MAIOR DA HISTÓRIA (GOAT)*\n\n` +
+                    `🐐 *➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤ // O MAIOR DA HISTÓRIA (➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤)*\n\n` +
                     `• 8x Bolas de Ouro 🏆\n` +
                     `• Campeão da Copa do Mundo FIFA 2022 🇦🇷\n` +
                     `• 4x UEFA Champions League 🌟\n` +
@@ -191,7 +191,7 @@ const NICHES = Object.freeze({
             }
         ],
         fallback: (prefix) =>
-            `⚽ *Resenha Oficial do Clube dos Campeões (GOAT):*\n` +
+            `⚽ *Resenha Oficial do Clube dos Campeões (➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤):*\n` +
             `O espaço do bom futebol, debates e resenha descontraída. Digite \`${prefix}tabela brasileirao\` para conferir a tabela ou \`${prefix}menu\` para jogos e diversão.`
     },
 
@@ -207,7 +207,7 @@ const NICHES = Object.freeze({
             {
                 trigger: /(como\s+usar|quais\s+comandos|lista\s+de\s+comandos|o\s+que\s+voce\s+faz)/i,
                 response: (prefix) =>
-                    `🎮 *LABORATÓRIO DE COMANDOS // GOATBOT*\n\n` +
+                    `🎮 *LABORATÓRIO DE COMANDOS // ➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤*\n\n` +
                     `Contamos com mais de 10.000 comandos canônicos e 20.000 atalhos JIT ativos!\n\n` +
                     `🧭 *Principais Menus do Bot:*\n` +
                     `• \`${prefix}menu\` — Menu principal visual com todas as categorias\n` +

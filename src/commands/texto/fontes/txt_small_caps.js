@@ -13,7 +13,7 @@ module.exports = {
     execute: async ({ reply, args, text }) => {
         const input = (text || args.join(' ')).trim();
         if (!input) {
-            return reply('✍️ *Fonte Small Caps*\n\nDigite seu texto após o comando para estilizar.\nExemplo: `.txt_small_caps GOATBOT`');
+            return reply('✍️ *Fonte Small Caps*\n\nDigite seu texto após o comando para estilizar.\nExemplo: `.txt_small_caps ➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤`');
         }
         const transformed = ts.toUnicodeFont(input, 'small_caps');
         return reply(transformed);

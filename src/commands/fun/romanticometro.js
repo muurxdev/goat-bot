@@ -18,7 +18,7 @@ module.exports = {
             chave: "romanticometro",
             emoji: "💘",
             oque: "romantismo",
-            vereditos: ["Romantismo de pedra.","Manda um coração de vez em quando.","Lembra das datas importantes.","Escreve cartas e declarações.","Romance digno de GOAT e Princesa."],
+            vereditos: ["Romantismo de pedra.","Manda um coração de vez em quando.","Lembra das datas importantes.","Escreve cartas e declarações.","Romance digno de ➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤ e Princesa."],
             sender, mentionedJid, prefix
         });
         return reply(texto, mencoes);

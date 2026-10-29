@@ -1,7 +1,7 @@
 /**
- * Comando .itemespadacaos — LÂMINA DO CAOS DE GOAT
+ * Comando .itemespadacaos — LÂMINA DO CAOS DE ➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤
  *
- * Ficha do equipamento: Lâmina do Caos de GOAT.
+ * Ficha do equipamento: Lâmina do Caos de ➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤.
  */
 
 const EQ = require('../../services/rpgEquipmentService')
@@ -63,7 +63,7 @@ module.exports = {
     aliases: ["fichaespadacaos"],
     category: 'rpg',
     subcategory: 'Equipamento & Forja',
-    description: 'Ficha do equipamento: Lâmina do Caos de GOAT',
+    description: 'Ficha do equipamento: Lâmina do Caos de ➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤',
     cooldownMs: 3000,
     execute: async ({ reply, sender, args = [], prefix = '.' }) => {
     return reply(fichaItem('espada_caos'))

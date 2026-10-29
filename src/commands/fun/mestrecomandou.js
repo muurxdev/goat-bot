@@ -1,5 +1,5 @@
 /**
- * Comando .mestrecomandou — O Mestre GOAT mandou: .mestrecomandou
+ * Comando .mestrecomandou — O Mestre ➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤ mandou: .mestrecomandou
  */
 const F = require("../../utils/formato");
 module.exports = {
@@ -7,7 +7,7 @@ module.exports = {
     aliases: ["mestrecomandou-cmd","cmd-mestrecomandou"],
     category: "fun",
     subcategory: "Jogos",
-    description: "Sorteia uma ordem do Mestre GOAT para o grupo cumprir",
+    description: "Sorteia uma ordem do Mestre ➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤ para o grupo cumprir",
     examples: [" — sorteia uma ordem para o grupo"],
     cooldownMs: 2000,
     execute: async ({ reply, prefix = "." }) => {

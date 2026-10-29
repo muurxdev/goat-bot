@@ -22,7 +22,7 @@ module.exports = {
             const to = setTimeout(() => ctl.abort(), 12000)
             const r = await fetch(`https://openlibrary.org/search.json?q=${encodeURIComponent(q)}&limit=1&fields=title,author_name,cover_i,isbn,first_publish_year`, {
                 signal: ctl.signal,
-                headers: { 'User-Agent': 'GOATBOT/3.0' }
+                headers: { 'User-Agent': '➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤/3.0' }
             })
             clearTimeout(to)
 

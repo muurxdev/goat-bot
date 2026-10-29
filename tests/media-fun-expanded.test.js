@@ -42,7 +42,7 @@ async function runTests() {
 
     await test('aiPersonaService lista e recupera personas de Saga e profissionais', () => {
         const goat = aiPersonaService.getPersona('goat');
-        assert(goat && goat.name.includes('GOAT'), 'GOAT não encontrado');
+        assert(goat && goat.name.includes('➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤'), 'marca não encontrada na persona');
         const heroi = aiPersonaService.getPersona('heroi');
         assert(heroi && heroi.name.includes('Herói'), 'Herói não encontrado');
         const advogado = aiPersonaService.getPersona('advogado');

@@ -251,7 +251,7 @@ function explainFilter(filterId) {
             ...specLines
         ]),
         `💡 *Como aplicar:*\nResponda a um áudio ou nota de voz com \`.${filter.id}\` para processar e receber o áudio transformado.`,
-        M.assinatura('GOAT Audio Engine')
+        M.assinatura('➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤ Audio Engine')
     ].join('\n\n');
 }
 

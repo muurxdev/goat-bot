@@ -20,7 +20,7 @@ module.exports = {
                 M.cabecalho('🧩', 'Desafio de Raciocínio #166'),
                 'Quanto é a soma: *13 + 9*?',
                 '👉 Envie sua resposta com: `.desafio_logica_166 <resultado>`',
-                M.assinatura('GOAT Mental Lab')
+                M.assinatura('➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤ Mental Lab')
             ].join('\n\n');
             return reply(doc);
         }

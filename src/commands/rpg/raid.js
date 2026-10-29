@@ -32,7 +32,7 @@ const RAID_BOSSES = {
         vidaBase: 60000,
         mult: 2.8,
         loot: ["🐉 Escama do Dragão Sombria", "🗡️ Lâmina Quebrada Sagrada"],
-        descricao: "A manifestação titânica da fúria do Dragão de GOAT."
+        descricao: "A manifestação titânica da fúria do Dragão de ➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤."
     },
     "ardente": {
         nome: "Ardente (4 Mandamentos Corrompido)",

@@ -13,7 +13,7 @@ module.exports = {
     execute: async ({ reply, prefix = "." }) => {
             const dilemas = [
                 "Você prefere: Ter o poder absoluto de Herói só ao meio-dia OU a imortalidade de Ban?",
-                "Você prefere: Comer a comida do GOAT todo dia OU lutar desarmado contra Cavaleiro?",
+                "Você prefere: Comer a comida do ➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤ todo dia OU lutar desarmado contra Cavaleiro?",
                 "Você prefere: Voar com as asas de King OU ler pensamentos como Mago?"
             ];
             const partes = dilemas[Math.floor(Math.random() * dilemas.length)].replace(/^Você prefere:\s*/, "").replace(/\?$/, "").split(" OU ")

@@ -26,7 +26,7 @@ module.exports = {
     subcategory: "Interação",
     description: "Aplaude o feito de alguém do grupo",
     usage: "<@pessoa ou nome>",
-    examples: ["@pessoa — marca alguém do grupo", "GOAT — usa um nome qualquer"],
+    examples: ["@pessoa — marca alguém do grupo", "➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤ — usa um nome qualquer"],
     cooldownMs: 1500,
     execute: async ({ reply, args = [], sender, mentionedJid, prefix = '.' }) => {
         const alvo = alvoDe(mentionedJid, args, sender)
@@ -37,7 +37,7 @@ module.exports = {
                 intro: "Alguém mandou bem? Levante da cadeira e aplauda para a taverna inteira ver. Só falta dizer para quem.",
                 secoes: [{ emoji: '✍️', titulo: 'Digite assim', linhas: [
                     `• ${F.cmd(prefix, "aplaudir", '@pessoa')} — marca alguém do grupo`,
-                    `• ${F.cmd(prefix, "aplaudir", 'GOAT')} — usa um nome qualquer`
+                    `• ${F.cmd(prefix, "aplaudir", '➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤')} — usa um nome qualquer`
                 ] }],
                 proximos: [
                 { nome: "elogiaramigo", args: "@pessoa", oque: "fazer um elogio" },

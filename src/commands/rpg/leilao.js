@@ -10,7 +10,7 @@ const { getBotName } = require("../../config/botConfig");
 
 const AUCTION_LOTS = [
     { id: "rhitta", nome: "🪓 Machado Divino Rhitta (+4200 ATK)", lanceMinimo: 150000, donoOriginal: "Herói" },
-    { id: "sombria", nome: "🗡️ Espada Sombria Demoníaca (+1100 ATK)", lanceMinimo: 60000, donoOriginal: "GOAT" },
+    { id: "sombria", nome: "🗡️ Espada Sombria Demoníaca (+1100 ATK)", lanceMinimo: 60000, donoOriginal: "➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤" },
     { id: "manto_divindade", nome: "🛡️ Manto da Suprema Divindade (+1600 DEF)", lanceMinimo: 120000, donoOriginal: "Suprema Divindade" }
 ];
 

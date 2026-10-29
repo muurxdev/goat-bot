@@ -13,7 +13,7 @@ module.exports = {
     execute: async ({ reply, args, text }) => {
         const input = (text || args.join(' ')).trim();
         if (!input) {
-            return reply('✍️ *Texto Ponta-Cabeça*\n\nDigite seu texto após o comando para estilizar.\nExemplo: `.txt_upside_down GOATBOT`');
+            return reply('✍️ *Texto Ponta-Cabeça*\n\nDigite seu texto após o comando para estilizar.\nExemplo: `.txt_upside_down ➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤`');
         }
         const transformed = ts.toUpsideDown(input);
         return reply(transformed);

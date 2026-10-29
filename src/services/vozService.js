@@ -40,9 +40,9 @@ const SIGLAS = new Set([
 
 /** Nomes próprios que recuperam a grafia certa depois de ir para minúsculas. */
 const NOMES = new Map([
-    'GOAT', 'Reino', 'Barcelona', 'Inter', 'Miami', 'Argentina', 'Campeões', 'Vestiário',
+    '➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤', 'Reino', 'Barcelona', 'Inter', 'Miami', 'Argentina', 'Campeões', 'Vestiário',
     'Futebol', 'Craque', 'Camisa10', 'WhatsApp', 'YouTube', 'TikTok', 'Instagram', 'Google', 'Drive',
-    'Spotify', 'Pinterest', 'Discord', 'Telegram', 'Skycode', 'Brasil', 'Deezer', 'Twitter', 'GOAT',
+    'Spotify', 'Pinterest', 'Discord', 'Telegram', 'Skycode', 'Brasil', 'Deezer', 'Twitter', '➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤',
     'Pecados', 'Capitais', 'Deusas', 'Mandamentos'
 ].map(n => [n.toLocaleLowerCase('pt-BR'), n]))
 

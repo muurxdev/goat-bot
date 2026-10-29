@@ -270,7 +270,7 @@ function startQrServer(port = process.env.PORT || 3000) {
     <div class="container">
         <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px;">
             <h1 style="margin:0;">🤖 ${getBotName()}</h1>
-            <span class="badge">Painel Executivo Web // GOAT</span>
+            <span class="badge">Painel Executivo Web // ➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤</span>
         </div>
         ${bodyHtml}
     </div>

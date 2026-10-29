@@ -6,7 +6,7 @@
 const { getBotName } = require("../../config/botConfig");
 
 const SACRED_TREASURES = [
-    { nome: "🗡️ Espada Demoníaca Sombria", dono: "GOAT (Pecado da Ira)", poder: "Cria clones físicos com dano multiplicado e reflete magias com Contra-ataque Total." },
+    { nome: "🗡️ Espada Demoníaca Sombria", dono: "➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤ (Pecado da Ira)", poder: "Cria clones físicos com dano multiplicado e reflete magias com Contra-ataque Total." },
     { nome: "🔨 Martelo Sagrado", dono: "Guerreira (Pecado da Inveja)", poder: "Manipula as placas tectônicas e absorve o impacto de magias na terra." },
     { nome: "🔱 Lança Espiritual Espiritual", dono: "King (Pecado da Preguiça)", poder: "Possui 8 formas divinas da Árvore Sagrada (Guardião, Pólen, Girassol, Multi-Lâminas)." },
     { nome: "🏹 Arco Duplo Duplo", dono: "Mago (Pecado da Luxúria)", poder: "Dispara flechas de luz mágica que reescrevem memórias e afetam o sistema nervoso." },

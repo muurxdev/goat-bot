@@ -23,7 +23,7 @@ module.exports = {
                 '• `.tts grave <texto>` — Voz grave/monstro\n' +
                 '• `.tts esquilo <texto>` — Voz rápida/esquilo\n' +
                 '• `.tts radio <texto>` — Efeito de rádio transmissor\n' +
-                '• `.tts eco <texto>` — Efeito de estádio/arena do GOAT\n\n' +
+                '• `.tts eco <texto>` — Efeito de estádio/arena do ➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤\n\n' +
                 '💡 _Também funciona respondendo a qualquer mensagem com `.tts`._')
         }
 

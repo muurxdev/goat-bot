@@ -72,7 +72,7 @@ const RELATED_ACTIONS = {
         { cmd: 'emojimix', desc: 'Misture dois emojis em um sticker', emoji: '🎭' }
     ],
 
-    // ⚽ Esportes & Futebol (Clube dos Campeões / GOAT)
+    // ⚽ Esportes & Futebol (Clube dos Campeões / ➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤)
     esportefutebol: [
         { cmd: 'brasileirao', desc: 'Tabela completa do Brasileirão Série A', emoji: '🇧🇷' },
         { cmd: 'champions', desc: 'UEFA Champions League fase de liga', emoji: '🏆' },
@@ -289,7 +289,7 @@ const INTENT_DICTIONARY = [
         ]
     },
     {
-        topic: 'Futebol, Jogos & Tabela (GOAT)',
+        topic: 'Futebol, Jogos & Tabela (➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤)',
         keywords: ['futebol', 'fut', 'tabela', 'jogos', 'placar', 'brasileirao', 'brasileirão', 'champions', 'goat', 'campeonato', 'serie a', 'serie b'],
         commands: [
             { cmd: 'esportefutebol tabela', desc: 'Tabela em tempo real do Brasileirão, Champions e ligas' },

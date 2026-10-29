@@ -22,7 +22,7 @@ module.exports = {
                 'Para equalizar um áudio, responda à mídia com o comando e o ganho desejado.',
                 'Exemplo: `.af_eq_13000hz 10` (para amplificar) ou `.af_eq_13000hz -8` (para atenuar).'
             ]),
-            M.assinatura('GOAT Studio')
+            M.assinatura('➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤ Studio')
         ].join('\n\n');
         return reply(doc);
     }

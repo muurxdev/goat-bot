@@ -18,12 +18,12 @@ module.exports = {
             .map(([cat, qtd]) => `• *${cat.toUpperCase()}*: ${qtd} comandos`);
         const doc = [
             M.cabecalho('⚡', 'Catálogo Oficial de 10.000 Comandos'),
-            '👑 *GOATBOT 100% Completo!*',
+            '👑 *➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤ 100% Completo!*',
             '📦 *Módulos Canônicos:* ' + stats.totalCommands + ' arquivos\n' +
             '🏷️ *Aliases Mapeados:* ' + stats.totalAliases + '\n' +
             '🎯 *Gatilhos Invocáveis:* ' + stats.totalTriggers + ' comandos prontos!',
             M.secao('📊', 'Comandos por Categoria', catLines),
-            M.assinatura('GOAT Prime Architecture')
+            M.assinatura('➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤ Prime Architecture')
         ].join('\n\n');
         return reply(doc);
     }

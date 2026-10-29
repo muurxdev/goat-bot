@@ -1,7 +1,7 @@
 /**
- * Comando .itemespadasubuniversal — LÂMINA SUBUNIVERSAL DE GOAT
+ * Comando .itemespadasubuniversal — LÂMINA SUBUNIVERSAL DE ➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤
  *
- * Ficha do equipamento: Lâmina Subuniversal de GOAT.
+ * Ficha do equipamento: Lâmina Subuniversal de ➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤.
  */
 
 const EQ = require('../../services/rpgEquipmentService')
@@ -63,7 +63,7 @@ module.exports = {
     aliases: ["fichaespadasubuniversal"],
     category: 'rpg',
     subcategory: 'Equipamento & Forja',
-    description: 'Ficha do equipamento: Lâmina Subuniversal de GOAT',
+    description: 'Ficha do equipamento: Lâmina Subuniversal de ➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤',
     cooldownMs: 3000,
     execute: async ({ reply, sender, args = [], prefix = '.' }) => {
     return reply(fichaItem('espada_subuniversal'))

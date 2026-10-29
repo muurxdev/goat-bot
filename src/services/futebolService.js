@@ -1,5 +1,5 @@
 /**
- * Serviço de Futebol & Campeonatos em Tempo Real // Skycode & GOATBOT
+ * Serviço de Futebol & Campeonatos em Tempo Real // Skycode & ➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤
  * 
  * Integração aberta com feeds esportivos públicos (ESPN Open API):
  * - Tabelas de classificação INTEIRAS (todos os 20 times ou chave completa)
@@ -231,7 +231,7 @@ function formatarTabela(data, options = null) {
     let out = `╔══════════════════════════════════════╗\n`
     out += `║  ⚽  ${data.leagueName.toUpperCase().padEnd(30, ' ')} ║\n`
     out += `╚══════════════════════════════════════╝\n`
-    out += `       GOAT CLUBE DOS CAMPEÕES\n\n`
+    out += `       ➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤ CLUBE DOS CAMPEÕES\n\n`
 
     // ── CASO 1: COPA LIBERTADORES (Fase de Grupos) ──────────────────────
     if (leagueId === 'conmebol.libertadores' || leagueKey.includes('libertadores') || data.isGroupStage) {
@@ -413,7 +413,7 @@ function formatarJogos(data, requestedLeague = 'brasileirao') {
     let out = `╔══════════════════════════════════════╗\n`
     out += `║  🏟️  JOGOS & PLACAR AO VIVO          ║\n`
     out += `╚══════════════════════════════════════╝\n`
-    out += `       GOAT CLUBE DOS CAMPEÕES\n\n`
+    out += `       ➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤ CLUBE DOS CAMPEÕES\n\n`
 
     if (!data.ok || !data.matches.length) {
         out += `⚠️ Não há partidas agendadas para hoje em *${data.leagueName || 'este campeonato'}*.\n\n`

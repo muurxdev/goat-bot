@@ -26,7 +26,7 @@ module.exports = {
     subcategory: "Magia",
     description: "Divide sua magia com um aliado do grupo",
     usage: "<@pessoa ou nome>",
-    examples: ["@pessoa — marca alguém do grupo", "GOAT — usa um nome qualquer"],
+    examples: ["@pessoa — marca alguém do grupo", "➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤ — usa um nome qualquer"],
     cooldownMs: 2500,
     execute: async ({ reply, args = [], sender, mentionedJid, prefix = '.' }) => {
         const alvo = alvoDe(mentionedJid, args, sender)
@@ -37,7 +37,7 @@ module.exports = {
                 intro: "Você canaliza parte da sua mana para recarregar a de um aliado cansado. Só falta dizer para quem.",
                 secoes: [{ emoji: '✍️', titulo: 'Digite assim', linhas: [
                     `• ${F.cmd(prefix, "compartilharmagia", '@pessoa')} — marca alguém do grupo`,
-                    `• ${F.cmd(prefix, "compartilharmagia", 'GOAT')} — usa um nome qualquer`
+                    `• ${F.cmd(prefix, "compartilharmagia", '➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤')} — usa um nome qualquer`
                 ] }],
                 proximos: [
                 { nome: "treinarjunto", args: "@pessoa", oque: "treinar com esse aliado" },

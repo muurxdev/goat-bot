@@ -13,10 +13,10 @@ module.exports = {
             const valid = ["espada", "escudo", "magia"];
             if (!valid.includes(escolha)) return reply("Uso: `.pedrapapelreino <espada|escudo|magia>`\n(Espada perfura Magia, Magia quebra Escudo, Escudo bloqueia Espada)");
             const bot = valid[Math.floor(Math.random() * valid.length)];
-            let res = `▫️ Sua escolha: *${escolha.toUpperCase()}*\n▫️ GOAT: *${bot.toUpperCase()}*\n\n`;
+            let res = `▫️ Sua escolha: *${escolha.toUpperCase()}*\n▫️ ➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤: *${bot.toUpperCase()}*\n\n`;
             if (escolha === bot) res += "🤝 Empate honrado de guerreiros!";
             else if ((escolha === "espada" && bot === "magia") || (escolha === "magia" && bot === "escudo") || (escolha === "escudo" && bot === "espada")) res += "🎉 *VOCÊ VENCEU A RODADA!*";
-            else res += "💀 *GOAT VENCEU!* A técnica dele superou a sua.";
+            else res += "💀 *➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤ VENCEU!* A técnica dele superou a sua.";
             return reply(res);
         }
 };

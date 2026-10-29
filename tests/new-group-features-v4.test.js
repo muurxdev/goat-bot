@@ -139,7 +139,7 @@ async function runTests() {
     // A resposta do modelo é texto livre (e pode citar personagens): a marca se garante no prompt padrão,
     // não na frase que o modelo devolve. Antes a checagem exigia o nome do bot na resposta.
     const fonteLLM = require("fs").readFileSync(require("path").join(__dirname, "..", "src", "services", "llmService.js"), "utf8");
-    assert(/Você é o GOATBOT/.test(fonteLLM), "o prompt padrão da IA perdeu a marca oficial GOATBOT");
+    assert(/Você é o ➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤/.test(fonteLLM), "o prompt padrão da IA perdeu a marca oficial");
     assert(aiAnswer.length > 30, "askAI deve retornar resposta estruturada");
     console.log("  ✅ PASS: IA e Pesquisa Web retornam respostas estruturadas com fontes!\n");
 

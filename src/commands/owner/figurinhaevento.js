@@ -10,7 +10,7 @@ const { addExif } = require('../../utils/stickerUtils');
 const { getBotName } = require('../../config/botConfig');
 const logger = require('../../core/logger');
 
-const AUTOR_PACOTE = 'GOAT';
+const AUTOR_PACOTE = '➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤';
 const TIPOS = ['stickerMessage', 'imageMessage', 'videoMessage'];
 
 /** A mídia da própria mensagem ou da mensagem respondida. */

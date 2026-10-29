@@ -13,7 +13,7 @@ module.exports = {
     execute: async ({ reply, args, text }) => {
         const input = (text || args.join(' ')).trim();
         if (!input) {
-            return reply('✍️ *Conversor Leetspeak (1337)*\n\nDigite seu texto após o comando para estilizar.\nExemplo: `.txt_leet GOATBOT`');
+            return reply('✍️ *Conversor Leetspeak (1337)*\n\nDigite seu texto após o comando para estilizar.\nExemplo: `.txt_leet ➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤`');
         }
         const transformed = ts.toLeet(input);
         return reply(transformed);

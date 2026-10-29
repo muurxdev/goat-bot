@@ -9,9 +9,9 @@ module.exports = {
     cooldownMs: 2000,
     execute: async ({ reply, prefix = '.' }) => {
         let doc = `╔══════════════════════════════════════╗\n`
-        doc += `║  ⚽  CLUBE DOS CAMPEÕES // GOAT 10   ║\n`
+        doc += `║  ⚽  CLUBE DOS CAMPEÕES // ➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤ 10   ║\n`
         doc += `╚══════════════════════════════════════╝\n`
-        doc += `       GOAT OFFICIAL SYSTEM\n\n`
+        doc += `       ➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤ OFFICIAL SYSTEM\n\n`
         doc += `🏆 *TABELAS INTEIRAS EM TEMPO REAL:*\n`
         doc += `• \`${prefix}brasileirao\` — Brasileirão Série A (todos os 20 clubes)\n`
         doc += `• \`${prefix}serieb\` — Brasileirão Série B (todos os 20 clubes)\n`

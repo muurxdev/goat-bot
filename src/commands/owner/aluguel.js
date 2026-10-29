@@ -981,7 +981,7 @@ module.exports = {
                         retornoMsg += `┃ 🔓 *Acesso:* Comandos e privado totalmente liberados\n`;
                         retornoMsg += `╰━━━━━━━━━━━━━━━━━━⬣\n\n`;
                         retornoMsg += `💡 _Dúvidas ou suporte? Digite \`${prefix}dono\` ou fale com a administração._\n`;
-                        retornoMsg += `👑 *GOAT Prime*`;
+                        retornoMsg += `👑 *➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤ Prime*`;
 
                         await client.sendMessage(resolved.jid, { text: retornoMsg });
                     } catch (notifyErr) {

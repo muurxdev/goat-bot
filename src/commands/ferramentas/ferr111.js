@@ -19,7 +19,7 @@ module.exports = {
     subcategory: "Conversões",
     description: "Transforma uma frase em zeros e uns",
     usage: "<texto>",
-    examples: ["oi — a palavra oi em binário","GOAT — um nome em binário"],
+    examples: ["oi — a palavra oi em binário","➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤ — um nome em binário"],
     cooldownMs: 3000,
     execute: async ({ reply, args = [], prefix = '.' }) => {
         try {

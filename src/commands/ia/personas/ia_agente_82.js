@@ -28,7 +28,7 @@ module.exports = {
             M.cabecalho('🤖', 'Consultoria: Criptoeconomia'),
             '📌 *Pergunta:* _"' + query.slice(0, 100) + '"_',
             '💡 *Parecer Especializado:*\n' + (res.texto || 'Análise concluída com sucesso.'),
-            M.assinatura('GOAT Intelligence Hub')
+            M.assinatura('➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤ Intelligence Hub')
         ].join('\n\n');
         return reply(doc);
     }

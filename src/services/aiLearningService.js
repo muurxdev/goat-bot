@@ -1,6 +1,6 @@
 const { nomeDoMembro } = require('../utils/nomeMembro');
 /**
- * AI & Machine Learning Learning Engine (GOAT / GOAT Prime)
+ * AI & Machine Learning Learning Engine (➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤ / ➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤ Prime)
  * 
  * Responsabilidades:
  * 1. Análise Linguística & Aprendizado Contínuo de Usuários (código, gírias, adjetivos, estilo)
@@ -8,7 +8,7 @@ const { nomeDoMembro } = require('../utils/nomeMembro');
  * 3. Roaming & Treinamento Autônomo (.profanity learning / .profanity roaming / .profanity train)
  * 4. Sistema Estrito de 3 Exclusões (3 Strikes = Ban/Remoção do Grupo)
  * 5. Anti-Link Inteligente com Parceria/Afiliação e Whitelist de Parceiros
- * 6. Motor de Conversação Natural Estilo ChatGPT (GOAT Prime 24/7 sem comando)
+ * 6. Motor de Conversação Natural Estilo ChatGPT (➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤ Prime 24/7 sem comando)
  * 
  * Alta Performance: Operações em memória com persistência atômica no SQLite WAL.
  */
@@ -433,7 +433,7 @@ async function disallowLinkUser(groupJid, userJid) {
 }
 
 // ══════════════════════════════════════════════════════════════
-// 6. MOTOR CONVERSACIONAL ESTILO CHATGPT (GOAT PRIME 24/7)
+// 6. MOTOR CONVERSACIONAL ESTILO CHATGPT (➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤ PRIME 24/7)
 // ══════════════════════════════════════════════════════════════
 
 /**
@@ -449,14 +449,14 @@ async function generateChatGPTReply(prompt, sender, context = {}) {
     // 1. Respostas Rápidas de Código / Programação para estilo 'dev'
     if (userProfile.style === 'dev' || CODE_PATTERNS.some(re => re.test(p))) {
         if (/como (fazer|criar|programar|declarar|usar|resolver)/i.test(clean) || p.includes('{') || p.includes('def ')) {
-            return `👨‍💻 *Central Dev GOAT Tech*\n\n` +
+            return `👨‍💻 *Central Dev ➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤ Tech*\n\n` +
                    `Entendido, craque dos códigos! Aqui está uma abordagem direta e limpa:\n\n` +
                    `\`\`\`javascript\n// Dica de alta performance e boas práticas\n// Certifique-se de validar parâmetros e tratar erros assíncronos\n\`\`\`\n\n` +
                    `💡 *Dica:* Se precisar de scripts ou utilitários prontos, use \`.dev\` ou me mande o erro exato que analisamos juntos!`;
         }
     }
 
-    // 2. Respostas de Resenha / Futebol na Persona GOAT Prime
+    // 2. Respostas de Resenha / Futebol na Persona ➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤ Prime
     if (userProfile.style === 'resenha' || /futebol|goat|cr7|champions|libertadores|gol|copa|brasil|argentina/i.test(clean)) {
         if (/goat|cristiano|cr7|melhor do mundo|goat/i.test(clean)) {
             return `⚽ *Fala meu parceiro!* Aqui é o *${botName}* (O Camisa 10)!\n\n` +
@@ -474,7 +474,7 @@ async function generateChatGPTReply(prompt, sender, context = {}) {
         }
     } catch (err) { logger.warn('[AILEARNINGSERVICE] falha ignorada: ' + (err && err.message)) }
 
-    // 4. Resposta Natural Autônoma GOAT
+    // 4. Resposta Natural Autônoma ➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤
     return `🏆 Fala, ${nomeDoMembro(sender)}! Sou o *${botName}*!\n\n` +
            `Recebi sua mensagem e tô sempre na área para trocar ideia, ajudar com tarefas, códigos, futebol e moderação.\n\n` +
            `💡 _Pode conversar comigo normalmente ou digitar \`.menu\` para conferir as mais de 10.000 opções!_`;

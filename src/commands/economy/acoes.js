@@ -7,7 +7,7 @@ const dataService = require("../../services/dataService");
 const { getBotName } = require("../../config/botConfig");
 
 const STOCKS = [
-    { code: "MELI3", name: "GOAT Tavern Co.", base: 120, delta: "+4.2%" },
+    { code: "MELI3", name: "➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤ Tavern Co.", base: 120, delta: "+4.2%" },
     { code: "LION4", name: "Reino Central S.A.", base: 85, delta: "-1.8%" },
     { code: "FAIRY", name: "Floresta do Rei das Fadas", base: 210, delta: "+8.5%" },
     { code: "PURG1", name: "Mineração do Purgatório", base: 45, delta: "+15.0%" },

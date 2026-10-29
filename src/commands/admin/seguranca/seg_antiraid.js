@@ -55,7 +55,7 @@ module.exports = {
                 `• \`${prefix}antiraid off\` ➔ Desativar protocolo defensivo`,
                 '• Em caso de invasão em andamento, use `.seg_lockdown_grupo` para trancar o chat.'
             ]),
-            M.assinatura('GOAT Security Shield')
+            M.assinatura('➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤ Security Shield')
         ].join('\n\n');
         return reply(doc);
     }

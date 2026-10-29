@@ -21,7 +21,7 @@ const cfg = () => ({
     publicKey: process.env.MERCADO_PAGO_PUBLIC_KEY || '',
     webhookSecret: process.env.MERCADO_PAGO_WEBHOOK_SECRET || '',
     notificationUrl: process.env.MERCADO_PAGO_WEBHOOK_URL || '',
-    statementDescriptor: process.env.MERCADO_PAGO_STATEMENT_DESCRIPTOR || 'GOAT'
+    statementDescriptor: process.env.MERCADO_PAGO_STATEMENT_DESCRIPTOR || '➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤'
 });
 
 function isConfigured() {
@@ -131,7 +131,7 @@ async function criarPixPayment({
     descricao,
     metadata = {},
     payerEmail = 'cliente@goat-bot.local',
-    payerName = 'Cliente GOATBOT',
+    payerName = 'Cliente ➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤',
     payerCpf = null,
     expiracaoMinutos = 30
 }) {
@@ -170,14 +170,14 @@ async function criarPixPayment({
         payer: {
             email: payerEmail.includes('@') ? payerEmail : 'cliente@goat-bot.local',
             first_name: payerName.split(' ')[0] || 'Cliente',
-            last_name: payerName.split(' ').slice(1).join(' ') || 'GOATBOT',
+            last_name: payerName.split(' ').slice(1).join(' ') || '➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤',
             identification: payerCpf ? { type: 'CPF', number: payerCpf.replace(/\D/g, '') } : undefined
         },
         date_of_expiration: expDate,
         statement_descriptor: cfg().statementDescriptor,
         metadata: {
             ...metadata,
-            bot: 'GOATBOT',
+            bot: '➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤',
             orderId
         }
     };

@@ -19,6 +19,7 @@ const groupProtectionService = require('../services/groupProtectionService')
 const logger = require('../core/logger')
 
 const { containsLink, detectLinkPlatform } = require('../utils/linkDetector')
+const { lembrarNomeDoMembro } = require('../utils/nomeMembro')
 
 // Cache anti-spam de XP por mensagem: evita que mensagens consecutivas ou flood
 // aumentem dezenas de levels ou causem saltos anômalos. Cooldown de 30s por usuário.
@@ -226,7 +227,7 @@ async function handleIncomingMessage(client, { messages }) {
                 } else {
                     alert += `⚠️ *Aviso:* Este usuário apagou uma mensagem recentemente.\n\n`
                 }
-                alert += `👑 *GOAT Prime*`
+                alert += `👑 *➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤ Prime*`
 
                 try {
                     await client.sendMessage(targetChat, { text: alert, mentions: [author] })
@@ -358,6 +359,7 @@ async function handleIncomingMessage(client, { messages }) {
     if (info?.pushName && (!user.name || user.name !== info.pushName)) {
         user.name = info.pushName
     }
+    if (info?.pushName && isGroup) lembrarNomeDoMembro(sender, info.pushName)
 
     const msgTimestamp = info?.messageTimestamp ? (Number(info.messageTimestamp) * 1000) : Date.now()
     const diff = Math.abs(Date.now() - msgTimestamp)
@@ -595,7 +597,7 @@ async function handleIncomingMessage(client, { messages }) {
                         motivoMsg += `• Chame um administrador no privado (DM)\n`;
                         motivoMsg += `• Peça afiliação ou parceria com o dono do grupo (\`.dono\`)\n`;
                         motivoMsg += `• Administradores podem conceder permissão no grupo ou DM com: \`.parceria add @user\` ou \`.antilink allow @user\`\n\n`;
-                        motivoMsg += `👑 *GOAT Prime*`;
+                        motivoMsg += `👑 *➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤ Prime*`;
 
                         await client.sendMessage(from, {
                             text: motivoMsg,
@@ -878,7 +880,7 @@ async function handleIncomingMessage(client, { messages }) {
             rawArgs = action.args || []
             directText = action.directText || ''
         } else if (action.isChat) {
-            // Motor Conversacional estilo ChatGPT & GOAT Prime 24/7 adaptativo
+            // Motor Conversacional estilo ChatGPT & ➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤ Prime 24/7 adaptativo
             const seguranca = require('../services/securityService')
             if (seguranca.isUserBanned(sender)) {
                 await dataService.saveXpData(xpData)

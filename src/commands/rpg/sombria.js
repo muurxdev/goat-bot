@@ -1,6 +1,6 @@
 /**
  * Comando .sombria
- * Tesouro Sagrado do Capitão GOAT: Cria 4 clones físicos e multiplica o dano em 3x a 5x
+ * Tesouro Sagrado do Capitão ➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤: Cria 4 clones físicos e multiplica o dano em 3x a 5x
  */
 
 const dataService = require("../../services/dataService");

@@ -118,7 +118,7 @@ async function sincronizarComStripe(pacote) {
         if (!stripe.isConfigured()) return { ok: false, motivo: 'Stripe não configurado no .env' };
 
         // 1. Garante o produto na Stripe
-        const desc = `GOATBOT — Plano ${pacote.nome} (${pacote.dias} dias de acesso ${pacote.escopo})`;
+        const desc = `➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤ — Plano ${pacote.nome} (${pacote.dias} dias de acesso ${pacote.escopo})`;
         const prod = await stripe.garantirProduto(`Aluguel: ${pacote.nome}`, desc);
 
         // 2. Garante o preço oficial na Stripe

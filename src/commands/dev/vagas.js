@@ -29,7 +29,7 @@ async function fetchLiveVagas() {
     for (const r of repos) {
         try {
             const res = await fetch(`https://api.github.com/repos/${r.path}/issues?state=open&per_page=6`, {
-                headers: { 'User-Agent': 'GOATBOT/2.0 (Skycode Community)' },
+                headers: { 'User-Agent': '➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤/2.0 (Skycode Community)' },
                 signal: AbortSignal.timeout(6000)
             });
             if (res.ok) {

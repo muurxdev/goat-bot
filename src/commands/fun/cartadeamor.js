@@ -13,6 +13,6 @@ module.exports = {
     description: "Gera uma declaração romântica poética",
     cooldownMs: 2000,
     execute: async ({ reply }) => {
-    return reply('💌 *CARTA DE AMOR:*\n\n"Nem mesmo o Contra-ataque Total do GOAT poderia rebater a força do sentimento que tenho por você. Você ilumina meus dias mais que o Sol do Herói."');
+    return reply('💌 *CARTA DE AMOR:*\n\n"Nem mesmo o Contra-ataque Total do ➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤ poderia rebater a força do sentimento que tenho por você. Você ilumina meus dias mais que o Sol do Herói."');
 }
 };

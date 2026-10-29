@@ -20,7 +20,7 @@ module.exports = {
                 M.cabecalho('🧩', 'Desafio de Raciocínio #45'),
                 'Quanto é a soma: *16 + 36*?',
                 '👉 Envie sua resposta com: `.desafio_logica_45 <resultado>`',
-                M.assinatura('GOAT Mental Lab')
+                M.assinatura('➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤ Mental Lab')
             ].join('\n\n');
             return reply(doc);
         }

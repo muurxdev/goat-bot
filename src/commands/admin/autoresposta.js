@@ -1,6 +1,6 @@
 /**
  * Comando .autoresposta / .autoreply — Gestão da Resposta Autônoma Contextual por Nicho (24H Engine)
- * GOATBOT // GOAT Prime (GOAT)
+ * ➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤ // ➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤ Prime (➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤)
  */
 
 const autonomousGroup = require('../../services/groupAutonomousAgentService');
@@ -113,7 +113,7 @@ module.exports = {
         let doc = `╔══════════════════════════════════════╗\n`;
         doc += `║ 🤖  AUTOMAÇÃO & RESPOSTA DE GRUPO    ║\n`;
         doc += `╚══════════════════════════════════════╝\n`;
-        doc += `       GOAT SKYCODE 24/7 PROTOCOL\n\n`;
+        doc += `       ➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤ SKYCODE 24/7 PROTOCOL\n\n`;
 
         doc += `📌 *Status da Auto-Resposta:* ${isAtivo ? '🟢 Ativada (24H Contínuo)' : '🔴 Desativada'}\n`;
         doc += `🎯 *Nicho do Grupo:* ${nicho.emoji} *${nicho.label}*\n`;
@@ -134,7 +134,7 @@ module.exports = {
             doc += `• Regras para manter parcerias e divulgações nos conformes.\n`;
             doc += `• Combate ao flood e orientação sobre canais oficiais.\n`;
         } else if (nicho.id === 'resenha') {
-            doc += `• Resenha esportiva com energia do GOAT Prime (\`GOAT\`).\n`;
+            doc += `• Resenha esportiva com energia do ➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤ Prime (\`➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤\`).\n`;
             doc += `• Tabelas do Brasileirão, Champions League, Libertadores e debate limpo.\n`;
         } else {
             doc += `• Guia interativo para os mais de 10.000 comandos e modo RPG.\n`;

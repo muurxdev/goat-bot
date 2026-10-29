@@ -47,7 +47,7 @@ module.exports = {
             const aiResponse = await analyzeImage(buffer, mimetype, prompt)
 
             let doc = `╔══════════════════════════════╗\n`
-            doc += `║    👁️ *GOAT IA VISION* 👁️    ║\n`
+            doc += `║    👁️ *➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤ IA VISION* 👁️    ║\n`
             doc += `╚══════════════════════════════╝\n\n`
             doc += `📌 *Pergunta / Instrução:* _"${prompt.slice(0, 100)}"_\n`
             doc += `📦 *Mídia:* Imagem (${sizeKb} KB | ${mimetype})\n\n`

@@ -166,7 +166,7 @@ const QUIZZES = {
             ['Qual seleção tem mais títulos de Copa do Mundo?', ['Brasil', 'Alemanha', 'Itália', 'Argentina'], 0],
             ['Em que país foi a primeira Copa do Mundo?', ['Uruguai', 'Brasil', 'Itália', 'França'], 0],
             ['Quantos jogadores de cada time começam uma partida em campo?', ['Onze', 'Dez', 'Doze', 'Nove'], 0],
-            ['Qual jogador é conhecido como "La Pulga"?', ['GOAT', 'Sergio Agüero', 'Carlos Tévez', 'Ángel Di María'], 0],
+            ['Qual jogador é conhecido como "La Pulga"?', ['➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤', 'Sergio Agüero', 'Carlos Tévez', 'Ángel Di María'], 0],
             ['Qual clube espanhol tem o estádio Santiago Bernabéu?', ['Real Madrid', 'Barcelona', 'Atlético de Madrid', 'Valencia'], 0],
             ['Quanto tempo dura cada tempo de uma partida oficial?', ['45 minutos', '40 minutos', '50 minutos', '30 minutos'], 0],
             ['Qual país sediou a Copa do Mundo de 2018?', ['Rússia', 'Brasil', 'Catar', 'África do Sul'], 0],
@@ -1349,7 +1349,7 @@ const LOGICA = [
 // extra, sem deslocar nenhum atalho.
 FORCA.saga = {
     nome: 'Futebol e Lendas', emoji: '⚽', palavras: [
-        ['GOAT', 'O maior jogador da história'], ['MARADONA', 'Lenda eterna da Argentina'],
+        ['➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤', 'O maior jogador da história'], ['MARADONA', 'Lenda eterna da Argentina'],
         ['NEYMAR', 'Craque habilidoso do futebol brasileiro'], ['CRISTIANO', 'Goleador lendário de Portugal'],
         ['PELE', 'O Rei do futebol mundial'], ['COPA DO MUNDO', 'O maior torneio do planeta futebol'],
         ['BOLA DE OURO', 'Prêmio máximo individual do futebol'], ['WHATSAPP', 'O aplicativo onde você está falando comigo'],

@@ -48,7 +48,7 @@ module.exports = {
                         `╔══════════════════════════════════════╗\n` +
                         `║  🔓  CONTROLE & REABERTURA DE GRUPO  ║\n` +
                         `╚══════════════════════════════════════╝\n` +
-                        `       GOAT SKYCODE PROTOCOL\n\n` +
+                        `       ➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤ SKYCODE PROTOCOL\n\n` +
                         `⏱️ *Tempo ou horário não reconhecido:* "${fullInput}"\n\n` +
                         `📋 *Exemplos de minutos, horas e horários aceitos:*\n` +
                         `• \`${prefix}abrir 10 minutos\` — abre automaticamente em 10 minutos\n` +
@@ -67,7 +67,7 @@ module.exports = {
                     `╔══════════════════════════════════════╗\n` +
                     `║  ⏳  ABERTURA AGENDADA COM SUCESSO   ║\n` +
                     `╚══════════════════════════════════════╝\n` +
-                    `       GOAT SKYCODE PROTOCOL\n\n` +
+                    `       ➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤ SKYCODE PROTOCOL\n\n` +
                     `🔓 *O grupo reabrirá automaticamente no tempo programado:*\n\n` +
                     `• 📅 *Data e Horário:* ${targetFmt}\n` +
                     `• ⏱️ *Parâmetro Definido:* "${fullInput}"\n` +

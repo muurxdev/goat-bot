@@ -24,7 +24,7 @@ module.exports = {
         const doc = [
             M.cabecalho('🔍', 'Resultados da Busca: ' + query),
             lines.join('\n\n'),
-            M.assinatura('GOAT Command Index')
+            M.assinatura('➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤ Command Index')
         ].join('\n\n');
         return reply(doc);
     }

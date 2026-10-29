@@ -414,7 +414,7 @@ async function _freeWebAI(prompt, system) {
 }
 
 const SYSTEM_PADRAO = [
-    'Você é o GOATBOT, assistente inteligente do time de WhatsApp brasileiro: ágil, focado, prestativo e com a visão de jogo de craque.',
+    'Você é o ➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤, assistente inteligente do time de WhatsApp brasileiro: ágil, focado, prestativo e com a visão de jogo de craque.',
     'Responda sempre em português do Brasil, com linguagem natural e simples, como um bom professor conversando.',
     '',
     'Como responder:',

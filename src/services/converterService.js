@@ -1101,7 +1101,7 @@ FERRAMENTAS.base_texto_bin = {
     titulo: 'Texto em binário',
     descricao: 'Transforma uma frase em zeros e uns',
     uso: '<texto>',
-    exemplos: [{ args: 'oi', oque: 'a palavra oi em binário' }, { args: 'GOAT', oque: 'um nome em binário' }],
+    exemplos: [{ args: 'oi', oque: 'a palavra oi em binário' }, { args: '➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤', oque: 'um nome em binário' }],
     dica: 'Cada caractere vira um grupo de 8 zeros e uns. Acento ocupa dois grupos.',
     calcular(args) {
         const texto = args.join(' ')

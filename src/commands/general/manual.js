@@ -1,7 +1,7 @@
 /**
  * Comando .manual / .guia
  * Manual Oficial de Funcionalidades, Módulos, Progressão de XP, Parcerias e Aluguel
- * GOATBOT // GOAT Prime (GOAT)
+ * ➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤ // ➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤ Prime (➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤)
  */
 
 const { getBotName } = require('../../config/botConfig');
@@ -143,7 +143,7 @@ module.exports = {
         doc += `• \`${p}manual 3\` ou \`${p}manual aluguel\` — Dono Temporário, Aluguel e Retorno de Pagamento\n`;
         doc += `• \`${p}manual 4\` ou \`${p}manual xp\` — Sistema de XP, Cartão Real e Subida de Nível\n`;
         doc += `• \`${p}manual 5\` ou \`${p}manual limitemsg\` — Como remover limites de mensagens e antispam\n\n`;
-        doc += `👑 *GOAT Prime (Camisa 10)*`;
+        doc += `👑 *➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤ Prime (Camisa 10)*`;
 
         return reply(doc);
     }

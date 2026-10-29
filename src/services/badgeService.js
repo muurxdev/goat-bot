@@ -199,7 +199,7 @@ function renderShowcase(userJid) {
             M.cabecalho('🏅', 'Vitrine de Conquistas'),
             'Nenhuma insígnia conquistada ainda.',
             '💡 Participe de raids, jogue trivias, opere na bolsa e suba de nível para desbloquear insígnias!',
-            M.assinatura('GOAT Bot · Perfil')
+            M.assinatura('➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤ Bot · Perfil')
         ].join('\n\n');
     }
 
@@ -212,7 +212,7 @@ function renderShowcase(userJid) {
         M.cabecalho('🏅', 'Vitrine de Conquistas & Insígnias'),
         `Total Desbloqueadas: *${userBadges.length}*`,
         M.secao('✨', 'Insígnias Exibidas', lines),
-        M.assinatura('GOAT Bot · Perfil')
+        M.assinatura('➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤ Bot · Perfil')
     ].join('\n\n');
 }
 

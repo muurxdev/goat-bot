@@ -1,6 +1,6 @@
 /**
  * Link Detector & Platform Classifier
- * GOATBOT // Detecção Fluente de Links e Plataformas
+ * ➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤ // Detecção Fluente de Links e Plataformas
  * 
  * Detecta confiavelmente links de QUALQUER rede social existente e sites da web,
  * neutralizando técnicas de evasão (espaços entre pontos, protocolos omitidos, encurtadores).

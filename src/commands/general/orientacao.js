@@ -1,5 +1,5 @@
 /**
- * Comando Executivo de Orientação & Manual do Sistema // GOATBOT (GOAT)
+ * Comando Executivo de Orientação & Manual do Sistema // ➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤ (➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤)
  *
  * Guia definitivo de uso e comandos práticos para administradores e membros:
  * - Abertura e Fechamento de Grupos (por minutos, horas, horários fixos e imediato)
@@ -35,7 +35,7 @@ module.exports = {
             let doc = `╔══════════════════════════════════════╗\n`
             doc += `║  🔓  GUIA DE ABERTURA & FECHAMENTO   ║\n`
             doc += `╚══════════════════════════════════════╝\n`
-            doc += `       GOAT SKYCODE PROTOCOL\n\n`
+            doc += `       ➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤ SKYCODE PROTOCOL\n\n`
 
             doc += `O bot permite abrir e fechar grupos imediatamente ou com agendamento no tempo que você escolher.\n\n`
 
@@ -71,7 +71,7 @@ module.exports = {
             let doc = `╔══════════════════════════════════════╗\n`
             doc += `║  📅  GUIA DA AGENDA AUTOMÁTICA       ║\n`
             doc += `╚══════════════════════════════════════╝\n`
-            doc += `       GOAT SKYCODE PROTOCOL\n\n`
+            doc += `       ➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤ SKYCODE PROTOCOL\n\n`
 
             doc += `A Agenda Automática abre e fecha o grupo todos os dias nos horários programados sem você precisar digitar nada.\n\n`
 
@@ -112,7 +112,7 @@ module.exports = {
             let doc = `╔══════════════════════════════════════╗\n`
             doc += `║  🛡️  GUIA DE PRESETS DE GRUPO        ║\n`
             doc += `╚══════════════════════════════════════╝\n`
-            doc += `       GOAT SKYCODE PROTOCOL\n\n`
+            doc += `       ➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤ SKYCODE PROTOCOL\n\n`
 
             doc += `Configure todas as regras de segurança e moderação do grupo em 1 único comando:\n\n`
 
@@ -145,7 +145,7 @@ module.exports = {
             let doc = `╔══════════════════════════════════════╗\n`
             doc += `║  ⚽  GUIA DE FUTEBOL & CAMPEONATOS   ║\n`
             doc += `╚══════════════════════════════════════╝\n`
-            doc += `       GOAT CLUBE DOS CAMPEÕES\n\n`
+            doc += `       ➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤ CLUBE DOS CAMPEÕES\n\n`
 
             doc += `Tabelas inteiras e independentes em tempo real com regras específicas por competição:\n\n`
             doc += `🇧🇷 *BRASILEIRÃO:*\n`
@@ -177,7 +177,7 @@ module.exports = {
             let doc = `╔══════════════════════════════════════╗\n`
             doc += `║  💼  GUIA DE VAGAS TECH // SKYCODE   ║\n`
             doc += `╚══════════════════════════════════════╝\n`
-            doc += `       GOAT SKYCODE PROTOCOL\n\n`
+            doc += `       ➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤ SKYCODE PROTOCOL\n\n`
 
             doc += `Radar de vagas reais apuradas diretamente dos maiores repositórios abertos do Brasil:\n\n`
             doc += `• \`${prefix}vagas\` ➔ Lista as vagas mais recentes de todas as áreas.\n`
@@ -200,7 +200,7 @@ module.exports = {
             let doc = `╔══════════════════════════════════════╗\n`
             doc += `║  ⭐  GUIA DE REPUTAÇÃO COMERCIAL     ║\n`
             doc += `╚══════════════════════════════════════╝\n`
-            doc += `       GOAT SKYCODE PROTOCOL\n\n`
+            doc += `       ➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤ SKYCODE PROTOCOL\n\n`
 
             doc += `Sistema comunitário de confiança para compra e venda segura:\n\n`
             doc += `• \`${prefix}reputacao\` ➔ Consulta seu próprio score e medalha comercial.\n`
@@ -220,9 +220,9 @@ module.exports = {
 
         // MENU CENTRAL DE ORIENTAÇÃO
         let doc = `╔══════════════════════════════════════╗\n`
-        doc += `║  🧭  CENTRAL DE ORIENTAÇÃO // GOAT  ║\n`
+        doc += `║  🧭  CENTRAL DE ORIENTAÇÃO // ➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤  ║\n`
         doc += `╚══════════════════════════════════════╝\n`
-        doc += `       GOAT OFFICIAL SYSTEM\n\n`
+        doc += `       ➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤ OFFICIAL SYSTEM\n\n`
 
         doc += `Olá! Escolha um dos tópicos abaixo para ver o manual completo passo a passo:\n\n`
 
@@ -255,7 +255,7 @@ module.exports = {
         doc += `• \`${prefix}orientacao abertura\` — Guia de abrir e fechar grupo\n`
         doc += `• \`${prefix}orientacao agenda\` — Guia da agenda diária\n`
         doc += `• \`${prefix}orientacao preset\` — Guia de blindagem e presets\n`
-        doc += `• \`${prefix}orientacao futebol\` — Guia de futebol do GOAT\n`
+        doc += `• \`${prefix}orientacao futebol\` — Guia de futebol do ➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤\n`
         doc += `• \`${prefix}menu\` — Painel geral de categorias`
         return reply(doc)
     }

@@ -834,7 +834,7 @@ const classesLendarias = {
         loots: ['🐉 Escama de Dragão', '💎 Núcleo Dracônico']
     },
     goat_assault: {
-        nome: '👑 Camisa 10 — Modo Lendário (GOAT Campeão)',
+        nome: '👑 Camisa 10 — Modo Lendário (➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤ Campeão)',
         requisito: 'Nível 80, 100 chefes, 50 vitórias e espólios supremos',
         habilidade: 'Contra-ataque Total: reflete o dobro do dano recebido. +800 ATK, +300 moedas e +200 HP.',
         loots: ['🫀 Coração do Dragão', '⚫ Núcleo Absoluto', '🌟 Chama Arcana']

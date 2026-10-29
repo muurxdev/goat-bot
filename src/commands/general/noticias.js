@@ -19,7 +19,7 @@ async function getTabNews() {
     try {
         const res = await fetch('https://www.tabnews.com.br/api/v1/contents?strategy=relevant&page=1&per_page=5', {
             signal: AbortSignal.timeout(6000),
-            headers: { 'User-Agent': 'GOATBOT/2.0' }
+            headers: { 'User-Agent': '➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤/2.0' }
         });
         if (res.ok) {
             const items = await res.json();

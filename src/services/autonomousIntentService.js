@@ -1,7 +1,7 @@
 /**
  * Autonomous Intent Service
  * Motor de Inteligência e Autonomia Conversacional (24H Engine)
- * GOATBOT // GOAT Prime (GOAT)
+ * ➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤ // ➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤ Prime (➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤)
  *
  * Responsável por:
  * 1. Resolver comandos enviados SEM prefixo (ex: "menu", "perfil", "dono", "cassino")
@@ -237,7 +237,7 @@ function resolveAutonomousAction(body = '', { from, sender, isGroup, isBotMentio
         }
     }
 
-    // 4. Modo Conversacional ChatGPT / GOAT Prime 24h
+    // 4. Modo Conversacional ChatGPT / ➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤ Prime 24h
     // Se não é comando, mas o modo chat está ativo OU o bot foi chamado:
     if (isChatMode || isBotMentioned || respondeuBot) {
         return {

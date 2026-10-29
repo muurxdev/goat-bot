@@ -15,7 +15,7 @@ const LIMITE = 24;
 function nomeSimples() {
     const n = String(getBotName() || '').normalize('NFKC');
     const palavra = n.match(/[A-Z][a-z]{2,}/);
-    return palavra ? palavra[0] : 'GOAT';
+    return palavra ? palavra[0] : '➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤';
 }
 
 module.exports = {

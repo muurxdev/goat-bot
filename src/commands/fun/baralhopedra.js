@@ -13,13 +13,13 @@ module.exports = {
             const p = (args[0] || "").toLowerCase();
             if (!escolhas.includes(p)) return reply("🔥💧🌿 *Duelo Elemental*\nUso: `.baralhopedra <fogo|agua|planta>`\n(Fogo queima Planta, Planta absorve Água, Água apaga Fogo)");
             const bot = escolhas[Math.floor(Math.random() * escolhas.length)];
-            let res = `▫️ Você: *${p.toUpperCase()}*\n▫️ GOAT: *${bot.toUpperCase()}*\n\n`;
+            let res = `▫️ Você: *${p.toUpperCase()}*\n▫️ ➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤: *${bot.toUpperCase()}*\n\n`;
             if (p === bot) {
                 res += "🤝 *EMPATE ELEMENTAL!* As energias se anularam.";
             } else if ((p === "fogo" && bot === "planta") || (p === "agua" && bot === "fogo") || (p === "planta" && bot === "agua")) {
                 res += "🎉 *VOCÊ VENCEU!* Seu elemento dominou o adversário!";
             } else {
-                res += "💀 *GOAT VENCEU!* Ele contra-atacou com vantagem elementar!";
+                res += "💀 *➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤ VENCEU!* Ele contra-atacou com vantagem elementar!";
             }
             return reply(res);
         }

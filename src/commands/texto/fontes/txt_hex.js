@@ -13,7 +13,7 @@ module.exports = {
     execute: async ({ reply, args, text }) => {
         const input = (text || args.join(' ')).trim();
         if (!input) {
-            return reply('✍️ *Conversor para Hexadecimal*\n\nDigite seu texto após o comando para estilizar.\nExemplo: `.txt_hex GOATBOT`');
+            return reply('✍️ *Conversor para Hexadecimal*\n\nDigite seu texto após o comando para estilizar.\nExemplo: `.txt_hex ➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤`');
         }
         const transformed = ts.toHex(input);
         return reply(transformed);

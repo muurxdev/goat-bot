@@ -31,7 +31,7 @@ module.exports = {
         // ═══════════════════════════════════════════════════════════════════
         if (['ddds', 'ddd', 'regioes', 'regiao', 'lista'].includes(sub)) {
             let doc = `╔══════════════════════════════╗\n`
-            doc += `║   🌐 *CATÁLOGO DE DDDS GOAT* 🌐   ║\n`
+            doc += `║   🌐 *CATÁLOGO DE DDDS ➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤* 🌐   ║\n`
             doc += `╚══════════════════════════════╝\n\n`
             doc += `Escolha qualquer DDD do Brasil ou exterior para gerar seu número:\n\n`
             doc += `🇧🇷 *BRASIL (Sudeste):*\n`
@@ -451,7 +451,7 @@ module.exports = {
         const hasApiKey = Boolean(virtualNumberService.getApiKey())
 
         let doc = `╔══════════════════════════════╗\n`
-        doc += `║   🤖 *GOAT VIRTUAL NUMBERS* 🤖   ║\n`
+        doc += `║   🤖 *➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤ VIRTUAL NUMBERS* 🤖   ║\n`
         doc += `║       _WhatsApp SMS Activator_       ║\n`
         doc += `╚══════════════════════════════╝\n\n`
 

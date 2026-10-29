@@ -16,7 +16,7 @@ module.exports = {
     cooldownMs: 2000,
     execute: async ({ reply, prefix = "." }) => {
     const fofocas = [
-        "Flagraram o GOAT comendo as sobras do Guardião de madrugada!",
+        "Flagraram o ➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤ comendo as sobras do Guardião de madrugada!",
         "Dizem que o Ban perdeu todo o dinheiro dele no bingo de Torre!",
         "Fontes anônimas afirmam que os admins vão sortear um pastel de vento no fim de semana."
     ];

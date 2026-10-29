@@ -10,7 +10,7 @@ const dataService = require("../../services/dataService");
 const CRIPTO_MARKET = {
     "BTC": { nome: "Reino Coin (BTC)", preco: 2500, variacao: "+4.8%", emoji: "🪙" },
     "ETH": { nome: "Token (ETH)", preco: 850, variacao: "-2.1%", emoji: "💎" },
-    "MEL": { nome: "GOAT Wrath (MEL)", preco: 120, variacao: "+15.2%", emoji: "🐉" },
+    "MEL": { nome: "➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤ Wrath (MEL)", preco: 120, variacao: "+15.2%", emoji: "🐉" },
     "ESC": { nome: "Sun Pride (ESC)", preco: 340, variacao: "+8.4%", emoji: "☀️" }
 };
 

@@ -16,7 +16,7 @@ module.exports = {
     subcategory: "Interação",
     description: "Dá as boas-vindas do time a alguém ou a todo o grupo",
     usage: "[@pessoa ou nome]",
-    examples: [" — cumprimenta todo mundo", "@pessoa — dá boas-vindas a alguém", "GOAT — usa um nome qualquer"],
+    examples: [" — cumprimenta todo mundo", "@pessoa — dá boas-vindas a alguém", "➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤ — usa um nome qualquer"],
     cooldownMs: 1500,
     execute: async ({ reply, args = [], sender, mentionedJid, prefix = '.' }) => {
         const marcado = Array.isArray(mentionedJid) ? mentionedJid[0] : mentionedJid

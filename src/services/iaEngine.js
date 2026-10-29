@@ -1,5 +1,5 @@
 /**
- * Motor de IA do GOAT — Roteamento inteligente, respostas naturais e sem disclaimers
+ * Motor de IA do ➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤ — Roteamento inteligente, respostas naturais e sem disclaimers
  */
 
 const logger = require('../core/logger')
@@ -57,9 +57,9 @@ const { getBotName } = require('../config/botConfig')
 
 const RESPOSTAS_CONVERSA = {
     saudacao: [
-        'Fala aí! Tudo na paz? Eu sou o GOAT! Como posso te ajudar hoje?',
-        'Opa! Tudo certo? GOAT na área! Pode mandar a dúvida ou o que você precisa.',
-        'E aí! Tudo bem por aí? Sou o GOAT. Se precisar de alguma informação, download ou ajuda, só falar!'
+        'Fala aí! Tudo na paz? Eu sou o ➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤! Como posso te ajudar hoje?',
+        'Opa! Tudo certo? ➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤ na área! Pode mandar a dúvida ou o que você precisa.',
+        'E aí! Tudo bem por aí? Sou o ➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤. Se precisar de alguma informação, download ou ajuda, só falar!'
     ],
     bem_estar: [
         'Tudo 100% por aqui, com energia máxima e pronto pra jogar junto! E com você, como estão as coisas?',
@@ -67,8 +67,8 @@ const RESPOSTAS_CONVERSA = {
         'Por aqui tá tudo excelente! Espero que seu dia esteja sendo produtivo. Como posso te ajudar agora?'
     ],
     quem_e: [
-        'Eu sou o GOAT! Um assistente inteligente e completo para o WhatsApp: tiro dúvidas, pesquiso na web, baixo mídias na melhor qualidade, gerencio grupos, comando um super RPG, economia e muito mais. Digite .menu para ver todos os comandos!',
-        'Prazer! Sou o GOAT, seu bot aqui no WhatsApp. Posso te ajudar com perguntas, pesquisas, downloads de músicas e vídeos, jogos e utilidades. No que posso ser útil agora?'
+        'Eu sou o ➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤! Um assistente inteligente e completo para o WhatsApp: tiro dúvidas, pesquiso na web, baixo mídias na melhor qualidade, gerencio grupos, comando um super RPG, economia e muito mais. Digite .menu para ver todos os comandos!',
+        'Prazer! Sou o ➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤, seu bot aqui no WhatsApp. Posso te ajudar com perguntas, pesquisas, downloads de músicas e vídeos, jogos e utilidades. No que posso ser útil agora?'
     ],
     agradecimento: [
         'Tmj sempre! Se precisar de mais alguma coisa, só chamar.',
@@ -298,7 +298,7 @@ async function responder(pergunta) {
 function motorAtual() {
     const llm = require('./llmService')
     const ativos = llm.providersAtivos()
-    return ativos.length ? ativos[0] : 'GOAT AI'
+    return ativos.length ? ativos[0] : '➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤ AI'
 }
 
 function limparCache() { _cache.clear() }

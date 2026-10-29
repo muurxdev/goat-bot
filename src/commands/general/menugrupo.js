@@ -1,5 +1,5 @@
 /**
- * Menu Oficial de Comandos de Grupo // GOATBOT (GOAT)
+ * Menu Oficial de Comandos de Grupo // ➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤ (➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤)
  * Mapeia 100% dos comandos de gestão, segurança, mensagens automáticas e moderação de grupos
  */
 
@@ -16,9 +16,9 @@ module.exports = {
     cooldownMs: 2000,
     execute: async ({ reply, client, from, info, prefix = "." }) => {
         let doc = `╔══════════════════════════════════════╗\n`;
-        doc += `║  👥  COMANDOS DE GRUPO // GOAT 10   ║\n`;
+        doc += `║  👥  COMANDOS DE GRUPO // ➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤ 10   ║\n`;
         doc += `╚══════════════════════════════════════╝\n`;
-        doc += `       GOAT CLUBE DOS CAMPEÕES\n\n`;
+        doc += `       ➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤ CLUBE DOS CAMPEÕES\n\n`;
 
         doc += `🔓 *ABERTURA & FECHAMENTO:*\n`;
         doc += `• \`${prefix}abrir [tempo]\` — Abre o grupo imediatamente ou por minutos/horas\n`;

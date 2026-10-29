@@ -13,7 +13,7 @@ module.exports = {
     execute: async ({ reply, args, text }) => {
         const input = (text || args.join(' ')).trim();
         if (!input) {
-            return reply('✍️ *Conversor para Binário*\n\nDigite seu texto após o comando para estilizar.\nExemplo: `.txt_binary GOATBOT`');
+            return reply('✍️ *Conversor para Binário*\n\nDigite seu texto após o comando para estilizar.\nExemplo: `.txt_binary ➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤`');
         }
         const transformed = ts.toBinary(input);
         return reply(transformed);

@@ -17,7 +17,7 @@ module.exports = {
             M.cabecalho('🛡️', 'Regra de Segurança #33'),
             '⚙️ *Parâmetro:* Defesa Ativa e Integridade do Grupo #33',
             '🔒 *Status:* Ativo e em conformidade com as diretrizes do reino.',
-            M.assinatura('GOAT Security Shield')
+            M.assinatura('➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤ Security Shield')
         ].join('\n\n');
         return reply(doc);
     }

@@ -1,7 +1,7 @@
 /**
  * Comando .esportefutebol — FUTEBOL & TABELAS AO VIVO
  *
- * Regras, curiosidades, tabelas em tempo real e jogos do dia (GOAT / Clube dos Campeões).
+ * Regras, curiosidades, tabelas em tempo real e jogos do dia (➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤ / Clube dos Campeões).
  */
 
 const L = require('../../services/lifestyleService')
@@ -53,11 +53,11 @@ module.exports = {
             return reply(doc)
         }
 
-        // 4. Menu Central Interativo do GOAT / Clube dos Campeões
+        // 4. Menu Central Interativo do ➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤ / Clube dos Campeões
         const e = L.ESPORTES['futebol']
         return reply(F.tela({
             emoji: '⚽',
-            titulo: 'Futebol // Clube dos Campeões (GOAT)',
+            titulo: 'Futebol // Clube dos Campeões (➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤)',
             intro: 'Central esportiva com tabelas em tempo real, jogos da rodada e regras oficiais.',
             secoes: [
                 { emoji: '🏆', titulo: 'Tabelas em Tempo Real', linhas: [

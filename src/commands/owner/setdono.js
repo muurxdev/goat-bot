@@ -88,7 +88,7 @@ module.exports = {
                 targetJid = cleanDigits;
                 customName = "";
             } else {
-                // B. Nome acompanhado de telefone (ex: "GOAT 21 98459-6995" ou "21 98459-6995 GOAT")
+                // B. Nome acompanhado de telefone (ex: "➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤ 21 98459-6995" ou "21 98459-6995 ➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤")
                 const phoneMatch = fullInput.match(/(?:\+?\d{1,4}[\s-]?)?(?:\(?\d{2,4}\)?[\s-]?)?\d{4,5}[-\s]?\d{4}/);
                 if (phoneMatch && phoneMatch[0].replace(/\D/g, "").length >= 8) {
                     targetJid = phoneMatch[0].replace(/\D/g, "");

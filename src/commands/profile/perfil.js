@@ -54,8 +54,8 @@ module.exports = {
                 intro: proprio
                     ? 'Crie sua ficha com um apelido para aparecer no ranking e ter um perfil completo.'
                     : `${marca} ainda não criou a ficha. Quando criar, o perfil aparece aqui.`,
-                secoes: proprio ? [{ emoji: '⌨️', titulo: 'Digite assim', linhas: [`${F.cmd(prefix, 'login', 'seu apelido')}`, `Exemplo: ${F.cmd(prefix, 'login', 'GOAT')}`] }] : [],
-                proximos: proprio ? [{ nome: 'login', args: 'GOAT', oque: 'criar sua ficha agora' }] : [{ nome: 'perfil', oque: 'ver o seu perfil' }],
+                secoes: proprio ? [{ emoji: '⌨️', titulo: 'Digite assim', linhas: [`${F.cmd(prefix, 'login', 'seu apelido')}`, `Exemplo: ${F.cmd(prefix, 'login', '➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤')}`] }] : [],
+                proximos: proprio ? [{ nome: 'login', args: '➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤', oque: 'criar sua ficha agora' }] : [{ nome: 'perfil', oque: 'ver o seu perfil' }],
                 prefix
             }), [alvo])
         }

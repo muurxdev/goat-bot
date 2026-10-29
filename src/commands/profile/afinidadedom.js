@@ -9,7 +9,7 @@ const DONS = [
     { emoji: "⚡", nome: "Relâmpago Cortante", mestre: "Trovão", traco: "a velocidade dos raios", dica: "Quem tem o relâmpago decide rápido e acerta primeiro." },
     { emoji: "❄️", nome: "Neve Eterna", mestre: "os magos do gelo", traco: "a calma que congela o medo", dica: "Quem tem a neve eterna pensa com a cabeça fria na hora do aperto." },
     { emoji: "🌿", nome: "Vida da Terra", mestre: "Guerreira", traco: "a força da rocha e do solo", dica: "Quem tem a vida da terra aguenta firme onde os outros caem." },
-    { emoji: "🌑", nome: "Treva Abissal", mestre: "GOAT", traco: "a regeneração sombria", dica: "Quem tem a treva abissal sempre volta mais forte depois de cair." }
+    { emoji: "🌑", nome: "Treva Abissal", mestre: "➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤", traco: "a regeneração sombria", dica: "Quem tem a treva abissal sempre volta mais forte depois de cair." }
 ];
 
 module.exports = {

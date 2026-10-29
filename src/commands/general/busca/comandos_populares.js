@@ -15,7 +15,7 @@ module.exports = {
         const doc = [
             M.cabecalho('🔥', 'Comandos Mais Populares'),
             top.map((c, i) => `${i + 1}º • ${c}`).join('\n'),
-            M.assinatura('GOATBOT')
+            M.assinatura('➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤')
         ].join('\n\n');
         return reply(doc);
     }

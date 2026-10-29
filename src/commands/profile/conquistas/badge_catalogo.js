@@ -16,7 +16,7 @@ module.exports = {
         const doc = [
             M.cabecalho('🏅', 'Catálogo de Insígnias do Reino'),
             lines.join('\n'),
-            M.assinatura('GOAT Badges')
+            M.assinatura('➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤ Badges')
         ].join('\n\n');
         return reply(doc);
     }

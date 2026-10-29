@@ -25,7 +25,7 @@ module.exports = {
             let doc = "📌 *Como baixar do Pinterest*\n";
             doc += "• \`.pinterest <link>\` — mando a imagem ou o vídeo\n";
             doc += "• \`.pinterest mp3 <link>\` — mando só o áudio do vídeo\n";
-            doc += "• \`.pinterest <pesquisa>\` — busco imagens, ex.: \`.pinterest GOAT wallpaper\`";
+            doc += "• \`.pinterest <pesquisa>\` — busco imagens, ex.: \`.pinterest ➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤ wallpaper\`";
             return reply(doc);
         }
 

@@ -282,7 +282,7 @@ async function enviarECompartilhar({ filePath, fileName, mimeType, folderId, onP
     let pasta = folderId || cfg().folderId
     if (!pasta) {
         try {
-            pasta = await garantirPasta('GOATBOT Downloads')
+            pasta = await garantirPasta('➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤ Downloads')
         } catch (err) {
             logger.warn(`[GDRIVE] Não foi possível criar pasta padrão: ${err.message}`)
         }

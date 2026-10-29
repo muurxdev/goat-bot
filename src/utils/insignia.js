@@ -31,7 +31,7 @@ function criarInsignia({ n, emoji, raridade }) {
                 `💎 *Raridade:* Grau ${raridade}`,
                 `📜 *Título Associado:* _"Lorde da Ordem Real #${n}"_`,
                 '⭐ *Status para você:* ' + (hasBadge ? '✅ *DESBLOQUEADA!*' : '🔒 *Bloqueada* (Atinja feitos no bot para liberar)'),
-                M.assinatura('GOAT Royal Archives')
+                M.assinatura('➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤ Royal Archives')
             ].join('\n\n')
             return reply(doc)
         }

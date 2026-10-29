@@ -26,7 +26,7 @@ module.exports = {
     subcategory: "Magia",
     description: "Lança uma bênção protetora sobre alguém do grupo",
     usage: "<@pessoa ou nome>",
-    examples: ["@pessoa — marca alguém do grupo", "GOAT — usa um nome qualquer"],
+    examples: ["@pessoa — marca alguém do grupo", "➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤ — usa um nome qualquer"],
     cooldownMs: 2000,
     execute: async ({ reply, args = [], sender, mentionedJid, prefix = '.' }) => {
         const alvo = alvoDe(mentionedJid, args, sender)
@@ -37,7 +37,7 @@ module.exports = {
                 intro: "Você ergue as mãos e cobre um aliado com uma aura dourada de proteção. É um gesto de carinho antes da batalha. Só falta dizer para quem.",
                 secoes: [{ emoji: '✍️', titulo: 'Digite assim', linhas: [
                     `• ${F.cmd(prefix, "abencoaramigo", '@pessoa')} — marca alguém do grupo`,
-                    `• ${F.cmd(prefix, "abencoaramigo", 'GOAT')} — usa um nome qualquer`
+                    `• ${F.cmd(prefix, "abencoaramigo", '➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤')} — usa um nome qualquer`
                 ] }],
                 proximos: [
                 { nome: "curaramigo", args: "@pessoa", oque: "curar as feridas de alguém" },

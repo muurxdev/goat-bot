@@ -156,7 +156,7 @@ module.exports = {
                     beneficiaryName: targetName
                 },
                 payerEmail: `${sender.split('@')[0]}@goat-bot.local`,
-                payerName: targetName || 'Cliente GOAT'
+                payerName: targetName || 'Cliente ➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤'
             })
 
             logger.info(`[ASSINAR/PIX] Cobrança #${pixData.id} criada para ${targetJid} via ${sender} (${pacote.nome})`)

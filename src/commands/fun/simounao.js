@@ -27,7 +27,7 @@ module.exports = {
                     prefix
                 }));
             }
-            const r = ["✅ SIM, com certeza absoluta!", "❌ NÃO, de jeito nenhum!", "🔮 TALVEZ, os ventos ainda são incertos...", "👀 Nem GOAT sabe a resposta dessa."];
+            const r = ["✅ SIM, com certeza absoluta!", "❌ NÃO, de jeito nenhum!", "🔮 TALVEZ, os ventos ainda são incertos...", "👀 Nem ➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤ sabe a resposta dessa."];
             return reply(F.tela({
                 emoji: "🔮",
                 titulo: "O oráculo respondeu",

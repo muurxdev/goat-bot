@@ -17,7 +17,7 @@ function telaUso(prefix, titulo, intro) {
         secoes: [
             { emoji: '⌨️', titulo: 'Digite assim', linhas: [F.cmd(prefix, 'json', '<format|minify|validate> <json>')] },
             { emoji: '📝', titulo: 'Exemplos', linhas: F.lista([
-                F.cmd(prefix, 'json', 'format {"nome":"GOAT","versao":2}') + ' — organiza com recuo',
+                F.cmd(prefix, 'json', 'format {"nome":"➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤","versao":2}') + ' — organiza com recuo',
                 F.cmd(prefix, 'json', 'minify {"a": 1, "b": 2}') + ' — tira os espaços',
                 F.cmd(prefix, 'json', 'validate {"status": "ok"}') + ' — só confere'
             ]) }
@@ -34,7 +34,7 @@ module.exports = {
     subcategory: 'Dev',
     description: 'Valida, formata ou compacta um texto em JSON',
     usage: '<format|minify|validate> <json>',
-    examples: ['format {"nome":"GOAT"} — organiza com recuo', 'minify {"a": 1} — tira os espaços', 'validate {"ok": true} — só confere'],
+    examples: ['format {"nome":"➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤"} — organiza com recuo', 'minify {"a": 1} — tira os espaços', 'validate {"ok": true} — só confere'],
     execute: async ({ args, text, reply, prefix = '.' }) => {
         const sub = args[0]?.toLowerCase()
 

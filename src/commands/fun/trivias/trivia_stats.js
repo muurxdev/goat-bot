@@ -22,7 +22,7 @@ module.exports = {
             '⭐ *Maior Sequência:* ' + s.max_streak + ' acertos seguidos\n' +
             '🪙 *Moedas Ganhas:* ' + s.total_coins_won + ' moedas\n' +
             '✨ *XP Acumulado:* ' + s.total_xp_won + ' XP',
-            M.assinatura('GOAT Academy')
+            M.assinatura('➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤ Academy')
         ].join('\n\n');
         return reply(doc);
     }

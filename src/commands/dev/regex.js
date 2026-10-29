@@ -33,7 +33,7 @@ module.exports = {
     subcategory: 'Regex',
     description: 'Testa uma expressão regular contra um texto e mostra o que ela encontra',
     usage: '/padrão/flags <texto>',
-    examples: ['/[0-9]{3}/g código 123 e 456 — acha números de 3 dígitos', '/^[a-z]+$/i GOAT — confere se só tem letras'],
+    examples: ['/[0-9]{3}/g código 123 e 456 — acha números de 3 dígitos', '/^[a-z]+$/i ➳ᴹᴿ᭄𝕸𝖊𝖘𝖘𝖎✤ — confere se só tem letras'],
     execute: async ({ text, args, reply, prefix = '.' }) => {
         if (!text) {
             return reply(telaUso(prefix, 'Testador de regex', 'Mostra se uma expressão regular encontra algo no texto e o que ela captura.'))
