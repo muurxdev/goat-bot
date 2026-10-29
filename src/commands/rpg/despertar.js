@@ -1,3 +1,4 @@
+const { nomeDoMembro } = require('../../utils/nomeMembro');
 /**
  * Comando .despertar / .awakening / .modoassalto
  * Desperte seu poder oculto para multiplicar temporariamente seu Combat Power
@@ -30,7 +31,7 @@ module.exports = {
         const card = renderCard({
             title: "DESPERTAR DO PODER SUPREMO!",
             icon: forma.icone,
-            subtitle: `💥 *Guerreiro:* @${sender.split("@")[0]}`,
+            subtitle: `💥 *Guerreiro:* ${nomeDoMembro(sender)}`,
             sections: [
                 {
                     title: "FORMA MÁXIMA DESPERTADA",

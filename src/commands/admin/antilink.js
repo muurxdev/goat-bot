@@ -1,3 +1,4 @@
+const { nomeDoMembro } = require('../../utils/nomeMembro');
 /**
  * Comando .antilink Avançado & Granular por Plataforma
  * Suporte a bloqueio geral ou seletivo: whatsapp, canal, telegram, instagram, tiktok, discord, youtube
@@ -51,7 +52,7 @@ module.exports = {
             const card = renderCard({
                 title: "ALERTA: LINK INTERCEPTADO!",
                 icon: "🚫",
-                subtitle: `🛡️ *Infrator Simulado:* @${senderNum}`,
+                subtitle: `🛡️ *Infrator Simulado:* ${nomeDoMembro(sender)}`,
                 sections: [
                     {
                         title: "DETALHES DA INFRAÇÃO",
@@ -130,7 +131,7 @@ module.exports = {
             const target = (contextInfo?.mentionedJid && contextInfo.mentionedJid[0]) || (args[1] ? args[1].replace(/[@\s]/g, '') + '@s.whatsapp.net' : null);
             if (!target) return reply(`💡 Marque o usuário para conceder permissão de link: \`.antilink allow @user\``);
             await aiLearning.allowLinkUser(from, target);
-            return reply(`🤝 @${target.split('@')[0]} agora é um parceiro/afiliado autorizado e tem permissão para postar links neste grupo!`, [target]);
+            return reply(`🤝 ${nomeDoMembro(target)} agora é um parceiro/afiliado autorizado e tem permissão para postar links neste grupo!`, [target]);
         }
 
         if (sub === "disallow" || sub === "revogar" || sub === "bloquearuser") {
@@ -138,7 +139,7 @@ module.exports = {
             const target = (contextInfo?.mentionedJid && contextInfo.mentionedJid[0]) || (args[1] ? args[1].replace(/[@\s]/g, '') + '@s.whatsapp.net' : null);
             if (!target) return reply(`💡 Marque o usuário para revogar permissão: \`.antilink disallow @user\``);
             await aiLearning.disallowLinkUser(from, target);
-            return reply(`🚫 Permissão de envio de links revogada para @${target.split('@')[0]}.`, [target]);
+            return reply(`🚫 Permissão de envio de links revogada para ${nomeDoMembro(target)}.`, [target]);
         }
 
         if (sub === "allowed" || sub === "parceiros" || sub === "whitelist") {
@@ -146,7 +147,7 @@ module.exports = {
             if (allowed.length === 0) {
                 return reply(`🤝 Nenhum membro possui permissão especial de postagem de links neste grupo.\nPara conceder, use \`.antilink allow @user\`.`);
             }
-            return reply(`🤝 *Parceiros & Afiliados Autorizados a Enviar Links (${allowed.length}):*\n\n` + allowed.map((j, i) => `${i + 1}. @${j.split('@')[0]}`).join('\n'), allowed);
+            return reply(`🤝 *Parceiros & Afiliados Autorizados a Enviar Links (${allowed.length}):*\n\n` + allowed.map((j, i) => `${i + 1}. ${nomeDoMembro(j)}`).join('\n'), allowed);
         }
 
         // 3. Configurar Plataformas Individuais (.antilink telegram on/off, etc.)

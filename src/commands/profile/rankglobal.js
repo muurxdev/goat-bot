@@ -1,3 +1,4 @@
+const { nomeDoMembro } = require('../../utils/nomeMembro');
 /**
  * Comando .rankglobal
  * Exibe o Ranking Global de Nível e XP unificado de todos os grupos (Top 50)
@@ -40,7 +41,7 @@ module.exports = {
         const linhas = ranking.map((user, i) => {
             const medalha = i === 0 ? "🥇" : i === 1 ? "🥈" : i === 2 ? "🥉" : `${i + 1}º`;
             mentions.push(user[0]);
-            return `${medalha} @${user[0].split("@")[0]} — *Nv. ${formatNumber(user[1].level)}* · ${formatNumber(user[1].xp || 0)} XP · ${moedas(user[1].coins || 0)}`;
+            return `${medalha} ${nomeDoMembro(user[0])} — *Nv. ${formatNumber(user[1].level)}* · ${formatNumber(user[1].xp || 0)} XP · ${moedas(user[1].coins || 0)}`;
         });
 
         await reply(F.tela({

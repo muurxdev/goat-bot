@@ -1,3 +1,4 @@
+const { nomeDoMembro } = require('../../utils/nomeMembro');
 const { renderCard } = require("../../utils/uiEngine");
 const dataService = require("../../services/dataService");
 
@@ -16,7 +17,7 @@ module.exports = {
         const card = renderCard({
             title: "SANTUÁRIO DO TESOURO SAGRADO",
             icon: "🗡️",
-            subtitle: `👤 *Portador:* @${sender.split("@")[0]}`,
+            subtitle: `👤 *Portador:* ${nomeDoMembro(sender)}`,
             sections: [
                 {
                     title: "ARMA SAGRADA VINCULADA",

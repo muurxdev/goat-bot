@@ -1,3 +1,4 @@
+const { nomeDoMembro } = require('../../utils/nomeMembro');
 /**
  * Comando .categoria
  * Liga/desliga uma CATEGORIA inteira de comandos no grupo. Quando desligada,
@@ -66,7 +67,7 @@ module.exports = {
         doc += `╚══════════════════════════════╝\n\n`
         doc += `${meta.emoji} *Categoria:* ${meta.label} (\`${key}\`)\n`
         doc += `${sub === 'off' ? '🔴' : '🟢'} *Estado:* ${sub === 'off' ? '*DESATIVADA*' : '*ATIVADA*'}\n`
-        doc += `👤 *Admin:* @${sender.split('@')[0]}\n\n`
+        doc += `👤 *Admin:* ${nomeDoMembro(sender)}\n\n`
         doc += sub === 'off'
             ? `🔒 _Nenhum comando de *${key}* funcionará até um admin reativar com_ \`.categoria on ${key}\`\n`
             : `✅ _Os comandos de *${key}* voltaram a funcionar normalmente._\n`

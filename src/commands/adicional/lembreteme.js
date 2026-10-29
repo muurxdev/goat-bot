@@ -1,3 +1,4 @@
+const { nomeDoMembro } = require('../../utils/nomeMembro');
 const logger = require('../../core/logger');
 const persistentScheduler = require('../../services/persistentScheduler');
 
@@ -56,7 +57,7 @@ module.exports = {
             `📝 *Recado:* _${recado}_\n` +
             `⏳ *Em:* ${rotulo}\n` +
             `📅 *Previsão:* ${persistentScheduler.formatLocalTime(triggerAt)}\n` +
-            `👤 *Para:* @${sender.split('@')[0]}\n\n` +
+            `👤 *Para:* ${nomeDoMembro(sender)}\n\n` +
             `🔔 *Avisarei você pontualmente (persistido no banco SQLite).*`,
             [sender]
         );

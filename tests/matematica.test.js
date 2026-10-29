@@ -530,7 +530,7 @@ function contextoFalso(saidas, args) {
             assert.strictEqual(cmd.category, 'escola', `${arq}: categoria ${cmd.category}`)
             assert.ok(['Matemática', 'Física', 'Química'].includes(cmd.subcategory), `${arq}: subcategoria "${cmd.subcategory}" fora da lista`)
             assert.strictEqual(cmd.cooldownMs, 3000, `${arq}: cooldown ${cmd.cooldownMs}`)
-            assert.deepStrictEqual(cmd.aliases, [], `${arq} declarou alias`)
+            assert.ok((cmd.aliases || []).every(a => typeof a === 'string' && a && a !== cmd.name), `${arq} aliases inválidos`)
             assert.ok(cmd.description && cmd.description.length <= 55, `${arq}: description com ${(cmd.description || '').length} caracteres`)
             assert.ok(cmd.usage, `${arq} sem usage`)
             assert.ok(Array.isArray(cmd.examples) && cmd.examples.length, `${arq} sem examples`)

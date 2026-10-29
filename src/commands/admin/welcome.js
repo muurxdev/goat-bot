@@ -1,3 +1,4 @@
+const { nomeDoMembro } = require('../../utils/nomeMembro');
 /**
  * Comando .welcome / .bv / .boasvindas
  * Ativa, desativa, personaliza ou testa (preview) as mensagens de boas-vindas do grupo
@@ -107,7 +108,7 @@ module.exports = {
             doc += `╭━〔 ⚙️ MENSAGEM CONFIGURADA 〕━⬣\n`;
             doc += `┃ 📝 *Texto:* ${customMsg.slice(0, 200)}${customMsg.length > 200 ? "..." : ""}\n`;
             doc += `┃ 🟢 *Estado:* *ATIVADO*\n`;
-            doc += `┃ 👤 *Administrador:* @${senderNum}\n`;
+            doc += `┃ 👤 *Administrador:* ${nomeDoMembro(sender)}\n`;
             doc += `╰━━━━━━━━━━━━━━━━━━⬣\n\n`;
             doc += `💡 _Digite_ \`.welcome -config\` _para ver uma simulação completa!_\n`;
             doc += `👑 *${botName}*`;
@@ -128,7 +129,7 @@ module.exports = {
             doc += `╭━〔 ⚙️ CONFIGURAÇÃO DE GRUPO 〕━⬣\n`;
             doc += `┃ 🎉 *Recurso:* Mensagens de Boas-Vindas (Entrada)\n`;
             doc += `┃ 🟢 *Estado:* *ATIVADO*\n`;
-            doc += `┃ 👤 *Administrador:* @${senderNum}\n`;
+            doc += `┃ 👤 *Administrador:* ${nomeDoMembro(sender)}\n`;
             doc += `╰━━━━━━━━━━━━━━━━━━⬣\n\n`;
             doc += `💡 _Para desativar:_ \`.welcome off\` | _Para testar:_ \`.welcome -config\`\n`;
             doc += `👑 *${botName}*`;
@@ -149,7 +150,7 @@ module.exports = {
             doc += `╭━〔 ⚙️ CONFIGURAÇÃO DE GRUPO 〕━⬣\n`;
             doc += `┃ 🎉 *Recurso:* Mensagens de Boas-Vindas (Entrada)\n`;
             doc += `┃ 🔴 *Estado:* *DESATIVADO*\n`;
-            doc += `┃ 👤 *Administrador:* @${senderNum}\n`;
+            doc += `┃ 👤 *Administrador:* ${nomeDoMembro(sender)}\n`;
             doc += `╰━━━━━━━━━━━━━━━━━━⬣\n\n`;
             doc += `💡 _Para reativar quando desejar:_ \`.welcome on\`\n`;
             doc += `👑 *${botName}*`;

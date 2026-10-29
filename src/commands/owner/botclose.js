@@ -1,3 +1,4 @@
+const { nomeDoMembro } = require('../../utils/nomeMembro');
 /**
  * Comando .botclose
  * Controla o fechamento temporário, programado ou imediato do bot
@@ -117,7 +118,7 @@ module.exports = {
                 secoes: [{
                     emoji: '📋', titulo: 'Detalhes', linhas: [
                         F.campo('Prazo', 'sem data para reabrir'),
-                        F.campo('Fechado por', `@${senderNum}`)
+                        F.campo('Fechado por', `${nomeDoMembro(sender)}`)
                     ]
                 }],
                 proximos: [{ nome: 'botopen', oque: 'reabrir agora' }]
@@ -138,7 +139,7 @@ module.exports = {
                         emoji: '📋', titulo: 'Detalhes', linhas: [
                             F.campo('Duração', res.durationStr),
                             F.campo('Reabertura', res.reopenAtFormatted),
-                            F.campo('Fechado por', `@${senderNum}`)
+                            F.campo('Fechado por', `${nomeDoMembro(sender)}`)
                         ]
                     }],
                     proximos: [
@@ -179,7 +180,7 @@ module.exports = {
                         emoji: '📋', titulo: 'Detalhes', linhas: [
                             F.campo('Fechamento', res.closeFormatted),
                             F.campo('Reabertura', reabre),
-                            F.campo('Marcado por', `@${senderNum}`)
+                            F.campo('Marcado por', `${nomeDoMembro(sender)}`)
                         ]
                     }],
                     proximos: [

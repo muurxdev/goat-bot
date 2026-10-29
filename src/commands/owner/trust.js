@@ -1,3 +1,4 @@
+const { nomeDoMembro } = require('../../utils/nomeMembro');
 /**
  * Comando .trust
  * Gerencia a lista de usuários de confiança (TRUSTED)
@@ -39,9 +40,9 @@ module.exports = {
 
             const linhas = [];
             list.forEach((item, i) => {
-                linhas.push(`*${i + 1}.* @${item.jid.split('@')[0]}`);
+                linhas.push(`*${i + 1}.* ${nomeDoMembro(item.jid)}`);
                 linhas.push(`   ${F.campo('Anotação', item.notes || 'sem anotação')}`);
-                linhas.push(`   ${F.campo('Adicionado por', `@${String(item.added_by || '').split('@')[0]}`)}`);
+                linhas.push(`   ${F.campo('Adicionado por', `${nomeDoMembro(String(item.added_by || ''))}`)}`);
             });
 
             const mentions = list.map(item => item.jid);
@@ -103,7 +104,7 @@ module.exports = {
                 emoji: '🔻',
                 titulo: 'Saiu da lista de confiança',
                 intro: `@${targetNum} voltou a ser um usuário comum.`,
-                secoes: [{ emoji: '📋', titulo: 'Detalhes', linhas: [F.campo('Removido por', `@${senderNum}`)] }],
+                secoes: [{ emoji: '📋', titulo: 'Detalhes', linhas: [F.campo('Removido por', `${nomeDoMembro(sender)}`)] }],
                 proximos: [{ nome: 'trust', args: '@pessoa', oque: 'coloca de volta' }],
                 prefix
             }), [targetJid, sender]);
@@ -123,7 +124,7 @@ module.exports = {
                 titulo: 'Detalhes',
                 linhas: [
                     F.campo('Anotação', notes),
-                    F.campo('Adicionado por', `@${senderNum}`)
+                    F.campo('Adicionado por', `${nomeDoMembro(sender)}`)
                 ]
             }],
             proximos: [

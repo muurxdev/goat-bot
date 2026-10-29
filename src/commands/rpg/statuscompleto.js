@@ -1,3 +1,4 @@
+const { nomeDoMembro } = require('../../utils/nomeMembro');
 /**
  * Comando .statuscompleto / .fichadetalhada
  * Painel analítico completo com stats reais do characterEngine
@@ -25,7 +26,7 @@ module.exports = {
         const card = renderCard({
             title: "FICHA ANALÍTICA DE COMBATE",
             icon: "📜",
-            subtitle: `👤 *Herói:* @${sender.split("@")[0]}`,
+            subtitle: `👤 *Herói:* ${nomeDoMembro(sender)}`,
             sections: [
                 {
                     title: "ATRIBUTOS PRINCIPAIS",

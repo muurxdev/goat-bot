@@ -1,3 +1,4 @@
+const { nomeDoMembro } = require('../../utils/nomeMembro');
 /**
  * Comando .opendm
  * Desbane ou libera o privado do bot para usuários (aceita números formatados, menções ou 'all')
@@ -91,7 +92,7 @@ module.exports = {
             emoji: '🔓',
             titulo: 'Privado liberado',
             intro: `@${userNum} já pode conversar e usar comandos comigo no privado.`,
-            secoes: [{ emoji: '📋', titulo: 'Detalhes', linhas: [F.campo('Liberado por', `@${sender.split('@')[0]}`)] }],
+            secoes: [{ emoji: '📋', titulo: 'Detalhes', linhas: [F.campo('Liberado por', `${nomeDoMembro(sender)}`)] }],
             dica: `Se o privado estiver fechado para todos, a pessoa ainda não consegue: reabra com ${F.cmd(prefix, 'ativardm')}.`,
             proximos: [{ nome: 'ativardm', oque: 'reabre o privado para todos' }],
             prefix

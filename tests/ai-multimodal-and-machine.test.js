@@ -47,7 +47,7 @@ async function runTests() {
     // Painel principal
     await machineCmd.execute({ ...mockCtx, args: [] });
     assert.ok(replyMsg.includes('PERFIL DE MACHINE LEARNING'), 'Painel principal deve ser exibido');
-    assert.ok(replyMsg.includes('5511999990001'), 'Deve conter identificação do usuário');
+    assert.ok(!replyMsg.includes('5511999990001'), 'Não mostra o número do usuário');
 
     // Subcomando ON/OFF
     await machineCmd.execute({ ...mockCtx, args: ['on'] });

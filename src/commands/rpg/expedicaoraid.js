@@ -1,3 +1,4 @@
+const { nomeDoMembro } = require('../../utils/nomeMembro');
 const { renderCard, formatCoins, formatXP } = require("../../utils/uiEngine");
 const dataService = require("../../services/dataService");
 const { initializeUser, adicionarXp } = require("../../services/xpService");
@@ -20,7 +21,7 @@ module.exports = {
         const card = renderCard({
             title: "EXPEDIÇÃO DE AVENTUREIROS — RETORNO",
             icon: "⛺",
-            subtitle: `🗺️ *Líder da Tropa:* @${sender.split("@")[0]}`,
+            subtitle: `🗺️ *Líder da Tropa:* ${nomeDoMembro(sender)}`,
             sections: [
                 {
                     title: "SAQUE DA EXPEDIÇÃO",

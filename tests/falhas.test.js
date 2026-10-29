@@ -86,6 +86,8 @@ async function main() {
     })
 
     console.log('\n--- 2. Dispatcher registra falha ---')
+    // Os comandos de teste são da categoria dev, desligada num PV novo; liga no PV do dono.
+    require('../src/services/moduleStateService').setModule('dev', true, 'pv')
     const longo = 'x'.repeat(1000)
     dispatcher.commands.set('explodeteste', {
         name: 'explodeteste',

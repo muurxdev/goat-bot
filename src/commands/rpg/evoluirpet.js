@@ -1,3 +1,4 @@
+const { nomeDoMembro } = require('../../utils/nomeMembro');
 /**
  * Comando .evoluirpet
  * Sistema de Evolução de Pets com árvores de estágios e bônus massivos de dano real
@@ -99,7 +100,7 @@ module.exports = {
         let doc = `╔══════════════════════════════╗\n`;
         doc += `║   🐾 *ÁRVORE DE EVOLUÇÃO DE PETS* 🐾   \n`;
         doc += `╚══════════════════════════════╝\n\n`;
-        doc += `👤 *Mestre:* @${sender.split("@")[0]}\n`;
+        doc += `👤 *Mestre:* ${nomeDoMembro(sender)}\n`;
         doc += `🐾 *Pet Atual:* **${currentPet}**\n\n`;
 
         doc += `╭━〔 📜 ESTÁGIOS DA ESPÉCIE 〕━⬣\n`;

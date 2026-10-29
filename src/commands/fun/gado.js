@@ -1,3 +1,4 @@
+const { nomeDoMembro } = require('../../utils/nomeMembro');
 /**
  * Comando .gado
  * Medidor de gado e corno com classificação divertida
@@ -23,7 +24,7 @@ module.exports = {
         else titulo = '👑 REI DO PASTO: Chifre de Ouro com Certificado'
 
         let doc = `🐂 *MEDIDOR DE GADO & CORNO* 🐂\n\n`
-        doc += `👤 *Alvo:* @${target.split('@')[0]}\n`
+        doc += `👤 *Alvo:* ${nomeDoMembro(target)}\n`
         doc += `📊 *Porcentagem:* *${percent}%*\n`
         doc += `🏆 *Diagnóstico:* ${titulo}`
 

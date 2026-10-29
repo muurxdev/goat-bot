@@ -1,3 +1,4 @@
+const { nomeDoMembro } = require('../../utils/nomeMembro');
 /**
  * Comando .setfotogrupo / .setppgrupo
  * Altera o ícone/foto de perfil do grupo respondendo a uma imagem
@@ -56,7 +57,7 @@ module.exports = {
             doc += `║ 🖼️ *FOTO DO GRUPO ATUALIZADA* 🖼️ ║\n`;
             doc += `╚══════════════════════════════╝\n\n`;
             doc += `✨ *O ícone do grupo foi atualizado com sucesso!*\n`;
-            doc += `👤 *Atualizado por:* @${senderNum}\n\n`;
+            doc += `👤 *Atualizado por:* ${nomeDoMembro(sender)}\n\n`;
             doc += `👑 *${botName}*`;
 
             return reply(doc.trim(), [sender]);

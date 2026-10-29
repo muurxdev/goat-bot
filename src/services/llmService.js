@@ -398,6 +398,11 @@ async function _freeWebAI(prompt, system) {
             }),
             signal: ctl.signal
         })
+        // Sem checar o status, um erro do serviço (503 com JSON) virava a "resposta" do bot.
+        if (!res.ok) {
+            logger.warn(`[FREE WEB AI] HTTP ${res.status}; sem resposta`)
+            return null
+        }
         const text = await res.text()
         return (text && text.trim()) ? text.trim() : null
     } catch (e) {

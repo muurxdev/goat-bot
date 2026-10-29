@@ -1,3 +1,4 @@
+const { nomeDoMembro } = require('../../utils/nomeMembro');
 /**
  * Comando .aluguel / .rent
  * Aluguel de grupos e do privado. Parte é pública (planos, teste grátis,
@@ -562,7 +563,7 @@ module.exports = {
                         targetType: 'group',
                         targetName: groupName,
                         grantedBy: sender,
-                        notes: `Combo Vitalício de @${resolved.jid.split('@')[0]}`
+                        notes: `Combo Vitalício de ${nomeDoMembro(resolved.jid)}`
                     })
                 }
             } else {
@@ -585,7 +586,7 @@ module.exports = {
                         F.campo('Para', resolved.name),
                         F.campo(resolved.jid.endsWith('@g.us') ? 'Código do grupo' : 'Número', identificacao(resolved.jid)),
                         F.campo('Modalidade', NOME_ESCOPO[scope] || scope),
-                        F.campo('Liberado por', `@${sender.split('@')[0]}`)
+                        F.campo('Liberado por', `${nomeDoMembro(sender)}`)
                     ]
                 }],
                 proximos: [
@@ -1001,7 +1002,7 @@ module.exports = {
                             F.campo('Vence em', expiraTexto),
                             price > 0 ? F.campo('Valor', `R$ ${price.toFixed(2)}`) : null,
                             pixKey ? F.campo('Chave Pix para renovar', '`' + pixKey + '`') : null,
-                            F.campo('Ativado por', `@${sender.split('@')[0]}`)
+                            F.campo('Ativado por', `${nomeDoMembro(sender)}`)
                         ]
                     }],
                     proximos: [

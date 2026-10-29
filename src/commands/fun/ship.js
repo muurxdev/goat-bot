@@ -1,3 +1,4 @@
+const { nomeDoMembro } = require('../../utils/nomeMembro');
 /**
  * Comando .ship
  * Calcula a compatibilidade amorosa e casal entre dois membros do grupo
@@ -36,7 +37,7 @@ module.exports = {
         else status = '🔥 100% AMOR ETERNO & DESTINO DAS ESTRELAS 🔥'
 
         let doc = `💘 *CALCULADORA DE CASAL & SHIP* 💘\n\n`
-        doc += `👩‍❤️‍👨 *Casal:* @${user1.split('@')[0]} ❤️ @${user2.split('@')[0]}\n`
+        doc += `👩‍❤️‍👨 *Casal:* ${nomeDoMembro(user1)} ❤️ ${nomeDoMembro(user2)}\n`
         doc += `📊 *Compatibilidade:* *${percent}%*\n`
         doc += `🔮 *Veredito:* ${status}`
 

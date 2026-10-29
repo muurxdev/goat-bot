@@ -1,3 +1,4 @@
+const { nomeDoMembro } = require('../../utils/nomeMembro');
 /**
  * Comando Mestre .grupo / .gp
  * Painel completo de controle, abertura, fechamento e configurações do grupo
@@ -33,7 +34,7 @@ module.exports = {
                 doc += `║   🔓 *GRUPO ABERTO PARA TODOS* 🔓   ║\n`;
                 doc += `╚══════════════════════════════╝\n\n`;
                 doc += `✨ Todos os participantes agora podem enviar mensagens livremente.\n\n`;
-                doc += `👤 *Autorizado por:* @${senderNum}\n`;
+                doc += `👤 *Autorizado por:* ${nomeDoMembro(sender)}\n`;
                 doc += `👑 *${botName}*`;
                 return reply(doc.trim(), [sender]);
             } catch (err) {
@@ -55,7 +56,7 @@ module.exports = {
                     const F = require('../../utils/formato');
                     doc += `⏱️ *Reabertura automática em:* ${F.dataHora(res.until)}\n\n`;
                 }
-                doc += `👤 *Fechado por:* @${senderNum}\n`;
+                doc += `👤 *Fechado por:* ${nomeDoMembro(sender)}\n`;
                 doc += `👑 *${botName}*`;
                 return reply(doc.trim(), [sender]);
             } catch (err) {

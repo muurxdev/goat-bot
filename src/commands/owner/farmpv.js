@@ -1,3 +1,4 @@
+const { nomeDoMembro } = require('../../utils/nomeMembro');
 /**
  * Comando .farmpv / .xppv
  * Permite que os donos ativem ou desativem o ganho de XP e farm no PV (privado)
@@ -65,7 +66,7 @@ module.exports = {
                 emoji: "🟢",
                 titulo: "XP no privado ligado",
                 intro: "A partir de agora, quem usa comandos comigo no privado também ganha XP.",
-                secoes: [{ emoji: "📋", titulo: "Detalhes", linhas: [F.campo("Alterado por", `@${senderNum}`)] }],
+                secoes: [{ emoji: "📋", titulo: "Detalhes", linhas: [F.campo("Alterado por", `${nomeDoMembro(sender)}`)] }],
                 proximos: [{ nome: "farmpv", args: "off", oque: "desliga de novo" }],
                 prefix
             }), sender ? [sender] : []);
@@ -78,7 +79,7 @@ module.exports = {
                 emoji: "🔴",
                 titulo: "XP no privado desligado",
                 intro: "No privado ninguém ganha mais XP. Nos grupos continua tudo igual.",
-                secoes: [{ emoji: "📋", titulo: "Detalhes", linhas: [F.campo("Alterado por", `@${senderNum}`)] }],
+                secoes: [{ emoji: "📋", titulo: "Detalhes", linhas: [F.campo("Alterado por", `${nomeDoMembro(sender)}`)] }],
                 proximos: [{ nome: "farmpv", args: "on", oque: "liga de novo" }],
                 prefix
             }), sender ? [sender] : []);

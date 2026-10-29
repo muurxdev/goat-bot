@@ -1,3 +1,4 @@
+const { nomeDoMembro } = require('../../utils/nomeMembro');
 /**
  * Comando .bosses — lista os chefes que o jogador já derrotou.
  *
@@ -27,7 +28,7 @@ module.exports = {
         const mencionado = info?.message?.extendedTextMessage?.contextInfo?.mentionedJid?.[0]
         const alvo = mencionado || sender
         const user = economy.carregarUsuario(alvo)
-        const quem = mencionado ? `@${alvo.split('@')[0]}` : 'Você'
+        const quem = mencionado ? `${nomeDoMembro(alvo)}` : 'Você'
         const mencoes = mencionado ? [alvo] : []
 
         const total = Number(user.bossesMortos || 0)

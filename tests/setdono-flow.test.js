@@ -85,7 +85,7 @@ async function runAsyncTest(name, fn) {
         });
 
         assert.ok(lastReply.includes('PATENTE DE DONO ATUALIZADA'), 'Mensagem de sucesso');
-        assert.ok(lastReply.includes('@5521984596995'), 'Deve marcar o JID inferido com 55');
+        assert.ok(lastMentions.includes('5521984596995@s.whatsapp.net'), 'Deve marcar o JID inferido com 55');
         assert.ok(lastReply.includes('+55 21 98459-6995'), 'Telefone formatado com DDI 55');
 
         const owners = ownerService.getOwners();
@@ -117,7 +117,7 @@ async function runAsyncTest(name, fn) {
         });
 
         assert.ok(/tenente/i.test(donosReply), 'Deve conter seção do Tenente');
-        assert.ok(donosReply.includes('@5521984596995'), 'Deve mencionar o Tenente');
+        assert.ok(donosReply.includes('Tenente'), 'Deve mencionar o Tenente');
         assert.ok(!donosReply.includes('Status: _Vago / Disponível_') || donosReply.includes('Sargento'), 'Tenente não pode estar vago');
         assert.ok(donosMentions.includes('5521984596995@s.whatsapp.net'), 'Deve constar nas menções');
     });

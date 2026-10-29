@@ -1,3 +1,4 @@
+const { nomeDoMembro } = require('../../utils/nomeMembro');
 const logger = require("../../core/logger");
 const { getBotName } = require("../../config/botConfig");
 const botMessageStore = require("../../services/botMessageStore");
@@ -52,7 +53,7 @@ module.exports = {
             doc += `╭━〔 ⚙️ RESULTADO 〕━⬣\n`;
             doc += `┃ 🧹 *Ação:* Minhas mensagens apagadas\n`;
             doc += `┃ 📊 *Removidas:* ${deleted}/${botMessages.length}\n`;
-            doc += `┃ 👤 *Solicitado por:* @${senderNum}\n`;
+            doc += `┃ 👤 *Solicitado por:* ${nomeDoMembro(sender)}\n`;
             doc += `╰━━━━━━━━━━━━━━━━━━⬣\n\n`;
             doc += `👑 *${botName}*`;
 

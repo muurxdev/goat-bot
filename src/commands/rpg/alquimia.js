@@ -1,3 +1,4 @@
+const { nomeDoMembro } = require('../../utils/nomeMembro');
 const { renderCard, formatCoins } = require("../../utils/uiEngine");
 const dataService = require("../../services/dataService");
 module.exports = {
@@ -15,7 +16,7 @@ module.exports = {
         const card = renderCard({
             title: "LABORATÓRIO ALQUÍMICO CENTRAL",
             icon: "🧪",
-            subtitle: `🧙 *Alquimista:* @${sender.split("@")[0]}`,
+            subtitle: `🧙 *Alquimista:* ${nomeDoMembro(sender)}`,
             sections: [
                 {
                     title: "TRANSMUTAÇÃO CONCLUÍDA",

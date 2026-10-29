@@ -1,3 +1,4 @@
+const { nomeDoMembro } = require('../../utils/nomeMembro');
 /**
  * Comando .profanity — Moderação Autônoma, IA Learning & Sistema de 3 Strikes
  * 
@@ -96,7 +97,7 @@ module.exports = {
             const target = (contextInfo?.mentionedJid && contextInfo.mentionedJid[0]) || (args[1] ? args[1].replace(/[@\s]/g, '') + '@s.whatsapp.net' : null);
             if (target) {
                 aiLearning.resetStrikes(from, target, "profanity");
-                return reply(`✅ Strikes de profanidade de @${target.split('@')[0]} foram resetados.`, [target]);
+                return reply(`✅ Strikes de profanidade de ${nomeDoMembro(target)} foram resetados.`, [target]);
             }
             return reply(`💡 Marque a pessoa para zerar strikes: \`${p}profanity reset @user\``);
         }

@@ -1,3 +1,4 @@
+const { nomeDoMembro } = require('../../utils/nomeMembro');
 /**
  * Comando .bencao / .oracao / .graca
  * Solicite a bênção divina diária da Deusa Suprema ou do Rei dos Demônios
@@ -39,7 +40,7 @@ module.exports = {
         const card = renderCard({
             title: tipo === "deusa" ? "BÊNÇÃO DA DEUSA SUPREMA" : "BÊNÇÃO DO REI DOS DEMÔNIOS",
             icon: tipo === "deusa" ? "✨" : "🔥",
-            subtitle: `🙏 *Devoto:* @${sender.split("@")[0]}`,
+            subtitle: `🙏 *Devoto:* ${nomeDoMembro(sender)}`,
             sections: [
                 {
                     title: "GRAÇA CONCEDIDA",

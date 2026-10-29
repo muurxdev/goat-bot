@@ -1,3 +1,4 @@
+const { nomeDoMembro } = require('../../utils/nomeMembro');
 /**
  * Comando .familiar / .guardiao / .espirito
  * Invocação e gestão de familiares guardiões místicos de Reino
@@ -36,7 +37,7 @@ module.exports = {
                 const card = renderCard({
                     title: "SANTUÁRIO DE FAMILIARES GUARDIÕES",
                     icon: "🐾",
-                    subtitle: `👤 *Aventureiro:* @${sender.split("@")[0]}`,
+                    subtitle: `👤 *Aventureiro:* ${nomeDoMembro(sender)}`,
                     sections: [
                         {
                             title: "STATUS ATUAL",
@@ -62,7 +63,7 @@ module.exports = {
             const card = renderCard({
                 title: "SEU FAMILIAR GUARDIÃO",
                 icon: "🐾",
-                subtitle: `👤 *Guardião:* @${sender.split("@")[0]}`,
+                subtitle: `👤 *Guardião:* ${nomeDoMembro(sender)}`,
                 sections: [
                     {
                         title: "FICHA DO FAMILIAR",

@@ -1,3 +1,4 @@
+const { nomeDoMembro } = require('../../utils/nomeMembro');
 /**
  * Comando .masmorrainfinita / .torreinfinita — Torre Infinita de Reino.
  *
@@ -97,7 +98,7 @@ module.exports = {
         const card = renderCard({
             title: `TORRE INFINITA — ANDAR ${andar.toLocaleString("pt-BR")} CONQUISTADO!`,
             icon: "🗼",
-            subtitle: `⚔️ *Conquistador:* @${sender.split("@")[0]}`,
+            subtitle: `⚔️ *Conquistador:* ${nomeDoMembro(sender)}`,
             sections: [{ title: "RESULTADO DA ESCALADA", icon: "🏆", fields: campos }],
             tip: marco ? `Marco de ${andar} andares! Equipamento garantido concedido.` : "A torre não tem topo — cada andar exige mais CP que o anterior.",
             mentions: [sender]

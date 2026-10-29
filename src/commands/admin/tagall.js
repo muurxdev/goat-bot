@@ -1,3 +1,4 @@
+const { nomeDoMembro } = require('../../utils/nomeMembro');
 /**
  * Comando .tagall / .todos / .marcartodos
  * Marca todos os participantes do grupo com layout formatado e menções reais
@@ -37,7 +38,7 @@ module.exports = {
         doc += `║   📢 *CONVOCAÇÃO GERAL* 📢   ║\n`;
         doc += `╚══════════════════════════════╝\n\n`;
         doc += `💬 *Aviso:* ${msg}\n\n`;
-        doc += `👤 *Convocado por:* @${senderNum}\n`;
+        doc += `👤 *Convocado por:* ${nomeDoMembro(sender)}\n`;
         doc += `👥 *Membros Notificados:* ${participants.length}\n\n`;
         doc += `👑 *${botName}*`;
 

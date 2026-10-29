@@ -1,3 +1,4 @@
+const { nomeDoMembro } = require('../../utils/nomeMembro');
 /**
  * Comando .ferreiro / .desmanchar / .fundir
  * Desmanche itens antigos do inventário e obtenha minérios sagrados e lingotes
@@ -24,7 +25,7 @@ module.exports = {
             const card = renderCard({
                 title: "OFICINA DO FERREIRO SAGRADO",
                 icon: "🔨",
-                subtitle: `⚒️ *Mestre Forjador:* @${sender.split("@")[0]}`,
+                subtitle: `⚒️ *Mestre Forjador:* ${nomeDoMembro(sender)}`,
                 sections: [
                     {
                         title: "SEUS MATERIAIS DE FORJA",

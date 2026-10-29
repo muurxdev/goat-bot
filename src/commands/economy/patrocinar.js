@@ -1,3 +1,4 @@
+const { nomeDoMembro } = require('../../utils/nomeMembro');
 /**
  * Comando .patrocinar / .patrocinio / .dropevento
  * Crie um evento patrocinado no grupo com premiação automática para o próximo que falar
@@ -23,7 +24,7 @@ module.exports = {
         // Só cabe um drop por grupo: sobrescrever o pendente apagaria as moedas de quem doou antes.
         const pendente = await dropPendenteAtivo(from);
         if (pendente) {
-            return reply(`⏳ Já tem um drop de *${formatCoins(pendente.amount)}* de @${pendente.sponsor.split("@")[0]} esperando alguém falar no grupo. Ele expira em ${Math.ceil(pendente.expiraEmMs / 60000)} min; depois disso você pode patrocinar o seu. Nada foi cobrado.`, [pendente.sponsor]);
+            return reply(`⏳ Já tem um drop de *${formatCoins(pendente.amount)}* de ${nomeDoMembro(pendente.sponsor)} esperando alguém falar no grupo. Ele expira em ${Math.ceil(pendente.expiraEmMs / 60000)} min; depois disso você pode patrocinar o seu. Nada foi cobrado.`, [pendente.sponsor]);
         }
 
         const xpData = dataService.getXpData();
@@ -49,7 +50,7 @@ module.exports = {
         const card = renderCard({
             title: "EVENTO PATROCINADO NO GRUPO!",
             icon: "🎁",
-            subtitle: `👑 *Patrocinador Oficial:* @${sender.split("@")[0]}`,
+            subtitle: `👑 *Patrocinador Oficial:* ${nomeDoMembro(sender)}`,
             sections: [
                 {
                     title: "DETALHES DO PATROCÍNIO",

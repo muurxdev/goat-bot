@@ -1,3 +1,4 @@
+const { nomeDoMembro } = require('../../utils/nomeMembro');
 /**
  * Comando .guilda / .cla / .clan
  * Sistema completo de Guildas com convites pelo líder, expulsão, listagem de todas as guildas e membros
@@ -63,11 +64,11 @@ module.exports = {
 
                 const membrosStr = (g.membros || []).map(m => {
                     mentions.push(m);
-                    return `@${m.split('@')[0]}`;
+                    return `${nomeDoMembro(m)}`;
                 }).join(', ');
 
                 doc += `╭━〔 ${idx + 1}. 🛡️ *${gName}* 〕━⬣\n`;
-                doc += `┃ 👑 *Líder:* @${liderJid.split('@')[0]}\n`;
+                doc += `┃ 👑 *Líder:* ${nomeDoMembro(liderJid)}\n`;
                 doc += `┃ 📈 *Nível:* ${g.level || 1}  |  ⭐ *XP:* ${(g.xp || 0).toLocaleString('pt-BR')}\n`;
                 doc += `┃ 👥 *Membros (${(g.membros || []).length}):* ${membrosStr || 'Nenhum'}\n`;
                 doc += `╰━━━━━━━━━━━━━━━━━━⬣\n\n`;
@@ -101,7 +102,7 @@ module.exports = {
 
             let doc = `🏰 *GUILDA FUNDADA COM SUCESSO!*\n\n`;
             doc += `📛 *Nome:* ${nomeOuAlvo}\n`;
-            doc += `👑 *Líder Soberano:* @${sender.split('@')[0]}\n`;
+            doc += `👑 *Líder Soberano:* ${nomeDoMembro(sender)}\n`;
             doc += `👥 *Membros Iniciais:* 1\n`;
             doc += `💰 *Custo Pago:* 500 coins\n\n`;
             doc += `💡 _Convide membros para o seu clã usando \`.guilda convidar @user\`!_`;
@@ -132,7 +133,7 @@ module.exports = {
 
             const targetUser = initializeUser(target, xpData);
             if (targetUser.guilda) {
-                return reply(`❌ O jogador @${target.split('@')[0]} já pertence à guilda *${targetUser.guilda}*!`, [target]);
+                return reply(`❌ O jogador ${nomeDoMembro(target)} já pertence à guilda *${targetUser.guilda}*!`, [target]);
             }
 
             if (!Array.isArray(g.convitesPendentes)) g.convitesPendentes = [];
@@ -144,9 +145,9 @@ module.exports = {
 
             let doc = `📩 *CONVITE DE GUILDA ENVIADO!*\n\n`;
             doc += `🏰 *Guilda:* ${minhaGuilda}\n`;
-            doc += `👑 *Líder Remetente:* @${sender.split('@')[0]}\n`;
-            doc += `👤 *Convidado:* @${target.split('@')[0]}\n\n`;
-            doc += `💡 _Para aceitar o convite, o jogador @${target.split('@')[0]} deve digitar:_ \`.guilda aceitar ${minhaGuilda}\``;
+            doc += `👑 *Líder Remetente:* ${nomeDoMembro(sender)}\n`;
+            doc += `👤 *Convidado:* ${nomeDoMembro(target)}\n\n`;
+            doc += `💡 _Para aceitar o convite, o jogador ${nomeDoMembro(target)} deve digitar:_ \`.guilda aceitar ${minhaGuilda}\``;
 
             return reply(doc.trim(), [sender, target]);
         }
@@ -170,7 +171,7 @@ module.exports = {
 
             const g = guilds[targetGuildName];
             if (!g.convitesPendentes || !g.convitesPendentes.includes(sender)) {
-                return reply(`⛔ *Sem Convite:* Você não possui um convite pendente do líder da guilda *${targetGuildName}*.\n💡 Solicite ao líder @${g.dono.split('@')[0]} para enviar um convite com \`.guilda convidar @seu_usuario\`!`, [g.dono]);
+                return reply(`⛔ *Sem Convite:* Você não possui um convite pendente do líder da guilda *${targetGuildName}*.\n💡 Solicite ao líder ${nomeDoMembro(g.dono)} para enviar um convite com \`.guilda convidar @seu_usuario\`!`, [g.dono]);
             }
 
             // Remove convite pendente e adiciona à guilda
@@ -182,8 +183,8 @@ module.exports = {
             await dataService.saveGuildData(guilds);
 
             let doc = `🎉 *CONVITE ACEITO COM SUCESSO!*\n\n`;
-            doc += `🏰 Boas-vindas à guilda *${targetGuildName}*, @${sender.split('@')[0]}!\n`;
-            doc += `👑 *Líder:* @${g.dono.split('@')[0]}\n`;
+            doc += `🏰 Boas-vindas à guilda *${targetGuildName}*, ${nomeDoMembro(sender)}!\n`;
+            doc += `👑 *Líder:* ${nomeDoMembro(g.dono)}\n`;
             doc += `👥 *Total de Membros:* ${g.membros.length}`;
 
             return reply(doc.trim(), [sender, g.dono]);
@@ -201,7 +202,7 @@ module.exports = {
             if (target === sender) return reply('❌ O líder não pode expulsar a si mesmo.');
 
             if (!g.membros.includes(target)) {
-                return reply(`❌ O jogador @${target.split('@')[0]} não faz parte da sua guilda.`, [target]);
+                return reply(`❌ O jogador ${nomeDoMembro(target)} não faz parte da sua guilda.`, [target]);
             }
 
             g.membros = g.membros.filter(m => m !== target);
@@ -211,7 +212,7 @@ module.exports = {
             await dataService.saveXpData(xpData);
             await dataService.saveGuildData(guilds);
 
-            return reply(`🚪 *MEMBRO EXPULSO DA GUILDA:*\n\nO jogador @${target.split('@')[0]} foi removido da guilda *${minhaGuilda}* pelo líder @${sender.split('@')[0]}.`, [target, sender]);
+            return reply(`🚪 *MEMBRO EXPULSO DA GUILDA:*\n\nO jogador ${nomeDoMembro(target)} foi removido da guilda *${minhaGuilda}* pelo líder ${nomeDoMembro(sender)}.`, [target, sender]);
         }
 
         // 7. SAIR DA GUILDA
@@ -249,14 +250,14 @@ module.exports = {
             doc += `║   🏰 *DETALHES DA GUILDA* 🏰   \n`;
             doc += `╚══════════════════════════════╝\n\n`;
             doc += `📛 *Nome:* ${gName}\n`;
-            doc += `👑 *Líder:* @${g.dono.split('@')[0]}\n`;
+            doc += `👑 *Líder:* ${nomeDoMembro(g.dono)}\n`;
             doc += `📈 *Nível:* ${g.level || 1}  |  ⭐ *XP Total:* ${(g.xp || 0).toLocaleString('pt-BR')}\n`;
             doc += `💰 *Cofre da Guilda:* ${(g.coins || 0).toLocaleString('pt-BR')} coins\n\n`;
 
             doc += `╭━〔 👥 MEMBROS REGISTRADOS (${(g.membros || []).length}) 〕━⬣\n`;
             (g.membros || []).forEach((m, idx) => {
                 const isLeader = m === g.dono;
-                doc += `┃ ${idx + 1}. @${m.split('@')[0]} ${isLeader ? '👑 *(Líder)*' : '⚔️ *(Guerreiro)*'}\n`;
+                doc += `┃ ${idx + 1}. ${nomeDoMembro(m)} ${isLeader ? '👑 *(Líder)*' : '⚔️ *(Guerreiro)*'}\n`;
             });
             doc += `╰━━━━━━━━━━━━━━━━━━⬣\n\n`;
             doc += `👑 *${botName}*`;

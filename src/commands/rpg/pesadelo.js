@@ -1,3 +1,4 @@
+const { nomeDoMembro } = require('../../utils/nomeMembro');
 /**
  * Comando .pesadelo (Modo Pesadelo do Purgatório)
  * Batalha de dificuldade Extrema contra entidades do Purgatório com 3x multiplicador de recompensas
@@ -104,7 +105,7 @@ module.exports = {
         let winDoc = `╔══════════════════════════════╗\n`;
         winDoc += `║   🏆 *PESADELO CONQUISTADO!* 🏆\n`;
         winDoc += `╚══════════════════════════════╝\n\n`;
-        winDoc += `👤 *Campeão:* @${sender.split('@')[0]}\n`;
+        winDoc += `👤 *Campeão:* ${nomeDoMembro(sender)}\n`;
         winDoc += `👹 *Chefe Eliminado:* ${boss.name}\n`;
         winDoc += `💥 *Dano Desferido:* -${danoTotalPlayer.toLocaleString('pt-BR')} HP em ${turnos} turnos\n\n`;
         winDoc += `╭━〔 🎁 RECOMPENSAS TRIPLAS (3x) 〕━⬣\n`;

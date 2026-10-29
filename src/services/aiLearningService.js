@@ -1,3 +1,4 @@
+const { nomeDoMembro } = require('../utils/nomeMembro');
 /**
  * AI & Machine Learning Learning Engine (GOAT / GOAT Prime)
  * 
@@ -474,7 +475,7 @@ async function generateChatGPTReply(prompt, sender, context = {}) {
     } catch (err) { logger.warn('[AILEARNINGSERVICE] falha ignorada: ' + (err && err.message)) }
 
     // 4. Resposta Natural Autônoma GOAT
-    return `🏆 Fala, @${sender.split('@')[0]}! Sou o *${botName}*!\n\n` +
+    return `🏆 Fala, ${nomeDoMembro(sender)}! Sou o *${botName}*!\n\n` +
            `Recebi sua mensagem e tô sempre na área para trocar ideia, ajudar com tarefas, códigos, futebol e moderação.\n\n` +
            `💡 _Pode conversar comigo normalmente ou digitar \`.menu\` para conferir as mais de 10.000 opções!_`;
 }

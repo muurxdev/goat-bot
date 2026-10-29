@@ -1,3 +1,4 @@
+const { nomeDoMembro } = require('../../utils/nomeMembro');
 const securityService = require('../../services/securityService')
 const F = require('../../utils/formato')
 
@@ -48,7 +49,7 @@ module.exports = {
                 titulo: 'Registro',
                 linhas: [
                     F.campo('Motivo', motivo),
-                    F.campo('Bloqueado por', `@${sender.split('@')[0]}`)
+                    F.campo('Bloqueado por', `${nomeDoMembro(sender)}`)
                 ]
             }],
             proximos: [

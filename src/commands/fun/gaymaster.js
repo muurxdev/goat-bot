@@ -1,3 +1,4 @@
+const { nomeDoMembro } = require('../../utils/nomeMembro');
 /**
  * Comando .gaymaster
  * Calcula a porcentagem cômica no medidor gay com barra visual e títulos
@@ -31,7 +32,7 @@ module.exports = {
         else titulo = '👑 GAYMASTER SUPREMO DO UNIVERSO 👑'
 
         let doc = `🏳️‍🌈 *CALCULADORA GAYMASTER* 🏳️‍🌈\n\n`
-        doc += `👤 *Alvo:* @${target.split('@')[0]}\n`
+        doc += `👤 *Alvo:* ${nomeDoMembro(target)}\n`
         doc += `📊 *Porcentagem:* *${percent}%*\n`
         doc += `📈 *Nível:* [${barra}]\n`
         doc += `🏆 *Classificação:* ${titulo}`

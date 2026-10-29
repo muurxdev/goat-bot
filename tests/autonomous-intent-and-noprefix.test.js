@@ -131,7 +131,11 @@ describe('🧠 Motor de Intenção Autônoma e Comandos Sem Prefixo', () => {
         configs[testGroup] = { conversaNatural: true };
         await dataService.saveConfigsData(configs);
 
+        // Modo Aluguel é ligado por padrão: o grupo de teste precisa de plano ativo para o comando responder.
+        require('../src/services/rentalService').setRental({ targetJid: testGroup, durationStr: '30d', rentedBy: 'teste' });
+
         // Garante usuário cadastrado para passar pelo gate de login
+        if (!dataService.getUser(testSender)) await dataService.saveUser({ jid: testSender });
         const user = dataService.getUser(testSender);
         user.registered = true;
         user.name = 'Testador';

@@ -1,3 +1,4 @@
+const { nomeDoMembro } = require('../../utils/nomeMembro');
 /**
  * Integração oficial com o Mercado Pago (Checkout Transparente & PIX)
  * 
@@ -380,7 +381,7 @@ async function processarAprovacao({
                     F.campo('Plano', pacoteId || 'Aluguel'),
                     F.campo('Duração', `+${dias} dias`),
                     F.campo('Valor', valorFormatado),
-                    F.campo('Destino', targetJid ? `@${targetJid.split('@')[0]}` : 'Carteira'),
+                    F.campo('Destino', targetJid ? `${nomeDoMembro(targetJid)}` : 'Carteira'),
                     F.campo('Confirmado em', agora)
                 ]
             }],
@@ -413,8 +414,8 @@ async function processarAprovacao({
                 linhas: [
                     F.campo('ID Transação', `#${paymentId}`),
                     F.campo('Valor', valorFormatado),
-                    F.campo('Pagador', requestedBy ? `@${requestedBy.split('@')[0]}` : 'Desconhecido'),
-                    F.campo('Alvo Liberado', targetJid ? `@${targetJid.split('@')[0]}` : 'N/A'),
+                    F.campo('Pagador', requestedBy ? `${nomeDoMembro(requestedBy)}` : 'Desconhecido'),
+                    F.campo('Alvo Liberado', targetJid ? `${nomeDoMembro(targetJid)}` : 'N/A'),
                     F.campo('Dias Adicionados', `+${dias} dias`),
                     F.campo('Horário', agora)
                 ]

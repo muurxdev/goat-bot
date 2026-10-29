@@ -136,7 +136,10 @@ teste('downloads têm teto de saltos e de tamanho', () => {
 // ── 7. IA respondia banido e sem limite de uso ────────────────────
 teste('resposta por IA confere banimento e limite antes de gastar', () => {
     const fonte = ler('src/handlers/messageHandler.js')
-    const trecho = fonte.slice(fonte.indexOf("veredito.tipo === 'pergunta'"), fonte.indexOf('askAI(cleanPrompt)'))
+    // Desde 2026-10-26 (commit 753a3358) a pergunta vai pelo ramo action.isChat, antes de generateChatGPTReply.
+    const inicio = fonte.indexOf('action.isChat'), fim = fonte.indexOf('generateChatGPTReply')
+    assert.ok(inicio > 0 && fim > inicio, 'ramo de conversa por IA não encontrado no messageHandler')
+    const trecho = fonte.slice(inicio, fim)
     assert.ok(/isUserBanned/.test(trecho), 'a resposta por IA voltou a atender quem está banido')
     assert.ok(/checkRateLimit/.test(trecho), 'a resposta por IA voltou a não ter limite de uso')
 })

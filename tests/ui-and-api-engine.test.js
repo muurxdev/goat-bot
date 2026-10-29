@@ -46,8 +46,8 @@ const card = renderCard({
     ],
     tip: 'Dica de teste'
 });
-// Títulos em CAIXA ALTA viram frase no renderCard (siglas e nomes próprios ficam).
-assert(card.includes('Teste de card'), 'Card deve conter o título');
+// Título sai em MAIÚSCULAS na moldura (convenção do CLAUDE.md): a comparação ignora a caixa.
+assert(/teste de card/i.test(card), 'Card deve conter o título');
 assert(card.includes('GOAT'), 'Card deve conter o nome formatado');
 console.log('  ✅ PASS: renderCard produz layouts Unicode completos');
 

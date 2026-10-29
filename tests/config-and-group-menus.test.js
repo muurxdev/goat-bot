@@ -41,7 +41,8 @@ async function runTests() {
     assert.ok(replyMsg.includes('ROTINAS & AUTONOMIA'), 'Deve conter seção de rotinas');
     assert.ok(replyMsg.includes('Agenda Automática'), 'Deve conter agenda automática');
     assert.ok(replyMsg.includes('Conteúdo Autônomo'), 'Deve conter conteúdo autônomo');
-    assert.ok(replyMsg.includes('SEGURANÇA & PRESETS'), 'Deve conter escudos e presets');
+    // Seção renomeada em 2026-10-26 (b225738d): "SEGURANÇA & ESCUDOS"; o preset continua na linha "Preset Ativo".
+    assert.ok(replyMsg.includes('SEGURANÇA & ESCUDOS') && replyMsg.includes('Preset Ativo'), 'Deve conter escudos e presets');
     console.log('  ✅ PASS: Painel geral .config consolida 100% das mensagens automáticas e rotinas');
     passed++;
 

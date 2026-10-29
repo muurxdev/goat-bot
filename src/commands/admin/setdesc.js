@@ -1,3 +1,4 @@
+const { nomeDoMembro } = require('../../utils/nomeMembro');
 /**
  * Comando .setdesc / .setbio / .setdescricao
  * Altera a descrição/bio do grupo diretamente pelo WhatsApp
@@ -40,7 +41,7 @@ module.exports = {
             doc += `╭━〔 📜 NOVA BIO / REGRAS 〕━⬣\n`;
             doc += `${String(newDesc.slice(0, 300) + (newDesc.length > 300 ? "\n..." : "")).split('\n').map(l => '┃ ' + l).join('\n')}\n`;
             doc += `╰━━━━━━━━━━━━━━━━━━⬣\n\n`;
-            doc += `👤 *Alterado por:* @${senderNum}\n`;
+            doc += `👤 *Alterado por:* ${nomeDoMembro(sender)}\n`;
             doc += `👑 *${botName}*`;
 
             return reply(doc.trim(), [sender]);

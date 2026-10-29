@@ -1,3 +1,4 @@
+const { nomeDoMembro } = require('../../utils/nomeMembro');
 /**
  * Comando .ascensao
  * Árvore de Ascensão Espiritual e Graus Cósmicos do Guerreiro
@@ -49,7 +50,7 @@ module.exports = {
         let doc = `╔══════════════════════════════╗\n`;
         doc += `║   🌌 *ÁRVORE DE ASCENSÃO CÓSMICA* 🌌   \n`;
         doc += `╚══════════════════════════════╝\n\n`;
-        doc += `👤 *Guerreiro:* @${sender.split("@")[0]}\n`;
+        doc += `👤 *Guerreiro:* ${nomeDoMembro(sender)}\n`;
         doc += `🌀 *Rebirths Concluídos:* *${info.rebirths} Graus (Progressão Infinita)*\n`;
         doc += `💥 *Bônus Permanente Atual:* *+${info.bonusDmgPercent.toLocaleString("pt-BR")}% Dano & XP Totais*\n\n`;
 

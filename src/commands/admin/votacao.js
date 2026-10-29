@@ -1,3 +1,4 @@
+const { nomeDoMembro } = require('../../utils/nomeMembro');
 /**
  * Comando .votacao / .plebiscito / .enqueterapida
  * Cria uma votação rápida no chat de Sim / Não com contagem automática
@@ -22,7 +23,7 @@ module.exports = {
         const card = renderCard({
             title: "VOTAÇÃO DEMOCRÁTICA DO GRUPO",
             icon: "🗳️",
-            subtitle: `📢 *Iniciada por:* @${sender.split("@")[0]}`,
+            subtitle: `📢 *Iniciada por:* ${nomeDoMembro(sender)}`,
             sections: [
                 {
                     title: "PAUTA EM VOTAÇÃO",

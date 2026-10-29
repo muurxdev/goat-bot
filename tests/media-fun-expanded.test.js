@@ -51,7 +51,8 @@ async function runTests() {
 
     await test('textTransformService converte textos para múltiplas fontes unicode e cifras', () => {
         const fraktur = textTransformService.toUnicodeFont('GOAT', 'gothic');
-        assert.strictEqual(fraktur, '𝔐𝔢𝔩𝔦𝔬𝔡𝔞𝔰');
+        // Rebrand: o texto de entrada já era GOAT; a saída esperada acompanha (antes era 𝔐𝔢𝔩𝔦𝔬𝔡𝔞𝔰 de "Meliodas").
+        assert.strictEqual(fraktur, '𝔊𝔒𝔄𝔗');
 
         const script = textTransformService.toUnicodeFont('Bot', 'cursive');
         assert.strictEqual(script, 'ℬℴ𝓉');

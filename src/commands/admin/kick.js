@@ -1,3 +1,4 @@
+const { nomeDoMembro } = require('../../utils/nomeMembro');
 /**
  * Comando .kick / .remover / .expulsar
  * Remove um membro do grupo. Admin também pode ser removido; só o criador do
@@ -35,7 +36,7 @@ module.exports = {
         const senderNum = sender.split('@')[0].split(':')[0];
 
         await client.sendMessage(from, {
-            text: `✅ @${targetNum} foi removido do grupo por @${senderNum}.`,
+            text: `✅ @${targetNum} foi removido do grupo por ${nomeDoMembro(sender)}.`,
             mentions: [targetJid, sender]
         });
         await figurinhaEventoService.enviar(client, from, 'banimento');

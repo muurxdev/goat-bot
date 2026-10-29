@@ -1,3 +1,4 @@
+const { nomeDoMembro } = require('../../utils/nomeMembro');
 /**
  * Comando .antispam
  * Ativa ou desativa o monitoramento de flood e spam de mensagens no grupo
@@ -38,7 +39,7 @@ module.exports = {
             doc += `╭━〔 ⚙️ CONFIGURAÇÃO DE GRUPO 〕━⬣\n`;
             doc += `┃ 🛡️ *Recurso:* Proteção Anti-Spam & Flood\n`;
             doc += `┃ 🟢 *Estado:* *ATIVADO*\n`;
-            doc += `┃ 👤 *Administrador:* @${senderNum}\n`;
+            doc += `┃ 👤 *Administrador:* ${nomeDoMembro(sender)}\n`;
             doc += `╰━━━━━━━━━━━━━━━━━━⬣\n\n`;
             doc += `💡 _Para desativar este recurso e remover limites:_ \`.antispam off\` ou \`.limitemsg off\`\n`;
             doc += `👑 *${botName}*`;
@@ -61,7 +62,7 @@ module.exports = {
             doc += `┃ 🛡️ *Recurso:* Limite de Mensagens & Anti-Spam\n`;
             doc += `┃ 🔴 *Estado:* *DESATIVADO (LIVRE)*\n`;
             doc += `┃ 💬 *Chat:* Nenhum limite de velocidade ou exclusão de mensagens ativo\n`;
-            doc += `┃ 👤 *Administrador:* @${senderNum}\n`;
+            doc += `┃ 👤 *Administrador:* ${nomeDoMembro(sender)}\n`;
             doc += `╰━━━━━━━━━━━━━━━━━━⬣\n\n`;
             doc += `💡 _Para reativar a proteção:_ \`.antispam on\`\n`;
             doc += `👑 *${botName}*`;

@@ -1,3 +1,4 @@
+const { nomeDoMembro } = require('../../utils/nomeMembro');
 /**
  * Comando Central .dossie / .perfil
  * Exibe o dossiê detalhado com 100% de persistência e dados reais do SQLite
@@ -160,7 +161,7 @@ async function dossie({ sender, senderReal, from, isGroup, isAdmin, isOwner, cli
                 return reply(F.tela({
                     emoji: "📁",
                     titulo: "Essa pessoa ainda não tem ficha",
-                    intro: `@${targetJid.split("@")[0]} ainda não fez o cadastro, então não tenho ficha para mostrar.`,
+                    intro: `${nomeDoMembro(targetJid)} ainda não fez o cadastro, então não tenho ficha para mostrar.`,
                     dica: "Peça para ela usar .login com o nick que quiser.",
                     proximos: [{ nome: "dossie", oque: "ver a sua própria ficha" }],
                     prefix

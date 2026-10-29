@@ -645,7 +645,7 @@ T('Mundo', '🧱', 'muros', 'Muros que dividiram o mundo',
     'Muro quase nunca é só pedra: é declaração política que sobrevive à própria função.',
     ['Onde fica', 'Quando', 'O que separava'], {
     berlim: ['Muro de Berlim', 'Alemanha', '1961 a 1989', 'Berlim Oriental e Ocidental', 'Tinha cerca de 155 km e cercava a parte ocidental da cidade por inteiro, como uma ilha. Caiu em parte por causa de um anúncio feito por engano em uma coletiva.'],
-    adriano: ['Muralha de Adriano', 'Reino Unido', 'a partir de 122', 'Limite norte do Império Romano na Reino', 'Tinha cerca de 117 km de costa a costa. Fortes, torres e portões a cada milha romana mostram que servia também de posto aduaneiro, não só de defesa.'],
+    adriano: ['Muralha de Adriano', 'Reino Unido', 'a partir de 122', 'Limite norte do Império Romano', 'Tinha cerca de 117 km de costa a costa. Fortes, torres e portões a cada milha romana mostram que servia também de posto aduaneiro, não só de defesa.'],
     gorgan: ['Grande Muralha de Gorgan', 'Irã', 'séculos V e VI', 'Império Sassânida e povos das estepes', 'Com cerca de 195 km, é uma das maiores muralhas antigas já construídas e tinha fortes guarnecidos por dezenas de milhares de soldados.'],
     belfast: ['Muros da paz', 'Irlanda do Norte', 'desde 1969', 'Bairros católicos e protestantes', 'Há mais muros de pé hoje do que no fim do conflito, em 1998. Alguns portões ainda fecham à noite, por acordo entre as próprias comunidades.'],
     saara: ['Berma do Saara Ocidental', 'Marrocos', 'anos 1980', 'Área controlada por Marrocos e a disputada', 'É uma barreira de areia e pedra de cerca de 2.700 km, cercada por um dos maiores campos minados contínuos do planeta.'],

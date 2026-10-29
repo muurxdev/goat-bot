@@ -88,9 +88,11 @@ dataService.saveXpData(xpData).then(() => {
         client: {},
         info: {}
     }).then(() => {
-        assert(victoryDoc.includes('O grupo derrotou'), 'Deve anunciar a derrota do Boss Raid')
-        assert(victoryDoc.includes('Espólios da raid'), 'Deve conter os espólios da raid no relatório')
-        assert(victoryDoc.includes('*Equipamento:*'), 'MVP deve receber equipamento garantido')
+        // Texto reescrito em 2026-09-17 (829bdb42): "O grupo derrubou o titã!"
+        assert(victoryDoc.includes('O grupo derrubou o titã'), 'Deve anunciar a derrota do Boss Raid')
+        // Relatório reescrito em 2026-09-17 (829bdb42): recompensas por jogador, com a linha do equipamento.
+        assert(/recompensas por dano/i.test(victoryDoc), 'Deve conter as recompensas por dano no relatório (título em caixa alta)')
+        assert(victoryDoc.includes('✨'), 'MVP deve receber equipamento garantido (100% de drop)')
 
         // Verifica inventário do MVP diretamente do banco
         const updatedMvp = dataService.getUser(testMvp)
@@ -113,10 +115,12 @@ dataService.saveXpData(xpData).then(() => {
         let sellReply = ''
         venderCommand.execute({
             text: 'loot',
+            args: ['loot'], // .vender lê args (o dispatcher entrega args)
             sender: testMvp,
             reply: (msg) => { sellReply = msg }
         }).then(() => {
-        assert(sellReply.includes('LOOTS VENDIDOS COM SUCESSO'), 'Deve vender loots de Raid com sucesso')
+        // Relatório reescrito em 2026-09-17: título "Loot vendido" (em caixa alta na moldura).
+        assert(/loot vendido/i.test(sellReply), 'Deve vender loots de Raid com sucesso')
         assert(sellReply.includes('Escama do Dragão Sombria'), 'Deve listar a escama vendida')
         console.log('  ✅ PASS: Materiais de Raid podem ser vendidos por coins no .vender loot')
 

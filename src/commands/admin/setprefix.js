@@ -1,3 +1,4 @@
+const { nomeDoMembro } = require('../../utils/nomeMembro');
 /**
  * Comando .setprefix
  * Altera ou consulta o prefixo de comandos no grupo ou globalmente
@@ -55,7 +56,7 @@ module.exports = {
         doc += `╚══════════════════════════════╝\n\n`;
         doc += `╭━〔 🏷️ NOVO PREFIXO DE COMANDOS 〕━⬣\n`;
         doc += `┃ 🔹 *Novo Prefixo:* \`${novoPrefixo}\`\n`;
-        doc += `┃ 👤 *Administrador:* @${senderNum}\n`;
+        doc += `┃ 👤 *Administrador:* ${nomeDoMembro(sender)}\n`;
         doc += `╰━━━━━━━━━━━━━━━━━━⬣\n\n`;
         doc += `💡 _Exemplo de uso:_ \`${novoPrefixo}menu\` ou \`${novoPrefixo}dossie\`\n`;
         doc += `👑 *${botName}*`;

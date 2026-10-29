@@ -1,3 +1,4 @@
+const { nomeDoMembro } = require('../../utils/nomeMembro');
 /**
  * Comando .leilao
  * Casa de Leilões de Itens Lendários, Relíquias e Armas Sagradas
@@ -43,7 +44,7 @@ module.exports = {
                 return reply(`🪙 Saldo insuficiente: Você possui apenas *${(user.coins || 0).toLocaleString("pt-BR")} Coins*.`);
             }
 
-            return reply(`🔨 *LANCE REGISTRADO NO LEILÃO!*\n\n📦 *Lote:* ${lot.nome}\n👤 *Licitante:* @${sender.split("@")[0]}\n💰 *Valor do Lance:* *${valorLance.toLocaleString("pt-BR")} Coins*\n⏳ *Status:* O martelo baterá ao término da rodada!`, [sender]);
+            return reply(`🔨 *LANCE REGISTRADO NO LEILÃO!*\n\n📦 *Lote:* ${lot.nome}\n👤 *Licitante:* ${nomeDoMembro(sender)}\n💰 *Valor do Lance:* *${valorLance.toLocaleString("pt-BR")} Coins*\n⏳ *Status:* O martelo baterá ao término da rodada!`, [sender]);
         }
 
         let doc = `╔══════════════════════════════╗\n`;

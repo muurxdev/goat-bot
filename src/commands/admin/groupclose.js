@@ -1,3 +1,4 @@
+const { nomeDoMembro } = require('../../utils/nomeMembro');
 const logger = require('../../core/logger');
 const F = require('../../utils/formato');
 const groupAuthService = require('../../services/groupAuthService');
@@ -111,7 +112,7 @@ module.exports = {
                     try {
                         const alertPv = `📢 *[ALERTA: GRUPO FECHADO PARA DIVULGAÇÃO]*\n\n` +
                             `👥 *Grupo:* ${vars.groupName}\n` +
-                            `👤 *Fechado por:* @${sender.split('@')[0]}\n` +
+                            `👤 *Fechado por:* ${nomeDoMembro(sender)}\n` +
                             `⏰ *Horário:* ${vars.hora || new Date().toLocaleTimeString('pt-BR')}\n` +
                             (groupConfig.divulgacaoMode.link ? `🔗 *Link:* ${groupConfig.divulgacaoMode.link}\n` : '') +
                             `\n✅ Travas e filtros de segurança 100% ativos no grupo.`;

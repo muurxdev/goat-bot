@@ -1,3 +1,4 @@
+const { nomeDoMembro } = require('../../utils/nomeMembro');
 /**
  * Comando .grimorio (Grimório de Magias e Habilidades)
  * Sistema de feitiços arcanos com habilidades ativas e passivas em combate
@@ -65,7 +66,7 @@ module.exports = {
         let doc = `╔══════════════════════════════╗\n`;
         doc += `║    📜 *GRIMÓRIO DE MAGIAS ARCANAS* 📜  \n`;
         doc += `╚══════════════════════════════╝\n\n`;
-        doc += `👤 *Mago / Guerreiro:* @${sender.split("@")[0]}\n`;
+        doc += `👤 *Mago / Guerreiro:* ${nomeDoMembro(sender)}\n`;
         doc += `⭐ *Nível:* ${user.level || 1}  |  ⚡ *Poder de Combate:* ${stats.cp} CP\n`;
         doc += `📖 *Magias Dominadas:* ${user.grimoireSpells.length} / ${SPELLS_DB.length}\n\n`;
 

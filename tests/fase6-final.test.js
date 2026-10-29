@@ -41,9 +41,11 @@ async function runTests() {
         assert(showcase.toUpperCase().includes('VITRINE DE CONQUISTAS'), 'Showcase não gerado corretamente');
     });
 
-    await test('commandSearchService totaliza exatamente 10.000 comandos canônicos', () => {
+    // 10.000 era a meta de 2026-10-25. Desde a remoção do anime (e da reorganização em curso) o catálogo
+    // tem 9.675 comandos canônicos, o mesmo número de arquivos em src/commands; a meta não é mais exata.
+    await test('commandSearchService totaliza os 9.675 comandos canônicos do disco', () => {
         const stats = searchService.getCatalogStats();
-        assert.strictEqual(stats.totalCommands, 10000, `Esperava 10.000 comandos, obteve ${stats.totalCommands}`);
+        assert.strictEqual(stats.totalCommands, 9675, `Esperava 9.675 comandos, obteve ${stats.totalCommands}`);
         assert(stats.totalAliases >= 8000, `Esperava >= 8000 aliases, obteve ${stats.totalAliases}`);
         assert(stats.totalTriggers >= 18000, `Esperava >= 18000 triggers invocáveis`);
     });

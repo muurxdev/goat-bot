@@ -1,3 +1,4 @@
+const { nomeDoMembro } = require('../../utils/nomeMembro');
 /**
  * Comando .setdono / .adddono
  * Nomeia ou altera Donos seguindo a hierarquia militar rígida
@@ -188,7 +189,7 @@ module.exports = {
         const liveName = resolveOwnerName(updated);
         const displayName = liveName && liveName !== updated.rank ? liveName : (updated.name || updated.rank);
         const contactDisplay = updated.phone || phoneFormatted || (targetJid ? formatPhoneFromJid(targetJid) : "Sem número cadastrado");
-        const tagIdentifier = (updated.jid || targetJid) ? `@${(updated.jid || targetJid).split("@")[0]}` : `@${sender.split("@")[0]}`;
+        const tagIdentifier = (updated.jid || targetJid) ? `${nomeDoMembro((updated.jid || targetJid))}` : `${nomeDoMembro(sender)}`;
 
         let res = "╔══════════════════════════════╗\n";
         res += "║  👑 *PATENTE DE DONO ATUALIZADA!*  \n";

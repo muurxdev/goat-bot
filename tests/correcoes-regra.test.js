@@ -47,25 +47,26 @@ async function run() {
     // ── Assinar primeiro: troca notifyDonos antes de o comando ser carregado ──
     console.log('\n--- 9. assinar: falha no aviso aos donos não vira erro do link ---')
     const ownerService = require('../src/services/ownerService')
-    const stripe = require('../src/services/payments/stripeService')
+    // Pagamento desde 2026-10-25 (commit 1f55efe4) é PIX do Mercado Pago, não Stripe.
+    const mercadoPago = require('../src/services/payments/mercadoPagoService')
     const notifyOriginal = ownerService.notifyDonos
-    const stripeOriginal = { isConfigured: stripe.isConfigured, criarCheckout: stripe.criarCheckout, modo: stripe.modo }
+    const mpOriginal = { criarPixPayment: mercadoPago.criarPixPayment, modo: mercadoPago.modo }
     ownerService.notifyDonos = async () => { throw new Error('whatsapp caiu') }
-    stripe.isConfigured = () => true
-    stripe.modo = () => 'teste'
-    stripe.criarCheckout = async () => ({ id: 'cs_test_1', url: 'https://pagar.exemplo/abc', metodos: ['cartão', 'Pix'] })
+    mercadoPago.modo = () => 'teste'
+    mercadoPago.criarPixPayment = async () => ({ id: 'pix_teste_1', qrCodeBuffer: null, copiaCola: '00020126pix-copia-cola-teste', expiresAt: Date.now() + 30 * 60000 })
     const assinar = require('../src/commands/owner/assinar')
     ownerService.notifyDonos = notifyOriginal
 
-    await test('link enviado e aviso aos donos falhando: nada de "Não consegui gerar o link"', async () => {
+    await test('PIX enviado e aviso aos donos falhando: nada de "Não consegui gerar o PIX"', async () => {
         const rentalPackages = require('../src/services/payments/rentalPackagesService')
         const plano = rentalPackages.getPacotes()[0]
         const { msgs, reply } = capturar()
-        await assinar.execute({ sender: '5511970000001@s.whatsapp.net', from: '5511970000001@s.whatsapp.net', isGroup: false, args: [plano.id], reply, client: null, info: {}, prefix: '.' })
-        assert.ok(msgs.some(m => temTexto(m, 'https://pagar.exemplo/abc')), 'o link deveria ter sido enviado')
-        assert.ok(!msgs.some(m => temTexto(m, 'Não consegui gerar o link')), 'falha no aviso não pode aparecer como falha do link')
+        const client = { sendMessage: async (_jid, payload) => { msgs.push(payload.text || payload.caption || ''); return {} } }
+        await assinar.execute({ sender: '5511970000001@s.whatsapp.net', from: '5511970000001@s.whatsapp.net', isGroup: false, args: [plano.id], reply, client, info: {}, prefix: '.' })
+        assert.ok(msgs.some(m => m.includes('00020126pix-copia-cola-teste')), 'o copia e cola deveria ter sido enviado')
+        assert.ok(!msgs.some(m => temTexto(m, 'Não consegui gerar o PIX')), 'falha no aviso não pode aparecer como falha do PIX')
     })
-    Object.assign(stripe, stripeOriginal)
+    Object.assign(mercadoPago, mpOriginal)
 
     const dispatcher = require('../src/handlers/commandDispatcher')
     dispatcher.loadCommands()

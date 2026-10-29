@@ -1,3 +1,4 @@
+const { nomeDoMembro } = require('../../utils/nomeMembro');
 /**
  * Comando .deldono / .delcargo / .delowner / .removerdono / .removercargo
  * Remove ou desativa um Dono da hierarquia militar seguindo autorização rígida:
@@ -171,7 +172,7 @@ module.exports = {
                 }
             }
 
-            const alvoLegivel = targetRaw.includes("@") ? `@${targetRaw.split("@")[0]}` : targetRaw;
+            const alvoLegivel = targetRaw.includes("@") ? `${nomeDoMembro(targetRaw)}` : targetRaw;
             return reply(F.tela({
                 emoji: "❌",
                 titulo: "Não achei esse dono",

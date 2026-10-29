@@ -1,3 +1,4 @@
+const { nomeDoMembro } = require('../../utils/nomeMembro');
 /**
  * Comando .bingo / .jogobingo / .cartelabingo
  * Rodada de bingo no grupo com cartela gerada aleatoriamente
@@ -30,7 +31,7 @@ module.exports = {
         const card = renderCard({
             title: "CARTELA OFICIAL DE BINGO",
             icon: "🎱",
-            subtitle: `👤 *Jogador:* @${sender.split("@")[0]}`,
+            subtitle: `👤 *Jogador:* ${nomeDoMembro(sender)}`,
             sections: [
                 {
                     title: "B   I   N   G   O",

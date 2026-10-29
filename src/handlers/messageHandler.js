@@ -1,3 +1,4 @@
+const { nomeDoMembro } = require('../utils/nomeMembro');
 /**
  * Message Handler
  * Processa mensagens recebidas do Baileys e delega para o Command Dispatcher
@@ -46,7 +47,7 @@ async function anunciarSubidaDeNivel({ client, from, info, sender, user, lvlRes 
     const legenda = F.tela({
         emoji: '🎉',
         titulo: `Subiu para o nível ${user.level}`,
-        intro: `@${sender.split('@')[0]} (*${nomeReal}*) agora é *${getCargo(user.level)}*.`,
+        intro: `${nomeDoMembro(sender)} (*${nomeReal}*) agora é *${getCargo(user.level)}*.`,
         secoes: [
             { emoji: '🎁', titulo: 'Ganhos', linhas: [
                 F.campo('Vida máxima', `${Number(user.hpMax || 0).toLocaleString('pt-BR')} (+${lvlRes.ganhoHp})`),
@@ -452,7 +453,7 @@ async function handleIncomingMessage(client, { messages }) {
                 await dataService.saveConfigsData(configs);
                 await dataService.saveXpData({ [sender]: user });
                 await client.sendMessage(from, {
-                    text: `🎁 @${sender.split('@')[0]} pegou o drop de *${formatCoins(dropAmount)}* oferecido por @${dropSponsor.split('@')[0]}!`,
+                    text: `🎁 ${nomeDoMembro(sender)} pegou o drop de *${formatCoins(dropAmount)}* oferecido por ${nomeDoMembro(dropSponsor)}!`,
                     mentions: [sender, dropSponsor]
                 });
             } else {
@@ -520,7 +521,7 @@ async function handleIncomingMessage(client, { messages }) {
                 const prazo = Number.isFinite(muteCheck.remainingMs)
                     ? `por mais ${muteCheck.remainingText}`
                     : 'até a administração liberar';
-                let alertMsg = `🔇 @${senderNum}, você está silenciado aqui ${prazo}.`;
+                let alertMsg = `🔇 ${nomeDoMembro(sender)}, você está silenciado aqui ${prazo}.`;
                 if (isBotAdmin) alertMsg += ` Suas mensagens serão apagadas até lá.`;
                 if (muteCheck.reason) alertMsg += `\n\n*Motivo:* ${muteCheck.reason}`;
                 await client.sendMessage(from, { text: alertMsg, mentions: [sender] }).catch(() => {});
@@ -553,21 +554,22 @@ async function handleIncomingMessage(client, { messages }) {
 
         const hasLink = containsLink(body);
 
-        if (hasLink && isSubjectToRules) {
+        // Links: admins também são fiscalizados; só o dono fica isento.
+        if (hasLink && !isOwner) {
             // ── FISCALIZAÇÃO FLUENTE DE LINKS E PARCERIAS ─────────────────────
-            // Parceiros/afiliados autorizados NÃO possuem limite diário nem exclusão de mensagens.
-            // Membros sem parceria sofrem banimento imediato se o anti-link estiver ligado.
+            // Parceiros/afiliados podem postar qualquer link, sem limite nem exclusão.
+            // Os demais sofrem banimento imediato se o anti-link estiver ligado e o link for de plataforma bloqueada.
             const aiLearning = require('../services/aiLearningService');
             const isUserAllowed = aiLearning.isUserAllowedToPostLinks(from, sender, configs);
 
-            if (isUserAllowed) {
-                // Usuário é parceiro/afiliado oficial: postagem 100% liberada sem restrições nem cotas.
-            } else if (configs[from]?.antilink) {
-                const linkPlat = detectLinkPlatform(body);
-                const platCfg = configs[from]?.antilinkConfig?.platforms;
-                // Link de DM (wa.me, api.whatsapp.com/send…) é sempre bloqueado; o toggle "whatsapp" libera só o convite de grupo.
-                const isPlatBlocked = linkPlat === 'whatsapp_dm' || (platCfg ? (platCfg[linkPlat] !== false) : true);
+            const linkPlat = detectLinkPlatform(body);
+            const platCfg = configs[from]?.antilinkConfig?.platforms;
+            // Link de DM (wa.me, api.whatsapp.com/send…) é sempre bloqueado; o toggle "whatsapp" libera só o convite de grupo.
+            const isPlatBlocked = linkPlat === 'whatsapp_dm' || (platCfg ? (platCfg[linkPlat] !== false) : true);
 
+            if (isUserAllowed) {
+                // Parceiro/afiliado oficial: qualquer link, sem restrições nem cotas.
+            } else if (configs[from]?.antilink && isPlatBlocked) {
                 if (isPlatBlocked) {
                     try {
                         const senderNum = sender.split('@')[0].split(':')[0];
@@ -580,7 +582,7 @@ async function handleIncomingMessage(client, { messages }) {
                         let motivoMsg = `╔══════════════════════════════╗\n`;
                         motivoMsg += `║     🚫 *BANIMENTO APLICADO* ⚡    ║\n`;
                         motivoMsg += `╚══════════════════════════════╝\n\n`;
-                        motivoMsg += `👤 *Infrator:* @${senderNum}\n`;
+                        motivoMsg += `👤 *Infrator:* ${nomeDoMembro(sender)}\n`;
                         const rotuloPlat = linkPlat === 'whatsapp_dm' ? 'WHATSAPP (DM)' : linkPlat.toUpperCase();
                         motivoMsg += `📜 *Motivo:* Envio de link [${rotuloPlat}] não autorizado sem parceria ou permissão prévia.\n`;
 
@@ -646,13 +648,13 @@ async function handleIncomingMessage(client, { messages }) {
                         }
                         await client.sendMessage(from, {
                             text: resultado.ok
-                                ? `🚫 @${sender.split('@')[0]} chegou a ${warnLimit} advertências por usar palavras proibidas e foi removido do grupo.`
-                                : `🚫 @${sender.split('@')[0]} chegou a ${warnLimit} advertências por usar palavras proibidas.\n\n${mensagemFalha(resultado.motivo, sender)}`,
+                                ? `🚫 ${nomeDoMembro(sender)} chegou a ${warnLimit} advertências por usar palavras proibidas e foi removido do grupo.`
+                                : `🚫 ${nomeDoMembro(sender)} chegou a ${warnLimit} advertências por usar palavras proibidas.\n\n${mensagemFalha(resultado.motivo, sender)}`,
                             mentions: [sender]
                         })
                     } else {
                         await client.sendMessage(from, {
-                            text: `🚫 @${sender.split('@')[0]}, essa palavra não é permitida neste grupo${isBotAdmin ? ', então apaguei sua mensagem' : ''}. Advertência *${totalWarns} de ${warnLimit}*.`,
+                            text: `🚫 ${nomeDoMembro(sender)}, essa palavra não é permitida neste grupo${isBotAdmin ? ', então apaguei sua mensagem' : ''}. Advertência *${totalWarns} de ${warnLimit}*.`,
                             mentions: [sender]
                         })
                     }
@@ -670,7 +672,7 @@ async function handleIncomingMessage(client, { messages }) {
                 try {
                     logger.warn(`[ANTITRAVA] Trava de ${sender} em ${from}: ${travaCheck.reason}`)
                     await client.sendMessage(from, {
-                        text: `🛡️ A mensagem de @${sender.split('@')[0]} foi feita para travar o WhatsApp de quem abre. Por segurança, estou tirando essa pessoa do grupo.`,
+                        text: `🛡️ A mensagem de ${nomeDoMembro(sender)} foi feita para travar o WhatsApp de quem abre. Por segurança, estou tirando essa pessoa do grupo.`,
                         mentions: [sender]
                     })
                     const { removerMembro, mensagemFalha } = require('../services/groupRemovalService')
@@ -691,7 +693,7 @@ async function handleIncomingMessage(client, { messages }) {
             if (spamCheck.isSpam) {
                 try {
                     await client.sendMessage(from, {
-                        text: `⚠️ @${sender.split('@')[0]}, você está mandando mensagens rápido demais. Vá com calma para não encher o grupo.`,
+                        text: `⚠️ ${nomeDoMembro(sender)}, você está mandando mensagens rápido demais. Vá com calma para não encher o grupo.`,
                         mentions: [sender]
                     }, { quoted: info })
                 } catch (e) {
@@ -914,7 +916,7 @@ async function handleIncomingMessage(client, { messages }) {
             // Menção sem texto útil: apresenta-se, em vez de ficar mudo.
             if (isBotMentioned && !body.replace(/@\d+/g, '').trim()) {
                 const { getBotName } = require('../config/botConfig')
-                await reply(`⚽ Fala, @${sender.split('@')[0]}! Aqui é o ${getBotName()}, o Camisa 10 do time. Digite \`${prefix}menu\` para ver os comandos e táticas.`, [sender])
+                await reply(`⚽ Fala, ${nomeDoMembro(sender)}! Aqui é o ${getBotName()}, o Camisa 10 do time. Digite \`${prefix}menu\` para ver os comandos e táticas.`, [sender])
                 await dataService.saveXpData(xpData)
                 return
             }
@@ -1015,7 +1017,7 @@ async function handleIncomingMessage(client, { messages }) {
         const aviso = F.tela({
             emoji: '📜',
             titulo: 'Crie seu login',
-            intro: `@${sender.split('@')[0]}, antes de usar qualquer comando você precisa criar seu login — é uma conta só, que vale em todos os grupos e no privado.`,
+            intro: `${nomeDoMembro(sender)}, antes de usar qualquer comando você precisa criar seu login — é uma conta só, que vale em todos os grupos e no privado.`,
             secoes: [
                 {
                     emoji: '✨',

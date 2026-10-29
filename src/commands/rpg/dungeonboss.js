@@ -1,3 +1,4 @@
+const { nomeDoMembro } = require('../../utils/nomeMembro');
 const { renderCard, formatXP, formatCoins } = require("../../utils/uiEngine");
 const dataService = require("../../services/dataService");
 const { initializeUser, adicionarXp } = require("../../services/xpService");
@@ -36,7 +37,7 @@ module.exports = {
         const card = renderCard({
             title: "CONFRONTO CONTRA O CHEFE DA DUNGEON",
             icon: "👹",
-            subtitle: `⚔️ *Desafiante:* @${sender.split("@")[0]}`,
+            subtitle: `⚔️ *Desafiante:* ${nomeDoMembro(sender)}`,
             sections: [
                 {
                     title: "DESFECHO DA BATALHA",

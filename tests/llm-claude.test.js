@@ -10,7 +10,6 @@ const assert = require('assert')
 
 const CHAVES = ['ANTHROPIC_API_KEY', 'ANTHROPIC_MODEL', 'ANTHROPIC_DAILY_MAX_CALLS', 'ANTHROPIC_DAILY_MAX_TOKENS',
     'GEMINI_API_KEY', 'GROQ_API_KEY', 'PERPLEXITY_API_KEY', 'CLOUDFLARE_ACCOUNT_ID', 'CLOUDFLARE_API_TOKEN', 'OLLAMA_URL']
-for (const k of CHAVES) delete process.env[k]
 
 const fetchOriginal = global.fetch
 const chamadas = []
@@ -31,17 +30,20 @@ async function teste(nome, fn) {
 }
 
 const llm = require('../src/services/llmService')
+// Depois do require: o dotenv carrega o .env nele; zerar antes deixava as chaves do .env voltarem.
+for (const k of CHAVES) delete process.env[k]
 
 const RESPOSTA_CLAUDE = { corpo: { content: [{ type: 'text', text: 'Olá! Sou o **Claude**.' }], usage: { input_tokens: 40, output_tokens: 20 } } }
 
 async function main() {
     console.log('\n🧪 Claude como motor do .ia...\n')
 
-    await teste('sem chave: não há provedor e nenhuma chamada sai', async () => {
+    // Desde 2026-10-26 o gratuito (Pollinations) é reserva fixa; o que se testa é não sair para provedor pago.
+    await teste('sem chave: não há provedor pago e nenhuma chamada vai para a Anthropic', async () => {
         simularFetch(RESPOSTA_CLAUDE)
         assert.strictEqual(llm.hasProvider(), false)
-        assert.strictEqual(await llm.ask('oi'), null)
-        assert.strictEqual(chamadas.length, 0)
+        await llm.ask('oi')
+        assert.ok(chamadas.every(c => !c.url.includes('api.anthropic.com')), `chamou: ${chamadas.map(c => c.url).join(', ')}`)
     })
 
     await teste('com chave: pede à API da Anthropic com os cabeçalhos e o corpo certos', async () => {
@@ -83,20 +85,24 @@ async function main() {
         process.env.GROQ_API_KEY = 'gsk-teste'
         process.env.GEMINI_API_KEY = 'gem-teste'
         simularFetch({ status: 500, corpo: { error: { message: 'indisponível' } } })
-        const r = await llm.ask('quem manda aqui?')
-        assert.strictEqual(r, null, 'outro provedor respondeu no lugar do Claude')
-        assert.ok(chamadas.every(c => c.url.includes('api.anthropic.com')), `chamou outro provedor: ${chamadas.map(c => c.url).join(', ')}`)
+        await llm.ask('quem manda aqui?')
+        // A reserva gratuita pode responder; Groq e Gemini não podem ser chamados com a chave do Claude.
+        assert.ok(chamadas[0].url.includes('api.anthropic.com'), `primeira chamada: ${chamadas[0].url}`)
+        assert.ok(chamadas.every(c => !/groq\.com|generativelanguage/.test(c.url)), `chamou outro provedor: ${chamadas.map(c => c.url).join(', ')}`)
         delete process.env.GROQ_API_KEY
         delete process.env.GEMINI_API_KEY
     })
 
-    await teste('teto diário atingido: nenhuma chamada paga sai e o retorno é null', async () => {
+    await teste('teto diário atingido: a Anthropic não é chamada (a reserva gratuita pode responder)', async () => {
         process.env.ANTHROPIC_DAILY_MAX_CALLS = String(llm.usoClaude().chamadas) // já estourou
         simularFetch(RESPOSTA_CLAUDE)
-        assert.strictEqual(await llm.ask('e agora?'), null)
-        assert.strictEqual(await llm.pesquisar('e a busca?'), null)
-        assert.strictEqual(chamadas.length, 0, 'chamou a Anthropic apesar do teto')
-        delete process.env.ANTHROPIC_DAILY_MAX_CALLS
+        try {
+            await llm.ask('e agora?')
+            assert.strictEqual(await llm.pesquisar('e a busca?'), null)
+            assert.ok(chamadas.every(c => !c.url.includes('api.anthropic.com')), 'chamou a Anthropic apesar do teto')
+        } finally {
+            delete process.env.ANTHROPIC_DAILY_MAX_CALLS
+        }
     })
 
     await teste('pesquisar: usa a ferramenta de busca na web e devolve texto + fontes citadas', async () => {

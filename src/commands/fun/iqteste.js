@@ -1,3 +1,4 @@
+const { nomeDoMembro } = require('../../utils/nomeMembro');
 /**
  * Comando .iqteste — Mede o QI humorístico do usuário ou de alguém marcado
  */
@@ -24,7 +25,7 @@ module.exports = {
             return reply(F.tela({
                 emoji: "🧠",
                 titulo: `QI ${iq}`,
-                intro: `Examinei a cabeça de @${target.split('@')[0]} e o resultado foi *${iq}*.`,
+                intro: `Examinei a cabeça de ${nomeDoMembro(target)} e o resultado foi *${iq}*.`,
                 secoes: [{ emoji: "📋", titulo: "Diagnóstico", linhas: [
                     diag,
                     F.campo("Escala", "de 40 a 199 (média humana perto de 100)")

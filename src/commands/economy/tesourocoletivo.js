@@ -1,3 +1,4 @@
+const { nomeDoMembro } = require('../../utils/nomeMembro');
 /**
  * Comando .tesourocoletivo / .baucoletivo / .pote
  * Baú coletivo do grupo que acumula moedas com a atividade e é sorteado entre os membros
@@ -104,7 +105,7 @@ module.exports = {
             dataService.saveUser(user);
             await dataService.saveConfigsData(configs);
 
-            return reply(`👑 *TESOURO LIBERADO E SAQUEADO!*\n\n🎉 Parabéns @${sender.split("@")[0]}! Você abriu o Baú Coletivo e faturou a bolada de *${formatCoins(premio)}*!\n🔄 O baú foi reiniciado para uma nova rodada.`, [sender]);
+            return reply(`👑 *TESOURO LIBERADO E SAQUEADO!*\n\n🎉 Parabéns ${nomeDoMembro(sender)}! Você abriu o Baú Coletivo e faturou a bolada de *${formatCoins(premio)}*!\n🔄 O baú foi reiniciado para uma nova rodada.`, [sender]);
         }
 
         // Subcomando desconhecido: antes o comando terminava sem responder nada.

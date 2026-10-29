@@ -1,3 +1,4 @@
+const { nomeDoMembro } = require('../../utils/nomeMembro');
 /**
  * Comando .bandm
  * Gerencia o bloqueio global e individual de mensagens no privado (DM) do bot
@@ -185,7 +186,7 @@ module.exports = {
             return reply(F.tela({
                 emoji: '🔓',
                 titulo: 'Pessoa liberada no privado',
-                intro: `@${targetJid.split('@')[0]} pode voltar a falar comigo no privado.`,
+                intro: `${nomeDoMembro(targetJid)} pode voltar a falar comigo no privado.`,
                 prefix
             }), [targetJid])
         }
@@ -240,10 +241,10 @@ module.exports = {
         await reply(F.tela({
             emoji: '🔒',
             titulo: 'Pessoa bloqueada no privado',
-            intro: `@${targetJid.split('@')[0]} não consegue mais usar meus comandos no privado. Se tentar, recebe o motivo e quem bloqueou.`,
+            intro: `${nomeDoMembro(targetJid)} não consegue mais usar meus comandos no privado. Se tentar, recebe o motivo e quem bloqueou.`,
             secoes: [{ emoji: '📋', titulo: 'Registro', linhas: [
                 F.campo('Motivo', String(reason).replace(/^[@\s]+/, '').trim() || reason),
-                F.campo('Bloqueado por', `@${sender.split('@')[0]}`)
+                F.campo('Bloqueado por', `${nomeDoMembro(sender)}`)
             ] }],
             proximos: [{ nome: 'bandm', args: `off ${targetJid.split('@')[0]}`, oque: 'liberar de novo' }],
             prefix

@@ -87,6 +87,9 @@ async function testGroupControlTime() {
 
     // Simula grupo fechado
     updatedSetting = 'announcement';
+    // O anúncio de abertura é opt-in (commit c635186d, 2026-10-25): liga a mensagem de abertura neste grupo.
+    const configRepo = require('../src/database/repositories/configRepository');
+    configRepo.saveConfig(testGroup, { ...(configRepo.getConfig(testGroup) || {}), abertura: true, aberturaEnabled: true });
 
     // Aguarda o disparo automático
     await new Promise(r => setTimeout(r, 350));

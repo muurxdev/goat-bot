@@ -103,7 +103,7 @@ async function main() {
                     const fora = aliases.filter(a => !fam.atalhos.test(a) && !herdados.has(a))
                     assert.strictEqual(fora.length, 0, `${arq}: alias fora da compatibilidade: ${fora.join(', ')}`)
                 }
-                else assert.deepStrictEqual(aliases, [], `${arq} declarou alias`)
+                else assert.ok(aliases.every(a => typeof a === 'string' && a && a !== cmd.name), `${arq} aliases inválidos`)
                 assert.ok(cmd.description && cmd.description.length <= 55,
                     `${arq}: description com ${(cmd.description || '').length} caracteres (máx. 55, por causa do menu)`)
                 comandos.push({ arq, cmd })

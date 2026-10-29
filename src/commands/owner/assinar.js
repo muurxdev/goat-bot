@@ -1,3 +1,4 @@
+const { nomeDoMembro } = require('../../utils/nomeMembro');
 /**
  * Comando .assinar — gera cobrança PIX com QR Code e Copia e Cola via Mercado Pago
  * 
@@ -176,7 +177,7 @@ module.exports = {
                             F.campo('Valor', reais(pacote.centavos)),
                             F.campo('Créditos inclusos', cr),
                             F.campo('ID Cobrança', `#${pixData.id}`),
-                            F.campo('Para', `@${targetJid.split('@')[0]}`),
+                            F.campo('Para', `${nomeDoMembro(targetJid)}`),
                             F.campo('Vence às', `${expiraFormatado} (em 30 min)`)
                         ]
                     },
@@ -242,12 +243,12 @@ module.exports = {
                 prefix,
                 emoji: '🔔',
                 titulo: 'Nova Cobrança PIX Gerada',
-                intro: `@${sender.split('@')[0]} gerou uma cobrança PIX no Mercado Pago.`,
+                intro: `${nomeDoMembro(sender)} gerou uma cobrança PIX no Mercado Pago.`,
                 secoes: [{
                     emoji: '📋', titulo: 'Detalhes', linhas: [
                         F.campo('ID Cobrança', `#${pixData.id}`),
-                        F.campo('Pediu', `@${sender.split('@')[0]}`),
-                        F.campo('Para', `@${targetJid.split('@')[0]} (${targetName})`),
+                        F.campo('Pediu', `${nomeDoMembro(sender)}`),
+                        F.campo('Para', `${nomeDoMembro(targetJid)} (${targetName})`),
                         F.campo('Plano', `${pacote.nome} (${pacote.id})`),
                         F.campo('Valor', reais(pacote.centavos)),
                         F.campo('Horário', new Date().toLocaleString('pt-BR', { timeZone: 'America/Sao_Paulo' }))

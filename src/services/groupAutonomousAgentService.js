@@ -1,3 +1,4 @@
+const { nomeDoMembro } = require('../utils/nomeMembro');
 /**
  * Serviço de Automação e Resposta Autônoma Contextual por Grupo (24H Engine)
  * GOATBOT // GOAT Prime (GOAT)
@@ -349,7 +350,7 @@ async function handleGroupMessage({
                 const respostaTexto = item.response(prefix);
                 await reply(respostaTexto, [sender]);
                 _lastAutoReplyTime.set(from, agora);
-                logger.info(`[AUTONOMOUS REPLY] Resposta direta [${groupNiche.id}] enviada para @${sender.split('@')[0]} em ${from}`);
+                logger.info(`[AUTONOMOUS REPLY] Resposta direta [${groupNiche.id}] enviada para ${nomeDoMembro(sender)} em ${from}`);
                 return true;
             }
         }
@@ -359,7 +360,7 @@ async function handleGroupMessage({
         const fallbackTexto = groupNiche.fallback(prefix);
         await reply(fallbackTexto, [sender]);
         _lastAutoReplyTime.set(from, agora);
-        logger.info(`[AUTONOMOUS REPLY] Resumo contextual [${groupNiche.id}] enviado para @${sender.split('@')[0]} em ${from}`);
+        logger.info(`[AUTONOMOUS REPLY] Resumo contextual [${groupNiche.id}] enviado para ${nomeDoMembro(sender)} em ${from}`);
         return true;
     }
 

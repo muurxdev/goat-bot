@@ -1,3 +1,4 @@
+const { nomeDoMembro } = require('../../utils/nomeMembro');
 /**
  * Comando Unificado .adm
  * Promove ou rebaixa administradores do grupo em um único comando inteligente
@@ -115,7 +116,7 @@ module.exports = {
                 doc += `╭━〔 ⚙️ HIERARQUIA DO GRUPO 〕━⬣\n`;
                 doc += `┃ 👤 *Participante:* @${targetNum}\n`;
                 doc += `┃ 🎖️ *Novo Cargo:* ⭐ *ADMINISTRADOR DO GRUPO*\n`;
-                doc += `┃ 🛡️ *Promovido por:* @${senderNum}\n`;
+                doc += `┃ 🛡️ *Promovido por:* ${nomeDoMembro(sender)}\n`;
                 doc += `╰━━━━━━━━━━━━━━━━━━⬣\n\n`;
                 doc += `💡 _Para rebaixar este participante:_ \`.adm demote @${targetNum}\`\n`;
                 doc += `👑 *${botName}*`;
@@ -129,7 +130,7 @@ module.exports = {
                 doc += `╭━〔 ⚙️ HIERARQUIA DO GRUPO 〕━⬣\n`;
                 doc += `┃ 👤 *Participante:* @${targetNum}\n`;
                 doc += `┃ 🔻 *Novo Cargo:* 👤 *MEMBRO COMUM*\n`;
-                doc += `┃ 🛡️ *Rebaixado por:* @${senderNum}\n`;
+                doc += `┃ 🛡️ *Rebaixado por:* ${nomeDoMembro(sender)}\n`;
                 doc += `╰━━━━━━━━━━━━━━━━━━⬣\n\n`;
                 doc += `💡 _Para promover este participante:_ \`.adm promote @${targetNum}\`\n`;
                 doc += `👑 *${botName}*`;

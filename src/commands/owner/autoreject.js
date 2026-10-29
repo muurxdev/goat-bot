@@ -1,3 +1,4 @@
+const { nomeDoMembro } = require('../../utils/nomeMembro');
 /**
  * Comando .autoreject
  * Ativa ou desativa a recusa automática de convites de grupos no privado
@@ -48,7 +49,7 @@ module.exports = {
             doc += `╭━〔 ⚙️ CONTROLE DE CONVITES 〕━⬣\n`;
             doc += `┃ 🛡️ *Recurso:* Auto-Rejeição de Convites de Grupo\n`;
             doc += `┃ 🟢 *Estado:* *ATIVADO*\n`;
-            doc += `┃ 👤 *Executado por:* @${senderNum}\n`;
+            doc += `┃ 👤 *Executado por:* ${nomeDoMembro(sender)}\n`;
             doc += `╰━━━━━━━━━━━━━━━━━━⬣\n\n`;
             doc += `💡 _Para desativar este recurso:_ \`.autoreject off\`\n`;
             doc += `👑 *${botName}*`;
@@ -66,7 +67,7 @@ module.exports = {
             doc += `╭━〔 ⚙️ CONTROLE DE CONVITES 〕━⬣\n`;
             doc += `┃ 🛡️ *Recurso:* Auto-Rejeição de Convites de Grupo\n`;
             doc += `┃ 🔴 *Estado:* *DESATIVADO*\n`;
-            doc += `┃ 👤 *Executado por:* @${senderNum}\n`;
+            doc += `┃ 👤 *Executado por:* ${nomeDoMembro(sender)}\n`;
             doc += `╰━━━━━━━━━━━━━━━━━━⬣\n\n`;
             doc += `💡 _Para reativar este recurso:_ \`.autoreject on\`\n`;
             doc += `👑 *${botName}*`;

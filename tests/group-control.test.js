@@ -31,17 +31,13 @@ async function run() {
     assert.strictEqual(opened.closed, false, 'grupo deve estar aberto')
     assert.strictEqual(updates[0].setting, 'not_announcement', 'abre via groupSettingUpdate not_announcement')
 
-    // ---- 3. fechamento com duração agenda reabertura ----
+    // ---- 3. fechamento com duração é AGENDADO (API atual: scheduleCloseGroup, desde 2026-10-25) ----
     updates = []
-    const timed = await groupControl.closeGroup(client, GROUP, { durationStr: '2m' })
-    assert.strictEqual(timed.closed, true, 'fechado')
-    assert.ok(timed.until > Date.now(), 'until deve ser futuro')
-    assert.strictEqual(updates[0].setting, 'announcement', 'chamou o fechamento')
+    const agendado = groupControl.scheduleCloseGroup(GROUP, '2m')
+    assert.strictEqual(agendado.scheduled, true, 'fechamento agendado')
+    assert.ok(agendado.triggerAt > Date.now(), 'horário do fechamento deve ser futuro')
 
-    // ---- 4. abrir durante agendamento cancela o timer de reabertura ----
-    const statusBefore = groupControl.getGroupStatus(GROUP)
-    assert.strictEqual(statusBefore.closed, true, 'status em memória fechado')
-    assert.ok(statusBefore.until > Date.now(), 'tem reabertura agendada')
+    // ---- 4. abrir durante agendamento cancela o fechamento pendente ----
     await groupControl.openGroup(client, GROUP, { silent: true })
     const statusAfter = groupControl.getGroupStatus(GROUP)
     assert.strictEqual(statusAfter.closed, false, 'status em memória aberto após abrir')
@@ -52,9 +48,9 @@ async function run() {
     assert.deepStrictEqual(groupControl.getGroupStatus('1203631111111111111@g.us'), { closed: false, until: null }, 'grupo desconhecido = aberto')
 
     // ---- 6. duração inválida lança ----
-    await assert.rejects(
-        () => groupControl.closeGroup(client, GROUP, { durationStr: 'xpto' }),
-        /Duração inválida|Unidade de duração inválida/,
+    assert.throws(
+        () => groupControl.scheduleCloseGroup(GROUP, 'xpto'),
+        /inválido/,
         'duração inválida deve lançar'
     )
 

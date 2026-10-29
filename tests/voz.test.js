@@ -58,7 +58,8 @@ test('helper cab/linha/bloco/sep copiado nos comandos sai limpo', () => {
 
 test('caixa alta vira frase preservando siglas e nomes próprios', () => {
     assert.strictEqual(emFrase('VÍDEO BAIXADO DO YOUTUBE EM MP4'), 'Vídeo baixado do YouTube em MP4')
-    assert.strictEqual(emFrase('RANKING DE XP EM REINO'), 'Ranking de XP no Reino')
+    // "em" fica "em": emFrase só corrige a caixa; a contração "no" nunca foi implementada.
+    assert.strictEqual(emFrase('RANKING DE XP EM REINO'), 'Ranking de XP em Reino')
     assert.strictEqual(normalizarLayout('⚠️ *ATENÇÃO:* leia as regras'), '⚠️ *Atenção:* leia as regras')
 })
 

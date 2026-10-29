@@ -1,3 +1,4 @@
+const { nomeDoMembro } = require('../../utils/nomeMembro');
 /**
  * Comando .lotofacil / .loto / .loteria-rapida
  * Loteria rápida de 5 números com sorteio instantâneo e multiplicadores altos
@@ -74,7 +75,7 @@ module.exports = {
         const card = renderCard({
             title: "LOTOFÁCIL DE REINO — SORTEIO",
             icon: "🎟️",
-            subtitle: `👤 *Apostador:* @${sender.split("@")[0]}`,
+            subtitle: `👤 *Apostador:* ${nomeDoMembro(sender)}`,
             sections: [
                 {
                     title: "RESULTADO DO SORTEIO",

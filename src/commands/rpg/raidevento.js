@@ -1,3 +1,4 @@
+const { nomeDoMembro } = require('../../utils/nomeMembro');
 const dataService = require('../../services/dataService')
 const { initializeUser, adicionarXp } = require('../../services/xpService')
 const { formatCoins } = require('../../utils/uiEngine')
@@ -56,7 +57,7 @@ module.exports = {
             if (participantes.length > 0) {
                 participantes.slice(0, 10).forEach(([pUser, dmg], i) => {
                     const medal = i === 0 ? '🥇' : i === 1 ? '🥈' : i === 2 ? '🥉' : '🎖️'
-                    doc += `┃ ${medal} @${pUser.split('@')[0]} — *${dmg.toLocaleString('pt-BR')} dmg*\n`
+                    doc += `┃ ${medal} ${nomeDoMembro(pUser)} — *${dmg.toLocaleString('pt-BR')} dmg*\n`
                 })
             } else {
                 doc += '┃ ▫️ Nenhum ataque ainda.\n'
@@ -237,7 +238,7 @@ async function handleVictory(sender, user, raid, xpData, eventos, eventKey, repl
     participantes.forEach((pUser, i) => {
         const dmg = (raid.dano || {})[pUser] || 0
         const medal = i === 0 ? '🥇' : i === 1 ? '🥈' : i === 2 ? '🥉' : '🎖️'
-        doc += `┃ ${medal} @${pUser.split('@')[0]} — *${dmg.toLocaleString('pt-BR')} dmg*\n`
+        doc += `┃ ${medal} ${nomeDoMembro(pUser)} — *${dmg.toLocaleString('pt-BR')} dmg*\n`
         const rew = dropsPorJogador[pUser] || []
         if (rew.length > 0) {
             rew.forEach(r => {

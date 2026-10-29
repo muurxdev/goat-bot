@@ -6,7 +6,7 @@
  * As contas ficam em services/bankingService.js; aqui só a apresentação.
  */
 
-const B = require('../../services/bankingService')
+const B = require('../../services/tesourariaService')
 const dataService = require('../../services/dataService')
 const F = require('../../utils/formato')
 

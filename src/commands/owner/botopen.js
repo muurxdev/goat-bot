@@ -1,3 +1,4 @@
+const { nomeDoMembro } = require('../../utils/nomeMembro');
 /**
  * Comando .botopen
  * Reabre o bot imediatamente ou programa um horário de abertura
@@ -58,7 +59,7 @@ module.exports = {
                         emoji: '📋', titulo: 'Detalhes', linhas: [
                             res.fechamentoPendente ? F.campo('Fechamento', res.closeFormatted) : null,
                             F.campo('Reabertura', res.reopenFormatted),
-                            F.campo('Marcado por', `@${senderNum}`)
+                            F.campo('Marcado por', `${nomeDoMembro(sender)}`)
                         ]
                     }],
                     proximos: [
@@ -95,7 +96,7 @@ module.exports = {
             secoes: [{
                 emoji: '📋', titulo: 'Detalhes', linhas: [
                     F.campo('Comandos', 'liberados para todos'),
-                    F.campo('Reaberto por', `@${senderNum}`)
+                    F.campo('Reaberto por', `${nomeDoMembro(sender)}`)
                 ]
             }],
             proximos: [

@@ -1,3 +1,4 @@
+const { nomeDoMembro } = require('../../utils/nomeMembro');
 /**
  * Comando .coliseu / .gladiador / .coliseum
  * Batalhas diárias em ondas de gladiadores no Coliseu de Torre com premiações de XP, Coins e Fragmentos
@@ -48,7 +49,7 @@ module.exports = {
         const card = renderCard({
             title: "COLISEU DE TORRE — RESULTADO",
             icon: "🏛️",
-            subtitle: `⚔️ *Guerreiro:* @${sender.split("@")[0]}`,
+            subtitle: `⚔️ *Guerreiro:* ${nomeDoMembro(sender)}`,
             sections: [
                 {
                     title: "ESTATÍSTICAS DA BATALHA",

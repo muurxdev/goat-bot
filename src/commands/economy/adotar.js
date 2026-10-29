@@ -1,3 +1,4 @@
+const { nomeDoMembro } = require('../../utils/nomeMembro');
 /**
  * Comando .adotar / .adotacao
  * Sistema de adoção de filhos no grupo com certidão social
@@ -41,7 +42,7 @@ module.exports = {
         doc += `╚══════════════════════════════╝\n\n`;
         doc += `✨ *Adoção oficializada em Reino!*\n\n`;
         doc += `╭━〔 👶 NOVO MEMBRO DA FAMÍLIA 〕━⬣\n`;
-        doc += `┃ 👨‍👦 *Responsável:* @${senderNum}\n`;
+        doc += `┃ 👨‍👦 *Responsável:* ${nomeDoMembro(sender)}\n`;
         doc += `┃ 👶 *Criança adotada:* @${targetNum}\n`;
         doc += `┃ ⚖️ *Pensão Alimentícia:* 50 coins por dia\n`;
         doc += `╰━━━━━━━━━━━━━━━━━━⬣\n\n`;

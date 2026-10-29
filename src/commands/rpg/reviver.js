@@ -1,3 +1,4 @@
+const { nomeDoMembro } = require('../../utils/nomeMembro');
 /**
  * Comando .reviver / .lagrimadadeusa
  * Revive o jogador — restaura HP total sem custo
@@ -30,7 +31,7 @@ module.exports = {
         let doc = `╔══════════════════════════════╗\n`;
         doc += `║   💧 *LÁGRIMA DA DEUSA* 💧   ║\n`;
         doc += `╚══════════════════════════════╝\n\n`;
-        doc += `✨ *A energia vital de @${senderNum} foi restaurada!*\n\n`;
+        doc += `✨ *A energia vital de ${nomeDoMembro(sender)} foi restaurada!*\n\n`;
         doc += `❤️ *HP:* ${hpAnterior} → *${hp.max}* (100%)\n`;
         doc += `${hp.barra}\n\n`;
         doc += `👑 *${botName}*`;

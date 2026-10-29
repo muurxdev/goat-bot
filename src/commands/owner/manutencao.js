@@ -1,3 +1,4 @@
+const { nomeDoMembro } = require('../../utils/nomeMembro');
 /**
  * Comando .manutencao
  * Ativa ou desativa o Modo Manutenção global
@@ -26,7 +27,7 @@ module.exports = {
             doc += `╭━〔 ⚙️ CONTROLE DO SERVIDOR 〕━⬣\n`;
             doc += `┃ 🔧 *Recurso:* Modo Manutenção Global\n`;
             doc += `┃ 🔴 *Estado:* *ATIVADO*\n`;
-            doc += `┃ 👤 *Executado por:* @${senderNum}\n`;
+            doc += `┃ 👤 *Executado por:* ${nomeDoMembro(sender)}\n`;
             doc += `╰━━━━━━━━━━━━━━━━━━⬣\n\n`;
             doc += `💡 _Para desativar a manutenção:_ \`.manutencao off\`\n`;
             doc += `👑 *${botName}*`;
@@ -41,7 +42,7 @@ module.exports = {
             doc += `╭━〔 ⚙️ CONTROLE DO SERVIDOR 〕━⬣\n`;
             doc += `┃ 🔧 *Recurso:* Modo Manutenção Global\n`;
             doc += `┃ 🟢 *Estado:* *DESATIVADO*\n`;
-            doc += `┃ 👤 *Executado por:* @${senderNum}\n`;
+            doc += `┃ 👤 *Executado por:* ${nomeDoMembro(sender)}\n`;
             doc += `╰━━━━━━━━━━━━━━━━━━⬣\n\n`;
             doc += `💡 _Para reativar a manutenção:_ \`.manutencao on\`\n`;
             doc += `👑 *${botName}*`;

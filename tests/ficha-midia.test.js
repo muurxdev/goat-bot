@@ -95,7 +95,8 @@ teste('.spotify: tipo, origem (com a verdade sobre o arquivo), data e próximos 
     assert.ok(t.includes('*Origem:* Spotify (áudio pelo YouTube)'), t)
     assert.ok(t.includes('*Publicado em:* 20/05/2023'), t)
     assert.ok(t.includes('*Artista:* MC Livinho') && !/Topic/.test(t), t)
-    assert.ok(/PRÓXIMOS PASSOS/i.test(t) && t.includes('`.play mp4 VÍCIO DESCOMUNAL - MC LIVINHO`'), t)
+    // Desde 2026-10-26 (aa8e5ca2) o .spotify usa o bloco compartilhado COMANDOS PARA AJUDAR.
+    assert.ok(/COMANDOS PARA AJUDAR/i.test(t) && t.includes('`.play mp4 VÍCIO DESCOMUNAL - MC LIVINHO`'), t)
     assert.ok(t.length <= 1024)
 })
 

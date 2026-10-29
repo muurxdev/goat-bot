@@ -16,7 +16,10 @@ const falhas = []
 const inicio = Date.now()
 for (const arquivo of arquivos) {
     const t0 = Date.now()
-    const r = spawnSync(process.execPath, [path.join(DIR, arquivo)], {
+    // Arquivos no estilo Mocha (describe/it) recebem o executor compartilhado antes de rodar.
+    const usaBdd = /\bdescribe\s*\(/.test(fs.readFileSync(path.join(DIR, arquivo), 'utf8'))
+    const preload = usaBdd ? ['-r', path.join(DIR, 'helpers', 'bdd-shim.js')] : []
+    const r = spawnSync(process.execPath, [...preload, path.join(DIR, arquivo)], {
         env: { ...process.env, NODE_ENV: 'test' },
         encoding: 'utf8',
         maxBuffer: 64 * 1024 * 1024,

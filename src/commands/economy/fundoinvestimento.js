@@ -1,3 +1,4 @@
+const { nomeDoMembro } = require('../../utils/nomeMembro');
 const { renderCard, formatCoins } = require("../../utils/uiEngine");
 module.exports = {
     name: "fundoinvestimento",
@@ -9,7 +10,7 @@ module.exports = {
         const card = renderCard({
             title: "FUNDO IMOBILIÁRIO CENTRAL",
             icon: "🏢",
-            subtitle: `💼 *Investidor:* @${sender.split("@")[0]}`,
+            subtitle: `💼 *Investidor:* ${nomeDoMembro(sender)}`,
             sections: [
                 {
                     title: "CARTEIRA DE ATIVOS",

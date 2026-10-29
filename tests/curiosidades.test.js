@@ -27,7 +27,7 @@ const C = require('../src/services/curiosityService')
 const D = require('../src/services/curiosityData')
 const F = require('../src/utils/formato')
 
-const ALVO = 250
+const ALVO = 249 // 250 até 2026-10 (anime removido: subcategoria Mangá e anime saiu)
 const PASTA = path.join(__dirname, '..', 'src', 'commands', 'curiosidades')
 const MANIFESTO = path.join(__dirname, '..', 'scripts', 'manifests', 'curio_arquivos.json')
 
@@ -280,11 +280,14 @@ const arquivos = fs.existsSync(PASTA)
     ? fs.readdirSync(PASTA).filter(f => /^curio\d+\.js$/.test(f)).sort((a, b) => parseInt(a.slice(5), 10) - parseInt(b.slice(5), 10))
     : []
 
-test(`a pasta tem exatamente ${ALVO} comandos, de curio1 a curio${ALVO}`, () => {
+// Os números não são recompactados: curio231 (Mangá e anime) saiu e os demais mantêm o nome que os usuários conhecem.
+test(`a pasta tem exatamente ${ALVO} comandos, os listados no manifesto (sem curio231)`, () => {
     assert.strictEqual(arquivos.length, ALVO, `achei ${arquivos.length} arquivo(s)`)
-    for (let i = 1; i <= ALVO; i++) {
-        assert.ok(arquivos.includes(`curio${i}.js`), `faltou curio${i}.js`)
+    const m = JSON.parse(fs.readFileSync(MANIFESTO, 'utf8'))
+    for (const item of m.comandos) {
+        assert.ok(arquivos.includes(`${item.nome}.js`), `faltou ${item.nome}.js`)
     }
+    assert.ok(!arquivos.includes('curio231.js'), 'curio231 era o anime removido')
 })
 
 test('o manifesto do gerador bate com o que está no disco', () => {
@@ -300,7 +303,7 @@ test('o manifesto do gerador bate com o que está no disco', () => {
 
 const comandos = arquivos.map(f => require(path.join(PASTA, f)))
 
-test('todos seguem o schema, sem chave estranha e sem apelido', () => {
+test('todos seguem o schema, sem chave estranha e com apelidos válidos', () => {
     const problemas = []
     const nomes = new Set()
     const descricoes = new Map()
@@ -309,7 +312,8 @@ test('todos seguem o schema, sem chave estranha e sem apelido', () => {
         if (!/^curio\d+$/.test(cmd.name || '')) problemas.push(`nome fora do padrão: ${cmd.name}`)
         if (nomes.has(cmd.name)) problemas.push(`nome repetido: ${cmd.name}`)
         nomes.add(cmd.name)
-        if (!Array.isArray(cmd.aliases) || cmd.aliases.length) problemas.push(`${cmd.name}: aliases tem que ser lista vazia`)
+        // Apelidos vêm da expansão de 20.000 aliases (commit 165795de, 2026-10-25): lista de textos, sem repetir o nome.
+        if (!Array.isArray(cmd.aliases) || cmd.aliases.some(a => typeof a !== 'string' || !a || a === cmd.name)) problemas.push(`${cmd.name}: aliases inválidos`)
         if (cmd.category !== 'curiosidades') problemas.push(`${cmd.name}: categoria "${cmd.category}"`)
         if (!C.SUBS.includes(cmd.subcategory)) problemas.push(`${cmd.name}: subcategoria "${cmd.subcategory}"`)
         if (cmd.cooldownMs !== 3000) problemas.push(`${cmd.name}: cooldown ${cmd.cooldownMs}`)

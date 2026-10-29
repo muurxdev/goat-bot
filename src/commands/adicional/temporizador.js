@@ -1,3 +1,4 @@
+const { nomeDoMembro } = require('../../utils/nomeMembro');
 const logger = require('../../core/logger');
 const persistentScheduler = require('../../services/persistentScheduler');
 
@@ -50,7 +51,7 @@ module.exports = {
             `⏳ Duração: *${tempoFormatado}*\n` +
             `🎯 Motivo: _${motivo}_\n` +
             `📅 Fim Previsto: ${persistentScheduler.formatLocalTime(triggerAt)}\n` +
-            `👤 Para: @${sender.split('@')[0]}\n\n` +
+            `👤 Para: ${nomeDoMembro(sender)}\n\n` +
             `🔔 *Avisarei você quando o tempo acabar (persistido no banco SQLite)!* `,
             [sender]
         );

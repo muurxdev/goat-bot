@@ -1,3 +1,4 @@
+const { nomeDoMembro } = require('../../utils/nomeMembro');
 const { renderCard } = require("../../utils/uiEngine");
 module.exports = {
     name: "cladeusa",
@@ -9,7 +10,7 @@ module.exports = {
         const card = renderCard({
             title: "ARCA SAGRADA DO CLÃ DAS DEUSAS",
             icon: "☀️",
-            subtitle: `✨ *Invocador:* @${sender.split("@")[0]}`,
+            subtitle: `✨ *Invocador:* ${nomeDoMembro(sender)}`,
             sections: [
                 {
                     title: "PODER DA LUZ SAGRADA",

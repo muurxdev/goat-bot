@@ -1,3 +1,4 @@
+const { nomeDoMembro } = require('../../utils/nomeMembro');
 /**
  * Comando .moderacao / .seguranca / .modall
  * Painel Central e Controle Mestre de Moderação e Escudos do Grupo.
@@ -59,7 +60,7 @@ module.exports = {
             const card = renderCard({
                 title: "ESCUDO DE SEGURANÇA TOTAL ATIVADO!",
                 icon: "🛡️",
-                subtitle: `👑 *Ativado por:* @${sender.split("@")[0]}`,
+                subtitle: `👑 *Ativado por:* ${nomeDoMembro(sender)}`,
                 sections: [
                     {
                         title: "PROTEÇÕES ATIVADAS (ALL ON)",

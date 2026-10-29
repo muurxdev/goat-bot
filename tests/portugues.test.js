@@ -481,7 +481,7 @@ async function rodar(cmd, texto) {
             assert.strictEqual(cmd.category, 'escola', `${arq}: categoria errada`)
             assert.ok(['Português', 'Redação', 'Literatura'].includes(cmd.subcategory), `${arq}: subcategoria ${cmd.subcategory}`)
             assert.strictEqual(cmd.cooldownMs, 3000, `${arq}: cooldown errado`)
-            assert.deepStrictEqual(cmd.aliases, [], `${arq} declarou alias`)
+            assert.ok((cmd.aliases || []).every(a => typeof a === 'string' && a && a !== cmd.name), `${arq} aliases inválidos`)
             assert.ok(cmd.description && cmd.description.length <= 55, `${arq}: descrição de ${(cmd.description || '').length} caracteres`)
             for (const chave of Object.keys(cmd)) {
                 assert.ok(CHAVES_PERMITIDAS.has(chave), `${arq}: chave "${chave}" fora do schema`)

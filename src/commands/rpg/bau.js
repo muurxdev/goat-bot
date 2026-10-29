@@ -1,3 +1,4 @@
+const { nomeDoMembro } = require('../../utils/nomeMembro');
 /**
  * Comando .bau / .deposito / .sacar / .armazem
  * Armazém Seguro de Retaguarda no SQLite para guardar moedas e equipamentos sem lotar a mochila
@@ -152,7 +153,7 @@ module.exports = {
         let doc = `╔══════════════════════════════╗\n`;
         doc += `║   🏛️ *BAÚ DE RETAGUARDA SEGURO* 🏛️   \n`;
         doc += `╚══════════════════════════════╝\n\n`;
-        doc += `👤 *Proprietário:* @${sender.split('@')[0]}\n`;
+        doc += `👤 *Proprietário:* ${nomeDoMembro(sender)}\n`;
         doc += `🪙 *Saldo no Baú:* *${vaultCoins.toLocaleString('pt-BR')} Coins* (Protegido contra roubo)\n`;
         doc += `💵 *Saldo na Carteira:* ${(user.coins || 0).toLocaleString('pt-BR')} Coins\n`;
         doc += `📦 *Total de Itens Estocados:* ${vaultItems.length} tipos de itens\n\n`;

@@ -1,3 +1,4 @@
+const { nomeDoMembro } = require('../../utils/nomeMembro');
 /**
  * Comando .desativardm / .ativardm
  * Desativa (ou reativa) o atendimento no PRIVADO do bot para TODOS — sem ser um
@@ -34,7 +35,7 @@ module.exports = {
         await dataService.saveConfigsData(configs)
         logger.info(`[DM TOGGLE] PV ${wantsOn ? 'ativado' : 'desativado'} (sem ban) por ${sender}`)
 
-        const autor = F.campo('Alterado por', `@${sender.split('@')[0]}`)
+        const autor = F.campo('Alterado por', `${nomeDoMembro(sender)}`)
         if (wantsOn) {
             return reply(F.tela({
                 emoji: '🔓',

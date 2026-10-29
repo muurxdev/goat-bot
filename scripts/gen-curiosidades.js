@@ -30,7 +30,7 @@ const DESTINO = path.join(RAIZ, 'src', 'commands', 'curiosidades')
 const MANIFESTO = path.join(RAIZ, 'scripts', 'manifests', 'curio_arquivos.json')
 const DRY = process.argv.includes('--dry')
 
-const ALVO = 250
+const ALVO = 249 // 250 até o anime sair (Mangá e anime, curio231)
 const PREFIXO = 'curio'
 const CATEGORIA = 'curiosidades'
 const TETO_DESCRICAO = 55

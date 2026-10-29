@@ -1,3 +1,4 @@
+const { nomeDoMembro } = require('../../utils/nomeMembro');
 const { renderCard, formatCoins } = require("../../utils/uiEngine");
 module.exports = {
     name: "cartaodecredito",
@@ -9,7 +10,7 @@ module.exports = {
         const card = renderCard({
             title: "CARTÃO BLACK CENTRAL",
             icon: "💳",
-            subtitle: `👤 *Titular:* @${sender.split("@")[0]}`,
+            subtitle: `👤 *Titular:* ${nomeDoMembro(sender)}`,
             sections: [
                 {
                     title: "DADOS DA FATURA",

@@ -1,3 +1,4 @@
+const { nomeDoMembro } = require('../../utils/nomeMembro');
 /**
  * Comando .mute / .mutar / .silenciar
  * Silencia um membro no grupo com tempo determinado e motivo
@@ -71,7 +72,7 @@ module.exports = {
             const res = muteService.muteUser({
                 groupJid: from,
                 userJid: targetJid,
-                mutedBy: `@${senderNum}`,
+                mutedBy: `${nomeDoMembro(sender)}`,
                 durationMinutes,
                 reason
             });

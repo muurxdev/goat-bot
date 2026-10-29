@@ -14,7 +14,7 @@ module.exports = {
     subcategory: 'Infraestrutura',
     description: 'Volta meus dados para uma cópia de segurança guardada',
     usage: '<nome do arquivo da cópia>',
-    examples: ['meliodas_backup_1700000000000.sqlite — volta os dados para essa cópia'],
+    examples: ['bot_backup_1700000000000.sqlite — volta os dados para essa cópia'],
     ownerOnly: true,
     cooldownMs: 5000,
     execute: async ({ text, reply, prefix = '.' }) => {
@@ -27,7 +27,7 @@ module.exports = {
                 secoes: [{
                     emoji: '✍️', titulo: 'Digite assim', linhas: [
                         F.cmd(prefix, 'backuprestore', '<nome do arquivo>'),
-                        `Exemplo: ${F.cmd(prefix, 'backuprestore', 'meliodas_backup_1700000000000.sqlite')}`
+                        `Exemplo: ${F.cmd(prefix, 'backuprestore', 'bot_backup_1700000000000.sqlite')}`
                     ]
                 }],
                 dica: 'Tudo o que mudou depois da cópia escolhida some. Faça um .backup antes se estiver em dúvida.',

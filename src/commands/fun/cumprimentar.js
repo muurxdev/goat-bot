@@ -1,3 +1,4 @@
+const { nomeDoMembro } = require('../../utils/nomeMembro');
 const F = require('../../utils/formato')
 const logger = require('../../core/logger')
 
@@ -27,7 +28,7 @@ module.exports = {
             return reply(F.tela({
                 emoji,
                 titulo: periodo + '!',
-                intro: `${periodo}, @${sender.split('@')[0]}! Como vai você? 😊`,
+                intro: `${periodo}, ${nomeDoMembro(sender)}! Como vai você? 😊`,
                 dica: 'Marque alguém para mandar o cumprimento para outra pessoa.',
                 proximos: [
                     { nome: 'cumprimentar', args: '@pessoa', oque: 'cumprimentar alguém do grupo' },
@@ -39,8 +40,8 @@ module.exports = {
 
         const mentions = [sender, mentionedJid]
         return reply(
-            `${emoji} *${periodo},* @${mentionedJid.split('@')[0]}!\n\n` +
-            `Enviado com carinho por @${sender.split('@')[0]} 💕`,
+            `${emoji} *${periodo},* ${nomeDoMembro(mentionedJid)}!\n\n` +
+            `Enviado com carinho por ${nomeDoMembro(sender)} 💕`,
             mentions
         )
     }

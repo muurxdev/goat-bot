@@ -1,3 +1,4 @@
+const { nomeDoMembro } = require('../../utils/nomeMembro');
 /**
  * Comando .racha / .dragrace / .corrida
  * Corrida de arrancada com nitro e apostas de coins
@@ -73,7 +74,7 @@ module.exports = {
         const card = renderCard({
             title: "RACHA NOTURNO DE REINO",
             icon: "🏎️",
-            subtitle: `🏁 *Piloto:* @${sender.split("@")[0]}`,
+            subtitle: `🏁 *Piloto:* ${nomeDoMembro(sender)}`,
             sections: [
                 {
                     title: "RESULTADO DA PISTA",

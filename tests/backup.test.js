@@ -54,7 +54,7 @@ async function runBackupTests() {
         createdBackup = backupService.createBackup(5)
 
         assert(createdBackup !== null)
-        assert(createdBackup.filename.startsWith('meliodas_backup_'))
+        assert(createdBackup.filename.startsWith('bot_backup_'))
         assert(createdBackup.sizeKb > 0)
         assert(typeof createdBackup.createdAt, 'string')
         assert(createdBackup.stats.users >= 0)
@@ -72,7 +72,7 @@ async function runBackupTests() {
         const list = backupService.listBackups()
         assert(Array.isArray(list))
         assert(list.length >= 1)
-        assert(list[0].filename.startsWith('meliodas_backup_'))
+        assert(list[0].filename.startsWith('bot_backup_'))
     })
 
     test('rotateBackups remove backups excedentes além do limite configurado', () => {
@@ -108,6 +108,9 @@ async function runBackupTests() {
     console.log('\n--- 4. Execução dos Comandos de Backup pelo Dono ---')
 
     await testAsync('dispatch executa .backuplist com sucesso para o Dono', async () => {
+        // O módulo "Dono & Bot" não vem ligado num ambiente novo; liga no escopo do grupo de teste.
+        const moduleState = require('../src/services/moduleStateService')
+        moduleState.setModule('owner', true, moduleState.scopeOf('120363000000000000@g.us', true))
         const ctx = createMockContext('.backuplist', {
             sender: '5511999999999@s.whatsapp.net',
             isOwner: true

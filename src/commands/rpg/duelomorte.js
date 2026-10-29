@@ -1,3 +1,4 @@
+const { nomeDoMembro } = require('../../utils/nomeMembro');
 /**
  * Comando .duelomorte / .dueloallin
  * Duelo mortal onde o vencedor leva 100% da aposta total
@@ -27,7 +28,7 @@ module.exports = {
         let doc = `╔══════════════════════════════╗\n`;
         doc += `║   ⚔️ *DUELO MORTAL: ALL-IN* ⚔️   ║\n`;
         doc += `╚══════════════════════════════╝\n\n`;
-        doc += `🔥 @${senderNum} desafiou @${targetNum} para um duelo mortal valendo tudo!\n`;
+        doc += `🔥 ${nomeDoMembro(sender)} desafiou @${targetNum} para um duelo mortal valendo tudo!\n`;
         doc += `💡 _Para aceitar, responda com:_ \`.aceitar\`\n\n`;
         doc += `👑 *${botName}*`;
 

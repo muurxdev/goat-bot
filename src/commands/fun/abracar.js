@@ -1,3 +1,4 @@
+const { nomeDoMembro } = require('../../utils/nomeMembro');
 const logger = require('../../core/logger')
 
 const MENSAGENS = [
@@ -22,7 +23,7 @@ module.exports = {
         const target = Array.isArray(mentionedJid) ? mentionedJid[0] : mentionedJid
         if (!target || target === sender) {
             return reply(
-                `🤗 @${sender.split('@')[0]} está precisando de um abraço...\n` +
+                `🤗 ${nomeDoMembro(sender)} está precisando de um abraço...\n` +
                 `Ninguém pra abraçar? Mencione alguém! \`.abracar @user\``
             )
         }
@@ -31,7 +32,7 @@ module.exports = {
         const mentions = [sender, target]
 
         return reply(
-            `🤗 @${sender.split('@')[0]} *abraçou* @${target.split('@')[0]}!\n\n` +
+            `🤗 ${nomeDoMembro(sender)} *abraçou* ${nomeDoMembro(target)}!\n\n` +
             `✨ _${frase}_`,
             mentions
         )

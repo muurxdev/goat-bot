@@ -40,7 +40,7 @@ const SIGLAS = new Set([
 
 /** Nomes próprios que recuperam a grafia certa depois de ir para minúsculas. */
 const NOMES = new Map([
-    'GOAT', 'GOAT', 'Barcelona', 'Inter', 'Miami', 'Argentina', 'Campeões', 'Vestiário',
+    'GOAT', 'Reino', 'Barcelona', 'Inter', 'Miami', 'Argentina', 'Campeões', 'Vestiário',
     'Futebol', 'Craque', 'Camisa10', 'WhatsApp', 'YouTube', 'TikTok', 'Instagram', 'Google', 'Drive',
     'Spotify', 'Pinterest', 'Discord', 'Telegram', 'Skycode', 'Brasil', 'Deezer', 'Twitter', 'GOAT',
     'Pecados', 'Capitais', 'Deusas', 'Mandamentos'

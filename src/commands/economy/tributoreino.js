@@ -1,3 +1,4 @@
+const { nomeDoMembro } = require('../../utils/nomeMembro');
 /**
  * Comando .tributoreino — Paga tributo a outro membro (10% de imposto real).
  *
@@ -49,7 +50,7 @@ module.exports = {
         }
 
         let doc = `🏰 *TRIBUTO AO REINO*\n\n`
-        doc += `👤 *Para:* @${destino.split('@')[0]}\n`
+        doc += `👤 *Para:* ${nomeDoMembro(destino)}\n`
         doc += `💰 *Valor:* ${economy.formatar(r.valor)} moedas\n`
         if (taxa > 0) {
             doc += `📉 *Taxa (10%):* -${economy.formatar(taxa)}\n`

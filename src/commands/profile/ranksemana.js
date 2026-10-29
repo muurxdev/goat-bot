@@ -1,3 +1,4 @@
+const { nomeDoMembro } = require('../../utils/nomeMembro');
 const dataService = require('../../services/dataService')
 const { getCargo } = require('../../utils/helpers')
 const { formatNumber } = require('../../utils/textoRpg')
@@ -35,7 +36,7 @@ module.exports = {
         const linhas = ranking.map((user, i) => {
             const medalha = i === 0 ? '🥇' : i === 1 ? '🥈' : i === 2 ? '🥉' : `${i + 1}º`
             mentions.push(user[0])
-            return `${medalha} @${user[0].split('@')[0]} — *${formatNumber(user[1].weeklyXp || 0)} XP* · Nv. ${formatNumber(user[1].level)} · ${getCargo(user[1].level)}`
+            return `${medalha} ${nomeDoMembro(user[0])} — *${formatNumber(user[1].weeklyXp || 0)} XP* · Nv. ${formatNumber(user[1].level)} · ${getCargo(user[1].level)}`
         })
 
         await reply(F.tela({

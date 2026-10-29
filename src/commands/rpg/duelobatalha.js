@@ -1,3 +1,4 @@
+const { nomeDoMembro } = require('../../utils/nomeMembro');
 const { renderCard, formatCoins, formatXP } = require("../../utils/uiEngine");
 const dataService = require("../../services/dataService");
 const { initializeUser, adicionarXp } = require("../../services/xpService");
@@ -27,7 +28,7 @@ module.exports = {
         const card = renderCard({
             title: "DUELO DA ARENA REAL",
             icon: "⚔️",
-            subtitle: `👤 *Combatente:* @${sender.split("@")[0]}`,
+            subtitle: `👤 *Combatente:* ${nomeDoMembro(sender)}`,
             sections: [
                 {
                     title: "RESULTADO DO EMBATE",

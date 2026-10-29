@@ -1,3 +1,4 @@
+const { nomeDoMembro } = require('../../utils/nomeMembro');
 const logger = require('../../core/logger')
 /**
  * Comando .parceria / .afiliacao
@@ -87,7 +88,9 @@ module.exports = {
             if (!target) return reply(`💡 Marque o usuário para conceder parceria: \`${p}parceria add @user\``);
 
             await aiLearning.allowLinkUser(effectiveGroup, target);
-            return reply(`🤝 *NOVA PARCERIA FIRMADA!*\n\n@${target.split('@')[0]} agora é um parceiro oficial e tem permissão permanente para postar links sem limite diário nem exclusão!\n\n📌 *Válido até:* Remoção manual por um administrador ou pelo dono.`, [target]);
+            // Mostra o nome do parceiro, nunca o número (a menção continua notificando)
+            const nomeParceiro = String(dataService.getUser(target)?.name || '').trim() || 'Este membro';
+            return reply(`🤝 *NOVA PARCERIA FIRMADA!*\n\n*${nomeParceiro}* agora é um parceiro oficial e tem permissão permanente para postar qualquer link sem limite diário nem exclusão!\n\n📌 *Válido até:* Remoção manual por um administrador ou pelo dono.`, [target]);
         }
 
         if (sub === "del" || sub === "remover" || sub === "revogar") {
@@ -101,7 +104,7 @@ module.exports = {
             if (!target) return reply(`💡 Marque o usuário para remover parceria: \`${p}parceria del @user\``);
 
             await aiLearning.disallowLinkUser(effectiveGroup, target);
-            return reply(`🚫 A parceria de @${target.split('@')[0]} foi encerrada e a permissão de links foi revogada.`, [target]);
+            return reply(`🚫 A parceria de ${nomeDoMembro(target)} foi encerrada e a permissão de links foi revogada.`, [target]);
         }
 
         // Painel e Orientações para Usuários e Admins
@@ -122,7 +125,7 @@ module.exports = {
             doc += `┃ _Nenhum parceiro cadastrado no momento._\n`;
         } else {
             allowed.forEach((j, i) => {
-                doc += `┃ ${i + 1}. @${j.split('@')[0]} ✅ (Sem limites)\n`;
+                doc += `┃ ${i + 1}. ${nomeDoMembro(j)} ✅ (Sem limites)\n`;
             });
         }
         doc += `╰━━━━━━━━━━━━━━━━━━⬣\n\n`;

@@ -1,3 +1,4 @@
+const { nomeDoMembro } = require('../../utils/nomeMembro');
 /**
  * Comando .torneio / .campeonato / .torre
  * Festival de Luta de Torre: Torneio eliminatório com chave de lutas, inscrições e premiação
@@ -69,7 +70,7 @@ module.exports = {
 
             activeTournament.participantes.push(sender);
 
-            return reply(`🥊 *INSCRIÇÃO CONFIRMADA!*\n\n@${sender.split("@")[0]} subiu ao ringue!\n👥 *Total de Lutadores Inscritos:* ${activeTournament.participantes.length} / 8\n💡 Digite \`.torneio lutar\` quando todos estiverem prontos!`, [sender]);
+            return reply(`🥊 *INSCRIÇÃO CONFIRMADA!*\n\n${nomeDoMembro(sender)} subiu ao ringue!\n👥 *Total de Lutadores Inscritos:* ${activeTournament.participantes.length} / 8\n💡 Digite \`.torneio lutar\` quando todos estiverem prontos!`, [sender]);
         }
 
         // 3. EXECUTAR LUTAS
@@ -95,8 +96,8 @@ module.exports = {
             doc += `║   🏆 *GRANDE FINAL DE TORRE!* 🏆   \n`;
             doc += `╚══════════════════════════════╝\n\n`;
             doc += `💥 *Após combates brutais nas semifinais e uma final inesquecível...*\n\n`;
-            doc += `🥇 *GRANDE CAMPEÃO:* @${campeaoJid.split("@")[0]} 👑\n`;
-            doc += `🥈 *Vice-Campeão:* @${viceJid.split("@")[0]}\n\n`;
+            doc += `🥇 *GRANDE CAMPEÃO:* ${nomeDoMembro(campeaoJid)} 👑\n`;
+            doc += `🥈 *Vice-Campeão:* ${nomeDoMembro(viceJid)}\n\n`;
             doc += `╭━〔 🎁 PREMIAÇÃO CONCEDIDA 〕━⬣\n`;
             doc += `┃ 💰 *Prêmio Máximo:* +50.000 Coins\n`;
             doc += `┃ ⭐ *Experiência de Mestre:* +${xpGanho.toLocaleString("pt-BR")} XP\n`;

@@ -1,3 +1,4 @@
+const { nomeDoMembro } = require('../../utils/nomeMembro');
 /**
  * Comando .clonartags / .extrairtags
  * Extrai menções e tags de uma mensagem citada e permite reutilizá-las
@@ -18,7 +19,7 @@ module.exports = {
             return reply(`📋 *Extrator de Menções & Tags*\n\nResponda a uma mensagem que contenha marcações (@alguém) com \`${prefix}clonartags\` para extrair todas as menções de uma só vez!`);
         }
 
-        const listaTags = mentions.map(m => `@${m.split('@')[0]}`).join(' ');
+        const listaTags = mentions.map(m => `${nomeDoMembro(m)}`).join(' ');
 
         let doc = `╔══════════════════════════════╗\n`;
         doc += `║     📋 *TAGS EXTRAÍDAS* 📋      ║\n`;

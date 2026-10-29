@@ -1,3 +1,4 @@
+const { nomeDoMembro } = require('../../utils/nomeMembro');
 /**
  * Comando .dueloaposta / .aposta1v1 / .x1aposta
  * Duelo 1v1 apostado onde o vencedor leva 100% da aposta do adversário
@@ -51,7 +52,7 @@ module.exports = {
         }
 
         if ((userOponente.coins || 0) < betAmount) {
-            return reply(`❌ O oponente @${mencao.split('@')[0]} não possui saldo suficiente para essa aposta de *${betAmount.toLocaleString('pt-BR')} Coins*!`, [mencao])
+            return reply(`❌ O oponente ${nomeDoMembro(mencao)} não possui saldo suficiente para essa aposta de *${betAmount.toLocaleString('pt-BR')} Coins*!`, [mencao])
         }
 
         const statsSender = calculateCharacterStats(userSender)
@@ -77,8 +78,8 @@ module.exports = {
         await dataService.saveXpData(xpData)
         logger.info(`[DUELO APOSTA] ${sender} vs ${mencao} valendo ${betAmount} -> Vencedor: ${vencedorJid}`)
 
-        const nomeVencedor = userVencedor.nicknameRpg ? `*${userVencedor.nicknameRpg}*` : `@${vencedorJid.split('@')[0]}`
-        const nomePerdedor = userPerdedor.nicknameRpg ? `*${userPerdedor.nicknameRpg}*` : `@${perdedorJid.split('@')[0]}`
+        const nomeVencedor = userVencedor.nicknameRpg ? `*${userVencedor.nicknameRpg}*` : `${nomeDoMembro(vencedorJid)}`
+        const nomePerdedor = userPerdedor.nicknameRpg ? `*${userPerdedor.nicknameRpg}*` : `${nomeDoMembro(perdedorJid)}`
 
         let doc = `╔══════════════════════════════╗\n`
         doc += `║   💰 *RESULTADO DA APOSTA 1V1* 💰   ║\n`
@@ -87,7 +88,7 @@ module.exports = {
         doc += `💵 *Pote Total em Jogo:* *${(betAmount * 2).toLocaleString('pt-BR')} Coins*\n\n`
 
         doc += `╭━〔 🏆 VENCEDOR DO POTE 〕━⬣\n`
-        doc += `┃ 👑 *Ganhador:* ${nomeVencedor} (@${vencedorJid.split('@')[0]})\n`
+        doc += `┃ 👑 *Ganhador:* ${nomeVencedor} (${nomeDoMembro(vencedorJid)})\n`
         doc += `┃ 💰 *Prêmio Ganho:* *+${betAmount.toLocaleString('pt-BR')} Coins*\n`
         doc += `┃ 📈 *Novo Saldo:* *${(userVencedor.coins || 0).toLocaleString('pt-BR')} Coins*\n`
         if (lvlResult.subiu) {
@@ -96,7 +97,7 @@ module.exports = {
         doc += `╰━━━━━━━━━━━━━━━━━━⬣\n\n`
 
         doc += `╭━〔 💀 PERDEDOR DA APOSTA 〕━⬣\n`
-        doc += `┃ 🩸 *Perdedor:* ${nomePerdedor} (@${perdedorJid.split('@')[0]})\n`
+        doc += `┃ 🩸 *Perdedor:* ${nomePerdedor} (${nomeDoMembro(perdedorJid)})\n`
         doc += `┃ 💸 *Prejuízo:* *-${betAmount.toLocaleString('pt-BR')} Coins*\n`
         doc += `┃ 💰 *Saldo Restante:* *${(userPerdedor.coins || 0).toLocaleString('pt-BR')} Coins*\n`
         doc += `╰━━━━━━━━━━━━━━━━━━⬣\n\n`

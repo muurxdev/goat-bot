@@ -1,3 +1,4 @@
+const { nomeDoMembro } = require('../../utils/nomeMembro');
 /**
  * Comando .afiliado / .linkafiliado / .permissaolink
  * Gestão de permissões de postagem de links e afiliados com cotas diárias e punição progressiva
@@ -61,7 +62,7 @@ module.exports = {
             const card = renderCard({
                 title: "ALERTA: LIMITE DE LINKS EXCEDIDO!",
                 icon: "🚫",
-                subtitle: `👤 *Usuário:* @${senderNum}`,
+                subtitle: `👤 *Usuário:* ${nomeDoMembro(sender)}`,
                 sections: [
                     {
                         title: "DETALHES DA INFRAÇÃO",
@@ -126,7 +127,7 @@ module.exports = {
             cfg.userLimits[cleanTarget] = targetLimit;
             await dataService.saveConfigsData(configs);
 
-            return reply(`🎉 *COTA DE AFILIADO CONCEDIDA!*\n\n👤 *Afiliado:* @${cleanTarget.split('@')[0]}\n📊 *Cota Especial:* *${targetLimit} link(s)* por dia liberados no grupo!`, [cleanTarget]);
+            return reply(`🎉 *COTA DE AFILIADO CONCEDIDA!*\n\n👤 *Afiliado:* ${nomeDoMembro(cleanTarget)}\n📊 *Cota Especial:* *${targetLimit} link(s)* por dia liberados no grupo!`, [cleanTarget]);
         }
 
         // 4. Revogar Cota Personalizada (.afiliado revogar @user)
@@ -139,9 +140,9 @@ module.exports = {
             if (cfg.userLimits && cfg.userLimits[cleanTarget]) {
                 delete cfg.userLimits[cleanTarget];
                 await dataService.saveConfigsData(configs);
-                return reply(`🗑️ Cota personalizada de @${cleanTarget.split('@')[0]} revogada. O usuário voltou ao limite padrão de ${cfg.defaultLinkLimit} links/dia.`, [cleanTarget]);
+                return reply(`🗑️ Cota personalizada de ${nomeDoMembro(cleanTarget)} revogada. O usuário voltou ao limite padrão de ${cfg.defaultLinkLimit} links/dia.`, [cleanTarget]);
             } else {
-                return reply(`ℹ️ O usuário @${cleanTarget.split('@')[0]} não possuía cota especial cadastrada.`, [cleanTarget]);
+                return reply(`ℹ️ O usuário ${nomeDoMembro(cleanTarget)} não possuía cota especial cadastrada.`, [cleanTarget]);
             }
         }
 
@@ -159,7 +160,7 @@ module.exports = {
                     delete cfg.userPosts[cleanTarget];
                     await dataService.saveConfigsData(configs);
                 }
-                return reply(`🔄 O contador de links postados hoje por @${cleanTarget.split('@')[0]} foi zerado com sucesso.`, [cleanTarget]);
+                return reply(`🔄 O contador de links postados hoje por ${nomeDoMembro(cleanTarget)} foi zerado com sucesso.`, [cleanTarget]);
             }
 
             return reply(`❌ Especifique \`${prefix}afiliado resetar @usuario\` ou \`${prefix}afiliado resetar todos\`.`);

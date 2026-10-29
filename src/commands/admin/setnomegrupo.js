@@ -1,3 +1,4 @@
+const { nomeDoMembro } = require('../../utils/nomeMembro');
 /**
  * Comando .setnomegrupo / .setsubject
  * Altera o título/nome do grupo diretamente pelo WhatsApp
@@ -43,7 +44,7 @@ module.exports = {
             doc += `╚══════════════════════════════╝\n\n`;
             doc += `╭━〔 🏷️ ATUALIZAÇÃO DE GRUPO 〕━⬣\n`;
             doc += `┃ 📛 *Novo Nome:* ${newName}\n`;
-            doc += `┃ 👤 *Alterado por:* @${senderNum}\n`;
+            doc += `┃ 👤 *Alterado por:* ${nomeDoMembro(sender)}\n`;
             doc += `╰━━━━━━━━━━━━━━━━━━⬣\n\n`;
             doc += `👑 *${botName}*`;
 

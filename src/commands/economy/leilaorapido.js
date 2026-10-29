@@ -1,3 +1,4 @@
+const { nomeDoMembro } = require('../../utils/nomeMembro');
 const { renderCard, formatCoins } = require("../../utils/uiEngine");
 module.exports = {
     name: "leilaorapido",
@@ -11,7 +12,7 @@ module.exports = {
         const card = renderCard({
             title: "LEILÃO RÁPIDO DO GRUPO!",
             icon: "🔨",
-            subtitle: `📢 *Iniciado por:* @${sender.split("@")[0]}`,
+            subtitle: `📢 *Iniciado por:* ${nomeDoMembro(sender)}`,
             sections: [
                 {
                     title: "LOTE EM DISPUTA",

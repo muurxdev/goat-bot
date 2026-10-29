@@ -1,3 +1,4 @@
+const { nomeDoMembro } = require('../utils/nomeMembro');
 /**
  * Votação democrática de moderação (.votekick / .voteban).
  *
@@ -55,7 +56,7 @@ async function iniciarVotacao({ client, from, reply, alvo, acao = 'kick', inicia
 
     await client.sendMessage(from, {
         text: `🗳️ *Votação aberta*\n\n` +
-            `@${iniciador.split('@')[0]} propôs remover @${alvoNum} do grupo${ehBan ? ' e impedir o uso dos meus comandos' : ''}.\n\n` +
+            `${nomeDoMembro(iniciador)} propôs remover @${alvoNum} do grupo${ehBan ? ' e impedir o uso dos meus comandos' : ''}.\n\n` +
             `• Responda *SIM* para aprovar\n` +
             `• Responda *NAO* para rejeitar\n\n` +
             `*Prazo:* ${Math.round(duracaoMs / 1000)} segundos\n` +

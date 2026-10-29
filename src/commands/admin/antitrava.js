@@ -1,3 +1,4 @@
+const { nomeDoMembro } = require('../../utils/nomeMembro');
 /**
  * Comando .antitrava
  * Ativa ou desativa o bloqueio e expulsão automática por envio de travas de texto
@@ -34,7 +35,7 @@ module.exports = {
             doc += `╭━〔 ⚙️ CONFIGURAÇÃO DE GRUPO 〕━⬣\n`;
             doc += `┃ 🛡️ *Recurso:* Proteção Anti-TravaZap\n`;
             doc += `┃ 🟢 *Estado:* *ATIVADO*\n`;
-            doc += `┃ 👤 *Administrador:* @${senderNum}\n`;
+            doc += `┃ 👤 *Administrador:* ${nomeDoMembro(sender)}\n`;
             doc += `╰━━━━━━━━━━━━━━━━━━⬣\n\n`;
             doc += `💡 _Para desativar este recurso:_ \`.antitrava off\`\n`;
             doc += `👑 *${botName}*`;
@@ -53,7 +54,7 @@ module.exports = {
             doc += `╭━〔 ⚙️ CONFIGURAÇÃO DE GRUPO 〕━⬣\n`;
             doc += `┃ 🛡️ *Recurso:* Proteção Anti-TravaZap\n`;
             doc += `┃ 🔴 *Estado:* *DESATIVADO*\n`;
-            doc += `┃ 👤 *Administrador:* @${senderNum}\n`;
+            doc += `┃ 👤 *Administrador:* ${nomeDoMembro(sender)}\n`;
             doc += `╰━━━━━━━━━━━━━━━━━━⬣\n\n`;
             doc += `💡 _Para reativar este recurso:_ \`.antitrava on\`\n`;
             doc += `👑 *${botName}*`;

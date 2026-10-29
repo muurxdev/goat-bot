@@ -1,3 +1,4 @@
+const { nomeDoMembro } = require('../../utils/nomeMembro');
 const dataService = require('../../services/dataService')
 const { initializeUser } = require('../../services/xpService')
 const { formatCoins } = require('../../utils/uiEngine')
@@ -52,11 +53,11 @@ module.exports = {
                 if (g.dono) mentions.push(g.dono)
                 const membros = (g.membros || []).map(m => {
                     mentions.push(m)
-                    return `@${m.split('@')[0]}`
+                    return `${nomeDoMembro(m)}`
                 }).join(', ')
 
                 doc += `╭━〔 ${idx + 1}. 🛡️ *${gName}* 〕━⬣\n`
-                doc += `┃ 👑 *Líder:* @${(g.dono || '').split('@')[0]}\n`
+                doc += `┃ 👑 *Líder:* ${nomeDoMembro((g.dono || ''))}\n`
                 doc += `┃ 📈 *Nível:* ${g.level || 1}  |  ⭐ *XP:* ${(g.xp || 0).toLocaleString('pt-BR')}\n`
                 doc += `┃ 👥 *Membros (${(g.membros || []).length}):* ${membros || 'Nenhum'}\n`
                 doc += `╰━━━━━━━━━━━━━━━━━━⬣\n\n`
@@ -90,7 +91,7 @@ module.exports = {
 
             let doc = '🏰 *GUILDA CRIADA COM SUCESSO!*\n\n'
             doc += `📛 *Nome:* ${nomeGuilda}\n`
-            doc += `👑 *Líder:* @${sender.split('@')[0]}\n`
+            doc += `👑 *Líder:* ${nomeDoMembro(sender)}\n`
             doc += `💰 *Custo Pago:* ${formatCoins(5000)}\n`
             doc += `👥 *Membros:* 1\n\n`
             doc += `💡 _Recrute membros com_ \`.guerraguilda recrutar @user\`!`
@@ -112,7 +113,7 @@ module.exports = {
 
             const targetUser = initializeUser(target, xpData)
             if (targetUser.guilda) {
-                return reply(`❌ @${target.split('@')[0]} já pertence à guilda *${targetUser.guilda}*!`, [target])
+                return reply(`❌ ${nomeDoMembro(target)} já pertence à guilda *${targetUser.guilda}*!`, [target])
             }
 
             if (!g.membros) g.membros = []
@@ -123,7 +124,7 @@ module.exports = {
             await dataService.saveGuildData(guilds)
             logger.info(`[GUERRAGUILDA] ${sender} recrutou ${target} na guilda ${minhaGuilda}`)
 
-            return reply(`✅ *MEMBRO RECRUTADO!*\n\n@${target.split('@')[0]} agora faz parte da guilda *${minhaGuilda}*!`, [sender, target])
+            return reply(`✅ *MEMBRO RECRUTADO!*\n\n${nomeDoMembro(target)} agora faz parte da guilda *${minhaGuilda}*!`, [sender, target])
         }
 
         if (sub === 'sair') {
@@ -159,14 +160,14 @@ module.exports = {
             doc += '║   🏰 *DETALHES DA GUILDA* 🏰   ║\n'
             doc += '╚══════════════════════════════╝\n\n'
             doc += `📛 *Nome:* ${gName}\n`
-            doc += `👑 *Líder:* @${(g.dono || '').split('@')[0]}\n`
+            doc += `👑 *Líder:* ${nomeDoMembro((g.dono || ''))}\n`
             doc += `📈 *Nível:* ${g.level || 1}  |  ⭐ *XP:* ${(g.xp || 0).toLocaleString('pt-BR')}\n`
             doc += `💰 *Cofre:* ${formatCoins(g.coins || 0)}\n\n`
 
             doc += `╭━〔 👥 MEMBROS (${(g.membros || []).length}) 〕━⬣\n`
             ;(g.membros || []).forEach((m, idx) => {
                 const isLeader = m === g.dono
-                doc += `┃ ${idx + 1}. @${m.split('@')[0]} ${isLeader ? '👑 *(Líder)*' : '⚔️ *(Guerreiro)*'}\n`
+                doc += `┃ ${idx + 1}. ${nomeDoMembro(m)} ${isLeader ? '👑 *(Líder)*' : '⚔️ *(Guerreiro)*'}\n`
             })
             doc += '╰━━━━━━━━━━━━━━━━━━⬣\n\n'
             doc += `👑 *${botName}*`

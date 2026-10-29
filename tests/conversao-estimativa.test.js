@@ -57,12 +57,11 @@ teste('sem dados do vídeo não estima (0) e não bloqueia conversão por engano
     assert.strictEqual(estimarConversaoSeg(null, 1), 0)
 })
 
-teste('servidor de 1 a 2 núcleos pede no máximo 1080p; o teto é configurável', () => {
-    assert.ok(require('../src/services/media/constants').MEDIA_LIMITS.CPU_CORES >= 1)
+// Atualizado em 2026-10-25 (commit 014b8385): o teto deixou de depender dos núcleos e o padrão é 4320p (8K).
+teste('o teto padrão é 4320p em qualquer servidor; o teto é configurável', () => {
     assert.strictEqual(limitesCom({ MEDIA_MAX_VIDEO_HEIGHT: '1440' }).MAX_VIDEO_HEIGHT, 1440)
     assert.strictEqual(limitesCom({ MEDIA_MAX_VIDEO_HEIGHT: '2160' }).MAX_VIDEO_HEIGHT, 2160)
-    const padrao = limitesCom({ MEDIA_MAX_VIDEO_HEIGHT: '' })
-    assert.strictEqual(padrao.MAX_VIDEO_HEIGHT, padrao.CPU_CORES <= 2 ? 1080 : 2160)
+    assert.strictEqual(limitesCom({ MEDIA_MAX_VIDEO_HEIGHT: '' }).MAX_VIDEO_HEIGHT, 4320)
 })
 
 teste('yt-dlp: com teto de 1080p a ordenação prefere "res:1080"', () => {

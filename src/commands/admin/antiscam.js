@@ -1,3 +1,4 @@
+const { nomeDoMembro } = require('../../utils/nomeMembro');
 /**
  * Comando .antiscam / .antigolpe
  * Liga ou desliga a proteção zero-day contra tentativas de golpes, fraudes financeiras e esquemas suspeitos.
@@ -60,7 +61,7 @@ module.exports = {
         doc += `╭━〔 ⚙️ CONFIGURAÇÃO DE GRUPO 〕━⬣\n`;
         doc += `┃ 🚷 *Recurso:* Anti-Scam / Anti-Fraude\n`;
         doc += `┃ ${isEnable ? "🟢 *ATIVADO*" : "🔴 *DESATIVADO*"}\n`;
-        doc += `┃ 👤 *Administrador:* @${senderNum}\n`;
+        doc += `┃ 👤 *Administrador:* ${nomeDoMembro(sender)}\n`;
         doc += `╰━━━━━━━━━━━━━━━━━━⬣\n\n`;
         doc += `💡 _Para ${isEnable ? "desativar" : "reativar"}:_ \`${p}antiscam ${isEnable ? "off" : "on"}\`\n`;
         doc += `👑 *${botName}*`;

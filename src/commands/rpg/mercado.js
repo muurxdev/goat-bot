@@ -1,3 +1,4 @@
+const { nomeDoMembro } = require('../../utils/nomeMembro');
 /**
  * Comando .mercado / .market
  * Mercado Central do Reino: compra e venda de equipamentos, minérios, poções e pergaminhos
@@ -119,7 +120,7 @@ module.exports = {
         let doc = `╔══════════════════════════════╗\n`;
         doc += `║   🏪 *MERCADO CENTRAL DE REINO* 🏪   \n`;
         doc += `╚══════════════════════════════╝\n\n`;
-        doc += `👤 *Comprador:* @${sender.split("@")[0]}  |  🪙 *Saldo:* ${(user.coins || 0).toLocaleString("pt-BR")} Coins\n\n`;
+        doc += `👤 *Comprador:* ${nomeDoMembro(sender)}  |  🪙 *Saldo:* ${(user.coins || 0).toLocaleString("pt-BR")} Coins\n\n`;
 
         doc += `╭━〔 🛒 ITENS & EQUIPAMENTOS À VENDA 〕━⬣\n`;
         MARKET_STOCK.forEach(it => {

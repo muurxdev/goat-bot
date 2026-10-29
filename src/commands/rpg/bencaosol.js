@@ -1,3 +1,4 @@
+const { nomeDoMembro } = require('../../utils/nomeMembro');
 const { renderCard } = require("../../utils/uiEngine");
 module.exports = {
     name: "bencaosol",
@@ -9,7 +10,7 @@ module.exports = {
         const card = renderCard({
             title: "GRAÇA DIVINA: SUNSHINE",
             icon: "☀️",
-            subtitle: `🔥 *Lorde do Sol:* @${sender.split("@")[0]}`,
+            subtitle: `🔥 *Lorde do Sol:* ${nomeDoMembro(sender)}`,
             sections: [
                 {
                     title: "PODER MÁXIMO DO MEIO-DIA",

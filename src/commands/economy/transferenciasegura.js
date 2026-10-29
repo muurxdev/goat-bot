@@ -1,3 +1,4 @@
+const { nomeDoMembro } = require('../../utils/nomeMembro');
 /**
  * Comando .transferenciasegura — Envia moedas para alguém com taxa de 2%.
  *
@@ -49,7 +50,7 @@ module.exports = {
         }
 
         let doc = `🔐 *TRANSFERÊNCIA SEGURA*\n\n`
-        doc += `👤 *Para:* @${destino.split('@')[0]}\n`
+        doc += `👤 *Para:* ${nomeDoMembro(destino)}\n`
         doc += `💰 *Valor:* ${economy.formatar(r.valor)} moedas\n`
         if (taxa > 0) {
             doc += `📉 *Taxa (2%):* -${economy.formatar(taxa)}\n`

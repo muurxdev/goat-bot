@@ -1,3 +1,4 @@
+const { nomeDoMembro } = require('../../utils/nomeMembro');
 /**
  * Comando .runas / .encantar / .runa
  * Forja, compra e equipamento de runas mágicas sagradas com bônus de combate reais
@@ -96,7 +97,7 @@ module.exports = {
         const card = renderCard({
             title: "ALTAR DE RUNAS SAGRADAS",
             icon: "🔮",
-            subtitle: `🧙 *Guerreiro:* @${sender.split("@")[0]}`,
+            subtitle: `🧙 *Guerreiro:* ${nomeDoMembro(sender)}`,
             sections: [
                 {
                     title: "SUAS RUNAS ATIVAS NO CORPO",

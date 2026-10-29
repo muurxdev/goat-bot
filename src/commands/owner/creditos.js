@@ -1,3 +1,4 @@
+const { nomeDoMembro } = require('../../utils/nomeMembro');
 /**
  * Comando .creditos — carteira de créditos do aluguel (dinheiro real).
  *
@@ -65,7 +66,7 @@ module.exports = {
                 prefix,
                 emoji: '✅',
                 titulo: 'Créditos ajustados',
-                intro: `${valor >= 0 ? 'Dei' : 'Tirei'} *${Math.abs(valor)}* créditos ${valor >= 0 ? 'para' : 'de'} @${mencionado.split('@')[0]}.`,
+                intro: `${valor >= 0 ? 'Dei' : 'Tirei'} *${Math.abs(valor)}* créditos ${valor >= 0 ? 'para' : 'de'} ${nomeDoMembro(mencionado)}.`,
                 secoes: [{ emoji: '💰', titulo: 'Saldo', linhas: [F.campo('Novo saldo', `${r.saldo} créditos`)] }],
                 proximos: [{ nome: 'creditos', args: 'todos', oque: 'ver todas as carteiras' }]
             }), [mencionado])
@@ -92,7 +93,7 @@ module.exports = {
             const linhas = []
             for (const p of perfis.slice(0, 25)) {
                 totalPago += Number(p.totalPago || 0)
-                linhas.push(`• @${p.jid.split('@')[0]}: ${p.creditos} créditos • ${reais(p.totalPago || 0)} pagos`)
+                linhas.push(`• ${nomeDoMembro(p.jid)}: ${p.creditos} créditos • ${reais(p.totalPago || 0)} pagos`)
             }
             if (perfis.length > 25) linhas.push(`_...e mais ${perfis.length - 25}._`)
             const doc = F.tela({
@@ -124,7 +125,7 @@ module.exports = {
             prefix,
             emoji: '💳',
             titulo: alvo !== sender ? 'Carteira de aluguel' : 'Sua carteira de aluguel',
-            intro: (alvo !== sender ? `@${alvo.split('@')[0]} tem` : 'Você tem') + ` *${p.creditos} créditos*, o suficiente para *${dias} dia(s)* de aluguel.`,
+            intro: (alvo !== sender ? `${nomeDoMembro(alvo)} tem` : 'Você tem') + ` *${p.creditos} créditos*, o suficiente para *${dias} dia(s)* de aluguel.`,
             secoes: [
                 {
                     emoji: '💰', titulo: 'Resumo', linhas: [

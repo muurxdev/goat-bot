@@ -1,3 +1,4 @@
+const { nomeDoMembro } = require('../../utils/nomeMembro');
 const groupRemovalService = require("../../services/groupRemovalService");
 const figurinhaEventoService = require("../../services/figurinhaEventoService");
 const audioEventoService = require("../../services/audioEventoService");
@@ -66,7 +67,7 @@ module.exports = {
 
             logger.info(`[TIMEBAN] ${apiJid} banido por ${formatDuration(durationMs)} em ${from} por ${sender}`);
 
-            let doc = `⏳ @${targetNum} foi removido do grupo por *${formatDuration(durationMs)}*, a pedido de @${senderNum}.\n\n`;
+            let doc = `⏳ @${targetNum} foi removido do grupo por *${formatDuration(durationMs)}*, a pedido de ${nomeDoMembro(sender)}.\n\n`;
             doc += `Se voltar antes do prazo, sai de novo. Depois disso, pode ser adicionado normalmente.`;
 
             await reply(doc, [apiJid, sender]);

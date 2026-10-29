@@ -21,8 +21,8 @@ module.exports = {
         txt += `💸 *Dividend Yield:* ${(q.divYield * 100).toFixed(1)}% a.a.\n`
         txt += `📦 *Volume do Pregão:* ${q.volume.toLocaleString('pt-BR')} cotas\n\n`
         txt += '💡 *Operações:*\n'
-        txt += `├ Comprar: \`.compraracao ${s.code} <qtd>\`\n`
-        txt += `└ Vender: \`.venderacao ${s.code} <qtd>\`\n`
+        txt += `├ Comprar: \`.compraracao ${q.code} <qtd>\`\n`
+        txt += `└ Vender: \`.venderacao ${q.code} <qtd>\`\n`
         return reply(txt.trim())
     }
 }

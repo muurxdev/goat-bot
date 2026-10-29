@@ -1,3 +1,4 @@
+const { nomeDoMembro } = require('../../utils/nomeMembro');
 /**
  * Comando .cripto / .trade / .criptomoedas
  * Simulador de bolsa cripto e trading virtual de moedas mágicas
@@ -35,7 +36,7 @@ module.exports = {
             const card = renderCard({
                 title: "MERCADO CRIPTO DE REINO",
                 icon: "📊",
-                subtitle: `💼 *Trader:* @${sender.split("@")[0]}`,
+                subtitle: `💼 *Trader:* ${nomeDoMembro(sender)}`,
                 sections: [
                     {
                         title: "COTAÇÕES AO VIVO",

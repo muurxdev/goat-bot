@@ -1,3 +1,4 @@
+const { nomeDoMembro } = require('../../utils/nomeMembro');
 /**
  * Comando .pay / .transferir / .pix
  * Transfere Coins com segurança entre usuários com auditoria no SQLite
@@ -127,7 +128,7 @@ module.exports = {
             type: "PIX ENVIADO",
             amount: -amount,
             balanceAfter: senderProfile.coins,
-            description: `Transferência Pix enviada para @${targetJid.split("@")[0]}`
+            description: `Transferência Pix enviada para ${nomeDoMembro(targetJid)}`
         });
 
         recordTransaction({
@@ -136,7 +137,7 @@ module.exports = {
             type: "PIX RECEBIDO",
             amount: amount,
             balanceAfter: recipientProfile.coins,
-            description: `Transferência Pix recebida de @${sender.split("@")[0]}`
+            description: `Transferência Pix recebida de ${nomeDoMembro(sender)}`
         });
 
         return reply(F.tela({

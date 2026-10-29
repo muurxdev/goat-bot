@@ -38,7 +38,8 @@ const { molduraQuebrada } = require('./helpers/moldura')
         assert.ok(t.includes('┃ *Nível:* 5'))
         assert.ok(t.includes('┃ ➤ um item'), 'item de lista vira "┃ ➤"')
         assert.ok(!t.includes('VAZIA'), 'seção vazia deve sumir')
-        assert.ok(t.includes('╭━〔 👉 PRÓXIMOS PASSOS 〕━⬣') && t.includes('┃ ➤ `.menu` — ver tudo'))
+        // Desde 2026-10-26 (aa8e5ca2) o bloco de próximos passos se chama COMANDOS PARA AJUDAR.
+        assert.ok(t.includes('╭━〔 🧭 COMANDOS PARA AJUDAR 〕━⬣') && t.includes('┃ ➤ `.menu` — ver tudo'))
         assert.ok(/👑 \*.+\*$/.test(t), 'termina com a assinatura do bot')
         assert.ok(!/\n{3,}/.test(t), 'sem linhas em branco sobrando')
     })
@@ -104,6 +105,8 @@ const { molduraQuebrada } = require('./helpers/moldura')
     await test('dispatcher entrega a ajuda enriquecida no lugar do uso seco', async () => {
         const dispatcher = require('../src/handlers/commandDispatcher')
         dispatcher.loadCommands()
+        // O comando de teste cai no módulo Utilidades, desligado num PV novo; liga no PV para o teste.
+        require('../src/services/moduleStateService').setModule('utilidades', true, 'pv')
         // Registra um comando de teste que responde uso seco sem argumento.
         const comandos = dispatcher.getCommands()
         const falso = {
@@ -120,7 +123,9 @@ const { molduraQuebrada } = require('./helpers/moldura')
 
             let conteudo = ''
             await dispatcher.dispatch({ commandName: 'testeusoseco', sender: '5511900000001@s.whatsapp.net', from: '5511900000001@s.whatsapp.net', isGroup: false, isOwner: true, args: ['oi'], reply: async t => { conteudo = t } })
-            assert.strictEqual(conteudo, '✅ oi', 'resposta de conteúdo passa intacta')
+            // Mapeamento universal (aa8e5ca2, 2026-10-26): toda resposta de comando ganha UMA linha de ajuda no fim.
+            assert.ok(conteudo.startsWith('✅ oi'), 'o conteúdo vem primeiro')
+            assert.strictEqual(conteudo.split('Comandos para Ajudar').length - 1, 1, 'a ajuda aparece uma vez só')
         } finally {
             comandos.delete('testeusoseco')
         }

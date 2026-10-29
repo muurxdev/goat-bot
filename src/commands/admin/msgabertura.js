@@ -1,3 +1,4 @@
+const { nomeDoMembro } = require('../../utils/nomeMembro');
 /**
  * Comando .msgabertura / .aberturamsg / .abertura
  * Ativa, desativa, personaliza e testa (preview) as mensagens de abertura do grupo
@@ -108,7 +109,7 @@ module.exports = {
             doc += `╭━〔 ⚙️ MENSAGEM CONFIGURADA 〕━⬣\n`;
             doc += `┃ 📝 *Texto:* ${customMsg.slice(0, 200)}${customMsg.length > 200 ? "..." : ""}\n`;
             doc += `┃ 🟢 *Estado:* *ATIVADO*\n`;
-            doc += `┃ 👤 *Administrador:* @${senderNum}\n`;
+            doc += `┃ 👤 *Administrador:* ${nomeDoMembro(sender)}\n`;
             doc += `╰━━━━━━━━━━━━━━━━━━⬣\n\n`;
             doc += `💡 _Digite_ \`.msgabertura -config\` _para ver uma simulação completa!_\n`;
             doc += `👑 *${botName}*`;
@@ -129,7 +130,7 @@ module.exports = {
             doc += `╭━〔 ⚙️ CONFIGURAÇÃO DE GRUPO 〕━⬣\n`;
             doc += `┃ 🔓 *Recurso:* Aviso de Abertura do Grupo\n`;
             doc += `┃ 🟢 *Estado:* *ATIVADO*\n`;
-            doc += `┃ 👤 *Administrador:* @${senderNum}\n`;
+            doc += `┃ 👤 *Administrador:* ${nomeDoMembro(sender)}\n`;
             doc += `╰━━━━━━━━━━━━━━━━━━⬣\n\n`;
             doc += `💡 _Para desativar:_ \`.msgabertura off\` | _Para testar:_ \`.msgabertura -config\`\n`;
             doc += `👑 *${botName}*`;
@@ -150,7 +151,7 @@ module.exports = {
             doc += `╭━〔 ⚙️ CONFIGURAÇÃO DE GRUPO 〕━⬣\n`;
             doc += `┃ 🔓 *Recurso:* Aviso de Abertura do Grupo\n`;
             doc += `┃ 🔴 *Estado:* *DESATIVADO*\n`;
-            doc += `┃ 👤 *Administrador:* @${senderNum}\n`;
+            doc += `┃ 👤 *Administrador:* ${nomeDoMembro(sender)}\n`;
             doc += `╰━━━━━━━━━━━━━━━━━━⬣\n\n`;
             doc += `💡 _Para reativar quando desejar:_ \`.msgabertura on\`\n`;
             doc += `👑 *${botName}*`;

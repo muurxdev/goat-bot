@@ -1,3 +1,4 @@
+const { nomeDoMembro } = require('../../utils/nomeMembro');
 /**
  * Comando .dono / .donos / .owner
  * Mostra quem são os donos, com a patente de cada um, contato e quem nomeou.
@@ -44,7 +45,7 @@ module.exports = {
             mentions.push(o.jid)
             const icone = ICONES[o.rank] || '👑'
             const patente = o.customTitle ? `${o.customTitle} (${TITULOS[o.rank] || o.rank})` : (TITULOS[o.rank] || o.rank)
-            const marca = `@${o.jid.split('@')[0]}`
+            const marca = `${nomeDoMembro(o.jid)}`
             // Nome puxado do perfil do WhatsApp ou do nick cadastrado
             const nome = resolveOwnerName(o)
             const quem = nome && nome !== o.rank ? `${marca} (${nome})` : marca

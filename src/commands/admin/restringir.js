@@ -1,3 +1,4 @@
+const { nomeDoMembro } = require('../../utils/nomeMembro');
 /**
  * Comando .restringir / .onlyadmin / .admonly
  * Restringe a utilização de comandos no grupo exclusivamente para Administradores do grupo e Donos do bot
@@ -69,7 +70,7 @@ module.exports = {
             doc += `╭━〔 🛡️ CONTROLE DE ACESSO 〕━⬣\n`;
             doc += `┃ 🔴 *Status:* *RESTRITO A ADMINISTRADORES & DONOS*\n`;
             doc += `┃ 👥 *Membros Comuns:* Comandos temporariamente bloqueados\n`;
-            doc += `┃ 👤 *Ativado por:* @${senderNum}\n`;
+            doc += `┃ 👤 *Ativado por:* ${nomeDoMembro(sender)}\n`;
             doc += `╰━━━━━━━━━━━━━━━━━━⬣\n\n`;
             doc += `💡 _Para liberar meus comandos para todos de novo:_ \`.restringir off\`\n\n`;
             doc += `👑 *${botName}*`;
@@ -87,7 +88,7 @@ module.exports = {
             doc += `╭━〔 🛡️ CONTROLE DE ACESSO 〕━⬣\n`;
             doc += `┃ 🟢 *Status:* *LIBERADO PARA TODOS OS MEMBROS*\n`;
             doc += `┃ 👥 *Membros Comuns:* Todos os comandos desbloqueados\n`;
-            doc += `┃ 👤 *Desativado por:* @${senderNum}\n`;
+            doc += `┃ 👤 *Desativado por:* ${nomeDoMembro(sender)}\n`;
             doc += `╰━━━━━━━━━━━━━━━━━━⬣\n\n`;
             doc += `💡 _Para restringir novamente:_ \`.restringir on\`\n\n`;
             doc += `👑 *${botName}*`;

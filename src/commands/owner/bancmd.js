@@ -1,3 +1,4 @@
+const { nomeDoMembro } = require('../../utils/nomeMembro');
 /**
  * Comando .bancmd / .unbancmd
  * Permite que os Donos do bot suspendam ou reativem comandos globalmente
@@ -155,7 +156,7 @@ module.exports = {
                     emoji: "🔓",
                     titulo: "Todos os comandos liberados",
                     intro: `Limpei *${count}* suspensão(ões). Tudo volta a funcionar em todos os grupos.`,
-                    secoes: [{ emoji: "📋", titulo: "Registro", linhas: [F.campo("Liberado por", `@${senderNum}`)] }]
+                    secoes: [{ emoji: "📋", titulo: "Registro", linhas: [F.campo("Liberado por", `${nomeDoMembro(sender)}`)] }]
                 }), sender ? [sender] : []);
             }
 
@@ -178,7 +179,7 @@ module.exports = {
                 emoji: "🔓",
                 titulo: isCat ? "Categoria liberada" : "Comando liberado",
                 intro: `\`${prefix}${target}\`${isCat ? " (a categoria inteira)" : ""} volta a funcionar em todos os grupos.`,
-                secoes: [{ emoji: "📋", titulo: "Registro", linhas: [F.campo("Liberado por", `@${senderNum}`)] }]
+                secoes: [{ emoji: "📋", titulo: "Registro", linhas: [F.campo("Liberado por", `${nomeDoMembro(sender)}`)] }]
             }), sender ? [sender] : []);
         }
 
@@ -205,7 +206,7 @@ module.exports = {
             intro: `Bloqueei ${alcance} (\`${prefix}${target}\`) em todos os grupos, até você liberar.`,
             secoes: [{ emoji: "📋", titulo: "Registro", linhas: [
                 F.campo("Motivo", reason),
-                F.campo("Suspenso por", `@${senderNum}`),
+                F.campo("Suspenso por", `${nomeDoMembro(sender)}`),
                 F.campo("Data", date)
             ] }],
             proximos: [{ nome: "unbancmd", args: target, oque: "liberar de novo" }],

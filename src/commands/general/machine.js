@@ -1,3 +1,4 @@
+const { nomeDoMembro } = require('../../utils/nomeMembro');
 /**
  * Comando .machine / .ml / .machinelearning / .chatgpt
  * Painel de Inteligência Artificial, Machine Learning, Treinamento e Conversação 24h
@@ -112,7 +113,7 @@ module.exports = {
         let doc = `╔══════════════════════════════╗\n`;
         doc += `║   🧠 *PERFIL DE MACHINE LEARNING* 🧠   ║\n`;
         doc += `╚══════════════════════════════╝\n\n`;
-        doc += `👤 *Usuário Analisado:* @${target.split('@')[0]}\n`;
+        doc += `👤 *Usuário Analisado:* ${nomeDoMembro(target)}\n`;
         doc += `🎭 *Estilo Dominante:* *${(profile.style || 'misto').toUpperCase()}*\n`;
         doc += `💬 *Total de Mensagens Analisadas:* ${profile.messages_count || 0}\n`;
         doc += `🤖 *Modo ChatGPT 24h:* ${modoChatAtual}\n\n`;

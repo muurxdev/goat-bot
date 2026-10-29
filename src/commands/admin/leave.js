@@ -1,3 +1,4 @@
+const { nomeDoMembro } = require('../../utils/nomeMembro');
 /**
  * Comando .leave / .adeus / .despedida / .saiu
  * Ativa, desativa, personaliza ou testa (preview) as mensagens de saída/despedida de membros do grupo
@@ -98,7 +99,7 @@ module.exports = {
             doc += `╭━〔 ⚙️ MENSAGEM CONFIGURADA 〕━⬣\n`;
             doc += `┃ 📝 *Texto:* ${customMsg.slice(0, 200)}${customMsg.length > 200 ? "..." : ""}\n`;
             doc += `┃ 🟢 *Estado:* *ATIVADO*\n`;
-            doc += `┃ 👤 *Administrador:* @${senderNum}\n`;
+            doc += `┃ 👤 *Administrador:* ${nomeDoMembro(sender)}\n`;
             doc += `╰━━━━━━━━━━━━━━━━━━⬣\n\n`;
             doc += `💡 _Digite_ \`.leave -config\` _para ver a simulação completa!_\n`;
             doc += `👑 *${botName}*`;
@@ -119,7 +120,7 @@ module.exports = {
             doc += `╭━〔 ⚙️ CONFIGURAÇÃO DE GRUPO 〕━⬣\n`;
             doc += `┃ 👋 *Recurso:* Mensagens de Saída / Despedida\n`;
             doc += `┃ 🟢 *Estado:* *ATIVADO*\n`;
-            doc += `┃ 👤 *Administrador:* @${senderNum}\n`;
+            doc += `┃ 👤 *Administrador:* ${nomeDoMembro(sender)}\n`;
             doc += `╰━━━━━━━━━━━━━━━━━━⬣\n\n`;
             doc += `💡 _Para desativar:_ \`.leave off\` | _Para testar:_ \`.leave -config\`\n`;
             doc += `👑 *${botName}*`;
@@ -140,7 +141,7 @@ module.exports = {
             doc += `╭━〔 ⚙️ CONFIGURAÇÃO DE GRUPO 〕━⬣\n`;
             doc += `┃ 👋 *Recurso:* Mensagens de Saída / Despedida\n`;
             doc += `┃ 🔴 *Estado:* *DESATIVADO*\n`;
-            doc += `┃ 👤 *Administrador:* @${senderNum}\n`;
+            doc += `┃ 👤 *Administrador:* ${nomeDoMembro(sender)}\n`;
             doc += `╰━━━━━━━━━━━━━━━━━━⬣\n\n`;
             doc += `💡 _Para reativar quando desejar:_ \`.leave on\`\n`;
             doc += `👑 *${botName}*`;

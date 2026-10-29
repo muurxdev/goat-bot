@@ -1,3 +1,4 @@
+const { nomeDoMembro } = require('../../utils/nomeMembro');
 /**
  * Jogo da Velha Interativo (Tic-Tac-Toe)
  * Suporte a 1v1 entre membros ou contra o Bot com persistência de XP e moedas
@@ -158,7 +159,7 @@ module.exports = {
 
                 const winnerJid = winner === 'X' ? game.playerX : game.playerO
                 const botVenceu = winner === 'O' && game.isBot
-                const winnerName = botVenceu ? '*' + getBotName() + '*' : `@${winnerJid.split('@')[0]}`
+                const winnerName = botVenceu ? '*' + getBotName() + '*' : `${nomeDoMembro(winnerJid)}`
 
                 if (botVenceu) {
                     endMsg += `🏆 *Eu venci desta vez!* Fechei a linha antes de você.\n\n👉 Revanche: ${F.cmd(prefix, 'velha', 'bot')}`
@@ -180,7 +181,7 @@ module.exports = {
 
             // Jogo continua: Mostra tabuleiro
             const nextTurnJid = game.turn === 'X' ? game.playerX : game.playerO
-            const nextTurnName = (game.turn === 'O' && game.isBot) ? '*' + getBotName() + '*' : `@${nextTurnJid.split('@')[0]}`
+            const nextTurnName = (game.turn === 'O' && game.isBot) ? '*' + getBotName() + '*' : `${nomeDoMembro(nextTurnJid)}`
 
             let statusMsg = `🎮 *Jogo da velha*\n\n`
             statusMsg += renderBoard(game.board) + '\n\n'
@@ -215,12 +216,12 @@ module.exports = {
         }
         games.set(from, newGame)
 
-        const opponentLabel = isVsBot ? '*' + getBotName() + '* (eu)' : `@${playerO.split('@')[0]}`
+        const opponentLabel = isVsBot ? '*' + getBotName() + '* (eu)' : `${nomeDoMembro(playerO)}`
 
         let startMsg = `🎮 *Jogo da velha começou*\n\n`
-        startMsg += `⚔️ @${playerX.split('@')[0]} (❌) *VS* ${opponentLabel} (⭕)\n\n`
+        startMsg += `⚔️ ${nomeDoMembro(playerX)} (❌) *VS* ${opponentLabel} (⭕)\n\n`
         startMsg += renderBoard(newGame.board) + '\n\n'
-        startMsg += `👉 *Primeira jogada:* @${playerX.split('@')[0]} (❌)\n`
+        startMsg += `👉 *Primeira jogada:* ${nomeDoMembro(playerX)} (❌)\n`
         startMsg += `💡 _Digite ${F.cmd(prefix, 'velha', '1')} a ${F.cmd(prefix, 'velha', '9')} para marcar a casa. Quem vencer ganha 200 moedas e 150 XP._`
 
         return reply(startMsg, [playerX, playerO].filter(j => j && j.includes('@')))

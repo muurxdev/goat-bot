@@ -1,3 +1,4 @@
+const { nomeDoMembro } = require('../../utils/nomeMembro');
 const { renderCard } = require("../../utils/uiEngine");
 module.exports = {
     name: "talisma",
@@ -9,7 +10,7 @@ module.exports = {
         const card = renderCard({
             title: "TALISMÃS & AMULETOS SAGRADOS",
             icon: "🧿",
-            subtitle: `👤 *Portador:* @${sender.split("@")[0]}`,
+            subtitle: `👤 *Portador:* ${nomeDoMembro(sender)}`,
             sections: [
                 {
                     title: "AMULETOS EQUIPADOS",

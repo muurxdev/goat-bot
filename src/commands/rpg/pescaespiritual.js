@@ -1,3 +1,4 @@
+const { nomeDoMembro } = require('../../utils/nomeMembro');
 const { renderCard, formatCoins, formatXP } = require("../../utils/uiEngine");
 const dataService = require("../../services/dataService");
 module.exports = {
@@ -19,7 +20,7 @@ module.exports = {
         const card = renderCard({
             title: "PESCA ESPIRITUAL NO LAGO SAGRADO",
             icon: "🎣",
-            subtitle: `🌊 *Pescador:* @${sender.split("@")[0]}`,
+            subtitle: `🌊 *Pescador:* ${nomeDoMembro(sender)}`,
             sections: [
                 {
                     title: "RESULTADO DA PESCARIA",
