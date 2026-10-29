@@ -149,10 +149,29 @@ function dominioDoLink(url = '') {
     return String(url).replace(/^[a-z]+:\/\//i, '').split('/')[0];
 }
 
+// Nome que o painel do antilink mostra para as plataformas do WhatsApp
+const ROTULO_PLATAFORMA = {
+    whatsapp: 'WhatsApp (grupo)',
+    canal: 'WhatsApp Canal',
+    whatsapp_dm: 'WhatsApp (DM / conversa privada)'
+};
+
+/**
+ * Se o anti-link bloqueia a plataforma no grupo.
+ * DM começa liberado: só bloqueia quando o admin liga `.antilink dm on`.
+ * As demais seguem o padrão antigo: sem config, bloqueia.
+ */
+function plataformaBloqueada(platforms, plataforma) {
+    if (plataforma === 'whatsapp_dm') return platforms?.whatsapp_dm === true;
+    return platforms ? platforms[plataforma] !== false : true;
+}
+
 module.exports = {
     containsLink,
     detectLinkPlatform,
     dominioDoLink,
     normalizeSneakySpacing,
+    plataformaBloqueada,
+    ROTULO_PLATAFORMA,
     PLATFORM_PATTERNS
 };

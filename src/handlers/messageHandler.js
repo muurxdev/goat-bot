@@ -18,7 +18,7 @@ const ownerService = require('../services/ownerService')
 const groupProtectionService = require('../services/groupProtectionService')
 const logger = require('../core/logger')
 
-const { containsLink, detectLinkPlatform } = require('../utils/linkDetector')
+const { containsLink, detectLinkPlatform, plataformaBloqueada, ROTULO_PLATAFORMA } = require('../utils/linkDetector')
 const { lembrarNomeDoMembro } = require('../utils/nomeMembro')
 
 // Cache anti-spam de XP por mensagem: evita que mensagens consecutivas ou flood
@@ -566,8 +566,8 @@ async function handleIncomingMessage(client, { messages }) {
 
             const linkPlat = detectLinkPlatform(body);
             const platCfg = configs[from]?.antilinkConfig?.platforms;
-            // Link de DM (wa.me, api.whatsapp.com/send…) é sempre bloqueado; o toggle "whatsapp" libera só o convite de grupo.
-            const isPlatBlocked = linkPlat === 'whatsapp_dm' || (platCfg ? (platCfg[linkPlat] !== false) : true);
+            // Cada tipo tem o seu toggle (.antilink whatsapp | canal | dm); ligar um não mexe nos outros.
+            const isPlatBlocked = plataformaBloqueada(platCfg, linkPlat);
 
             if (isUserAllowed) {
                 // Parceiro/afiliado oficial: qualquer link, sem restrições nem cotas.
@@ -585,7 +585,7 @@ async function handleIncomingMessage(client, { messages }) {
                         motivoMsg += `║     🚫 *BANIMENTO APLICADO* ⚡    ║\n`;
                         motivoMsg += `╚══════════════════════════════╝\n\n`;
                         motivoMsg += `👤 *Infrator:* ${nomeDoMembro(sender)}\n`;
-                        const rotuloPlat = linkPlat === 'whatsapp_dm' ? 'WHATSAPP (DM)' : linkPlat.toUpperCase();
+                        const rotuloPlat = ROTULO_PLATAFORMA[linkPlat] || linkPlat.toUpperCase();
                         motivoMsg += `📜 *Motivo:* Envio de link [${rotuloPlat}] não autorizado sem parceria ou permissão prévia.\n`;
 
                         if (!resultado.ok) {

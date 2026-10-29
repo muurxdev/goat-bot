@@ -8,7 +8,8 @@ const { nomeDoMembro } = require('../../utils/nomeMembro');
 const dataService = require("../../services/dataService");
 const { getBotName } = require("../../config/botConfig");
 const logger = require("../../core/logger");
-const { dominioDoLink } = require("../../utils/linkDetector");
+const { dominioDoLink, plataformaBloqueada, ROTULO_PLATAFORMA } = require("../../utils/linkDetector");
+const { textoListaParceiros } = require("../../utils/parceriaLista");
 
 module.exports = {
     name: "antilink",
@@ -30,6 +31,7 @@ module.exports = {
                 platforms: {
                     whatsapp: true,
                     canal: true,
+                    whatsapp_dm: false,
                     telegram: true,
                     instagram: false,
                     tiktok: false,
@@ -71,7 +73,9 @@ module.exports = {
             return reply(card, [sender]);
         }
 
-        const validPlatforms = ["whatsapp", "canal", "telegram", "instagram", "tiktok", "discord", "youtube", "outros"];
+        const validPlatforms = ["whatsapp", "canal", "whatsapp_dm", "telegram", "instagram", "tiktok", "discord", "youtube", "outros"];
+        // Atalhos dos tipos do WhatsApp: .antilink grupo on, .antilink dm off…
+        const ALIAS_PLATAFORMA = { grupo: "whatsapp", grupos: "whatsapp", canais: "canal", dm: "whatsapp_dm", privado: "whatsapp_dm", pv: "whatsapp_dm" };
 
         // 1. Toggle Geral com suporte a ALL ON e ALL OFF
         const isAllOn = (sub === "all" && ["on", "1", "ativar", "sim"].includes(param)) || (["on", "1", "ativar", "sim"].includes(sub) && param === "all");
@@ -83,7 +87,7 @@ module.exports = {
             validPlatforms.forEach(p => { configs[from].antilinkConfig.platforms[p] = true; });
             await dataService.saveConfigsData(configs);
             let msg = `🛡️ *ANTI-LINK TOTAL ATIVADO (ALL ON)!*\n\n`;
-            msg += `🌐 *Todas as plataformas foram bloqueadas:* WhatsApp, Canais, Telegram, Instagram, TikTok, Discord, YouTube e Outros links da web.\n`;
+            msg += `🌐 *Todas as plataformas foram bloqueadas:* WhatsApp (grupo), Canal, DM, Telegram, Instagram, TikTok, Discord, YouTube e Outros links da web.\n`;
             msg += `⚖️ *Punição ativa:* *${configs[from].antilinkConfig.action.toUpperCase()}*\n\n`;
             msg += `💡 _Dica: Para permitir uma rede específica (ex: YouTube), use:_ \`.antilink youtube off\``;
             return reply(msg);
@@ -143,25 +147,24 @@ module.exports = {
         }
 
         if (sub === "allowed" || sub === "parceiros" || sub === "whitelist") {
-            const allowed = configs[from]?.allowedLinkUsers || [];
-            if (allowed.length === 0) {
-                return reply(`🤝 Nenhum membro possui permissão especial de postagem de links neste grupo.\nPara conceder, use \`.antilink allow @user\`.`);
-            }
-            return reply(`🤝 *Parceiros & Afiliados Autorizados a Enviar Links (${allowed.length}):*\n\n` + allowed.map((j, i) => `${i + 1}. ${nomeDoMembro(j)}`).join('\n'), allowed);
+            const { texto, mentions } = textoListaParceiros(configs[from]?.allowedLinkUsers || []);
+            return reply(texto, mentions);
         }
 
-        // 3. Configurar Plataformas Individuais (.antilink telegram on/off, etc.)
-        if (validPlatforms.includes(sub)) {
+        // 3. Configurar Plataformas Individuais (.antilink whatsapp|canal|dm|telegram on/off, etc.)
+        const plataforma = ALIAS_PLATAFORMA[sub] || sub;
+        if (validPlatforms.includes(plataforma)) {
             const isEnable = ["on", "1", "ativar", "sim"].includes(param);
             const isDisable = ["off", "0", "desativar", "nao"].includes(param);
             if (isEnable || isDisable) {
-                configs[from].antilinkConfig.platforms[sub] = isEnable;
+                configs[from].antilinkConfig.platforms[plataforma] = isEnable;
                 if (isEnable && !configs[from].antilink) {
                     configs[from].antilink = true;
                     configs[from].antilinkConfig.enabled = true;
                 }
                 await dataService.saveConfigsData(configs);
-                return reply(`⚙️ *Filtro para [${sub.toUpperCase()}]:* ${isEnable ? "🟢 *BLOQUEADO (Proibido)*" : "🔴 *LIBERADO (Permitido)*"}\n💡 _Demais redes continuam conforme configuradas._`);
+                const rotulo = ROTULO_PLATAFORMA[plataforma] || plataforma.toUpperCase();
+                return reply(`⚙️ *Filtro para [${rotulo}]:* ${isEnable ? "🟢 *BLOQUEADO (Proibido)*" : "🔴 *LIBERADO (Permitido)*"}\n💡 _Demais redes continuam conforme configuradas._`);
             }
         }
 
@@ -173,15 +176,18 @@ module.exports = {
         doc += `📌 *Status Geral:* ${cfg.enabled ? "🟢 *ATIVADO*" : "🔴 *DESATIVADO*"}\n`;
         doc += `⚖️ *Punição Definida:* \`${cfg.action.toUpperCase()}\`\n\n`;
         doc += `╭━〔 🌐 FILTROS POR PLATAFORMA 〕━⬣\n`;
-        for (const [plat, enabled] of Object.entries(cfg.platforms)) {
-            doc += `┃ ${enabled ? "🟢" : "🔴"} *${plat.toUpperCase()}:* ${enabled ? "Bloqueado" : "Permitido"}\n`;
+        for (const plat of validPlatforms) {
+            const bloqueada = plataformaBloqueada(cfg.platforms, plat);
+            doc += `┃ ${bloqueada ? "🟢" : "🔴"} *${ROTULO_PLATAFORMA[plat] || plat.toUpperCase()}:* ${bloqueada ? "Bloqueado" : "Permitido"}\n`;
         }
-        doc += `┃ 🔴 *WHATSAPP (DM):* Sempre bloqueado (wa.me e links de conversa privada)\n`;
         doc += `╰━━━━━━━━━━━━━━━━━━⬣\n\n`;
         doc += `💡 *Comandos de Configuração:*\n`;
         doc += `• \`.antilink all on\` — Bloquear TODAS as redes de uma vez\n`;
         doc += `• \`.antilink all off\` — Liberar TODAS as redes\n`;
-        doc += `• \`.antilink <rede> on/off\` — Alternar rede específica (ex: \`.antilink youtube off\`)\n`;
+        doc += `• \`.antilink whatsapp on/off\` — Convite de grupo (chat.whatsapp.com)\n`;
+        doc += `• \`.antilink canal on/off\` — Canal do WhatsApp\n`;
+        doc += `• \`.antilink dm on/off\` — Conversa privada (wa.me, api.whatsapp.com)\n`;
+        doc += `• \`.antilink <rede> on/off\` — Alternar outra rede (ex: \`.antilink youtube off\`)\n`;
         doc += `• \`.antilink acao <delete|warn|kick|ban>\` — Definir punição\n\n`;
         doc += `👑 *${botName}*`;
 

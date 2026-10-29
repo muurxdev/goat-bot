@@ -1,4 +1,5 @@
-const { nomeDoMembro, nomeDoMembroNoGrupo } = require('../../utils/nomeMembro');
+const { nomeDoMembroNoGrupo } = require('../../utils/nomeMembro');
+const { textoListaParceiros, numeroDoJid } = require('../../utils/parceriaLista');
 const logger = require('../../core/logger')
 /**
  * Comando .parceria / .afiliacao
@@ -59,7 +60,7 @@ module.exports = {
         const sub = (args[0] || "").toLowerCase().trim();
 
         // Se não houver grupo alvo no privado e tentar add/del, solicita o ID do grupo
-        if (!targetGroup && (sub === "add" || sub === "del" || sub === "autorizar" || sub === "remover")) {
+        if (!targetGroup && (sub === "add" || sub === "del" || sub === "autorizar" || sub === "remover" || sub === "lista")) {
             return reply(`💡 *No privado (DM), informe o grupo alvo:*\n\`${p}parceria add @user <id_do_grupo@g.us>\`\n\n_Exemplo:_ \`${p}parceria add @5511999990001 120363000000000099@g.us\``);
         }
 
@@ -88,9 +89,10 @@ module.exports = {
             if (!target) return reply(`💡 Marque o usuário para conceder parceria: \`${p}parceria add @user\``);
 
             await aiLearning.allowLinkUser(effectiveGroup, target);
-            // Mostra o nome do parceiro, nunca o número (a menção continua notificando)
+            // @ do membro (a menção mostra o nome dele no WhatsApp) e o nome em negrito
             const nomeParceiro = await nomeDoMembroNoGrupo(client, effectiveGroup, target);
-            return reply(`🤝 *NOVA PARCERIA FIRMADA!*\n\n*${nomeParceiro}* agora é um parceiro oficial e tem permissão permanente para postar qualquer link sem limite diário nem exclusão!\n\n📌 *Válido até:* Remoção manual por um administrador ou pelo dono.`, [target]);
+            const num = numeroDoJid(target);
+            return reply(`🤝 *NOVA PARCERIA FIRMADA!*\n\n@${num} (*${nomeParceiro}*) agora é parceiro oficial e pode postar qualquer link, sem limite diário nem exclusão.\n\n📌 *Validade:* permanente, até um admin remover com \`${p}parceria del @${num}\`.`, [target]);
         }
 
         if (sub === "del" || sub === "remover" || sub === "revogar") {
@@ -104,7 +106,13 @@ module.exports = {
             if (!target) return reply(`💡 Marque o usuário para remover parceria: \`${p}parceria del @user\``);
 
             await aiLearning.disallowLinkUser(effectiveGroup, target);
-            return reply(`🚫 A parceria de ${await nomeDoMembroNoGrupo(client, effectiveGroup, target)} foi encerrada e a permissão de links foi revogada.`, [target]);
+            const nomeRevogado = await nomeDoMembroNoGrupo(client, effectiveGroup, target);
+            return reply(`🚫 @${numeroDoJid(target)} (*${nomeRevogado}*) teve a parceria encerrada e a permissão de links foi revogada.`, [target]);
+        }
+
+        if (sub === "lista" || sub === "listar" || sub === "ver" || sub === "todos") {
+            const { texto, mentions } = textoListaParceiros(allowed, p);
+            return reply(texto, mentions);
         }
 
         // Painel e Orientações para Usuários e Admins
@@ -125,7 +133,7 @@ module.exports = {
             doc += `┃ _Nenhum parceiro cadastrado no momento._\n`;
         } else {
             allowed.forEach((j, i) => {
-                doc += `┃ ${i + 1}. ${nomeDoMembro(j)} ✅ (Sem limites)\n`;
+                doc += `┃ ${i + 1}. @${numeroDoJid(j)} ✅ (permanente)\n`;
             });
         }
         doc += `╰━━━━━━━━━━━━━━━━━━⬣\n\n`;
