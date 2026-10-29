@@ -1,4 +1,4 @@
-const { nomeDoMembro } = require('../../utils/nomeMembro');
+const { nomeDoMembro, nomeDoMembroNoGrupo } = require('../../utils/nomeMembro');
 const logger = require('../../core/logger')
 /**
  * Comando .parceria / .afiliacao
@@ -89,7 +89,7 @@ module.exports = {
 
             await aiLearning.allowLinkUser(effectiveGroup, target);
             // Mostra o nome do parceiro, nunca o número (a menção continua notificando)
-            const nomeParceiro = String(dataService.getUser(target)?.name || '').trim() || 'Este membro';
+            const nomeParceiro = await nomeDoMembroNoGrupo(client, effectiveGroup, target);
             return reply(`🤝 *NOVA PARCERIA FIRMADA!*\n\n*${nomeParceiro}* agora é um parceiro oficial e tem permissão permanente para postar qualquer link sem limite diário nem exclusão!\n\n📌 *Válido até:* Remoção manual por um administrador ou pelo dono.`, [target]);
         }
 
@@ -104,7 +104,7 @@ module.exports = {
             if (!target) return reply(`💡 Marque o usuário para remover parceria: \`${p}parceria del @user\``);
 
             await aiLearning.disallowLinkUser(effectiveGroup, target);
-            return reply(`🚫 A parceria de ${nomeDoMembro(target)} foi encerrada e a permissão de links foi revogada.`, [target]);
+            return reply(`🚫 A parceria de ${await nomeDoMembroNoGrupo(client, effectiveGroup, target)} foi encerrada e a permissão de links foi revogada.`, [target]);
         }
 
         // Painel e Orientações para Usuários e Admins
